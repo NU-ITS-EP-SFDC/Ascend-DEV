@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Mapping Provider --></label>
+        <name>geopointe__Mapping_Provider__c</name>
+        <picklistValues>
+            <masterLabel>Google</masterLabel>
+            <translation><!-- Google --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MapQuest</masterLabel>
+            <translation><!-- MapQuest --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

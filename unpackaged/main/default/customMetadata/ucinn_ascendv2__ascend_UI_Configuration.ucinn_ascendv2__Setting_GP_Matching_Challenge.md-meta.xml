@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP Matching Challenge</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Matching_Challenge_Info_Map__c&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Matching Challenge Info Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Matching_Challenge__c&quot;,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;additionalFieldsToQuery&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;value&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Matching_Challenge_Requirement__c&quot;,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;additionalFieldsToQuery&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;value&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Designation_Detail__c&quot;,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;additionalFieldsToQuery&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;value&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Matching_Challenge_Relation__c&quot;,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;additionalFieldsToQuery&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;value&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Matching_Challenge_Sponsor__c&quot;,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;additionalFieldsToQuery&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;value&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;Opportunity&quot;,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;additionalFieldsToQuery&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;value&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;findRelationsOnSessionApproval&quot;,
+            &quot;helpText&quot;: &quot;Determines if we should try to match transactions with matching challeneges on session approval.&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;checkbox&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;allowDesignationDetailToMatchMultipleChallenges&quot;,
+            &quot;helpText&quot;: &quot;Determines if a Desigantion Detail can be linked to multiple matching challeneges.&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;checkbox&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;deleteSponsorOpportunityOnSponsorDeletion&quot;,
+            &quot;helpText&quot;: &quot;When deleting the matching sponsor should we also delete the opportunity.&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;checkbox&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;createPledgesOnSponsorTrigger&quot;,
+            &quot;helpText&quot;: &quot;If all required information is present we allow the creation of the sponsors pledge automatically.&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;checkbox&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;allowMultiplePrimarySponsor&quot;,
+            &quot;helpText&quot;: &quot;We can have multiple primary sponsors on a matching challenge&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;checkbox&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;allowOverlappingRequirement&quot;,
+            &quot;helpText&quot;: &quot;Matching Requirements can have overlapping criterias.&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;checkbox&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;sponsorToCreatePledgeFormulaFieldApi&quot;,
+            &quot;helpText&quot;: &quot;If this field on the sponsor record is TRUE it will automatically create the pledge using the sponsor record.&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;matchingChallengeIsValidFieldApi&quot;,
+            &quot;helpText&quot;: &quot;Field on the matching challenege object that determines if challenges goal is met.&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;createSoftCreditOnPrimaryPledgeFromRelations&quot;,
+            &quot;helpText&quot;: &quot;If TRUE we will create soft credits on the sponsor pledges of all the transactions that met this challenge.&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;checkbox&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;matchDesignationDetailToChallengeRequirementInfoList&quot;,
+            &quot;helpText&quot;: &quot;List of criterias to check designation against matching challenege requirments&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;list&quot;,
+              &quot;listType&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;Designation_Detail__c&quot;,
+                  &quot;helpText&quot;: &quot;Field on the Designation Detail object to compare against.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;value1&quot;,
+                  &quot;helpText&quot;: &quot;Base value of the DD to compare against the requirement.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;operator&quot;,
+                  &quot;helpText&quot;: &quot;operator to compare the designation detail field.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;picklist&quot;,
+                    &quot;customPicklistValuesString&quot;: [
+                      &quot;!=&quot;,
+                      &quot;&lt;=&quot;,
+                      &quot;==&quot;,
+                      &quot;&gt;=&quot;,
+                      &quot;&gt;&quot;,
+                      &quot;&lt;&quot;
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;Matching_Challenge_Requirement__c&quot;,
+                  &quot;helpText&quot;: &quot;Field on the Matching Challenge Requirment object to compare against.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;value2&quot;,
+                  &quot;helpText&quot;: &quot;Base value of the Matching Challenge Required to compare against the DD.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;matchingChallengeRequirementAllowNull&quot;,
+                  &quot;helpText&quot;: &quot;Allow this Matching Challenege Requirement field to be null.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;sponsorToOpportunityMappingList&quot;,
+            &quot;helpText&quot;: &quot;Maps fields on the sponsor object onto the pledge that gets created.&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;list&quot;,
+              &quot;listType&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;allowNullValue&quot;,
+                  &quot;helpText&quot;: &quot;Allow this field on the sponsor to be null.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;Opportunity&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity field to set.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;Matching_Challenge_Sponsor__c&quot;,
+                  &quot;helpText&quot;: &quot;Matching Challenege Sponsor field to get.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;value&quot;,
+                  &quot;helpText&quot;: &quot;Base value to set the opportunity field&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;useValueIfNull&quot;,
+                  &quot;helpText&quot;: &quot;If the sponsor field is null then use the value to populate the opportunity record.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;matchingChallengeRTv2PaymentInfoMap&quot;,
+            &quot;helpText&quot;: &quot;Configuration pertaining&quot;,
+            &quot;valueType&quot;: &quot;text&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;rtv2FieldsToMapList&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;Review_Transaction_v2__c&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;Opportunity&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;Matching_Challenge__c&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;Matching_Challenge_Sponsor__c&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;value&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;useValueIfNull&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;checkbox&quot;
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;rtv2IndexedFieldsToMapList&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;rtv2BeforeIndexFieldApi&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;Opportunity&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;Matching_Challenge__c&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;Matching_Challenge_Sponsor__c&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;value&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;useValueIfNull&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;checkbox&quot;
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Setting__mdt&quot;,
+  &quot;title&quot;: &quot;Matching Challenge&quot;,
+  &quot;helpText&quot;: &quot;Configuration pertaining to Matching Challenege.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

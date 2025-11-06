@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If checked, and if User Latitude/Longitude fields are mapped, this Action will only be performed if User Location is available. --></help>
+        <label><!-- Require User Location --></label>
+        <name>geopointe__Require_User_Location__c</name>
+    </CustomFieldTranslation>

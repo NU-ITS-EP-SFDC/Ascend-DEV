@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The default item duration for the calendar --></help>
+        <label><!-- Default Calendar Duration --></label>
+        <name>geopointe__Default_Calendar_Duration__c</name>
+    </CustomFieldTranslation>

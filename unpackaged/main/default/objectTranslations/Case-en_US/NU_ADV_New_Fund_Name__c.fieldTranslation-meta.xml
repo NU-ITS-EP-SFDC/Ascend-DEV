@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What is the NEW name of the fund? --></help>
+        <label><!-- New Fund Name --></label>
+        <name>NU_ADV_New_Fund_Name__c</name>
+    </CustomFieldTranslation>

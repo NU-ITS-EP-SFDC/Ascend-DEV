@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ucinn_ascendv2__Briefing_Purpose__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Briefing Purpose</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Event Bio</fullName>
+                <default>false</default>
+                <label>Event Bio</label>
+            </value>
+            <value>
+                <fullName>Corporate Bio</fullName>
+                <default>false</default>
+                <label>Corporate Bio</label>
+            </value>
+            <value>
+                <fullName>Trustee Bio</fullName>
+                <default>false</default>
+                <label>Trustee Bio</label>
+            </value>
+            <value>
+                <fullName>Research Bio</fullName>
+                <default>false</default>
+                <label>Research Bio</label>
+            </value>
+            <value>
+                <fullName>Largest Visible Gift</fullName>
+                <default>false</default>
+                <label>Largest Visible Gift</label>
+            </value>
+            <value>
+                <fullName>Source of Wealth</fullName>
+                <default>false</default>
+                <label>Source of Wealth</label>
+            </value>
+            <value>
+                <fullName>Research Analysis</fullName>
+                <default>false</default>
+                <label>Research Analysis</label>
+            </value>
+            <value>
+                <fullName>Employment</fullName>
+                <default>false</default>
+                <label>Career History</label>
+            </value>
+            <value>
+                <fullName>Family Information</fullName>
+                <default>false</default>
+                <label>Family Information</label>
+            </value>
+            <value>
+                <fullName>Visible Assets</fullName>
+                <default>false</default>
+                <label>Visible Assets</label>
+            </value>
+            <value>
+                <fullName>Family Foundation</fullName>
+                <default>false</default>
+                <label>Family Foundation</label>
+            </value>
+            <value>
+                <fullName>External Philanthropy</fullName>
+                <default>false</default>
+                <label>External Philanthropy</label>
+            </value>
+            <value>
+                <fullName>Additional Notes</fullName>
+                <default>false</default>
+                <label>Notes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

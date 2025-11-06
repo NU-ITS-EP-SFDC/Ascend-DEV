@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Corporate Relations Opportunity Manager --></label>
+        <name>Corporate_Relations_Opportunity_Manager__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Prospect Management Setting</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__engage_Email_Brand_Voice__c</field>
+        <value xsi:type="xsd:string">{!Email.ucinn_ascendv2__Organization_Name__c} invites donors to support future generations and be a participant in the advancement of society. {!Email.ucinn_ascendv2__Organization_Name__c} communicates with a positive, engaging, and confident voice. {!Email.ucinn_ascendv2__Organization_Name__c} wants to make it clear that donors are valued, and that contributions have an immediate and pertinent impact.</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__engage_Email_Configuration__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;Ascend - Prospect Appeal&quot;: {
+    &quot;emailInputFields&quot;: [
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Sender__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Designation__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Impact__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Program__c&quot;
+      }
+    ],
+    &quot;subject&quot;: &quot;Welcome!&quot;,
+    &quot;brandVoiceKey&quot;: &quot;brand_voice&quot;,
+    &quot;engageMergeFields&quot;: [
+      {
+        &quot;content&quot;: &quot;The following is information about the prospective donor: Donor&apos;s name is {!Contact.Name}. The following is information about the sender of the email: The Sender is {!Email.ucinn_ascendv2__Sender__r.Name} who holds the title of {!Email.ucinn_ascendv2__Sender__r.Title} at {!Email.ucinn_ascendv2__Organization_Name__c}. The area of need is {!Email.ucinn_ascendv2__Designation__r.Name}. The suggested gift amount should be {!Contact.ucinn_ascendv2__Amount_of_Most_Recent_Gift__c}. The following is the URL that can be clicked on to give to the organization {!Email.ucinn_ascendv2__Designation__r.ucinn_ascendv2__Giving_URL__c}. The following is information about the testimonial. {!Email.ucinn_ascendv2__Designation__r.ucinn_ascendv2__Testimonial__c}.&quot;,
+        &quot;field&quot;: &quot;ucinn_ascendv2__Additional_Information__c&quot;,
+        &quot;engageKey&quot;: &quot;additional_information&quot;
+      },
+      {
+        &quot;field&quot;: &quot;ucinn_ascendv2__Impact__c&quot;,
+        &quot;engageKey&quot;: &quot;impact&quot;
+      },
+      {
+        &quot;field&quot;: &quot;ucinn_ascendv2__Program__c&quot;,
+        &quot;engageKey&quot;: &quot;program&quot;
+      }
+    ]
+  },
+  &quot;Ascend - Thank You&quot;: {
+    &quot;emailInputFields&quot;: [
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Sender__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Gift_or_Pledge__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Impact__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Program__c&quot;
+      }
+    ],
+    &quot;subject&quot;: &quot;Thank You!&quot;,
+    &quot;brandVoiceKey&quot;: &quot;brand_voice&quot;,
+    &quot;engageMergeFields&quot;: [
+      {
+        &quot;content&quot;: &quot;The following is information about the donor: Donor&apos;s name is {!Contact.Name}. Only address the donor by their first name. The following is information about the sender of the email: The Sender is {!Email.ucinn_ascendv2__Sender__r.Name} who holds the title of {!Email.ucinn_ascendv2__Sender__r.Title} at {!Email.ucinn_ascendv2__Organization_Name__c}. The amount of the gift was {!Email.ucinn_ascendv2__Gift_or_Pledge__r.Amount}. When referring to the gift, ensure that you reference it in lowercase letters using the word: {!Email.ucinn_ascendv2__Gift_or_Pledge__r.RecordType.Name}.&quot;,
+        &quot;field&quot;: &quot;ucinn_ascendv2__Additional_Information__c&quot;,
+        &quot;engageKey&quot;: &quot;additional_information&quot;
+      },
+      {
+        &quot;field&quot;: &quot;ucinn_ascendv2__Impact__c&quot;,
+        &quot;engageKey&quot;: &quot;impact&quot;
+      },
+      {
+        &quot;field&quot;: &quot;ucinn_ascendv2__Program__c&quot;,
+        &quot;engageKey&quot;: &quot;program&quot;
+      }
+    ]
+  },
+  &quot;Ascend - Planned Giving Appeal&quot;: {
+    &quot;emailInputFields&quot;: [
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Sender__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Program__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Strategy__c&quot;
+      }
+    ],
+    &quot;subject&quot;: &quot;Opportunity to Have a Positive Impact!&quot;,
+    &quot;brandVoiceKey&quot;: &quot;brand_voice&quot;,
+    &quot;engageMergeFields&quot;: [
+      {
+        &quot;content&quot;: &quot;The following is information about the donor: Donor&apos;s name is {!Contact.Name}. Only address the donor by their first name. The following is information about the sender of the email: The Sender is {!Email.ucinn_ascendv2__Sender__r.Name} who holds the title of {!Email.ucinn_ascendv2__Sender__r.Title} at {!Email.ucinn_ascendv2__Organization_Name__c}.&quot;,
+        &quot;field&quot;: &quot;ucinn_ascendv2__Additional_Information__c&quot;,
+        &quot;engageKey&quot;: &quot;additional_information&quot;
+      },
+      {
+        &quot;field&quot;: &quot;ucinn_ascendv2__Strategy__c&quot;,
+        &quot;engageKey&quot;: &quot;strategy&quot;
+      },
+      {
+        &quot;field&quot;: &quot;ucinn_ascendv2__Program__c&quot;,
+        &quot;engageKey&quot;: &quot;program&quot;
+      }
+    ]
+  },
+  &quot;Ascend - Lapsed Donor Appeal&quot;: {
+    &quot;emailInputFields&quot;: [
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Sender__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Designation__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Program__c&quot;
+      }
+    ],
+    &quot;subject&quot;: &quot;Opportunity to Have a Positive Impact!&quot;,
+    &quot;brandVoiceKey&quot;: &quot;brand_voice&quot;,
+    &quot;engageMergeFields&quot;: [
+      {
+        &quot;content&quot;: &quot;The following is information about the donor: Donor&apos;s name is {!Contact.Name}. Only address the donor by their first name. The donor&apos;s first gift was made on {!Contact.ucinn_ascendv2__Date_of_First_Gift__c}. The donor&apos;s first pledge was made on {!Contact.ucinn_ascendv2__Date_of_First_Pledge__c}. The donor&apos;s last gift was on {!Contact.ucinn_ascendv2__Date_of_Most_Recent_Gift__c}. The donor&apos;s last pledge was on {!Contact.ucinn_ascendv2__Date_of_Most_Recent_Pledge__c}. The donor&apos;s last gift was to the following designation: {!Contact.ucinn_ascendv2__Designation_of_Most_Recent_Gift_Lookup__r.Name}. The donor&apos;s last pledge was to the following designation: {!Contact.ucinn_ascendv2__Designation_of_Most_Recent_Pledge_Lookup__r.Name}. When referring to the last gift or pledge, only refer to the latest one. Suggest that the donor give to the following designation: {!Email.ucinn_ascendv2__Designation__r.Name}. The following is information about the testimonial: {!Email.ucinn_ascendv2__Designation__r.ucinn_ascendv2__Testimonial__c}. The following is the URL that can be clicked on to give to the organization {!Email.ucinn_ascendv2__Designation__r.ucinn_ascendv2__Giving_URL__c}. The following is information about the sender of the email: The Sender is {!Email.ucinn_ascendv2__Sender__r.Name} who holds the title of {!Email.ucinn_ascendv2__Sender__r.Title} at {!Email.ucinn_ascendv2__Organization_Name__c}.&quot;,
+        &quot;field&quot;: &quot;ucinn_ascendv2__Additional_Information__c&quot;,
+        &quot;engageKey&quot;: &quot;additional_information&quot;
+      },
+      {
+        &quot;field&quot;: &quot;ucinn_ascendv2__Program__c&quot;,
+        &quot;engageKey&quot;: &quot;program&quot;
+      }
+    ]
+  },
+  &quot;Ascend - Donor Visit Follow Up&quot;: {
+    &quot;emailInputFields&quot;: [
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Sender__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Meeting_Information__c&quot;
+      }
+    ],
+    &quot;subject&quot;: &quot;Following Up!&quot;,
+    &quot;brandVoiceKey&quot;: &quot;brand_voice&quot;,
+    &quot;engageMergeFields&quot;: [
+      {
+        &quot;content&quot;: &quot;The following is information about the donor: Donor&apos;s name is {!Contact.Name}. Only address the donor by their first name. The following is information about the sender of the email: The Sender is {!Email.ucinn_ascendv2__Sender__r.Name} who holds the title of {!Email.ucinn_ascendv2__Sender__r.Title} at {!Email.ucinn_ascendv2__Organization_Name__c}.&quot;,
+        &quot;field&quot;: &quot;ucinn_ascendv2__Additional_Information__c&quot;,
+        &quot;engageKey&quot;: &quot;additional_information&quot;
+      },
+      {
+        &quot;field&quot;: &quot;ucinn_ascendv2__Meeting_Information__c&quot;,
+        &quot;engageKey&quot;: &quot;meeting&quot;
+      }
+    ]
+  },
+  &quot;Ascend - Event Invitation&quot;: {
+    &quot;emailInputFields&quot;: [
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Sender__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Event_Information__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Program__c&quot;
+      }
+    ],
+    &quot;subject&quot;: &quot;You&apos;re Invited!&quot;,
+    &quot;brandVoiceKey&quot;: &quot;brand_voice&quot;,
+    &quot;engageMergeFields&quot;: [
+      {
+        &quot;content&quot;: &quot;The following is information about the donor: Donor&apos;s name is {!Contact.Name}. Only address the donor by their first name. The following is information about the sender of the email: The Sender is {!Email.ucinn_ascendv2__Sender__r.Name} who holds the title of {!Email.ucinn_ascendv2__Sender__r.Title} at {!Email.ucinn_ascendv2__Organization_Name__c}.&quot;,
+        &quot;field&quot;: &quot;ucinn_ascendv2__Additional_Information__c&quot;,
+        &quot;engageKey&quot;: &quot;additional_information&quot;
+      },
+      {
+        &quot;field&quot;: &quot;ucinn_ascendv2__Event_Information__c&quot;,
+        &quot;engageKey&quot;: &quot;event&quot;
+      },
+      {
+        &quot;field&quot;: &quot;ucinn_ascendv2__Program__c&quot;,
+        &quot;engageKey&quot;: &quot;program&quot;
+      }
+    ]
+  },
+  &quot;Ascend - Phone Call Script&quot;: {
+    &quot;emailInputFields&quot;: [
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Sender__c&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ucinn_ascendv2__Program__c&quot;
+      },
+      {
+         &quot;name&quot;: &quot;ucinn_ascendv2__Purpose__c&quot;
+      }
+    ],
+    &quot;subject&quot;: &quot;Phone Call&quot;,
+    &quot;brandVoiceKey&quot;: &quot;brand_voice&quot;,
+    &quot;engageMergeFields&quot;: [
+      {
+        &quot;content&quot;: &quot;The following is information about the donor: Donor&apos;s name is {!Contact.Name}. Only address the donor by their first name. The following is information about the sender of the email: The caller is {!Email.ucinn_ascendv2__Sender__r.Name} who holds the title of {!Email.ucinn_ascendv2__Sender__r.Title} at {!Email.ucinn_ascendv2__Organization_Name__c}.&quot;,
+        &quot;field&quot;: &quot;ucinn_ascendv2__Additional_Information__c&quot;,
+        &quot;engageKey&quot;: &quot;additional_information&quot;
+      },
+      {
+        &quot;field&quot;: &quot;ucinn_ascendv2__Program__c&quot;,
+        &quot;engageKey&quot;: &quot;program&quot;
+      },
+      {
+        &quot;field&quot;: &quot;ucinn_ascendv2__Purpose__c&quot;,
+        &quot;engageKey&quot;: &quot;purpose&quot;
+      }
+    ]
+  }
+}</value>
+    </values>
+</CustomMetadata>

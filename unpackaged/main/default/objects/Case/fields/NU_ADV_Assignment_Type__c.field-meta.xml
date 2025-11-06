@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NU_ADV_Assignment_Type__c</fullName>
+    <label>Assignment Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PRM</fullName>
+                <default>false</default>
+                <label>PRM</label>
+            </value>
+            <value>
+                <fullName>Primary Relationship Manager</fullName>
+                <default>false</default>
+                <label>Primary Relationship Manager</label>
+            </value>
+            <value>
+                <fullName>Secondary Relationship Manager</fullName>
+                <default>false</default>
+                <label>Secondary Relationship Manager</label>
+            </value>
+            <value>
+                <fullName>Leadership Giving Manager</fullName>
+                <default>false</default>
+                <label>Leadership Giving Manager</label>
+            </value>
+            <value>
+                <fullName>Planned Giving Manager</fullName>
+                <default>false</default>
+                <label>Planned Giving Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

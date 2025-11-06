@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- In what field should the professor be an expert? --></help>
+        <label><!-- Faculty Field --></label>
+        <name>NU_ADV_Faculty_Field__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Color Marker Date Rule Generator --></label>
+        <name>geopointe__Color_Marker_Date_Rule_Generator__c</name>
+        <picklistValues>
+            <masterLabel>auto</masterLabel>
+            <translation><!-- auto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>customRange</masterLabel>
+            <translation><!-- customRange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dynamicRange</masterLabel>
+            <translation><!-- dynamicRange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ordinalDayOfWeek</masterLabel>
+            <translation><!-- ordinalDayOfWeek --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ordinalMonthOfYear</masterLabel>
+            <translation><!-- ordinalMonthOfYear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ordinalQuarterOfYear</masterLabel>
+            <translation><!-- ordinalQuarterOfYear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ordinalWeekOfMonth</masterLabel>
+            <translation><!-- ordinalWeekOfMonth --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

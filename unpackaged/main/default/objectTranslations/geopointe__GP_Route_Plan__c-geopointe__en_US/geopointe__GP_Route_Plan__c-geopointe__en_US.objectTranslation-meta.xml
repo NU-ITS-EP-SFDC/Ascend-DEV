@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Geopointe Route Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Geopointe Route Plans</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Geopointe Route Plan Layout</layout>
+        <sections>
+            <label><!-- Completed Visits (Input) --></label>
+            <section>Completed Visits (Input)</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Plan Configuration --></label>
+            <section>Plan Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Scheduled Visits (Output) --></label>
+            <section>Scheduled Visits (Output)</section>
+        </sections>
+        <sections>
+            <label><!-- Scheduling Constraints --></label>
+            <section>Scheduling Constraints</section>
+        </sections>
+        <sections>
+            <label><!-- User Configuration --></label>
+            <section>User Configuration</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,593 @@
+<apex:page controller="iWave_PROscores.iWavePROScoreDetailViewController" lightningStyleSheets="true">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <apex:stylesheet value="{! URLFOR($Resource.FontAwesome, '/font-awesome-4.4.0/css/font-awesome.min.css') }" />
+    <apex:stylesheet value="{! URLFOR($Resource.ProScoreCSS) }" />
+    <apex:includeScript value="{! URLFOR($Resource.jQuery) }" />
+    <script src="../../soap/ajax/44.0/connection.js" type="text/javascript"></script>
+    <script src="../../soap/ajax/44.0/apex.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function(){
+        doActionWithValidatedCredentials(promoteToProfileOrLink);
+        $('#back-to-contact').click(backToResource);
+        
+        $('.format-est-cap-range').each(function(){
+            let num = $(this).text();
+            num = parseFloat(num).toLocaleString('en');
+            $(this).text(num);
+        });
+    });
+
+    function showPleaseWait(){
+        $('#promote-profile').css('display','none');
+        $('#please-wait').toggle();
+    }
+
+
+    function backToResource() {
+        window.location = '/' + '{! objectToScore['Id'] }';
+    }
+
+    function promoteToProfileOrLink(){
+
+        var dmsId = '{! HTMLENCODE(dmsId) }';
+        var isPromoted = '{! hasProfile }';
+        var profileUrl = '{! HTMLENCODE(profileUrl) }';
+
+        if (profileUrl !== '' && isPromoted !== 'false') {
+            showLinkToProfileButton();
+        } else if (dmsId && dmsId !== '' && isPromoted !== 'false') {
+            showLinkToProfileButton();
+        } else {
+            showPromoteToProfileButton();
+        }
+    }
+
+    function showLinkToProfileButton(){
+        var dmsId = '{! HTMLENCODE(dmsId) }';
+        var profileUrl = '{! HTMLENCODE(profileUrl) }';
+
+        $('#promote-profile').css('display','none');
+        $('#please-wait').css('display','none');
+        $('#link-to-profile').toggle();
+
+        if (profileUrl !== '') {
+            $('#link-to-profile').html("<a target = '_BLANK' href = '{! HTMLENCODE(profileUrl) }'>Link to Profile </a>");
+        } else {
+            $('#link-to-profile').html("<a target = '_BLANK' href = '{! HTMLENCODE(proRootUrl) }/api/goto/profile-dms/" + '{! HTMLENCODE(dmsId) }' + "'>Link to Profile </a>");
+        }
+    }
+
+    function showPromoteToProfileButton(){
+        $('#promote-profile').click(showPleaseWait);
+    }
+
+    function showDetails() {
+        document.getElementById('proscore_box_summary').style.display = 'none';
+        document.getElementById('proscore_box_details').style.display = 'block';
+    }
+
+    function hideDetails() {
+        document.getElementById('proscore_box_details').style.display = 'none';
+        document.getElementById('proscore_box_summary').style.display = 'block';
+    }
+    </script>
+    <apex:form >
+        <apex:pageBlock >
+            <div class="proscore-details-view" style = 'margin-top:15px;'>
+
+                <div style = 'padding-left:30px;float:left;'>
+                    <span style = 'font-size:30px;font-weight:bold;'>{! objectToScore['Name'] }</span>
+                    <div class="insights-icon" style="display: {! IF(theScore['Insights__c'] == '', 'none', 'inline-block') };">
+                        <img src="{! URLFOR($Resource.insightsIcons, 'analytics-icons/diamond-circle.png') }" title="Insights - Hidden Gem" style="display: {! IF(theScore['Insights__c'] == 'Hidden Gem', 'block', 'none') };" />
+                        <img src="{! URLFOR($Resource.insightsIcons, 'analytics-icons/giftbox-circle.png') }" title="Insights - Distinguished Philanthropist" style="display: {! IF(OR(theScore['Insights__c'] == 'Distinguished Philanthropist', theScore['Insights__c'] == 'Distinguished'), 'block', 'none') };" />
+                        <img src="{! URLFOR($Resource.insightsIcons, 'analytics-icons/pause-circle.png') }" title="Insights - Not Now Prospect" style="display: {! IF(OR(theScore['Insights__c'] == 'Not Now Prospect', theScore['Insights__c'] == 'Not Now'), 'block', 'none') };" />
+                        <img src="{! URLFOR($Resource.insightsIcons, 'analytics-icons/trophy-circle.png') }" title="Insights - Your Champion" style="display: {! IF(OR(theScore['Insights__c'] == 'Your Champion', theScore['Insights__c'] == 'Champion'), 'block', 'none') };" />
+                    </div>
+                    <div class="insights-icon" style="display: {! IF(theScore['Cultivation__c'] == null, 'none', IF(theScore['Cultivation__c'] != '', 'inline-block', 'none')) }">
+                        <img src="{! URLFOR($Resource.analyticsIcons, '/circle_cul_story.png') }" title="Cultivation - Storytelling" style="display: {! IF(theScore['Cultivation__c'] == 'storytelling', 'block', 'none') };" />
+                        <img src="{! URLFOR($Resource.analyticsIcons, '/circle_cul_person.png') }" title="Cultivation - Personalization" style="display: {! IF(theScore['Cultivation__c'] == 'personalization', 'block', 'none') };" />
+                        <img src="{! URLFOR($Resource.analyticsIcons, '/circle_cul_annual.png') }" title="Cultivation - Annual" style="display: {! IF(theScore['Cultivation__c'] == 'annual', 'block', 'none') };" />
+                        <img src="{! URLFOR($Resource.analyticsIcons, '/circle_cul_research.png') }" title="Cultivation - Research-Driven" style="display: {! IF(theScore['Cultivation__c'] == 'research driven', 'block', 'none') };" />
+                    </div>
+                    <div class="insights-icon" style="display: {! IF(theScore['Engagement__c'] == null, 'none', IF(theScore['Engagement__c'] != '', 'inline-block', 'none')) }">
+                        <img src="{! URLFOR($Resource.analyticsIcons, '/circle_eng_team.png') }" title="Engagement - Team" style="display: {! IF(theScore['Engagement__c'] == 'team', 'block', 'none') }"/>
+                        <img src="{! URLFOR($Resource.analyticsIcons, '/circle_eng_leader.png') }" title="Engagement - Leadership" style="display: {! IF(theScore['Engagement__c'] == 'leadership', 'block', 'none') }"/>
+                        <img src="{! URLFOR($Resource.analyticsIcons, '/circle_eng_social.png') }" title="Engagement - Social" style="display: {! IF(theScore['Engagement__c'] == 'social', 'block', 'none') }"/>
+                        <img src="{! URLFOR($Resource.analyticsIcons, '/circle_eng_ambass.png') }" title="Engagement - Ambassador" style="display: {! IF(theScore['Engagement__c'] == 'ambassador', 'block', 'none') }"/>
+                    </div>
+                    <div class="insights-icon" style="display: {! IF(theScore['Giving_Velocity__c'] == null, 'none', IF(theScore['Giving_Velocity__c'] != '', 'inline-block', 'none')) }">
+                        <img src="{! URLFOR($Resource.analyticsIcons, '/circle_vel_accel.png') }" title="Giving Velocity - Accelerating" style="display: {! IF(theScore['Giving_Velocity__c'] == 'accelerating', 'block', 'none') }"/>
+                        <img src="{! URLFOR($Resource.analyticsIcons, '/circle_vel_decel.png') }" title="Giving Velocity - Decelerating" style="display: {! IF(theScore['Giving_Velocity__c'] == 'decelerating', 'block', 'none') }"/>
+                        <img src="{! URLFOR($Resource.analyticsIcons, '/circle_vel_steady.png') }" title="Giving Velocity - Steady" style="display: {! IF(theScore['Giving_Velocity__c'] == 'steady', 'block', 'none') }"/>
+                    </div>
+                    <div class="insights-icon" style="display: {! IF(theScore['Planned_Giving_Score__c'] == null, 'none', IF(theScore['Planned_Giving_Score__c'] != '', 'inline-block', 'none')) }">
+                        <img src="{! URLFOR($Resource.pgIcons, '/circle_pg_1not.png') }" title="Not a Planned Giver" style="display: {! IF(theScore['Planned_Giving_Segment__c'] == 'Planned Giving - Not a Planned Giver', 'block', 'none') }"/>
+                        <img src="{! URLFOR($Resource.pgIcons, '/circle_pg_2potential.png') }" title="Potential Planned Giver" style="display: {! IF(theScore['Planned_Giving_Segment__c'] == 'Planned Giving - Potential Planned Giver', 'block', 'none') }"/>
+                        <img src="{! URLFOR($Resource.pgIcons, '/circle_pg_3strong.png') }" title="Strong Planned Giving Prospect" style="display: {! IF(theScore['Planned_Giving_Segment__c'] == 'Planned Giving - Strong Planned Giving Prospect', 'block', 'none') }"/>
+                        <img src="{! URLFOR($Resource.pgIcons, '/circle_pg_4ideal.png') }" title="Ideal Planned Giver" style="display: {! IF(theScore['Planned_Giving_Segment__c'] == 'Planned Giving - Ideal Planned Giver', 'block', 'none') }"/>
+                    </div>
+                    <div class="is-verified">
+                        <span class="{! IF(isVerified, 'slds-icon-utility-check-verified', 'slds-icon-utility-check-unverified') }" title="{! IF(isVerified, 'Verified', 'Unverified') }">
+                            <svg aria-hidden="true" class="{! IF(isVerified, 'slds-icon slds-icon-text-success', 'slds-icon slds-icon-text-light') }">
+                                <use xlink:href="{! URLFOR($Resource.icons, 'utility-sprite/svg/symbols.svg') }#check"></use>
+                            </svg>
+                        </span>
+                        <span class="verified-text">{! IF(isVerified, 'Verified', 'Unverified') }</span>
+                    </div>
+                    <span style = 'font-weight:bold;'>Created Date: <apex:outputField value="{! theScore['CreatedDate'] }"/></span>
+                </div>
+                <div style = 'padding-right:30px;float:right;padding-top:15px;'>
+                    <apex:outputPanel id="renderErrorMessage" >
+                        <script>
+                            var errorMessage = '{! errorMessage}';
+                            var successful = {! successful};
+
+                            function showResultOfPromoteProfile() {
+                                if (successful){
+                                    showLinkToProfileButton();
+                                }
+                                else {
+                                    $('#promote-profile').css('display','none');//hide
+                                    $('#please-wait').css('display','none');//hide
+                                    $('#problem-promoting').toggle();//show
+                                    if (errorMessage){
+                                        $('#problem-promoting').html(errorMessage);
+                                    }
+                                }
+                            }
+                        </script>
+                    </apex:outputPanel>
+                    <apex:outputPanel onclick="promoteOrLinkToProfileJs()" styleClass=""  id="promoteProfileButtons"><span class="createProfileBtn" id = 'promote-profile'>Create Profile</span></apex:outputPanel>
+                    <span class = 'pleaseWaitBtn' id = 'please-wait'>Promoting... please wait.</span>
+                    <span class = 'linkToProfileBtn' id = 'link-to-profile'></span>
+                    <span class = 'problemPromotingProfile' id = 'problem-promoting'>There was a problem promoting your contact to a profile. Please contact <a href="mailto:support@iwave.com">support@iwave.com</a></span>
+                    <span class = 'returnToContactBtn'  id = 'back-to-contact'>Return to {! IF(objectToScoreType == 'Contact', 'Contact', 'Lead') }</span>
+                </div>
+                <div style='clear:both;'></div>
+                <apex:pageBlockSection columns="3">
+                    <apex:pageBlockSectionItem >
+                        <apex:pageBlockSection columns="1">
+                            <span style = 'font-size:20px; font-weight:bold;'>Score Summary</span>
+                            <br /><br />                            
+                            <!-- iwave score begin-->
+                            <div class="score-group">
+                                <div id="proscore_box_summary">
+                                    <img src="{! URLFOR($Resource.badgeIcons, 'iwave-score-01--lg.svg') }" style="display: {! IF(theScore['PRO_Score__c'] == 1, 'block', 'none') };" />
+                                    <img src="{! URLFOR($Resource.badgeIcons, 'iwave-score-02--lg.svg') }" style="display: {! IF(theScore['PRO_Score__c'] == 2, 'block', 'none') };" />
+                                    <img src="{! URLFOR($Resource.badgeIcons, 'iwave-score-03--lg.svg') }" style="display: {! IF(theScore['PRO_Score__c'] == 3, 'block', 'none') };" />
+                                    <img src="{! URLFOR($Resource.badgeIcons, 'iwave-score-04--lg.svg') }" style="display: {! IF(theScore['PRO_Score__c'] == 4, 'block', 'none') };" />
+                                    <!--<span class="showScoreDetails" onclick="javascript: showDetails();">Show Details &raquo;</span>-->
+                                </div>
+
+                                <div class="score-detail-rows">
+                                    <h3 class="proscore_score_breakdown" style = 'padding-left:10px;'>
+                                        <img src="{! $Resource.badgeIcons }/secondary-score-0{! theScore['Propensity_Score__c'] }--lg.svg" />
+                                        Propensity to Give
+                                    </h3>
+                                    <h3 class="proscore_score_breakdown" style = 'padding-left:10px;'>
+                                        <img src="{! $Resource.badgeIcons }/secondary-score-0{! theScore['Affinity_Score__c'] }--lg.svg" />
+                                        Affinity {! theAffinityDescription }
+                                    </h3>
+                                    <h3 class="proscore_score_breakdown" style = 'padding-left:10px;'>
+                                        <img src="{! $Resource.badgeIcons }/secondary-score-0{! theScore['Capacity_Score__c'] }--lg.svg" />
+                                        Estimated Capacity to Give
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- iwave score end -->
+
+                            <div id="proscore_box_details" class="proscore_box proscore-{! theScore['PRO_Score__c'] }" style="display: none;">
+                                <ul class="details">
+                                    <li class="proscore-{! theScore['Propensity_Score__c'] }"><span>{! theScore['Propensity_Score__c'] }</span>Propensity</li>
+                                    <li class="proscore-{! theScore['Affinity_Score__c'] }"><span>{! theScore['Affinity_Score__c'] }</span>Affinity</li>
+                                    <li class="proscore-{! theScore['Capacity_Score__c'] }"><span>{! theScore['Capacity_Score__c'] }</span>Capacity</li>
+                                </ul>
+                                <span class="hideScoreDetails" onclick="javascript: hideDetails();">&laquo; Hide Details</span>
+                            </div>
+
+                            <!-- rfm score BEGIN -->
+                            <div class="score-group" style="display: {! IF(theScore['RFM_Score__c'] == null, 'none', IF(theScore['RFM_Score__c'] > 0, '', 'none')) }">
+                                <div id="proscore_box_summary">
+                                    <img src="{! URLFOR($Resource.badgeIcons, 'RFM-score-00--lg.svg') }" style="display: {! IF(theScore['RFM_Score__c'] <  1, 'block', 'none') };" />
+                                    <img src="{! URLFOR($Resource.badgeIcons, 'RFM-score-01--lg.svg') }" style="display: {! IF(theScore['RFM_Score__c'] == 1, 'block', 'none') };" />
+                                    <img src="{! URLFOR($Resource.badgeIcons, 'RFM-score-02--lg.svg') }" style="display: {! IF(theScore['RFM_Score__c'] == 2, 'block', 'none') };" />
+                                    <img src="{! URLFOR($Resource.badgeIcons, 'RFM-score-03--lg.svg') }" style="display: {! IF(theScore['RFM_Score__c'] == 3, 'block', 'none') };" />
+                                    <img src="{! URLFOR($Resource.badgeIcons, 'RFM-score-04--lg.svg') }" style="display: {! IF(theScore['RFM_Score__c'] == 4, 'block', 'none') };" />
+                                </div>
+                                <div class="score-detail-rows">
+                                    <h3 class="proscore_score_breakdown" style = 'padding-left:10px;'>
+                                        <img src="{! $Resource.badgeIcons }/secondary-score-0{! theScore['RFM_Recency_Score__c'] }--lg.svg" />
+                                        Recency
+                                    </h3>
+                                    <h3 class="proscore_score_breakdown" style = 'padding-left:10px;'>
+                                        <img src="{! $Resource.badgeIcons }/secondary-score-0{! theScore['RFM_Frequency_Score__c'] }--lg.svg" />
+                                        Frequency
+                                    </h3>
+                                    <h3 class="proscore_score_breakdown" style = 'padding-left:10px;'>
+                                        <img src="{! $Resource.badgeIcons }/secondary-score-0{! theScore['RFM_Monetary_Score__c'] }--lg.svg" />
+                                        Monetary
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- rfm score END -->
+
+                           	<div style = ''>
+
+                                <table class="proscore-table">
+                                    <thead>
+                                        <tr><th colspan="2"><label class='font_style_header'>Additional Score Details</label></th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td><label class='font_style'>Capacity Range: </label></td><td><label class='font_style'>{! formattedCapacityRange }</label></td></tr>
+                                        <tr><td><label class='font_style'>Capacity/5 year: </label></td><td><label class='font_style'>${! formattedCapacityValue }</label></td></tr>
+                                        <tr><td><label class='font_style'>Common Name Score: </label></td><td><label class='font_style'>{! theScore['Common_Name_Score__c'] }</label><br /></td></tr>
+                                        <tr><td><label class='font_style'>Primary Affinity </label></td><td><label class='font_style'>{! theScore['Primary_Affinity_Description__c'] }</label><br /></td></tr>
+                                        <tr><td><label class='font_style'>Primary Affinity Score </label></td><td><label class='font_style'>{! theScore['Primary_Affinity_Score__c'] }</label><br /></td></tr>
+                                        <tr><td><label class='font_style'>Secondary Affinity </label></td><td><label class='font_style'>{! theScore['Secondary_Affinity_Description__c'] }</label><br /></td></tr>
+                                        <tr><td><label class='font_style'>Secondary Affinity Score: </label></td><td><label class='font_style'>{! theScore['Secondary_Affinity_Score__c'] }</label><br /></td></tr>
+                                    </tbody>
+
+                                    <tbody><tr><td colspan="2">&nbsp;</td></tr></tbody>
+
+                                    <thead>
+                                        <tr><th colspan="2"><label class='font_style_header'>Giving Breakdown</label></th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td><label class='font_style'>Value of Donations: </label></td><td><label class='font_style'>${! formattedDonationsValue }</label></td></tr>
+                                        <tr><td><label class='font_style'>Number of Donations: </label></td><td><label class='font_style'>{! theScore['Total_Donations_Number__c'] }</label></td></tr>
+                                        <tr><td><label class='font_style'>Value of Properties: </label></td><td><label class='font_style'>${! formattedPropertiesValue }</label></td></tr>
+                                        <tr><td><label class='font_style'>Number of Properties: </label></td><td><label class='font_style'>{! theScore['Total_Properties_Number__c'] }</label></td></tr>
+                                    </tbody>
+
+                                    <tbody><tr><td colspan="2">&nbsp;</td></tr></tbody>
+
+                                    <thead>
+                                        <tr><th colspan="2"><label class='font_style_header'>Planned Giving</label></th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td><label class='font_style'>Score: </label></td><td><label class='font_style'>{! theScore['Planned_Giving_Score__c'] }</label><br /></td></tr>
+                                        <tr><td><label class='font_style'>Segment: </label></td><td><label class='font_style'>{! theScore['Planned_Giving_Segment__c'] }</label><br /></td></tr>
+                                    </tbody>
+
+                                    <tbody><tr><td colspan="2">&nbsp;</td></tr></tbody>
+
+                                    <thead>
+                                        <tr><th colspan="2"><label class='font_style_header'>Other Information</label></th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td><label class='font_style'>Insider: </label></td><td><label class='font_style'>{! IF(theScore['Has_Sec_Insider_Filings__c'], 'Yes', 'No') }</label><br /></td></tr>
+                                        <tr><td><label class='font_style'>Business Affiliation: </label></td><td><label class='font_style'>{! IF(theScore['Has_Business_Affiliation__c'], 'Yes', 'No') }</label><br /></td></tr>
+                                        <tr><td><label class='font_style'>Business Affiliation Business Name: </label></td><td><label class='font_style'>{! theScore['Business_Affiliation_Business_Name__c'] }</label><br /></td></tr>
+                                        <tr><td><label class='font_style'>Corporate Title: </label></td><td><label class='font_style'>{! theScore['Business_Affiliation_Corporate_Title__c'] }</label><br /></td></tr>
+                                        <tr><td><label class='font_style'>Business Email: </label></td><td><label class='font_style'>{! theScore['BusEmail__c'] }</label><br /></td></tr>
+                                        <tr><td><label class='font_style'>Business Phone: </label></td><td><label class='font_style'>{! theScore['BusPhone__c'] }</label><br /></td></tr>
+                                        <tr><td><label class='font_style'>Age Range: </label></td><td><label class='font_style'>{! theScore['Age_Range__c'] }</label><br /></td></tr>                                  
+                                    </tbody>
+                                </table>
+                                <br /><br />
+                            </div>
+                        </apex:pageBlockSection>
+                    </apex:pageBlockSectionItem>
+
+                    <apex:pageBlockSectionItem >
+                        <apex:pageBlockSection columns="1">
+                            <div style = 'margin-right:auto;border-left:2px solid #9D9D9D; padding-left: 15px;'>
+                                <style>
+                                  img.badge {
+                                    height: 30px;
+                                    width: auto !important;
+                                  }
+                                  .data2Col h2 {
+                                    float: none;
+                                    display: block;
+                                  }
+                                </style>
+                                <span style = 'font-size:20px; font-weight:bold;'>Analytics</span>
+                                <br /><br />
+                                <div style="display: {! IF(theScore['Insights__c'] == null, 'none', IF(theScore['Insights__c'] != '', '', 'none')) }">
+                                  <h2>Insights</h2>                                    
+                                
+                                  <div style="display: {! IF(theScore['Insights__c'] == 'Hidden Gem', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_ins_hidden.png') }" title="Hidden Gem"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Hidden Gem</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>An area of opportunity! These prospects have great potential to become major gift donors. They have capacity and are already giving to other nonprofits, though they are not giving to yours.</p>
+                                      </div>
+                                  </div>                                     
+                                  <div style="display: {! IF(or(theScore['Insights__c'] == 'Distinguished Philanthropist', theScore['Insights__c'] == 'Distinguished'), 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_ins_disting.png') }" title="Distinguished Philanthropist"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Distinguished Philanthropist</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>Great major gift donors that are interested in your organization and donate to your cause. They may also be giving to others and could have additional capacity.</p>
+                                      </div>
+                                  </div>
+                                  <div style="display: {! IF(or(theScore['Insights__c'] == 'Not Now Prospect', theScore['Insights__c'] == 'Not Now'), 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_ins_not_now.png') }" title="Not Now Prospect"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Not Now Prospect</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>Individuals that do not appear to be overly philanthropic with you or other nonprofits. Unless additional information is uncovered, this group should be considered your lowest priority to action.</p>
+                                      </div>
+                                  </div>
+                                  <div style="display: {! IF(or(theScore['Insights__c'] == 'Your Champion', theScore['Insights__c'] == 'Champion'), 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_ins_champion.png') }" title="Your Champion"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Your Champion</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>High performers that have a proven affinity to your nonprofit and are already donating charitable gifts. They are not on the radar of other nonprofits so continue to cultivate these relationships.</p>
+                                      </div>
+                                  </div>
+                                </div>                              
+                                
+                                <div style="display: {! IF(theScore['Cultivation__c'] == null, 'none', IF(theScore['Cultivation__c'] != '', '', 'none')) }">
+                                  <h2>Cultivation</h2>
+                                  
+                                  <div style="display: {! IF(theScore['Cultivation__c'] == 'storytelling', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_cul_story.png') }" title="Storytelling"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Storytelling</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>These prospects need to know what their hard-earned money will accomplish. Start by sharing your mission and the impact of a gift using stories, photos and videos.</p>
+                                      </div>
+                                  </div>
+                                  <div style="display: {! IF(theScore['Cultivation__c'] == 'personalization', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_cul_person.png') }" title="Personalization"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Personalization</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>These are major gift prospects! Utilize personalized messages and customized initiatives like exclusive events, on-site tours or nomination for a board position.</p>
+                                      </div>
+                                  </div>
+                                  <div style="display: {! IF(theScore['Cultivation__c'] == 'annual', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_cul_annual.png') }" title="Annual"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Annual</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>These individuals should be considered your lowest priority. Encourage them to join your newsletter, follow your social media channels, or receive an annual mailing letter.</p>
+                                      </div>
+                                  </div>
+                                  <div style="display: {! IF(theScore['Cultivation__c'] == 'research driven', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_cul_research.png') }" title="Research-Driven"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Research-Driven</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>These prospects have likely hidden their wealth and are potential major gift donors. Do research to determine the right messaging. For example, if affiliated with a foundation, consider a grant request. If they give frequently, use personalized messages.</p>
+                                      </div>
+                                  </div>                                     
+                                </div>
+                                
+                                <div style="display: {! IF(theScore['Engagement__c'] == null, 'none', IF(theScore['Engagement__c'] != '', '', 'none')) }">
+                                  <h2>Engagement</h2>
+                                  
+                                  <div style="display: {! IF(theScore['Engagement__c'] == 'team', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_eng_team.png') }" title="Team"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Team</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>These prospects have great potential to give a major gift or planned gift. Engage using highly influential advocates like your executive director, board members, or an existing major donor.</p>
+                                      <p>Cultivate, Solicit, Steward</p>
+                                      </div>
+                                  </div>
+                                  <div style="display: {! IF(theScore['Engagement__c'] == 'leadership', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_eng_leader.png') }" title="Leadership"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Leadership</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>These prospects have great potential to give a major gift or planned gift. Engage using highly influential advocates like your executive director, board members, or an existing major donor.</p>
+                                        <p>Cultivate, Solicit, Steward</p>
+                                      </div>
+                                  </div>
+                                  <div style="display: {! IF(theScore['Engagement__c'] == 'social', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_eng_social.png') }" title="Social"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Social</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>These individuals should be considered your lowest priority to action. Use inexpensive, time-effective channels like group emails and social media.</p>
+                                        <p>Build awareness and engagement</p>
+                                      </div>
+                                  </div>                                    
+                                  <div style="display: {! IF(theScore['Engagement__c'] == 'ambassador', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_eng_ambass.png') }" title="Ambassador"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Ambassador</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                          <p>These individuals are passionate about your cause. Engage using ambassadors (e.g. fundraisers, volunteers, members) and time-effective channels like group emails and social media.</p>
+                                          <p>Solicit, Upgrade and Steward</p>
+                                      </div>
+                                  </div>                                    
+                                </div>                        
+                                 
+                                <div style="display: {! IF(theScore['Giving_Velocity__c'] == null, 'none', IF(theScore['Giving_Velocity__c'] != '', '', 'none')) }">
+                                  <h2>Giving Velocity</h2>
+                                  
+                                  <div style="display: {! IF(theScore['Giving_Velocity__c'] == 'accelerating', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_vel_accel.png') }" title="Accelerating"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Accelerating</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>Donors whose yearly giving trend is increasing.</p>
+                                      </div>
+                                  </div>
+                                  <div style="display: {! IF(theScore['Giving_Velocity__c'] == 'decelerating', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics" style="display: none">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_vel_decel.png') }" title="Decelerating"/>
+                                          <h3 class="slds-text-heading_medium">Decelerating</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>Donors whose yearly giving trend is decreasing.</p>
+                                      </div>
+                                  </div>
+                                  <div style="display: {! IF(theScore['Giving_Velocity__c'] == 'steady', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics" style="display: none">
+                                          <img class="badge" src="{! URLFOR($Resource.analyticsIcons, '/badge_vel_steady.png') }" title="Steady"/>
+                                          <h3 class="slds-text-heading_medium">Steady</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>Donors whose yearly giving trend is unchanged.</p>
+                                      </div>
+                                  </div>                                                                          
+                                </div>
+                                <div style="display: {! IF(theScore['Planned_Giving_Segment__c'] == null, 'none', IF(theScore['Planned_Giving_Segment__c'] != '', '', 'none')) }">
+                                    <h2>Planned Giving</h2>
+                                    
+                                  <div style="display: {! IF(theScore['Planned_Giving_Segment__c'] == 'Not a Planned Giver', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics">
+                                          <img class="badge" src="{! URLFOR($Resource.pgIcons, '/badge_pg_1not.png') }" title="Not a Planned Giver"/>
+                                          <h3 class="slds-text-heading_medium" style="display: none">Not a Planned Giver</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>The iWave data and your internal giving data indicate that these individuals do not currently have planned giving potential. We recommend dismissing them from planned giving campaigns for now but continuing to leverage them in other fundraising activities.</p>
+                                      </div>
+                                  </div>                                    
+                                  <div style="display: {! IF(theScore['Planned_Giving_Segment__c'] == 'Potential Planned Giver', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics" style="display: none">
+                                          <img class="badge" src="{! URLFOR($Resource.pgIcons, '/badge_pg_2potential.png') }" title="Potential Planned Giver"/>
+                                          <h3 class="slds-text-heading_medium">Potential Planned Giver</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>These individuals appear to be great donors and lovers of your cause. However, based on our analysis, they are missing some key indicators of great planned givers. The potential is there, but further research is required.</p>
+                                      </div>
+                                  </div>           
+                                  <div style="display: {! IF(theScore['Planned_Giving_Segment__c'] == 'Strong Planned Giving Prospect', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics" style="display: none">
+                                          <img class="badge" src="{! URLFOR($Resource.pgIcons, '/badge_pg_3strong.png') }" title="Strong Planned Giving Prospect"/>
+                                          <h3 class="slds-text-heading_medium">Strong Planned Giving Prospect</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>iWave has detected great planned giving potential in these individuals. However, they don’t appear to have given very recently or frequently to your organization. We recommend nurturing them into planned giving donors.</p>
+                                      </div>
+                                  </div>    
+                                  <div style="display: {! IF(theScore['Planned_Giving_Segment__c'] == 'Ideal Planned Giver', 'block', 'none') }">
+                                      <h3 class="proscore_score_breakdown analytics" style="display: none">
+                                          <img class="badge" src="{! URLFOR($Resource.pgIcons, '/badge_pg_4ideal.png') }" title="Ideal Planned Giver"/>
+                                          <h3 class="slds-text-heading_medium">Ideal Planned Giver</h3>
+                                      </h3>
+                                      <div class="slds-p-around_small">
+                                        <p>These individuals are excellent planned giving prospects as indicated by both the iWave data and your internal giving data. If they are not already in a planned giving campaign, we recommend adding them.</p>
+                                      </div>
+                                  </div>                                       
+                                </div>
+                                
+                            </div>
+                        </apex:pageBlockSection>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:pageBlockSection columns="1">
+                            <div style = "display: {! IF(lenses != null && lenses.size > 0, 'block', 'none') }; margin-right:auto;border-left:2px solid #9D9D9D; padding-left: 15px;">
+                                <span style = 'font-size:20px; font-weight:bold;'>Multi-Lens Scores</span>
+                                <br /><br />
+                                <apex:repeat value="{!lenses}" var="lens" id="multiLens">
+                                    <h2>
+                                        Multi-Lens: {!lens.Lens_Name__c}
+                                    </h2>
+                                    
+                                    <div style="display: {! IF(lens.iWave_PROscores__Estimated_Capacity_Range_High__c != null && lens.iWave_PROscores__Estimated_Capacity_Range_High__c != null && lens.iWave_PROscores__Estimated_Capacity_Range_High__c > 0 && lens.iWave_PROscores__Estimated_Capacity_Range_Low__c > 0, 'block', 'none') }">
+                                        <h3>
+                                            Largest Estimated Capacity: $<span class="format-est-cap-range">{!ROUND(lens.iWave_PROscores__Estimated_Capacity_Range_Low__c, 0)}</span> - $<span class="format-est-cap-range">{!ROUND(lens.iWave_PROscores__Estimated_Capacity_Range_High__c, 0)}</span>
+                                        </h3>                                        
+                                    </div>                                      
+                                    <div style="display: {! IF((lens.iWave_PROscores__Estimated_Capacity_Range_High__c != null && lens.iWave_PROscores__Estimated_Capacity_Range_High__c > 0) && (lens.iWave_PROscores__Estimated_Capacity_Range_Low__c == null || lens.iWave_PROscores__Estimated_Capacity_Range_Low__c == 0), 'block', 'none') }">
+                                        <h3>
+                                            Largest Estimated Capacity: $0 - $<span class="format-est-cap-range">{!ROUND(lens.iWave_PROscores__Estimated_Capacity_Range_High__c, 0)}</span>
+                                        </h3>                                        
+                                    </div>                                    
+                                    <div style="display: {! IF((lens.iWave_PROscores__Estimated_Capacity_Range_High__c == null || lens.iWave_PROscores__Estimated_Capacity_Range_High__c == 0) && (lens.iWave_PROscores__Estimated_Capacity_Range_Low__c != null && lens.iWave_PROscores__Estimated_Capacity_Range_Low__c > 0), 'block', 'none') }">
+                                        <h3>
+                                            Largest Estimated Capacity: $<span class="format-est-cap-range">{!ROUND(lens.iWave_PROscores__Estimated_Capacity_Range_Low__c, 0)}</span> and more
+                                        </h3>                                        
+                                    </div>  
+                                    
+                                    
+                                    <!-- iwave score begin-->
+                                    <div class="score-group">
+                                        <div id="proscore_box_summary">
+                                            <img src="{! URLFOR($Resource.badgeIcons, 'iwave-score-01--lg.svg') }" style="display: {! IF(lens.iWave_PROscores__iWave_Score__c == 1, 'block', 'none') };" />
+                                            <img src="{! URLFOR($Resource.badgeIcons, 'iwave-score-02--lg.svg') }" style="display: {! IF(lens.iWave_PROscores__iWave_Score__c == 2, 'block', 'none') };" />
+                                            <img src="{! URLFOR($Resource.badgeIcons, 'iwave-score-03--lg.svg') }" style="display: {! IF(lens.iWave_PROscores__iWave_Score__c == 3, 'block', 'none') };" />
+                                            <img src="{! URLFOR($Resource.badgeIcons, 'iwave-score-04--lg.svg') }" style="display: {! IF(lens.iWave_PROscores__iWave_Score__c == 4, 'block', 'none') };" />
+                                            <!--<span class="showScoreDetails" onclick="javascript: showDetails();">Show Details &raquo;</span>-->
+                                        </div>
+        
+                                        <div class="score-detail-rows">
+                                            <h3 class="proscore_score_breakdown" style = 'padding-left:10px;'>
+                                                <img src="{! $Resource.badgeIcons }/secondary-score-0{! lens.iWave_PROscores__Score_Propensity__c }--lg.svg" />
+                                                Propensity to Give
+                                            </h3>
+                                            <h3 class="proscore_score_breakdown" style = 'padding-left:10px;'>
+                                                <img src="{! $Resource.badgeIcons }/secondary-score-0{! lens.iWave_PROscores__Score_Affinity__c }--lg.svg" />
+                                                Affinity to {! theAffinityDescription }<!-- / Linkage to {! theAffinityDescription }-->
+                                            </h3>
+                                            <h3 class="proscore_score_breakdown" style = 'padding-left:10px;'>
+                                                <img src="{! $Resource.badgeIcons }/secondary-score-0{! lens.iWave_PROscores__Score_Capacity__c }--lg.svg" />
+                                                Estimated Capacity to Give
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- iwave score end -->
+        
+        
+                                    <!-- rfm score BEGIN -->
+                                    <div class="score-group" style="display: {! IF(lens.iWave_PROscores__RFM_Score__c == null, 'none', IF(lens.iWave_PROscores__RFM_Score__c > 0, '', 'none')) }">
+                                        <div id="proscore_box_summary">
+                                            <img src="{! URLFOR($Resource.badgeIcons, 'RFM-score-00--lg.svg') }" style="display: {! IF(lens.iWave_PROscores__RFM_Score__c <= 0, 'block', 'none') };" />
+                                            <img src="{! URLFOR($Resource.badgeIcons, 'RFM-score-01--lg.svg') }" style="display: {! IF(lens.iWave_PROscores__RFM_Score__c == 1, 'block', 'none') };" />
+                                            <img src="{! URLFOR($Resource.badgeIcons, 'RFM-score-02--lg.svg') }" style="display: {! IF(lens.iWave_PROscores__RFM_Score__c == 2, 'block', 'none') };" />
+                                            <img src="{! URLFOR($Resource.badgeIcons, 'RFM-score-03--lg.svg') }" style="display: {! IF(lens.iWave_PROscores__RFM_Score__c == 3, 'block', 'none') };" />
+                                            <img src="{! URLFOR($Resource.badgeIcons, 'RFM-score-04--lg.svg') }" style="display: {! IF(lens.iWave_PROscores__RFM_Score__c == 4, 'block', 'none') };" />
+                                        </div>
+                                        <div class="score-detail-rows">
+                                            <h3 class="proscore_score_breakdown" style = 'padding-left:10px;'>
+                                                <img src="{! $Resource.badgeIcons }/secondary-score-0{! lens.iWave_PROscores__RFM_Score_Recency__c }--lg.svg" />
+                                                Recency
+                                            </h3>
+                                            <h3 class="proscore_score_breakdown" style = 'padding-left:10px;'>
+                                                <img src="{! $Resource.badgeIcons }/secondary-score-0{! lens.iWave_PROscores__RFM_Score_Frequency__c }--lg.svg" />
+                                                Frequency
+                                            </h3>
+                                            <h3 class="proscore_score_breakdown" style = 'padding-left:10px;'>
+                                                <img src="{! $Resource.badgeIcons }/secondary-score-0{! lens.iWave_PROscores__RFM_Score_Monetary__c }--lg.svg" />
+                                                Monetary
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- rfm score END -->                                    
+                                    
+                                </apex:repeat>
+								<div style="clear: both">
+                                    
+                                </div>                                
+                            </div>
+                        </apex:pageBlockSection>
+                    </apex:pageBlockSectionItem>
+                    
+                </apex:pageBlockSection>
+            </div>
+        </apex:pageBlock>
+    </apex:form>
+    <apex:form >
+        <apex:actionFunction action="{!promoteProfileLF}" name="promoteOrLinkToProfileJs" rerender="renderErrorMessage" oncomplete="showResultOfPromoteProfile()">
+    </apex:actionFunction>
+
+    </apex:form>
+
+  <apex:form >
+      <c:ProScoreCredentialsModal />
+  </apex:form>
+  </html>
+</apex:page>

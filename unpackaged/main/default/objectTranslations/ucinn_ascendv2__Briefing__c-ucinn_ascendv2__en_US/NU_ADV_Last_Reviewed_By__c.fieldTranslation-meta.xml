@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Last Reviewed By --></label>
+        <name>NU_ADV_Last_Reviewed_By__c</name>
+        <relationshipLabel><!-- Briefing Components --></relationshipLabel>
+    </CustomFieldTranslation>

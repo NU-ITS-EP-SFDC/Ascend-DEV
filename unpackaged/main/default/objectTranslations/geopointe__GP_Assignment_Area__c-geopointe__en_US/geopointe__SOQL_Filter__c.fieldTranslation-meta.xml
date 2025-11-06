@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A SOQL WHERE clause (without including &quot;WHERE&quot;) can be present here to add a hardcoded filter to the Assignment Plan. --></help>
+        <label><!-- SOQL Filter --></label>
+        <name>geopointe__SOQL_Filter__c</name>
+    </CustomFieldTranslation>

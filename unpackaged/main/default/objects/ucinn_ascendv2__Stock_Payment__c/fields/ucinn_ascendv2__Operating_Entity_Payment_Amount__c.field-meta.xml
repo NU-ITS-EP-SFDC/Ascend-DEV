@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ucinn_ascendv2__Operating_Entity_Payment_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>(( IF(ISPICKVAL($CustomMetadata.ucinn_ascendv2__Gift_Processing_Setting__mdt.ucinn_ascendv2__Gift_Processing_Setting.ucinn_ascendv2__Payment_Method__c, "Gift Amount"), ucinn_ascendv2__Payment__r.ucinn_ascendv2__Operating_Entity_Amount__c +  ucinn_ascendv2__Payment__r.ucinn_ascendv2__Non_Gift_Operating_Entity_Amount__c, ucinn_ascendv2__Payment__r.ucinn_ascendv2__Operating_Entity_Amount__c))  / ucinn_ascendv2__Payment__r.ucinn_ascendv2__Operating_Entity_Total_Payment__c) *   ucinn_ascendv2__Stock__r.ucinn_ascendv2__Operating_Entity_Payment_Amount__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Operating Entity Payment Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

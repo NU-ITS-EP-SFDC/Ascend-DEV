@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ucinn_ascendv2__Project__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Prompt</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ascend - Thank You</fullName>
+                <default>false</default>
+                <label>Thank You Note</label>
+            </value>
+            <value>
+                <fullName>Ascend - Lapsed Donor Appeal</fullName>
+                <default>false</default>
+                <label>Lapsed Donor</label>
+            </value>
+            <value>
+                <fullName>Ascend - Planned Giving Appeal</fullName>
+                <default>false</default>
+                <label>Planned Giving</label>
+            </value>
+            <value>
+                <fullName>Ascend - Prospect Appeal</fullName>
+                <default>false</default>
+                <label>Welcome Email</label>
+            </value>
+            <value>
+                <fullName>Ascend - Donor Visit Follow Up</fullName>
+                <default>false</default>
+                <label>Donor Visit Follow Up</label>
+            </value>
+            <value>
+                <fullName>Ascend - Phone Call Script</fullName>
+                <default>false</default>
+                <label>Phone Call Script</label>
+            </value>
+            <value>
+                <fullName>Ascend - Event Invitation</fullName>
+                <default>false</default>
+                <label>Event Invitation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

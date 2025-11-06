@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- In Honor or Memory Of --></label>
+        <name>NU_ADV_Honor_Mem_Constituent__c</name>
+        <relationshipLabel><!-- Designations --></relationshipLabel>
+    </CustomFieldTranslation>

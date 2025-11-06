@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting Bio GratefulBioDemoSetting</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_Physician_Assignment_Sharing__c&quot;,
+      &quot;toolTip&quot;: &quot;When checked, the development officer is given access to patient and hospital visit records related to physicians that the development officer have been assigned with when sharing settings for constituents and hospital visits are set to private.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Physician Assignment Sharing&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Hospital_Visits_trigger__c&quot;,
+      &quot;toolTip&quot;: &quot;Enable/Disable constituent trigger functionality that updates hospital visit count information.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Top Visited Department Trigger&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Department_Field_Names__c&quot;,
+      &quot;toolTip&quot;: &quot;Define a list of fields that outline what departments are associated with a hospital visit.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;label&quot;: &quot;Hospital Visit Department Fields&quot;,
+        &quot;helpText&quot;: &quot;Define a list of fields that outline what departments are associated with a hospital visit.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Hospital_Visits_Where_Count__c&quot;,
+      &quot;toolTip&quot;: &quot;Filter what hospital visits are checked when counting up department visits. Provided as a formula in the following format:\n\nucinn_ascendv2__Admit_Date__c &lt;= TODAY AND ucinn_ascendv2__Encounter_Type__c = &apos;Recurring&apos;&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Hospital Visit Department Filter&quot;
+      }
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+   &quot;objectApiName&quot;:&quot;ucinn_ascendv2__Bio_Demo_Setting__mdt&quot;,
+   &quot;additionalConditions&quot;:&quot;&quot;,
+   &quot;title&quot;:&quot;Bio Demo Setting&quot;,
+   &quot;helpText&quot;:&quot;Configuration Pertaining to Custom metadata Bio Demo Setting for Grateful Patient&quot;,
+   &quot;allowCreate&quot;:false
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

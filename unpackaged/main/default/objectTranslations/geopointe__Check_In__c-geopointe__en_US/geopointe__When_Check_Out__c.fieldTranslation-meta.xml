@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Date Time of the Check-Out --></help>
+        <label><!-- When - Check Out --></label>
+        <name>geopointe__When_Check_Out__c</name>
+    </CustomFieldTranslation>

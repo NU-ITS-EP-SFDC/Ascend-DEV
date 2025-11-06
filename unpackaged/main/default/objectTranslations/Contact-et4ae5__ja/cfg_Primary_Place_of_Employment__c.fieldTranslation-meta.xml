@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Place of Employment to be displayed on Affinity Group pages. --></help>
+        <label><!-- Primary Place of Employment --></label>
+        <name>cfg_Primary_Place_of_Employment__c</name>
+    </CustomFieldTranslation>

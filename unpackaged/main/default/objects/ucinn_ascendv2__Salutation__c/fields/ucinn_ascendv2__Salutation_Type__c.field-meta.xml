@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ucinn_ascendv2__Salutation_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Salutation Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Formal</fullName>
+                <default>false</default>
+                <label>Formal</label>
+            </value>
+            <value>
+                <fullName>Informal</fullName>
+                <default>false</default>
+                <label>Informal</label>
+            </value>
+            <value>
+                <fullName>Modern Name</fullName>
+                <default>false</default>
+                <label>Modern Joint or Individual Name</label>
+            </value>
+            <value>
+                <fullName>Honor Roll Name</fullName>
+                <default>false</default>
+                <label>Honor Roll Name</label>
+            </value>
+            <value>
+                <fullName>Nametag Display</fullName>
+                <default>false</default>
+                <label>Nametag Display</label>
+            </value>
+            <value>
+                <fullName>Mailing Salutation</fullName>
+                <default>false</default>
+                <label>Mailing Salutation</label>
+            </value>
+            <value>
+                <fullName>Email Salutation</fullName>
+                <default>false</default>
+                <label>Email Salutation</label>
+            </value>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <label>TBD</label>
+            </value>
+            <value>
+                <fullName>Nickname</fullName>
+                <default>false</default>
+                <label>Nickname</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

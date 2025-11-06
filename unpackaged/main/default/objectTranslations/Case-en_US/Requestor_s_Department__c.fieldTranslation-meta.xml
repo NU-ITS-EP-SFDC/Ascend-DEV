@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Department requesting change. --></help>
+        <label><!-- Requestor&apos;s Department --></label>
+        <name>Requestor_s_Department__c</name>
+        <picklistValues>
+            <masterLabel>Adv Marketing &amp; Communications</masterLabel>
+            <translation><!-- Adv Marketing &amp; Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advancement Resources</masterLabel>
+            <translation><!-- Advancement Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advancement Technology</masterLabel>
+            <translation><!-- Advancement Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alumni Relations</masterLabel>
+            <translation><!-- Alumni Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annual Giving</masterLabel>
+            <translation><!-- Annual Giving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Athletics</masterLabel>
+            <translation><!-- Athletics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board of Trustees Office</masterLabel>
+            <translation><!-- Board of Trustees Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporations &amp; Foundations</masterLabel>
+            <translation><!-- Corporations &amp; Foundations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Strategy &amp; Analytics</masterLabel>
+            <translation><!-- Data Strategy &amp; Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donor Relations</masterLabel>
+            <translation><!-- Donor Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Philanthropy</masterLabel>
+            <translation><!-- Family Philanthropy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund Management</masterLabel>
+            <translation><!-- Fund Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Planning</masterLabel>
+            <translation><!-- Gift Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Processing</masterLabel>
+            <translation><!-- Gift Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Giving</masterLabel>
+            <translation><!-- Individual Giving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interdisciplinary Initiatives</masterLabel>
+            <translation><!-- Interdisciplinary Initiatives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leadership Relations</masterLabel>
+            <translation><!-- Leadership Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SVP’s Office</masterLabel>
+            <translation><!-- SVP’s Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signature University Events</masterLabel>
+            <translation><!-- Signature University Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Leadership Relations</masterLabel>
+            <translation><!-- Student Leadership Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP’s Office</masterLabel>
+            <translation><!-- VP’s Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women’s Entrepreneurship Program</masterLabel>
+            <translation><!-- Women’s Entrepreneurship Program --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

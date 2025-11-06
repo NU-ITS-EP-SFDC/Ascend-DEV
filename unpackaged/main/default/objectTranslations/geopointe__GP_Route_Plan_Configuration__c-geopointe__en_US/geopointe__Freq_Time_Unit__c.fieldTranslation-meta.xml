@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Target Frequency - Time Unit --></label>
+        <name>geopointe__Freq_Time_Unit__c</name>
+        <picklistValues>
+            <masterLabel>day</masterLabel>
+            <translation><!-- day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>month</masterLabel>
+            <translation><!-- month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>week</masterLabel>
+            <translation><!-- week --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

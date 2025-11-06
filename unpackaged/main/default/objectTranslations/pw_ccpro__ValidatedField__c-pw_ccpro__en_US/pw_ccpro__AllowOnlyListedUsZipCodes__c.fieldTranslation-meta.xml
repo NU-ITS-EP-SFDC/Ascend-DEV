@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If enabled, this option will verify whether the entered US ZIP Code exists within the installed ZIP Code data. --></help>
+        <label><!-- Require Installed Zipcode --></label>
+        <name>pw_ccpro__AllowOnlyListedUsZipCodes__c</name>
+    </CustomFieldTranslation>

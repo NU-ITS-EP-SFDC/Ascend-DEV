@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Current Primary Relationship Manager --></label>
+        <name>NU_ADV_Current_Primary_Rel_Manager__c</name>
+        <relationshipLabel><!-- Cases (Current Primary Relationship Manager) --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Event Code --></label>
+        <name>geopointe__Event_Code__c</name>
+        <picklistValues>
+            <masterLabel>COLL</masterLabel>
+            <translation><!-- COLL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONN</masterLabel>
+            <translation><!-- CONN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISCON</masterLabel>
+            <translation><!-- DISCON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HDACC</masterLabel>
+            <translation><!-- HDACC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HDDEC</masterLabel>
+            <translation><!-- HDDEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HDLFT</masterLabel>
+            <translation><!-- HDLFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HDRGT</masterLabel>
+            <translation><!-- HDRGT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDLE</masterLabel>
+            <translation><!-- IDLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGOFF</masterLabel>
+            <translation><!-- IGOFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGON</masterLabel>
+            <translation><!-- IGON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POSTOW</masterLabel>
+            <translation><!-- POSTOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>START</masterLabel>
+            <translation><!-- START --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STARTTOW</masterLabel>
+            <translation><!-- STARTTOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STOP</masterLabel>
+            <translation><!-- STOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STOPTOW</masterLabel>
+            <translation><!-- STOPTOW --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

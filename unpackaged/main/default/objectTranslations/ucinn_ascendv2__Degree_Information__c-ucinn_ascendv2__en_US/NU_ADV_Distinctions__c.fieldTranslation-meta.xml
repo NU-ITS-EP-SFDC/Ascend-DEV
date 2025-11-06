@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Distinctions --></label>
+        <name>NU_ADV_Distinctions__c</name>
+        <picklistValues>
+            <masterLabel>With High Honors</masterLabel>
+            <translation><!-- With High Honors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>With Highest Honors</masterLabel>
+            <translation><!-- With Highest Honors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>With Honors</masterLabel>
+            <translation><!-- With Honors --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

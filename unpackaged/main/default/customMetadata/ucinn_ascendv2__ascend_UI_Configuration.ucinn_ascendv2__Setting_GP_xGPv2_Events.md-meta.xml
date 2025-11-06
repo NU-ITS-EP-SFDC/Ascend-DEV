@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP xGPv2 Events</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Field_Change_Event_Mapping__c&quot;,
+      &quot;toolTip&quot;: &quot;Configuration pertaining to fields on the transaction entry layout that throw events.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Field Change Event Mapping&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;helpText&quot;: &quot;This field fires the event when its changed&quot;,
+        &quot;keyLabel&quot;: &quot;Section Name&quot;,
+        &quot;keyHelpText&quot;: &quot;Section Name from where the event will be triggered from.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;helpText&quot;: &quot;Specify the section name defined from Related Information Field Map that will trigger this event.&quot;,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+              &quot;keyHelpText&quot;: &quot;The object inside this section that you want to fire the event from.&quot;,
+              &quot;helpText&quot;: &quot;object to map of fields and the events that those fields fire.&quot;,
+              &quot;title&quot;: &quot;Object To Field Event Mapping&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;helpText&quot;: &quot;Map field to event arguments.&quot;,
+                    &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+                    &quot;keyHelpText&quot;: &quot;Field of this object that will be firing the event when value changes.&quot;,
+                    &quot;valueLabel&quot;: &quot;Event Definition&quot;,
+                    &quot;valueHelpText&quot;: &quot;Event Name or a json object describing the event with additional parameters.&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;valueType&quot;: &quot;multi&quot;,
+                        &quot;valueTypeToFieldParams&quot;: {
+                          &quot;string&quot;: {
+                            &quot;type&quot;: &quot;text&quot;
+                          },
+                          &quot;object&quot;: {
+                            &quot;type&quot;: &quot;object&quot;,
+                            &quot;jsonKeysToValueList&quot;: [
+                              {
+                                &quot;key&quot;: &quot;eventName&quot;,
+                                &quot;helpText&quot;: &quot;Name of the even being fired.&quot;,
+                                &quot;valueCustomFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;text&quot;
+                                }
+                              },
+                              {
+                                &quot;key&quot;: &quot;fireOnPrepopulation&quot;,
+                                &quot;helpText&quot;: &quot;On prepopulation fire the event.&quot;,
+                                &quot;valueCustomFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;checkbox&quot;
+                                }
+                              },
+                              {
+                                &quot;key&quot;: &quot;validationMap&quot;,
+                                &quot;helpText&quot;: &quot;Define validations to run before setting the value and firing events.&quot;,
+                                &quot;valueJsonFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;object&quot;,
+                                  &quot;jsonKeysToValueList&quot;: [
+                                    {
+                                      &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                                      &quot;valueJsonFieldParams&quot;: {
+                                        &quot;type&quot;: &quot;object&quot;,
+                                        &quot;jsonKeysToValueList&quot;: [
+                                          {
+                                            &quot;key&quot;: &quot;type&quot;,
+                                            &quot;valueCustomFieldParams&quot;: {
+                                              &quot;type&quot;: &quot;picklist&quot;,
+                                              &quot;customPicklistValuesString&quot;: [
+                                                &quot;notice&quot;,
+                                                &quot;modal&quot;
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                &quot;key&quot;: &quot;extraData&quot;,
+                                &quot;helpText&quot;: &quot;Extra data from the front end to be sent to the backend to do certain calculations for this event.&quot;,
+                                &quot;valueJsonFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;list&quot;,
+                                  &quot;listType&quot;: &quot;value&quot;,
+                                  &quot;valueCustomFieldParams&quot;: {
+                                    &quot;type&quot;: &quot;text&quot;
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Field_Change_Event_Handler_Mapping__c&quot;,
+      &quot;toolTip&quot;: &quot;Configuration pertaining to fields on the transaction entry layout that handle events.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Field Change Event Handler Mapping&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;helpText&quot;: &quot;This catches the event that is fired when a field is changed.&quot;,
+        &quot;keyLabel&quot;: &quot;Section Name&quot;,
+        &quot;keyHelpText&quot;: &quot;Section Name of the related section that will be handling the events that are fired.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;helpText&quot;: &quot;This maps the Related Information Section name to the events that it should listen for.&quot;,
+            &quot;valueType&quot;: &quot;multi&quot;,
+            &quot;valueTypeToFieldParams&quot;: {
+              &quot;object&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+                &quot;keyHelpText&quot;: &quot;Object that will be handling events.&quot;,
+                &quot;jsonKeysToValueList&quot;: [
+                  {
+                    &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                    &quot;helpText&quot;: &quot;Object of this section that will handle this field level events.&quot;,
+                    &quot;valueJsonFieldParams&quot;: {
+                      &quot;type&quot;: &quot;object&quot;,
+                      &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+                      &quot;keyHelpText&quot;: &quot;Field that will be handling events.&quot;,
+                      &quot;jsonKeysToValueList&quot;: [
+                        {
+                          &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                          &quot;valueJsonFieldParams&quot;: {
+                            &quot;type&quot;: &quot;list&quot;,
+                            &quot;listType&quot;: &quot;object&quot;,
+                            &quot;helpText&quot;: &quot;All the events that this field is listening for. When a event listed here is fired this field will handle it.&quot;,
+                            &quot;jsonKeysToValueList&quot;: [
+                              {
+                                &quot;key&quot;: &quot;event&quot;,
+                                &quot;label&quot;: &quot;Event Name&quot;,
+                                &quot;helpText&quot;: &quot;Name of the Event being handled&quot;,
+                                &quot;valueCustomFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;text&quot;
+                                }
+                              },
+                              {
+                                &quot;key&quot;: &quot;priority&quot;,
+                                &quot;label&quot;: &quot;Priority&quot;,
+                                &quot;helpText&quot;: &quot;When other fields are also handling the same event what should the order of execution be. Lower number priority means this field will handle this event first. Blank means it will handle this event last.&quot;,
+                                &quot;valueCustomFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;number&quot;
+                                }
+                              },
+                              {
+                                &quot;key&quot;: &quot;indexed&quot;,
+                                &quot;label&quot;: &quot;Indexed&quot;,
+                                &quot;helpText&quot;: &quot;Should only the same row index as the field that fired this event handle it.&quot;,
+                                &quot;valueCustomFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;checkbox&quot;
+                                }
+                              },
+                              {
+                                &quot;key&quot;: &quot;chain&quot;,
+                                &quot;label&quot;: &quot;Chain&quot;,
+                                &quot;helpText&quot;: &quot;After this field finishes handling this event, should we fire this field that handled the event.&quot;,
+                                &quot;valueCustomFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;checkbox&quot;
+                                }
+                              },
+                              {
+                                &quot;key&quot;: &quot;fireOnPrepopulation&quot;,
+                                &quot;label&quot;: &quot;Fire on Prepopulation&quot;,
+                                &quot;helpText&quot;: &quot;On page load do we want to automatically fire this event even when value isn&apos;t updated manually or updated by an event.&quot;,
+                                &quot;valueCustomFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;checkbox&quot;
+                                }
+                              },
+                              {
+                                &quot;key&quot;: &quot;extraData&quot;,
+                                &quot;label&quot;: &quot;Extra Data&quot;,
+                                &quot;helpText&quot;: &quot;Extra data from the front end to be passed to the backend to do some computation.&quot;,
+                                &quot;valueJsonFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;list&quot;,
+                                  &quot;listType&quot;: &quot;value&quot;,
+                                  &quot;valueCustomFieldParams&quot;: {
+                                    &quot;type&quot;: &quot;text&quot;
+                                  }
+                                }
+                              },
+                              {
+                                &quot;key&quot;: &quot;fieldPath&quot;,
+                                &quot;label&quot;: &quot;Field Path&quot;,
+                                &quot;helpText&quot;: &quot;Used when a lookup value is changed it uses this field path to grab a value from that lookup object that was selected and populates this field.&quot;,
+                                &quot;valueCustomFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;text&quot;
+                                }
+                              },
+                              {
+                                &quot;key&quot;: &quot;attributePath&quot;,
+                                &quot;label&quot;: &quot;Attribute Path&quot;,
+                                &quot;helpText&quot;: &quot;Define a path to grab a value from the front end. EX) transactionRecords.TransactionInformation.Opportunity.Type&quot;,
+                                &quot;valueCustomFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;text&quot;
+                                }
+                              },
+                              {
+                                &quot;key&quot;: &quot;baseDefault&quot;,
+                                &quot;valueCustomFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;text&quot;
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;componentHandledEvents&quot;,
+                    &quot;helpText&quot;: &quot;Look for events that will update this whole section.&quot;,
+                    &quot;valueJsonFieldParams&quot;: {
+                      &quot;type&quot;: &quot;list&quot;,
+                      &quot;listType&quot;: &quot;object&quot;,
+                      &quot;helpText&quot;: &quot;All the events that this field is listening for. When a event listed here is fired this field will handle it.&quot;,
+                      &quot;jsonKeysToValueList&quot;: [
+                        {
+                          &quot;key&quot;: &quot;event&quot;,
+                          &quot;label&quot;: &quot;Event Name&quot;,
+                          &quot;helpText&quot;: &quot;Name of the Event being handled&quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;text&quot;
+                          }
+                        },
+                        {
+                          &quot;key&quot;: &quot;priority&quot;,
+                          &quot;label&quot;: &quot;Priority&quot;,
+                          &quot;helpText&quot;: &quot;When other fields are also handling the same event what should the order of execution be. Lower number priority means this field will handle this event first. Blank means it will handle this event last.&quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;number&quot;
+                          }
+                        },
+                        {
+                          &quot;key&quot;: &quot;indexed&quot;,
+                          &quot;label&quot;: &quot;Indexed&quot;,
+                          &quot;helpText&quot;: &quot;Should only the same row index as the field that fired this event handle it.&quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;checkbox&quot;
+                          }
+                        },
+                        {
+                          &quot;key&quot;: &quot;chain&quot;,
+                          &quot;label&quot;: &quot;Chain&quot;,
+                          &quot;helpText&quot;: &quot;After this field finishes handling this event, should we fire this field that handled the event.&quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;checkbox&quot;
+                          }
+                        },
+                        {
+                          &quot;key&quot;: &quot;fireOnPrepopulation&quot;,
+                          &quot;label&quot;: &quot;Fire on Prepopulation&quot;,
+                          &quot;helpText&quot;: &quot;On page load do we want to automatically fire this event even when value isn&apos;t updated manually or updated by an event.&quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;checkbox&quot;
+                          }
+                        },
+                        {
+                          &quot;key&quot;: &quot;extraData&quot;,
+                          &quot;label&quot;: &quot;Extra Data&quot;,
+                          &quot;helpText&quot;: &quot;Extra data from the front end to be passed to the backend to do some computation.&quot;,
+                          &quot;valueJsonFieldParams&quot;: {
+                            &quot;type&quot;: &quot;list&quot;,
+                            &quot;listType&quot;: &quot;value&quot;,
+                            &quot;valueCustomFieldParams&quot;: {
+                              &quot;type&quot;: &quot;text&quot;
+                            }
+                          }
+                        },
+                        {
+                          &quot;key&quot;: &quot;fieldPath&quot;,
+                          &quot;label&quot;: &quot;Field Path&quot;,
+                          &quot;helpText&quot;: &quot;Used when a lookup value is changed it uses this field path to grab a value from that lookup object that was selected and populates this field.&quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;text&quot;
+                          }
+                        },
+                        {
+                          &quot;key&quot;: &quot;attributePath&quot;,
+                          &quot;label&quot;: &quot;Attribute Path&quot;,
+                          &quot;helpText&quot;: &quot;Define a path to grab a value from the front end. EX) transactionRecords.TransactionInformation.Opportunity.Type&quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;text&quot;
+                          }
+                        },
+                        {
+                          &quot;key&quot;: &quot;baseDefault&quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;text&quot;
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;fieldHandledEvents&quot;,
+                    &quot;helpText&quot;: &quot;Look for events that will update specific fields.&quot;,
+                    &quot;valueJsonFieldParams&quot;: {
+                      &quot;type&quot;: &quot;object&quot;,
+                      &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+                      &quot;keyHelpText&quot;: &quot;Object of the fields that will being listening for these events.&quot;,
+                      &quot;jsonKeysToValueList&quot;: [
+                        {
+                          &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                          &quot;valueJsonFieldParams&quot;: {
+                            &quot;type&quot;: &quot;object&quot;,
+                            &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+                            &quot;keyHelpText&quot;: &quot;Field of this object that will be handling this event.&quot;,
+                            &quot;valueLabel&quot;: &quot;Event Def.&quot;,
+                            &quot;jsonKeysToValueList&quot;: [
+                              {
+                                &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                                &quot;valueJsonFieldParams&quot;: {
+                                  &quot;type&quot;: &quot;list&quot;,
+                                  &quot;listType&quot;: &quot;object&quot;,
+                                  &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+                                  &quot;jsonKeysToValueList&quot;: [
+                                    {
+                                      &quot;key&quot;: &quot;event&quot;,
+                                      &quot;label&quot;: &quot;Event Name&quot;,
+                                      &quot;helpText&quot;: &quot;Name of the Event being handled&quot;,
+                                      &quot;valueCustomFieldParams&quot;: {
+                                        &quot;type&quot;: &quot;text&quot;
+                                      }
+                                    },
+                                    {
+                                      &quot;key&quot;: &quot;priority&quot;,
+                                      &quot;label&quot;: &quot;Priority&quot;,
+                                      &quot;helpText&quot;: &quot;When other fields are also handling the same event what should the order of execution be. Lower number priority means this field will handle this event first. Blank means it will handle this event last.&quot;,
+                                      &quot;valueCustomFieldParams&quot;: {
+                                        &quot;type&quot;: &quot;number&quot;
+                                      }
+                                    },
+                                    {
+                                      &quot;key&quot;: &quot;indexed&quot;,
+                                      &quot;label&quot;: &quot;Indexed&quot;,
+                                      &quot;helpText&quot;: &quot;Should only the same row index as the field that fired this event handle it.&quot;,
+                                      &quot;valueCustomFieldParams&quot;: {
+                                        &quot;type&quot;: &quot;checkbox&quot;
+                                      }
+                                    },
+                                    {
+                                      &quot;key&quot;: &quot;chain&quot;,
+                                      &quot;label&quot;: &quot;Chain&quot;,
+                                      &quot;helpText&quot;: &quot;After this field finishes handling this event, should we fire this field that handled the event.&quot;,
+                                      &quot;valueCustomFieldParams&quot;: {
+                                        &quot;type&quot;: &quot;checkbox&quot;
+                                      }
+                                    },
+                                    {
+                                      &quot;key&quot;: &quot;fireOnPrepopulation&quot;,
+                                      &quot;label&quot;: &quot;Fire on Prepopulation&quot;,
+                                      &quot;helpText&quot;: &quot;On page load do we want to automatically fire this event even when value isn&apos;t updated manually or updated by an event.&quot;,
+                                      &quot;valueCustomFieldParams&quot;: {
+                                        &quot;type&quot;: &quot;checkbox&quot;
+                                      }
+                                    },
+                                    {
+                                      &quot;key&quot;: &quot;extraData&quot;,
+                                      &quot;label&quot;: &quot;Extra Data&quot;,
+                                      &quot;helpText&quot;: &quot;Extra data from the front end to be passed to the backend to do some computation.&quot;,
+                                      &quot;valueJsonFieldParams&quot;: {
+                                        &quot;type&quot;: &quot;list&quot;,
+                                        &quot;listType&quot;: &quot;value&quot;,
+                                        &quot;valueCustomFieldParams&quot;: {
+                                          &quot;type&quot;: &quot;text&quot;
+                                        }
+                                      }
+                                    },
+                                    {
+                                      &quot;key&quot;: &quot;fieldPath&quot;,
+                                      &quot;label&quot;: &quot;Field Path&quot;,
+                                      &quot;helpText&quot;: &quot;Used when a lookup value is changed it uses this field path to grab a value from that lookup object that was selected and populates this field.&quot;,
+                                      &quot;valueCustomFieldParams&quot;: {
+                                        &quot;type&quot;: &quot;text&quot;
+                                      }
+                                    },
+                                    {
+                                      &quot;key&quot;: &quot;attributePath&quot;,
+                                      &quot;label&quot;: &quot;Attribute Path&quot;,
+                                      &quot;helpText&quot;: &quot;Define a path to grab a value from the front end. EX) transactionRecords.TransactionInformation.Opportunity.Type&quot;,
+                                      &quot;valueCustomFieldParams&quot;: {
+                                        &quot;type&quot;: &quot;text&quot;
+                                      }
+                                    },
+                                    {
+                                      &quot;key&quot;: &quot;baseDefault&quot;,
+                                      &quot;valueCustomFieldParams&quot;: {
+                                        &quot;type&quot;: &quot;text&quot;
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              &quot;list&quot;: {
+                &quot;type&quot;: &quot;list&quot;,
+                &quot;listType&quot;: &quot;object&quot;,
+                &quot;helpText&quot;: &quot;All the events that this field is listening for. When a event listed here is fired this field will handle it.&quot;,
+                &quot;jsonKeysToValueList&quot;: [
+                  {
+                    &quot;key&quot;: &quot;event&quot;,
+                    &quot;label&quot;: &quot;Event Name&quot;,
+                    &quot;helpText&quot;: &quot;Name of the Event being handled&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;priority&quot;,
+                    &quot;label&quot;: &quot;Priority&quot;,
+                    &quot;helpText&quot;: &quot;When other fields are also handling the same event what should the order of execution be. Lower number priority means this field will handle this event first. Blank means it will handle this event last.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;number&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;indexed&quot;,
+                    &quot;label&quot;: &quot;Indexed&quot;,
+                    &quot;helpText&quot;: &quot;Should only the same row index as the field that fired this event handle it.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;chain&quot;,
+                    &quot;label&quot;: &quot;Chain&quot;,
+                    &quot;helpText&quot;: &quot;After this field finishes handling this event, should we fire this field that handled the event.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;fireOnPrepopulation&quot;,
+                    &quot;label&quot;: &quot;Fire on Prepopulation&quot;,
+                    &quot;helpText&quot;: &quot;On page load do we want to automatically fire this event even when value isn&apos;t updated manually or updated by an event.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;extraData&quot;,
+                    &quot;label&quot;: &quot;Extra Data&quot;,
+                    &quot;helpText&quot;: &quot;Extra data from the front end to be passed to the backend to do some computation.&quot;,
+                    &quot;valueJsonFieldParams&quot;: {
+                      &quot;type&quot;: &quot;list&quot;,
+                      &quot;listType&quot;: &quot;value&quot;,
+                      &quot;valueCustomFieldParams&quot;: {
+                        &quot;type&quot;: &quot;text&quot;
+                      }
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;fieldPath&quot;,
+                    &quot;label&quot;: &quot;Field Path&quot;,
+                    &quot;helpText&quot;: &quot;Used when a lookup value is changed it uses this field path to grab a value from that lookup object that was selected and populates this field.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;attributePath&quot;,
+                    &quot;label&quot;: &quot;Attribute Path&quot;,
+                    &quot;helpText&quot;: &quot;Define a path to grab a value from the front end. EX) transactionRecords.TransactionInformation.Opportunity.Type&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;baseDefault&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Setting__mdt&quot;,
+  &quot;title&quot;: &quot;Expeditied Gift Processing v2 Events&quot;,
+  &quot;helpText&quot;: &quot;Configuration pertaining to events being fired and handled while performing transactions on Expedited Gift Processing v2.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

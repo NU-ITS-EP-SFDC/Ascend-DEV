@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Route Plan Name --></label>
+        <name>geopointe__Route_Plan_Name__c</name>
+    </CustomFieldTranslation>

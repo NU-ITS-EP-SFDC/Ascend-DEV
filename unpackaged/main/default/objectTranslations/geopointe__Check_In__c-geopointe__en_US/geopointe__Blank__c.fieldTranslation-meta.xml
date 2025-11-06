@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Used to map the address fields on the Check In map object.  Since a Check-In has no address, we have to specify blank fields. --></help>
+        <label><!-- Blank --></label>
+        <name>geopointe__Blank__c</name>
+    </CustomFieldTranslation>

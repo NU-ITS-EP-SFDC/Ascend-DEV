@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Is the fund open to students at all colleges or is it restricted to a certain college? --></help>
+        <label><!-- College Restriction --></label>
+        <name>NU_ADV_College_Restriction__c</name>
+        <picklistValues>
+            <masterLabel>Open to all graduates</masterLabel>
+            <translation><!-- Open to all graduates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open to all students</masterLabel>
+            <translation><!-- Open to all students --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open to all undergraduates</masterLabel>
+            <translation><!-- Open to all undergraduates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restricted to Bouvé</masterLabel>
+            <translation><!-- Restricted to Bouvé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restricted to CAMD</masterLabel>
+            <translation><!-- Restricted to CAMD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restricted to COE</masterLabel>
+            <translation><!-- Restricted to COE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restricted to COS</masterLabel>
+            <translation><!-- Restricted to COS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restricted to CPS</masterLabel>
+            <translation><!-- Restricted to CPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restricted to CSSH</masterLabel>
+            <translation><!-- Restricted to CSSH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restricted to DMSB</masterLabel>
+            <translation><!-- Restricted to DMSB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restricted to Khoury</masterLabel>
+            <translation><!-- Restricted to Khoury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restricted to NUSL</masterLabel>
+            <translation><!-- Restricted to NUSL --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

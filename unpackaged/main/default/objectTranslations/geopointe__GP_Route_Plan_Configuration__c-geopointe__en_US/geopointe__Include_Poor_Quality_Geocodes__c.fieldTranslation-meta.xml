@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Include Poor Quality Geocodes --></label>
+        <name>geopointe__Include_Poor_Quality_Geocodes__c</name>
+    </CustomFieldTranslation>

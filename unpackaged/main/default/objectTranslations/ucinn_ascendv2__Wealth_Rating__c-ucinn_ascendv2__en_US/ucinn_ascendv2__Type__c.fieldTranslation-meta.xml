@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type --></label>
+        <name>ucinn_ascendv2__Type__c</name>
+        <picklistValues>
+            <masterLabel>Development Research</masterLabel>
+            <translation><!-- Development Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donorscape</masterLabel>
+            <translation><!-- Donorscape --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fundraiser</masterLabel>
+            <translation><!-- Fundraiser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reeher</masterLabel>
+            <translation><!-- Reeher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Top 25</masterLabel>
+            <translation><!-- Unit Top 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth Engine</masterLabel>
+            <translation><!-- Wealth Engine --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

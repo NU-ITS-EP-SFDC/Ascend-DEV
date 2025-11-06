@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$ucinn_ascendv2__Donor_ID__c</field>
+    </columns>
+    <columns>
+        <field>Contact$NU_ADV_NU_ID__c</field>
+    </columns>
+    <columns>
+        <field>Contact$ucinn_ascendv2__Contact_Type__c</field>
+    </columns>
+    <columns>
+        <field>Contact$NU_ADV_Current_University_Connections__c</field>
+    </columns>
+    <columns>
+        <field>Contact$ucinn_ascendv2__PRM__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact$ucinn_ascendv2__Is_Deceased__c</field>
+    </columns>
+    <columns>
+        <field>Contact$ucinn_ascendv2__Deceased_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Constituent_Awards__r$NU_ADV_Award_Honor__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Constituent_Awards__r$NU_ADV_Description__c</field>
+    </columns>
+    <description>Who are the constituents that have received a Networked for Life award?</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Constituent_Awards__r$NU_ADV_Award_Honor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Networked for life</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Constituent_Awards__r$NU_ADV_Year_Received__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Networked for Life award recipients</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_constituent_awards__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$NU_ADV_Assignment_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

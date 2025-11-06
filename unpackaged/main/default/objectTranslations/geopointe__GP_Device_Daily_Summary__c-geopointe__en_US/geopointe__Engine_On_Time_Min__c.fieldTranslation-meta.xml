@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The total amount of time the engine was on. Set to -1 if unknown. --></help>
+        <label><!-- Engine On Time (min) --></label>
+        <name>geopointe__Engine_On_Time_Min__c</name>
+    </CustomFieldTranslation>

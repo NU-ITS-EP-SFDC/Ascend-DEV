@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How many years will it take to pay off the pledge? --></help>
+        <label><!-- NU ADV Pledge Duration --></label>
+        <name>NU_ADV_Pledge_Duration__c</name>
+    </CustomFieldTranslation>

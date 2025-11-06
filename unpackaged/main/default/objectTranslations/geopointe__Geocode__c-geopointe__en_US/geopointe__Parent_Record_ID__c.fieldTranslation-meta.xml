@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The 18-character record ID of the parent record to this geocode record.  There is a 1 to 1 relationship between the parent record and its geocode record. --></help>
+        <label><!-- Parent Record ID DEPRECATED --></label>
+        <name>geopointe__Parent_Record_ID__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contact Report</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contact Reports</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Contact Report Description --></label>
+        <name>ucinn_ascendv2__Contact_Report_Description</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Contact Report Detail-Constituent --></label>
+        <name>ucinn_ascendv2__Contact_Report_Detail_Constituent</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Contact Report Detail-Organization --></label>
+        <name>ucinn_ascendv2__Contact_Report_Detail_Organization</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- System Information --></label>
+        <name>ucinn_ascendv2__System_Information</name>
+    </fieldSets>
+    <layouts>
+        <layout>Contact Report Layout</layout>
+        <sections>
+            <label><!-- Contact Report --></label>
+            <section>Contact Report</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Responsible Parties --></label>
+            <section>Responsible Parties</section>
+        </sections>
+        <sections>
+            <label><!-- Solicitors --></label>
+            <section>Solicitors</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Report Layout V1</layout>
+        <sections>
+            <label><!-- Contact Report --></label>
+            <section>Contact Report</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Responsible Parties --></label>
+            <section>Responsible Parties</section>
+        </sections>
+        <sections>
+            <label><!-- Solicitors --></label>
+            <section>Solicitors</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Do not change the Name field. Upon creation, the Name field should read [Default Name]. --></errorMessage>
+        <name>Name_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the RMATS team can select a status of approved, incomplete, or inactive. --></errorMessage>
+        <name>ucinn_ascendv2__Status_Development_Officer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the RMATS team can select a status of approved, incomplete, or inactive. --></errorMessage>
+        <name>ucinn_ascendv2__Status_Development_Research</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the RMATS team can select a status of approved, incomplete, or inactive. --></errorMessage>
+        <name>ucinn_ascendv2__Status_GPM</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the RMATS team can select a status of approved, incomplete, or inactive. --></errorMessage>
+        <name>ucinn_ascendv2__Status_Presidential</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the RMATS team can select a status of approved, incomplete, or inactive. --></errorMessage>
+        <name>ucinn_ascendv2__Status_Stewardship_Officer</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- NU_ADV_Attachments --></label>
+        <name>NU_ADV_Attachments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Upload_from_Contact_Report --></label>
+        <name>NU_ADV_Upload_from_Contact_Report</name>
+    </webLinks>
+</CustomObjectTranslation>

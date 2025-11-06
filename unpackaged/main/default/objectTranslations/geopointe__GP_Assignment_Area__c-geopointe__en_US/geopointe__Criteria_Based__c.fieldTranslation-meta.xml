@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If checked, the assignment area will not require a shape and will be criteria based. --></help>
+        <label><!-- Criteria Based --></label>
+        <name>geopointe__Criteria_Based__c</name>
+    </CustomFieldTranslation>

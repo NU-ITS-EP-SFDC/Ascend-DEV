@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP Payment Amount</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Payment_Method__c&quot;,
+      &quot;toolTip&quot;: &quot;Determines how the Payment record will be created and corresponding validation rules from regular GP. Value to be stored on the Payment Amount field of the Payment record will either be Gift Amount only or Gift Amount + Non-Gift Amount.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Payment Method&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Legacy&quot;,
+          &quot;Gift Amount&quot;,
+          &quot;Gift Amount + Non-Gift Amount&quot;
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Hard_Soft_Credit_Calculation_Type__c&quot;,
+      &quot;toolTip&quot;: &quot;Only applies to non-Legacy Payment Methods. Determines how Hard and Soft Credits are calculated: Either Payment Amount (Gift + Non-Gift) OR Gift Amount Payer Hard Credit / Non-Gift Amount Payer Soft Credit / Payment Amount Relationship Soft Credit.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Hard/Soft Credit Calculation Type&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Legacy&quot;,
+          &quot;Payment Amount&quot;,
+          &quot;Gift Amount / Non-Gift Amount / Payment Amount&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Auto_Calculation_Setting__c&quot;,
+      &quot;toolTip&quot;: &quot;A mapping of ascend transaction types to the autocalculation status. For example, \&quot;{ \&quot;{ascend transaction type}\&quot; : \&quot;{Enabled or Disabled}\&quot; }\&quot;&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Transaction Types for auto-calculation&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;title&quot;: &quot;Auto Calculation Setting&quot;,
+        &quot;keyLabel&quot;: &quot;Transaction Type&quot;,
+        &quot;valueLabel&quot;: &quot;Auto Calculation Setting&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;Outright Gift&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Enabled&quot;,
+                &quot;Disabled&quot;,
+                &quot;Provide Option&quot;
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;Recurring Gift&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Enabled&quot;,
+                &quot;Disabled&quot;,
+                &quot;Provide Option&quot;
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;Recurring Gift Payment&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Enabled&quot;,
+                &quot;Disabled&quot;,
+                &quot;Provide Option&quot;
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;Pledge&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Enabled&quot;,
+                &quot;Disabled&quot;,
+                &quot;Provide Option&quot;
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;Pledge Payment&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Enabled&quot;,
+                &quot;Disabled&quot;,
+                &quot;Provide Option&quot;
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;Matching Gift&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Enabled&quot;,
+                &quot;Disabled&quot;,
+                &quot;Provide Option&quot;
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;Matching Gift Payment&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Enabled&quot;,
+                &quot;Disabled&quot;,
+                &quot;Provide Option&quot;
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Allow_Non_Gift_Amount_to_Pay_Installment__c&quot;,
+      &quot;toolTip&quot;: &quot;When checked, all payment method in Gift Processing Setting CMT will adhere to the method selected (just like in the case of outright gift, for example). Payment method of Legacy will allow non-gift amount to pay down the pledge. If unchecked, use current approach, which is don&apos;t apply non gift amount to payment when making a pledge payment.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Allow Non Gift Amount to Pay Installment&quot;
+      }
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+&quot;objectApiName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Setting__mdt&quot;,
+&quot;title&quot;: &quot;Payment Amount Calculation Settings&quot;,
+&quot;helpText&quot;: &quot;Set the behavior of Gift Processing for the interaction between the Amount fields on the Payment Object&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

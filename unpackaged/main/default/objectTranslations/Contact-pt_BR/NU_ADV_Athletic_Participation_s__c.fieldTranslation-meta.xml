@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Athletic Participation(s) --></label>
+        <name>NU_ADV_Athletic_Participation_s__c</name>
+        <picklistValues>
+            <masterLabel>Baseball Team</masterLabel>
+            <translation><!-- Baseball Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baseball Team Practice Player</masterLabel>
+            <translation><!-- Baseball Team Practice Player --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheerleading - Basketball</masterLabel>
+            <translation><!-- Cheerleading - Basketball --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheerleading - Football</masterLabel>
+            <translation><!-- Cheerleading - Football --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheerleading - Hockey</masterLabel>
+            <translation><!-- Cheerleading - Hockey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men's Basketball Team</masterLabel>
+            <translation><!-- Men&apos;s Basketball Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men's Crew Team</masterLabel>
+            <translation><!-- Men&apos;s Crew Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men's Football Team</masterLabel>
+            <translation><!-- Men&apos;s Football Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men's Ice Hockey Team</masterLabel>
+            <translation><!-- Men&apos;s Ice Hockey Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men's Soccer Team</masterLabel>
+            <translation><!-- Men&apos;s Soccer Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men's Swimming &amp; Diving Team</masterLabel>
+            <translation><!-- Men&apos;s Swimming &amp; Diving Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men's Track &amp; Field Team</masterLabel>
+            <translation><!-- Men&apos;s Track &amp; Field Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women's Basketball Team</masterLabel>
+            <translation><!-- Women&apos;s Basketball Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women's Crew Team</masterLabel>
+            <translation><!-- Women&apos;s Crew Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women's Field Hockey Team</masterLabel>
+            <translation><!-- Women&apos;s Field Hockey Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women's Ice Hockey Team</masterLabel>
+            <translation><!-- Women&apos;s Ice Hockey Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women's Soccer</masterLabel>
+            <translation><!-- Women&apos;s Soccer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women's Swimming &amp; Diving Team</masterLabel>
+            <translation><!-- Women&apos;s Swimming &amp; Diving Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women's Track &amp; Field Team</masterLabel>
+            <translation><!-- Women&apos;s Track &amp; Field Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women's Volleyball Team</masterLabel>
+            <translation><!-- Women&apos;s Volleyball Team --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

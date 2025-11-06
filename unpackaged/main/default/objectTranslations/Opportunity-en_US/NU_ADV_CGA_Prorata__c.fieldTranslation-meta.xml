@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Partial payment amount based on time between date of gift and end of quarter. --></help>
+        <label><!-- CGA Prorata --></label>
+        <name>NU_ADV_CGA_Prorata__c</name>
+    </CustomFieldTranslation>

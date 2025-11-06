@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Self disclosed data from the constituent.  Data is not verified. --></help>
+        <label><!-- Is First Generation --></label>
+        <name>ucinn_ascendv2__Is_First_Generation__c</name>
+    </CustomFieldTranslation>

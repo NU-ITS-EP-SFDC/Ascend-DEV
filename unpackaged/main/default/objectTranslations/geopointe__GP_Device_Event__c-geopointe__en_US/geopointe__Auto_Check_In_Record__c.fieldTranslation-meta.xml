@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Auto Check In Record --></label>
+        <name>geopointe__Auto_Check_In_Record__c</name>
+        <relationshipLabel><!-- Geopointe Device Events --></relationshipLabel>
+    </CustomFieldTranslation>

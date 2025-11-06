@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- New Window - This link will navigate you away from the map, causing the map to refresh and lose saved progress.
+
+  Modal - The URL will open in a modal allowing the data set to persist. However some Flow Components may not work on mobile, see help article ... --></help>
+        <label><!-- Mobile Behavior --></label>
+        <name>geopointe__Mobile_Behavior__c</name>
+        <picklistValues>
+            <masterLabel>Modal</masterLabel>
+            <translation><!-- Modal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Window</masterLabel>
+            <translation><!-- New Window --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

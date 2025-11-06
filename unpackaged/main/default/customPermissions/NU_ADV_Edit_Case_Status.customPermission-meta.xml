@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Assigned to the Edit Case Status permission set and System Administrator profile. Used for the Select_Users_Can_Edit_Status validation rule on the Case object.</description>
+    <isLicensed>false</isLicensed>
+    <label>Edit Case Status</label>
+</CustomPermission>

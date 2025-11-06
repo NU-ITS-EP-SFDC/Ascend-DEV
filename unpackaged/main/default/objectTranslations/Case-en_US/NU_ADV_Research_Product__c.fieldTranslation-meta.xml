@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Research Product --></label>
+        <name>NU_ADV_Research_Product__c</name>
+        <picklistValues>
+            <masterLabel>Evaluation</masterLabel>
+            <translation><!-- Evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memo</masterLabel>
+            <translation><!-- Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project</masterLabel>
+            <translation><!-- Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospecting Project</masterLabel>
+            <translation><!-- Prospecting Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rating Review</masterLabel>
+            <translation><!-- Rating Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Snapshot</masterLabel>
+            <translation><!-- Snapshot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth Screening Request</masterLabel>
+            <translation><!-- Wealth Screening Request --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

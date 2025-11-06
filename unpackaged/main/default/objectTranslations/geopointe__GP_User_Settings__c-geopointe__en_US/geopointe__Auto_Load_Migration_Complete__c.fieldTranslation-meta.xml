@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Set when starred map items have been recoded as Auto_Load_Map_Items__c --></help>
+        <label><!-- Auto Load Migration Complete --></label>
+        <name>geopointe__Auto_Load_Migration_Complete__c</name>
+    </CustomFieldTranslation>

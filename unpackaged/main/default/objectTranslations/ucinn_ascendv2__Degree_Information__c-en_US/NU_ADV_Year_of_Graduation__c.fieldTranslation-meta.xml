@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Year of Graduation --></label>
+        <name>NU_ADV_Year_of_Graduation__c</name>
+    </CustomFieldTranslation>

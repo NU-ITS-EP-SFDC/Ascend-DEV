@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The time zone this Zip Code covers (where data is available) --></help>
+        <label><!-- Time Zone --></label>
+        <name>pw_ccpro__TimeZone__c</name>
+        <relationshipLabel><!-- ZIP Codes --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP Session Defaults</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Session_Defaults_Mapping__c&quot;,
+         &quot;toolTip&quot;: &quot;Ex:{\&quot;Gift\&quot;:{\&quot;Session_Field__c\&quot;:\&quot;Opportunity.Opp_Field__c\&quot;, \&quot;Field2__c\&quot;:\&quot;Payment__c.Field__c\&quot;}, \&quot;Pledge Payment\&quot;:{\&quot;Field3__c\&quot;:\&quot;Payment__c.Field2__c\&quot;}}. Valid types are Gift, Pledge, Pledge Payment, Recurring Gift Payment, and Matching Gift Payment.&quot;,
+         &quot;jsonFieldParams&quot;: {
+            &quot;label&quot;: &quot;Session Defaults Mapping&quot;,
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;keyLabel&quot;: &quot;Transaction Type&quot;,
+            &quot;valueLabel&quot;: &quot;Session Defaults Mapping&quot;,
+            &quot;title&quot;: &quot;Session Defaults Mapping&quot;,
+            &quot;helpText&quot;: &quot;Specify the Default Value Mappings from Session for specific Transaction Types&quot;,
+            &quot;jsonKeysToValueList&quot;: [
+               {
+                  &quot;key&quot;: &quot;Gift&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                     &quot;keyLabel&quot;: &quot;Session Field API Name&quot;,
+                     &quot;valueLabel&quot;: &quot;Transaction Object Field API Name&quot;,
+                     &quot;keyHelpText&quot;: &quot;E.g. Session_Field_Name__c&quot;,
+                     &quot;valueHelpText&quot;: &quot;E.g. Opportunity.Opportunity_Field_Name__c\nE.g. Payment__c.Payment_Field_Name__c&quot;,
+                     &quot;title&quot;: &quot;Session Defaults Mapping: Gift&quot;,
+                     &quot;type&quot;: &quot;object&quot;,
+                     &quot;helpText&quot;: &quot;Specify the Default Value Mappings for Gift (Outright, Recurring, Matching) Transaction Types. Use the Key to specify the Session Field and its value for the corresponding Opportunity/Payment/Designation Detail Field.&quot;,
+                     &quot;jsonKeysToValueList&quot;: [
+                        {
+                           &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                           &quot;valueCustomFieldParams&quot;: {
+                              &quot;type&quot;: &quot;text&quot;
+                           },
+                           &quot;valueType&quot;: &quot;text&quot;
+                        }
+                     ]
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;Pledge&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                     &quot;title&quot;: &quot;Session Defaults Mapping: Pledge&quot;,
+                     &quot;keyLabel&quot;: &quot;Session Field API Name&quot;,
+                     &quot;valueLabel&quot;: &quot;Transaction Object Field API Name&quot;,
+                     &quot;keyHelpText&quot;: &quot;E.g. Session_Field_Name__c&quot;,
+                     &quot;valueHelpText&quot;: &quot;E.g. Opportunity.Opportunity_Field_Name__c\nE.g. Payment__c.Payment_Field_Name__c&quot;,
+                     &quot;type&quot;: &quot;object&quot;,
+                     &quot;helpText&quot;: &quot;Specify the Default Value Mappings for Pledge Transaction Type. Use the Key to specify the Session Field and its value for the corresponding Opportunity/Payment/Designation Detail Field.&quot;,
+                     &quot;jsonKeysToValueList&quot;: [
+                        {
+                           &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                           &quot;valueCustomFieldParams&quot;: {
+                              &quot;type&quot;: &quot;text&quot;
+                           },
+                           &quot;valueType&quot;: &quot;text&quot;
+                        }
+                     ]
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;Pledge Payment&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                     &quot;title&quot;: &quot;Session Defaults Mapping: Pledge Payment&quot;,
+                     &quot;helpText&quot;: &quot;Specify the Default Value Mappings for Pledge Payment Transaction Type. Use the Key to specify the Session Field and its value for the corresponding Opportunity/Payment/Designation Detail Field.&quot;,
+                     &quot;type&quot;: &quot;object&quot;,
+                     &quot;keyLabel&quot;: &quot;Session Field API Name&quot;,
+                     &quot;valueLabel&quot;: &quot;Transaction Object Field API Name&quot;,
+                     &quot;keyHelpText&quot;: &quot;E.g. Session_Field_Name__c&quot;,
+                     &quot;valueHelpText&quot;: &quot;E.g. Opportunity.Opportunity_Field_Name__c\nE.g. Payment__c.Payment_Field_Name__c&quot;,
+                     &quot;jsonKeysToValueList&quot;: [
+                        {
+                           &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                           &quot;valueCustomFieldParams&quot;: {
+                              &quot;type&quot;: &quot;text&quot;
+                           },
+                           &quot;valueType&quot;: &quot;text&quot;
+                        }
+                     ]
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;Recurring Gift Payment&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                     &quot;title&quot;: &quot;Session Defaults Mapping: Recurring Gift Payment&quot;,
+                     &quot;helpText&quot;: &quot;Specify the Default Value Mappings for Recurring Gift Payment Transaction Type. Use the Key to specify the Session Field and its value for the corresponding Opportunity/Payment/Designation Detail Field.&quot;,
+                     &quot;type&quot;: &quot;object&quot;,
+                     &quot;keyLabel&quot;: &quot;Session Field API Name&quot;,
+                     &quot;valueLabel&quot;: &quot;Transaction Object Field API Name&quot;,
+                     &quot;keyHelpText&quot;: &quot;E.g. Session_Field_Name__c&quot;,
+                     &quot;valueHelpText&quot;: &quot;E.g. Opportunity.Opportunity_Field_Name__c\nE.g. Payment__c.Payment_Field_Name__c&quot;,
+                     &quot;jsonKeysToValueList&quot;: [
+                        {
+                           &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                           &quot;valueCustomFieldParams&quot;: {
+                              &quot;type&quot;: &quot;text&quot;
+                           },
+                           &quot;valueType&quot;: &quot;text&quot;
+                        }
+                     ]
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;Matching Gift Payment&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                     &quot;title&quot;: &quot;Session Defaults Mapping: Matching Gift Payment&quot;,
+                     &quot;helpText&quot;: &quot;Specify the Default Value Mappings for Matching Gift Payment Transaction Type. Use the Key to specify the Session Field and its value for the corresponding Opportunity/Payment/Designation Detail Field.&quot;,
+                     &quot;type&quot;: &quot;object&quot;,
+                     &quot;keyLabel&quot;: &quot;Session Field API Name&quot;,
+                     &quot;valueLabel&quot;: &quot;Transaction Object Field API Name&quot;,
+                     &quot;keyHelpText&quot;: &quot;E.g. Session_Field_Name__c&quot;,
+                     &quot;valueHelpText&quot;: &quot;E.g. Opportunity.Opportunity_Field_Name__c\nE.g. Payment__c.Payment_Field_Name__c&quot;,
+                     &quot;jsonKeysToValueList&quot;: [
+                        {
+                           &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                           &quot;valueCustomFieldParams&quot;: {
+                              &quot;type&quot;: &quot;text&quot;
+                           },
+                           &quot;valueType&quot;: &quot;text&quot;
+                        }
+                     ]
+                  }
+               }
+            ]
+         }
+      }
+   ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Setting__mdt&quot;,
+  &quot;title&quot;: &quot;Session Defaults&quot;,
+  &quot;helpText&quot;: &quot;Configuration pertaining to session defaults&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

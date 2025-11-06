@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Use JSON and 24-hour format: {&quot;Mon&quot;:(&quot;08:00&quot;,&quot;17:30&quot;),&quot;Tue&quot;:(&quot;07:30&quot;,&quot;13:00&quot;)} --></help>
+        <label><!-- Breaks --></label>
+        <name>geopointe__Breaks__c</name>
+    </CustomFieldTranslation>

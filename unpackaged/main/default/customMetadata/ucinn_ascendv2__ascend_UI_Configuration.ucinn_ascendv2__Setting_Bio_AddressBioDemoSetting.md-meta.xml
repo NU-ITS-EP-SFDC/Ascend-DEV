@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting Bio AddressBioDemoSetting</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Excluded_Address_Relation_Statuses_v1__c&quot;,
+      &quot;toolTip&quot;: &quot;Enter a JSON list of address relation statuses which should not be bubbled up to appear on the overview. The leftmost value will be what other address relation statuses are set to when multiple current address relations are disabled. If blank, all statuses will bubble up.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;helpText&quot;: &quot;Enter a JSON list of address relation statuses which should not be bubbled up to appear on the overview. The leftmost value will be what other address relation statuses are set to when multiple current address relations are disabled. If blank, all statuses will bubble up.&quot;,
+        &quot;label&quot;: &quot;Excluded Address Relation Statuses&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Excluded_Address_Relation_Statuse&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__SmartyStreets_US_Field_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Example: {\&quot;DPV_Match_Code__c\&quot;:{\&quot;analysis\&quot;:\&quot;dpv_match_code\&quot;}, \&quot;DPV_Vacant__c\&quot;:{\&quot;analysis\&quot;:\&quot;dpv_vacant\&quot;}, \&quot;Active__c\&quot;:{\&quot;analysis\&quot;:\&quot;active\&quot;}}&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;SmartyStreets US Field Map&quot;,
+        &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+        &quot;valueLabel&quot;: &quot;Smarty Response Value&quot;,
+        &quot;helpText&quot;: &quot;Set fields based on smartystreet return response.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_International_Autocomplete__c&quot;,
+      &quot;toolTip&quot;: &quot;Enables International Autocomplete and country picklist next to auto complete lookup. Currently leveraged by SmartyStreets International Autocomplete API.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable International Autocomplete&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__SmartyStreets_International_Field_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Example: {\&quot;Verification_Status__c\&quot;:{\&quot;analysis\&quot;:\&quot;verification_status\&quot;}, \&quot;Address_Precision__c\&quot;:{\&quot;analysis\&quot;:\&quot;address_precision\&quot;}}&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;SmartyStreets International Field Map&quot;,
+        &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+        &quot;valueLabel&quot;: &quot;Smarty Response Value&quot;,
+        &quot;helpText&quot;: &quot;Set fields based on smartystreet return response.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__SmartyStreets_Default_Country_v1__c&quot;,
+      &quot;toolTip&quot;: &quot;Default country value for SmartyStreets international autocomplete.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;SmartyStreets Default Country&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__SmartyStreets_US_Address_Search_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Mapping between ascend and smarty api call.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;SmartyStreets US Address Search Map&quot;,
+        &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+        &quot;valueLabel&quot;: &quot;Field to Smarty Map&quot;,
+        &quot;helpText&quot;: &quot;Mapping between ascend and smarty api call.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+              &quot;valueLabel&quot;: &quot;Smarty Field&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__SmartyStreets_Match_Method__c&quot;,
+      &quot;toolTip&quot;: &quot;For US Address Verification.\n\nstrict - The API will return detailed output only if a valid match is found.\ninvalid - The API will return detailed output for both valid and invalid addresses.\n enhanced - The API will return detailed output based on a more aggressive matching mechanism. Only available with us-core-cloud license.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;SmartyStreets Match Method&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;strict&quot;,
+          &quot;invalid&quot;,
+          &quot;enhanced&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__SmartyStreets_Country_Code_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Map of supported SmartyStreets countries to their corresponding ISO3 codes which are required to make callouts to the SmartyStreets international autocomplete API.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;SmartyStreets Country Code Map&quot;,
+        &quot;keyLabel&quot;: &quot;Country Name&quot;,
+        &quot;valueLabel&quot;: &quot;ISO3 codes&quot;,
+        &quot;helpText&quot;: &quot;Mapping between country and their IS03 codes&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__SmartyStreet_Timeout_Limit__c&quot;,
+      &quot;toolTip&quot;: &quot;The time in seconds to wait for a response from Smarty. The minimum is 1 second and the maximum is 120 seconds.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;label&quot;: &quot;SmartyStreets Timeout Limit&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__State_and_Country_Picklist__c&quot;,
+      &quot;toolTip&quot;: &quot;Stores the Country State picklist values with the country Name(label) as the key.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;State and Country Picklist&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;defaultCountry&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;countryMap&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;keyLabel&quot;: &quot;Country&quot;,
+              &quot;valueLabel&quot;: &quot;Country Def.&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;value&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;stateMapByLabel&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;keyLabel&quot;: &quot;State&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;value&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;label&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;isoCode&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;stateMapByIsoCode&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;value&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;label&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;isoCode&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;stateMapByIntegrationValue&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;value&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;label&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;isoCode&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;label&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;isoCode&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__State_and_Country_Picklist_Value__c&quot;,
+      &quot;toolTip&quot;: &quot;Stores the Country State Picklist values with the integration Value as the key.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;State and Country Picklist Value&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;defaultCountry&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;countryMap&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;keyLabel&quot;: &quot;Country&quot;,
+              &quot;valueLabel&quot;: &quot;Country Def.&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;value&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;stateMapByLabel&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;keyLabel&quot;: &quot;State&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;value&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;label&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;isoCode&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;stateMapByIsoCode&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;value&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;label&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;isoCode&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;stateMapByIntegrationValue&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;keyLabel&quot;: &quot;State Integration Value&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;value&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;label&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;isoCode&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;label&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;isoCode&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__State_and_Country_Picklist_ISO_Code__c&quot;,
+      &quot;toolTip&quot;: &quot;Stores the Country State Picklist values with the ISO code as the key.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;State and Country Picklist ISO Code&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;defaultCountry&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;countryMap&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;keyLabel&quot;: &quot;Country ISO Code&quot;,
+              &quot;valueLabel&quot;: &quot;Country Def.&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;value&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;stateMapByLabel&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;keyLabel&quot;: &quot;State&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;value&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;label&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;isoCode&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;stateMapByIsoCode&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;keyLabel&quot;: &quot;State Iso Code&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;value&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;label&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;isoCode&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;stateMapByIntegrationValue&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;value&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;label&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;isoCode&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;label&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;isoCode&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_State_and_Country_Picklist_ISO_Code&quot;
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+   &quot;objectApiName&quot;:&quot;ucinn_ascendv2__Bio_Demo_Setting__mdt&quot;,
+   &quot;additionalConditions&quot;:&quot;&quot;,
+   &quot;title&quot;:&quot;Bio Demo Setting&quot;,
+   &quot;helpText&quot;:&quot;Configuration Pertaining to Custom metadata Bio Demo Setting for Addresses&quot;,
+   &quot;allowCreate&quot;:false
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

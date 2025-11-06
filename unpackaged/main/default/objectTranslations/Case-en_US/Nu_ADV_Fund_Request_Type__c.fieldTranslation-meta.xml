@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Fund Request Type --></label>
+        <name>Nu_ADV_Fund_Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Detail Code Request</masterLabel>
+            <translation><!-- Detail Code Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund Clean-Up</masterLabel>
+            <translation><!-- Fund Clean-Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund Term Revision</masterLabel>
+            <translation><!-- Fund Term Revision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift-in-Kind or Deed of Gift</masterLabel>
+            <translation><!-- Gift-in-Kind or Deed of Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Named Space Agreement</masterLabel>
+            <translation><!-- Named Space Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Fund</masterLabel>
+            <translation><!-- New Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New MOU</masterLabel>
+            <translation><!-- New MOU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Statement of Intent</masterLabel>
+            <translation><!-- New Statement of Intent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Realized Planned Gift</masterLabel>
+            <translation><!-- Realized Planned Gift --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

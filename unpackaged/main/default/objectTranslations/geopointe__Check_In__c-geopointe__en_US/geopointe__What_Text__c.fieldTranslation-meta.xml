@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If a What ID is entered into the record, this field should be populated with the Name of that record.  If not, this field can be populated with text describing what was being checked into. --></help>
+        <label><!-- What (Text) --></label>
+        <name>geopointe__What_Text__c</name>
+    </CustomFieldTranslation>

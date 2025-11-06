@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When enabled, this setting will validate postal codes against the regular expression configured for the corresponding country. --></help>
+        <label><!-- Regex-Validate Postal Code on Save --></label>
+        <name>pw_ccpro__ValidatePostalCodeWithRegexOnSave__c</name>
+    </CustomFieldTranslation>

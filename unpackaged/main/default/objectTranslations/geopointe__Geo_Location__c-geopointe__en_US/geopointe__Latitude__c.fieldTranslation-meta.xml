@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If you collect your own coordinates for your locations, you can put the latitude here. The system will use this location instead of the address on the record. --></help>
+        <label><!-- Latitude --></label>
+        <name>geopointe__Latitude__c</name>
+    </CustomFieldTranslation>

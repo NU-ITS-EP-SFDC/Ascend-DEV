@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Google Only --></help>
+        <label><!-- Avoid Highways --></label>
+        <name>geopointe__Avoid_Highways__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Indicates that this is used by the system as a temporary record. It is not intended to be saved long-term. The system will periodically clean these records up. --></help>
+        <label><!-- Temporary --></label>
+        <name>geopointe__Temporary__c</name>
+    </CustomFieldTranslation>

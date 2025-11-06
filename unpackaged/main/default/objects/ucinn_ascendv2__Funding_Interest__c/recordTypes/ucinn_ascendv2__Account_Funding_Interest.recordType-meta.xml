@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ucinn_ascendv2__Account_Funding_Interest</fullName>
+    <active>true</active>
+    <description>Funding interest related to the corporation or organization.</description>
+    <label>Account Funding Interest</label>
+    <picklistValues>
+        <picklist>NU_ADV_Interest_Category__c</picklist>
+        <values>
+            <fullName>Animal%2C Agricultural%2C Zoological</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts%2C Culture%2C Humanities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diversity Equity and Inclusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entrepreneurship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Political</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Science and Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports and Recreations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Interest_Level__c</picklist>
+        <values>
+            <fullName>Interested</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Interest_Value__c</picklist>
+        <values>
+            <fullName>Academic Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adult Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Animal Rescue and Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Animal Welfare and Rights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Architecture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aviation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Climate Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Club Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Foundations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer and Technology Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conservation Centers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooperative Organizations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cultural Awareness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cultural Programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Democracy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diseases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disorders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Early Childhood Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Policy and Reform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fisheries and Wildlife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foreign Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gardening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gender and Sexuality Equity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graduate and Professional Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Care Administration and Financing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historical Artifacts and Antiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historical Societies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing and Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Economics and Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Humanitarian Relief Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Peace and Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LBGQIA2S%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Libraries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mentorship Programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Museums</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parks and Nature Centers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient and Family Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peer Leader</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performing Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceutical and Vaccine Research and Discovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philately</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical Handicaps%09Diversity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Political Party or Canidate Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Broadcasting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Speaking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public or Private Ventures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Race Based Initiatives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rehabilitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religious Activities and Spiritual Organizations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religious Media and Broadcasting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sailing and Maritime Participation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarships%2C Grants%2C and Financial Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shelter and Housing%2FResidential Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustainability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustainable Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traditional Medicine and Holistic Medicine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visual Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volunteering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Youth Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Youth Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Youth and Family Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoos and Aquariums</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Source__c</picklist>
+        <values>
+            <fullName>Engagement Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect Research</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Data_Source__c</picklist>
+        <values>
+            <fullName>Kindsight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Reported</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- MapQuest Only --></help>
+        <label><!-- Avoid Tolls --></label>
+        <name>geopointe__Avoid_Tolls__c</name>
+    </CustomFieldTranslation>

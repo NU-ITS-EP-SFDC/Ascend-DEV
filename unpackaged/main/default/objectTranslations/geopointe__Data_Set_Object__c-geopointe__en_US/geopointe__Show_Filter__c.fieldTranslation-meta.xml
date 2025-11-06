@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Show Filter --></label>
+        <name>geopointe__Show_Filter__c</name>
+        <picklistValues>
+            <masterLabel>all</masterLabel>
+            <translation><!-- all --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>my</masterLabel>
+            <translation><!-- my --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

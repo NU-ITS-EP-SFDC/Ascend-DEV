@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <formulas>
+        <name>WealthRating</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.NU_ADV_Prospect_Research_Rating__c})</expression>
+    </formulas>
+    <interviewLabel>Wealth Rating {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Wealth Rating</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Copy_1_of_Copy_1_of_Update_Household</name>
+        <label>Update Constituent</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <connector>
+            <targetReference>Update_Household2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ucinn_ascendv2__Account__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ucinn_ascendv2__Wealth_Last_Rating_Date_Time__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_1_of_Remove_VIP</name>
+        <label>Add VIP</label>
+        <locationX>176</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Remove_VIP</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5 OR 6)</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ucinn_ascendv2__Account__r.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>NU_ADV_Wealth_Rating__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>5. $5,000,000-9,999,999</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>NU_ADV_Wealth_Rating__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>4. $10,000,000-24,999,999</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>NU_ADV_Wealth_Rating__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>3. $25,000,000-49,999,999</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>NU_ADV_Wealth_Rating__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>2. $50,000,000-99,999,999</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>NU_ADV_Wealth_Rating__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>1. $100 million+</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ucinn_ascendv2__Is_VIP__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Remove_VIP</name>
+        <label>Remove VIP</label>
+        <locationX>176</locationX>
+        <locationY>647</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ucinn_ascendv2__Account__r.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>NU_ADV_Wealth_Rating__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>5. $5,000,000-9,999,999</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>NU_ADV_Wealth_Rating__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>4. $10,000,000-24,999,999</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>NU_ADV_Wealth_Rating__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>3. $25,000,000-49,999,999</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>NU_ADV_Wealth_Rating__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>2. $50,000,000-99,999,999</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>NU_ADV_Wealth_Rating__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>1. $100 million+</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ucinn_ascendv2__Is_VIP__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Household2</name>
+        <label>Update Household</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Copy_1_of_Remove_VIP</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ucinn_ascendv2__Account__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ucinn_ascendv2__Wealth_Rating__c</field>
+            <value>
+                <elementReference>WealthRating</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Copy_1_of_Copy_1_of_Update_Household</targetReference>
+        </connector>
+        <filterFormula>TEXT({!$Record.NU_ADV_Rating_or_Score_Type__c}) = &apos;Prospect Research&apos;</filterFormula>
+        <object>ucinn_ascendv2__Wealth_Rating__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

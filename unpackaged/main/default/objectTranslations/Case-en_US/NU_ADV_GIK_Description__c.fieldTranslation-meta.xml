@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please explain the Gift in Kind or Describe the Work(s) of Art --></help>
+        <label><!-- GIK Description --></label>
+        <name>NU_ADV_GIK_Description__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,1552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting Util KnowtifySetting</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;Label&quot;,
+      &quot;required&quot;: true,
+      &quot;criteria&quot;: [
+        {
+          &quot;isCreation&quot;: true
+        }
+      ],
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_NAME&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_Knowtify__c&quot;,
+      &quot;toolTip&quot;: &quot;Enable ascend Knowtify.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Knowtify&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__View_Critical_Information_Button_Display__c&quot;,
+      &quot;toolTip&quot;: &quot;Determines when to display the View Critical Information button.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;View Critical Information Button Display&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Always Show&quot;,
+          &quot;Always Hide&quot;,
+          &quot;Hide If No Critical Information&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Knowtify_Button_Label__c&quot;,
+      &quot;toolTip&quot;: &quot;Label for the Knowtify button.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Knowtify Button Label&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Aggregate_Household__c&quot;,
+      &quot;toolTip&quot;: &quot;Show all the household member comments and data records, along with the household comments and data records at the same time.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Aggregate Household&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Default_Tab__c&quot;,
+      &quot;toolTip&quot;: &quot;Determines which tab (Bio Demo, Gift Processing, Interim, Review Transaction (v2)) is active when Knowtify modal is opened. If blank, use the enabled tab field (Enable Bio Demo Tab, Enable Gift Processing Tab, Enable Interim Tab, Enable Review Transaction (v2) Tab) based on the specified context.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Default Tab&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Bio Demo&quot;,
+          &quot;Gift Processing&quot;,
+          &quot;Interim&quot;,
+          &quot;Review Transaction&quot;
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Appearance__c&quot;,
+      &quot;toolTip&quot;: &quot;Sets the default appearance for how Knowtify is presented.\n\nManual: Manually invoke modal\nDisruptive: Always shows at the opening of a page\nPop-Up: Small notification to optionally open modal\n\nIf blank, use the appearance specified for the context (Bio Demo Appearance, Gift Processing Appearance, Interim Appearance, Review Transaction (v2) Appearance)&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Appearance&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Manual&quot;,
+          &quot;Disruptive&quot;,
+          &quot;Pop-Up&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;HEADER_FIELD_NAME_SETTING&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Field Name Settings&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Critical_Start_Date_API_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;A field name to query within critical objects to determine if a record is within a valid date range.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Critical Start Date API Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Critical_End_Date_API_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;A field name to query within critical objects to determine if a record is within a valid date range.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Critical End Date API Name&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Mark_Critical_API_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;A field name to query within critical objects to determine if a record is critical.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Mark Critical API Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_MARK_CRITICAL&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;HEADER_Modal_Appearance&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Modal Appearance Settings&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__knowtify_Title__c&quot;,
+      &quot;toolTip&quot;: &quot;Title for knowtify modal.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Knowtify Title&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Pop_Up_Text__c&quot;,
+      &quot;toolTip&quot;: &quot;The message to display within the knowtify pop up notification.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Pop Up Text&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Modal_Fields__c&quot;,
+      &quot;toolTip&quot;: &quot;List of what fields to display for the record type that triggered knowtify.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;label&quot;: &quot;Modal Fields to Display&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Comment_Fields__c&quot;,
+      &quot;toolTip&quot;: &quot;JSON mapping containing comment object to be used and what fields to be displayed.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Comment Object and Fields to Display&quot;,
+        &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;RelationshipName&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;orderBy&quot;,
+                  &quot;helpText&quot;: &quot;ex: Knowtify_Start_Date__c ASC&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;filterCriteria&quot;,
+                  &quot;helpText&quot;: &quot;ex: Knowtify_Start_Date__c &lt; TODAY&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;columns&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;label&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;fieldName&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;type&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;picklist&quot;,
+                          &quot;customPicklistValuesString&quot;: [
+                            &quot;url&quot;,
+                            &quot;customUrl&quot;,
+                            &quot;dynamicCustomType&quot;,
+                            &quot;currency&quot;,
+                            &quot;boolean&quot;,
+                            &quot;button&quot;,
+                            &quot;button-icon&quot;,
+                            &quot;date-local&quot;,
+                            &quot;date&quot;,
+                            &quot;email&quot;,
+                            &quot;location&quot;,
+                            &quot;number&quot;,
+                            &quot;percent&quot;,
+                            &quot;phone&quot;,
+                            &quot;text&quot;
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;initialWidth&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;number&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;wrapText&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;checkbox&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;typeAttributes&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;prepend&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;target&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;objectApi&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;fieldApi&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;type&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;editable&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;checkbox&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;displayValue&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;recordId&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;rowIndex&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Disable_Critical_Comments__c&quot;,
+      &quot;toolTip&quot;: &quot;Check to hide the comments section of Knowtify, and not use it to determine if there is critical information.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Disable Critical Comments&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;HEADER_BIO_DEMO_SETTING&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Bio Demo Settings&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Bio_Demo_Tab__c&quot;,
+      &quot;toolTip&quot;: &quot;Enable/Disable Bio Demo tab.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Bio Demo Tab&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Bio_Demo_Tab_Label__c&quot;,
+      &quot;toolTip&quot;: &quot;The name of the Bio Demo tab. If blank, the name used is Bio Demo.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Bio Demo Tab Label&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Bio_Demo_Appearance__c&quot;,
+      &quot;toolTip&quot;: &quot;Manual: Manually invoke modal\nDisruptive: Always shows at the opening of a page\nPop-Up: Small notification to optionally open modal&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Bio Demo Appearance&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Manual&quot;,
+          &quot;Disruptive&quot;,
+          &quot;Pop-Up&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Bio_Demo_Objects__c&quot;,
+      &quot;toolTip&quot;: &quot;JSON Map of objects to check for critical information as well as what fields to display.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Bio Demo Objects&quot;,
+        &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;RelationshipName&quot;,
+                  &quot;valueLabel&quot;: &quot;Field Api Name&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;orderBy&quot;,
+                  &quot;helpText&quot;: &quot;ex: Knowtify_Start_Date__c ASC&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;filterCriteria&quot;,
+                  &quot;helpText&quot;: &quot;ex: Knowtify_Start_Date__c &lt; TODAY&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;columns&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;label&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;fieldName&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;type&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;picklist&quot;,
+                          &quot;customPicklistValuesString&quot;: [
+                            &quot;url&quot;,
+                            &quot;customUrl&quot;,
+                            &quot;dynamicCustomType&quot;,
+                            &quot;currency&quot;,
+                            &quot;boolean&quot;,
+                            &quot;button&quot;,
+                            &quot;button-icon&quot;,
+                            &quot;date-local&quot;,
+                            &quot;date&quot;,
+                            &quot;email&quot;,
+                            &quot;location&quot;,
+                            &quot;number&quot;,
+                            &quot;percent&quot;,
+                            &quot;phone&quot;,
+                            &quot;text&quot;
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;initialWidth&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;number&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;wrapText&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;checkbox&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;typeAttributes&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;prepend&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;target&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;objectApi&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;fieldApi&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;type&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;editable&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;checkbox&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;displayValue&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;recordId&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;rowIndex&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_BIO_OBJECTS&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;HEADER_Gift_PROCESSING_SETTING&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Gift Processing Settings&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Tab__c&quot;,
+      &quot;toolTip&quot;: &quot;Enable/Disable Gift Processing tab.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Gift Processing Tab&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Tab_Label__c&quot;,
+      &quot;toolTip&quot;: &quot;The name of the Gift Processing Tab. If blank, the name used is Gift Processing.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Gift Processing Tab Label&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Appearance__c&quot;,
+      &quot;toolTip&quot;: &quot;Manual: Manually invoke modal\nDisruptive: Always shows at the opening of a page\nPop-Up: Small notification to optionally open modal&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Gift Processing Appearance&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Manual&quot;,
+          &quot;Disruptive&quot;,
+          &quot;Pop-Up&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Objects__c&quot;,
+      &quot;toolTip&quot;: &quot;JSON Map of objects to check for critical information as well as what fields to display.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Gift Processing Objects&quot;,
+        &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;RelationshipName&quot;,
+                  &quot;valueLabel&quot;: &quot;Field Api Name&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;orderBy&quot;,
+                  &quot;helpText&quot;: &quot;ex: Knowtify_Start_Date__c ASC&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;filterCriteria&quot;,
+                  &quot;helpText&quot;: &quot;ex: Knowtify_Start_Date__c &lt; TODAY&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;columns&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;label&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;fieldName&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;type&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;picklist&quot;,
+                          &quot;customPicklistValuesString&quot;: [
+                            &quot;url&quot;,
+                            &quot;customUrl&quot;,
+                            &quot;dynamicCustomType&quot;,
+                            &quot;currency&quot;,
+                            &quot;boolean&quot;,
+                            &quot;button&quot;,
+                            &quot;button-icon&quot;,
+                            &quot;date-local&quot;,
+                            &quot;date&quot;,
+                            &quot;email&quot;,
+                            &quot;location&quot;,
+                            &quot;number&quot;,
+                            &quot;percent&quot;,
+                            &quot;phone&quot;,
+                            &quot;text&quot;
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;initialWidth&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;number&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;wrapText&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;checkbox&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;typeAttributes&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;prepend&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;target&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;objectApi&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;fieldApi&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;type&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;editable&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;checkbox&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;displayValue&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;recordId&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;rowIndex&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_GP_OBJECTS&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;HEADER_Interim_SETTING&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Interim Settings&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Interim_Tab__c&quot;,
+      &quot;toolTip&quot;: &quot;Enable/Disable Interim tab.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Interim Tab&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Interim_Tab_Label__c&quot;,
+      &quot;toolTip&quot;: &quot;The name of the Interim Tab. If blank, the name used is Interim.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Interim Tab Label&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Interim_Appearance__c&quot;,
+      &quot;toolTip&quot;: &quot;Manual: Manually invoke modal\nDisruptive: Always shows at the opening of a page\nPop-Up: Small notification to optionally open modal&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Interim Appearance&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Manual&quot;,
+          &quot;Disruptive&quot;,
+          &quot;Pop-Up&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Interim_Objects__c&quot;,
+      &quot;toolTip&quot;: &quot;JSON Map of objects to check for critical information as well as what fields to display.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Interim Objects&quot;,
+        &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;RelationshipName&quot;,
+                  &quot;valueLabel&quot;: &quot;Field Api Name&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;orderBy&quot;,
+                  &quot;helpText&quot;: &quot;ex: Knowtify_Start_Date__c ASC&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;filterCriteria&quot;,
+                  &quot;helpText&quot;: &quot;ex: Knowtify_Start_Date__c &lt; TODAY&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;columns&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;label&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;fieldName&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;type&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;picklist&quot;,
+                          &quot;customPicklistValuesString&quot;: [
+                            &quot;url&quot;,
+                            &quot;customUrl&quot;,
+                            &quot;dynamicCustomType&quot;,
+                            &quot;currency&quot;,
+                            &quot;boolean&quot;,
+                            &quot;button&quot;,
+                            &quot;button-icon&quot;,
+                            &quot;date-local&quot;,
+                            &quot;date&quot;,
+                            &quot;email&quot;,
+                            &quot;location&quot;,
+                            &quot;number&quot;,
+                            &quot;percent&quot;,
+                            &quot;phone&quot;,
+                            &quot;text&quot;
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;initialWidth&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;number&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;wrapText&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;checkbox&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;typeAttributes&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;prepend&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;target&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;objectApi&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;fieldApi&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;type&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;editable&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;checkbox&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;displayValue&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;recordId&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;rowIndex&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Interim_OBJECTS&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;HEADER_RTv2_SETTING&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Review Transaction Settings&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Review_Transaction_Tab__c&quot;,
+      &quot;toolTip&quot;: &quot;Enable/Disable Review Transaction (v2).&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Review Transaction (v2) Tab&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Review_Transaction_Tab_Label__c&quot;,
+      &quot;toolTip&quot;: &quot;The name of the Review Transaction (v2) tab. If blank, the name used is Review Transaction (v2).&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Review Transaction (v2) Tab Label&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Review_Transaction_Appearance__c&quot;,
+      &quot;toolTip&quot;: &quot;Manual: Manually invoke modal\nDisruptive: Always shows at the opening of a page\nPop-Up: Small notification to optionally open modal&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Review Transaction (v2) Appearance&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Manual&quot;,
+          &quot;Disruptive&quot;,
+          &quot;Pop-Up&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Review_Transaction_Objects__c&quot;,
+      &quot;toolTip&quot;: &quot;JSON Map of objects to check for critical information as well as what fields to display.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Review Transaction (v2) Objects&quot;,
+        &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;RelationshipName&quot;,
+                  &quot;valueLabel&quot;: &quot;Field Api Name&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;orderBy&quot;,
+                  &quot;helpText&quot;: &quot;ex: Knowtify_Start_Date__c ASC&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;filterCriteria&quot;,
+                  &quot;helpText&quot;: &quot;ex: Knowtify_Start_Date__c &lt; TODAY&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;columns&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;label&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;fieldName&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;type&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;picklist&quot;,
+                          &quot;customPicklistValuesString&quot;: [
+                            &quot;url&quot;,
+                            &quot;customUrl&quot;,
+                            &quot;dynamicCustomType&quot;,
+                            &quot;currency&quot;,
+                            &quot;boolean&quot;,
+                            &quot;button&quot;,
+                            &quot;button-icon&quot;,
+                            &quot;date-local&quot;,
+                            &quot;date&quot;,
+                            &quot;email&quot;,
+                            &quot;location&quot;,
+                            &quot;number&quot;,
+                            &quot;percent&quot;,
+                            &quot;phone&quot;,
+                            &quot;text&quot;
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;initialWidth&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;number&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;wrapText&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;checkbox&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;typeAttributes&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;prepend&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;target&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;objectApi&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;fieldApi&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;type&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;editable&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;checkbox&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;displayValue&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;recordId&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;rowIndex&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_GP_OBJECTS&quot;
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+&quot;objectApiName&quot;: &quot;ucinn_ascendv2__Knowtify_Setting__mdt&quot;,
+&quot;title&quot;: &quot;Knowtify Setting&quot;,&quot;allowCreate&quot;:true,
+&quot;helpText&quot;: &quot;Configuration pertaining to the custom metadata Knowtify Setting&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

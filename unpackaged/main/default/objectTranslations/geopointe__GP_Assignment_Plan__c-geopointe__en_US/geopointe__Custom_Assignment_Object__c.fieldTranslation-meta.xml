@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This is an the Custom Object you create that links Geopointe Assignment Areas to the standard or custom object in your system. This object you create should have Master-Detail to Geopointe Assignment Area and your custom/standard object. --></help>
+        <label><!-- Custom Assignment Object --></label>
+        <name>geopointe__Custom_Assignment_Object__c</name>
+    </CustomFieldTranslation>

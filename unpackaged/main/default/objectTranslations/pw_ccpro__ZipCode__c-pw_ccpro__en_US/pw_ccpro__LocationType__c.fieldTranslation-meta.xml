@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Location Type --></label>
+        <name>pw_ccpro__LocationType__c</name>
+        <picklistValues>
+            <masterLabel>Acceptable</masterLabel>
+            <translation><!-- Acceptable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Acceptable</masterLabel>
+            <translation><!-- Not Acceptable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

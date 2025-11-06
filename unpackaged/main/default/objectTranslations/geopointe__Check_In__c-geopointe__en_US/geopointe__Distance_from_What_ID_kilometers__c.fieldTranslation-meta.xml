@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Upon a successful checkin, the distance is calculated from the user&apos;s actual location to the location of the record they checked into (in kilometers). --></help>
+        <label><!-- Distance from What ID (kilometers) --></label>
+        <name>geopointe__Distance_from_What_ID_kilometers__c</name>
+    </CustomFieldTranslation>

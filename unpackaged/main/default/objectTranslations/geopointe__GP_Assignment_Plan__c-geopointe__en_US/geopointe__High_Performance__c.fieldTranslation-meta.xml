@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Utilize the off-platform high performance assignment engine. --></help>
+        <label><!-- High Performance --></label>
+        <name>geopointe__High_Performance__c</name>
+    </CustomFieldTranslation>

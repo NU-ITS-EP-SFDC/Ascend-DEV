@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP Setting Utility</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_Recurring_Gift__c&quot;,
+      &quot;toolTip&quot;: &quot;For hiding or showing recurring gift records on the gift processing screen.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Recurring Gift&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_External_Stock_API_Callouts__c&quot;,
+      &quot;toolTip&quot;: &quot;When checked, use external API to lookup company name and low/high stock prices based on stock ticker and date.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable External Stock API Callouts&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Keep_External_System_ID_on_New_Record__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Keep External System ID on New Record&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_External_Stock_API_Callouts__c&quot;,
+      &quot;toolTip&quot;: &quot;When checked, use external API to lookup company name and low/high stock prices based on stock ticker and date.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable External Stock API Callouts&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Is_Delete_Opportunity_Enabled__c&quot;,
+      &quot;toolTip&quot;: &quot;Allow deletetion of opportunities through gp UI&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Is Delete Opportunity Enabled&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Opportunity_Deletion_Batch_Threshold__c&quot;,
+      &quot;toolTip&quot;: &quot;When certain Ascend functions try to delete multiple Opportunities at once, they may attempt the deletion as a batch job instead of an immediate deletion. This setting controls the threshold at which that happens.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;label&quot;: &quot;Opportunity Deletion Batch Threshold&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_OPP_DELETE_BATCH_THRESHOLD&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Payment_Processing_Batch_Threshold__c&quot;,
+      &quot;toolTip&quot;: &quot;On the wizard, run a batch if the number of payments in a transaction is greater than or equal to this threshold.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;label&quot;: &quot;Payment Processing Batch Threshold&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_PAYMENT_PROCESSING_BATCH_THRESHOLD&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Custom_Payment_Frequency__c&quot;,
+      &quot;toolTip&quot;: &quot;Construct JSON like {\&quot;Payment Frequency\&quot;:{\&quot;Months\&quot;:1,\&quot;Days\&quot;:1}}. Payment Frequency is the custom Frequency API Name. The order of Months and Days dictates summing order. There needs to be a key of Months or Days. No support for Years key.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Custom Payment Frequency&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Custom Frequency&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;Months&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;number&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;Days&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;number&quot;
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_CUSTOM_PAYMENT_FREQUENCY&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Auto_Apply_Opp_Hard_Soft_Credits__c&quot;,
+      &quot;toolTip&quot;: &quot;Transaction Types that will auto apply manual credits from the parent opportunity. Use any combination of \&quot;Pledge Payment\&quot; , \&quot;Recurring Gift Payment\&quot;, \&quot;Matching Gift Payment\&quot;, \&quot;Auto Renewing Membership Payment\&quot;, \&quot;Installment Based Membership Payment\&quot;, \&quot;Auto Renewing POS Payment\&quot;, \&quot;Installment Based POS Payment\&quot;, \&quot;Partial Payment POS Payment\&quot; delimited by \&quot;;\&quot;.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Auto Apply Opp Hard/Soft Credits&quot;,
+        &quot;type&quot;: &quot;listNotJSON&quot;,
+        &quot;listNotJSONSeperator&quot;: &quot;;&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;picklist&quot;,
+          &quot;customPicklistValuesString&quot;: [
+            &quot;Pledge Payment&quot;,
+            &quot;Recurring Gift Payment&quot;,
+            &quot;Matching Gift Payment&quot;,
+            &quot;Auto Renewing Membership Payment&quot;,
+            &quot;Installment Based Membership Payment&quot;,
+            &quot;Auto Renewing POS Payment&quot;,
+            &quot;Installment Based POS Payment&quot;,
+            &quot;Partial Payment POS Payment&quot;
+          ]
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_AUTO_APPLY__OPP_HSC&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Hard_and_Soft_Credit_Subtype_Mapping__c&quot;,
+      &quot;toolTip&quot;: &quot;Maps HSC created from relationships/affiliations with specific subtype.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Hard And Soft Credit Subtype Mapping&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;Relationship Defaults&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;keyLabel&quot;: &quot;Constituent Role&quot;,
+              &quot;valueLabel&quot;: &quot;HSC Credit Subtype&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;Affiliation Defaults&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;keyLabel&quot;: &quot;Constituent Role&quot;,
+              &quot;valueLabel&quot;: &quot;HSC Credit Subtype&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_HSC_SUBTYPE_MAPPING&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Session_Fields_To_Track__c&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Session Fields To Track&quot;,
+        &quot;helpText&quot;: &quot;Currency fields to track and display when session is closed&quot;,
+        &quot;type&quot;: &quot;listNotJSON&quot;,
+        &quot;title&quot;: &quot;Session Fields To Track&quot;,
+        &quot;listNotJSONSeperator&quot;: &quot;,&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_SESSION_FIELDS_TO_TRACK&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Adjustment_History_Columns_v1__c&quot;,
+      &quot;toolTip&quot;: &quot;JSON string to override adjustment history table columns./n/nEx:[ {&apos;fieldName&apos;: &apos;Name&apos;},{&apos;label&apos;: &apos;Adjustment Type&apos;,&apos;fieldName&apos;: &apos;Adjustment_Type__c&apos;} ]&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Adjustment History Columns&quot;,
+        &quot;helpText&quot;: &quot;Currency fields to track and display when session is closed&quot;,
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;object&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;fieldName&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;label&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Adjustment_History_Columns_v1&quot;
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+&quot;objectApiName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Setting__mdt&quot;,
+&quot;title&quot;: &quot;Gift Processing Utility Settings&quot;,
+&quot;helpText&quot;: &quot;Configuration pertaining to utility settings from Gift Processing Setting metadata.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

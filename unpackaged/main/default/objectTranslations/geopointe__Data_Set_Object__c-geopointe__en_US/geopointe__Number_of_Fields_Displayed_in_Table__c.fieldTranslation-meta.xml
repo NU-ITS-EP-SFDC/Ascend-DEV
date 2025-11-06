@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This value controls how many of the selected fields are displayed in the search results table under the map. For example, if &apos;5&apos; is selected, the first 5 fields the current user has access to will be displayed in the table. --></help>
+        <label><!-- Number of Fields Displayed in Table --></label>
+        <name>geopointe__Number_of_Fields_Displayed_in_Table__c</name>
+    </CustomFieldTranslation>

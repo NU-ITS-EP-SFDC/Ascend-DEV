@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Record (Map Point) - This action will be a link or button displayed in the detail bubble on the Map page and will only apply to the selected record.
+
+List (Data Set Search) - This action will be applied to all records returned in a Data Set search. --></help>
+        <label><!-- Apply To --></label>
+        <name>geopointe__Apply_To__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Point</masterLabel>
+            <translation><!-- Point --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

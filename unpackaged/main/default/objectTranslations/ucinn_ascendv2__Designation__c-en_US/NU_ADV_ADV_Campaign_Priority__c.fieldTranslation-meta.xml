@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- ADV Campaign Priority --></label>
+        <name>NU_ADV_ADV_Campaign_Priority__c</name>
+        <picklistValues>
+            <masterLabel>Diversity Across Campuses and Disciplines</masterLabel>
+            <translation><!-- Diversity Across Campuses and Disciplines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education, Innovation, and Research Impact</masterLabel>
+            <translation><!-- Education, Innovation, and Research Impact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entrepreneurship Ecosystem</masterLabel>
+            <translation><!-- Entrepreneurship Ecosystem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faculty Excellence</masterLabel>
+            <translation><!-- Faculty Excellence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Holding</masterLabel>
+            <translation><!-- Gift Holding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Experience and Exploration</masterLabel>
+            <translation><!-- Global Experience and Exploration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Historical</masterLabel>
+            <translation><!-- Historical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Experience and Opportunity</masterLabel>
+            <translation><!-- Student Experience and Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrestricted</masterLabel>
+            <translation><!-- Unrestricted --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

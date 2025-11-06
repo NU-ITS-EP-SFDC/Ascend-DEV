@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Request Type --></label>
+        <name>NU_ADV_Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Event Invite List</masterLabel>
+            <translation><!-- Event Invite List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Dashboard</masterLabel>
+            <translation><!-- New Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Report</masterLabel>
+            <translation><!-- New Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect Identification</masterLabel>
+            <translation><!-- Prospect Identification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect Research</masterLabel>
+            <translation><!-- Prospect Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Dashboard Change or Update</masterLabel>
+            <translation><!-- Standard Dashboard Change or Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Report Change or Update</masterLabel>
+            <translation><!-- Standard Report Change or Update --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

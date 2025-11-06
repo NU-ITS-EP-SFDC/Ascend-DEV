@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, the Assignment Plan batch job will also run the default Lead or Case Assignment Rule upon record update. This only affects plans using assignment fields. If Reassign Owner is also checked, the Assignment Rule will take precedence. --></help>
+        <label><!-- Run Assignment Rule --></label>
+        <name>geopointe__Run_Assignment_Rule__c</name>
+    </CustomFieldTranslation>

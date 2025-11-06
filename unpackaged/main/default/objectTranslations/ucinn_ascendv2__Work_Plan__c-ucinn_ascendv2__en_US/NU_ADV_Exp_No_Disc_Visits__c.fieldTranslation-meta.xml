@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Expected No of Discovery Personal Visits --></label>
+        <name>NU_ADV_Exp_No_Disc_Visits__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The hexadecimal color for this shape, such as #8ce013. --></help>
+        <label><!-- Color --></label>
+        <name>geopointe__Color__c</name>
+    </CustomFieldTranslation>

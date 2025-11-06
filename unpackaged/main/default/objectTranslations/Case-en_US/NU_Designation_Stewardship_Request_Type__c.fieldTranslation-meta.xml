@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Designation Stewardship Request Type --></label>
+        <name>NU_Designation_Stewardship_Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Adding Stewardee</masterLabel>
+            <translation><!-- Adding Stewardee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changing Communication Method</masterLabel>
+            <translation><!-- Changing Communication Method --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changing Reporting Type or Level</masterLabel>
+            <translation><!-- Changing Reporting Type or Level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removing Stewardee</masterLabel>
+            <translation><!-- Removing Stewardee --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

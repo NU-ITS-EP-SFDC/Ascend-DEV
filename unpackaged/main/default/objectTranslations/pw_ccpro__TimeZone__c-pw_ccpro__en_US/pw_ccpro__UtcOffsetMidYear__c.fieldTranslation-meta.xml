@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The difference (in hours) from UTC as at 1st Jul.
+Note that the UTC Mid Year offset is different from the UTC offset for zones where daylight saving time is observed --></help>
+        <label><!-- UTC Offset Mid Year --></label>
+        <name>pw_ccpro__UtcOffsetMidYear__c</name>
+    </CustomFieldTranslation>

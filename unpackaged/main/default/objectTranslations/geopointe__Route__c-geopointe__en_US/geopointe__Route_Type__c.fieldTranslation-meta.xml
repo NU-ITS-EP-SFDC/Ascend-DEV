@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Route Type --></label>
+        <name>geopointe__Route_Type__c</name>
+        <picklistValues>
+            <masterLabel>bicycle</masterLabel>
+            <translation><!-- bicycle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fastest</masterLabel>
+            <translation><!-- fastest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>multimodal</masterLabel>
+            <translation><!-- multimodal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pedestrian</masterLabel>
+            <translation><!-- pedestrian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>shortest</masterLabel>
+            <translation><!-- shortest --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

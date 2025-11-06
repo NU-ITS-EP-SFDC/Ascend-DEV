@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting Bio DegreeBioDemoSetting</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Populate_Preferred_Class_Year_v1__c&quot;,
+      &quot;toolTip&quot;: &quot;Choose to populate the preferred class year with the first or last affinity class year&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Populate Preferred Class Year&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;First Degree&quot;,
+          &quot;Last Degree&quot;
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Degree_Information_to_Contact_Mapping__c&quot;,
+      &quot;toolTip&quot;: &quot;A field mapping that will map from Degree Information to the Constituent&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Degree Information to Contact Mapping&quot;,
+        &quot;helpText&quot;: &quot;A field mapping that will map from Degree Information to the Constituent&quot;,
+        &quot;keyLabel&quot;: &quot;Degree Field Api&quot;,
+        &quot;valueLabel&quot;: &quot;Constituent Field Api&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Degree_Type_Priority_List__c&quot;,
+      &quot;toolTip&quot;: &quot;Comma Separated Values that define the order of degree types to consider from Degree Code: Degree Level&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;listNotJSON&quot;,
+        &quot;listNotJSONSeperator&quot;: &quot;,&quot;,
+        &quot;helpText&quot;: &quot;Comma Separated Values that define the order of degree types to consider from Degree Code: Degree Level&quot;,
+        &quot;label&quot;: &quot;Degree Type Priority List&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Update_Constituent_Type_on_Deg_Change_v1__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Update Constituent Type on Deg Change&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Degree_Type_Mapping_Source_Object__c&quot;,
+      &quot;toolTip&quot;: &quot;This is the object whose &apos;degree/degree level&apos; value will be used to summarize the donor&apos;s degree information to the contact record.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Degree Type Mapping Source Object&quot;,
+        &quot;helptext&quot;: &quot;This is the object whose &apos;degree/degree level&apos; value will be used to summarize the donor&apos;s degree information to the contact record.&quot;,
+        &quot;customPicklistValues&quot;: [
+          {
+            &quot;label&quot;: &quot;--None--&quot;,
+            &quot;value&quot;: &quot;&quot;
+          },
+          {
+            &quot;label&quot;: &quot;ascend Degree Code Object&quot;,
+            &quot;value&quot;: &quot;ucinn_ascendv2__Degree_Code__c&quot;
+          },
+          {
+            &quot;label&quot;: &quot;ascend Degree Information Object&quot;,
+            &quot;value&quot;: &quot;ucinn_ascendv2__Degree_Information__c&quot;
+          },
+          {
+            &quot;label&quot;: &quot;ascend Post Code Object&quot;,
+            &quot;value&quot;: &quot;ucinn_ascendv2__Post_Code__c&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Degree_Type_Mapped_Value__c&quot;,
+      &quot;toolTip&quot;: &quot;Degree mapping configuration for contact roll-up in JSON format.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Degree Type Mapped Value&quot;,
+        &quot;helpText&quot;: &quot;Degree mapping configuration for contact roll-up in JSON format.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;object&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;mappings&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;list&quot;,
+              &quot;listType&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;recordType&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;mappedValue&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;values&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;value&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Degree_Type_Mapping_Source_Field__c&quot;,
+      &quot;toolTip&quot;: &quot;This is the field in the object whose value will be used to perform the Degree Type mapping.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Degree Type Mapping Source Field&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_DEGREE_TYPE_MAPPING_SOURCE&quot;
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+   &quot;objectApiName&quot;:&quot;ucinn_ascendv2__Bio_Demo_Setting__mdt&quot;,
+   &quot;additionalConditions&quot;:&quot;&quot;,
+   &quot;title&quot;:&quot;Bio Demo Setting&quot;,
+   &quot;helpText&quot;:&quot;Configuration Pertaining to Custom metadata Bio Demo Setting for Degrees&quot;,
+   &quot;allowCreate&quot;:false
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

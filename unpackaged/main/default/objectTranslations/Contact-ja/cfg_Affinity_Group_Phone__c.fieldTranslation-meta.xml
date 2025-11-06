@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Contact Phone to be displayed for Support Staff on Affinity Group pages. --></help>
+        <label><!-- Affinity Group Phone --></label>
+        <name>cfg_Affinity_Group_Phone__c</name>
+    </CustomFieldTranslation>

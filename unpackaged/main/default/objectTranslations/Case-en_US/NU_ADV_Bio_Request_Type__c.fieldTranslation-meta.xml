@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Information to be updated --></help>
+        <label><!-- Bio Request Type --></label>
+        <name>NU_ADV_Bio_Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Address</masterLabel>
+            <translation><!-- Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Constituent Type</masterLabel>
+            <translation><!-- Constituent Type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deceased</masterLabel>
+            <translation><!-- Deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Name Change</masterLabel>
+            <translation><!-- Name Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Dashboard</masterLabel>
+            <translation><!-- New Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Report</masterLabel>
+            <translation><!-- New Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Dashboard Change or Update</masterLabel>
+            <translation><!-- Standard Dashboard Change or Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Report Change or Update</masterLabel>
+            <translation><!-- Standard Report Change or Update --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

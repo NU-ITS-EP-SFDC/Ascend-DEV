@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The time in minutes from first summarized Check In to last Check Out. --></help>
+        <label><!-- Total Time (min) --></label>
+        <name>geopointe__Total_Time_min__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- FPSS Membership Start Date --></label>
+        <name>NU_ADV_FPSS_Membership_Start_Date__c</name>
+    </CustomFieldTranslation>

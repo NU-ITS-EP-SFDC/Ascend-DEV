@@ -1,0 +1,2937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Add_Constituent_NU_ID</name>
+        <label>Add Constituent IDs</label>
+        <locationX>1139</locationX>
+        <locationY>2090</locationY>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Collect_NU_IDs.ucinn_ascendv2__Contact__r.NU_ADV_NU_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>,</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Collect_NU_IDs.ucinn_ascendv2__Contact__r.ucinn_ascendv2__Donor_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>,</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Collect_NU_IDs</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Constituent_NU_ID_Research</name>
+        <label>Add Constituent IDs</label>
+        <locationX>1491</locationX>
+        <locationY>1682</locationY>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Collect_Constituent_NU_IDs.NU_ADV_NU_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>,</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Collect_Constituent_NU_IDs.ucinn_ascendv2__Donor_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>,</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Collect_Constituent_NU_IDs</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Contact_Report_Collection will be a default value in the input screen. recordId could be used as a default value by itself; however, if the user fails to upload a file from the input screen, Contact_Report_Collection will need to save their input to use it as the default value when the user is returned to the input screen.</description>
+        <name>Add_CR_Id_to_Collection</name>
+        <label>Add CR Id to Collection</label>
+        <locationX>1546</locationX>
+        <locationY>242</locationY>
+        <assignmentItems>
+            <assignToReference>Contact_Report_Collection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Main_Screen</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_CR_Name</name>
+        <label>Add CR Name</label>
+        <locationX>1139</locationX>
+        <locationY>1574</locationY>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Collect_CR_Names.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>,</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Collect_CR_Names</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>A research document uploaded through a constituent&apos;s record should be associated with both them and their spouse (if applicable) by default. The user can change this in the input screen.</description>
+        <name>Add_Id_and_Spouse_Id_to_Collection</name>
+        <label>Add Id and Spouse Id to Collection</label>
+        <locationX>314</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>Constituent_Collection_Research</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Constituent_Collection_Research</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>initialSpouseId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Main_Screen</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>recordId could be used as a default value by itself; however, if the user fails to upload a file from the input screen, Org_Collection_Research will need to save their input to use it as the default value when the user is returned to the input screen.</description>
+        <name>Add_Org_Id_to_Collection</name>
+        <label>Add Org Id to Collection</label>
+        <locationX>578</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>Org_Collection_Research</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Main_Screen</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Organization_NU_ID</name>
+        <label>Add Organization IDs</label>
+        <locationX>1403</locationX>
+        <locationY>2090</locationY>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Collect_NU_IDs.ucinn_ascendv2__Account__r.NU_ADV_NU_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>,</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Collect_NU_IDs.ucinn_ascendv2__Account__r.ucinn_ascendv2__Donor_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>,</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Collect_NU_IDs</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Organization_NU_ID_Research</name>
+        <label>Add Organization IDs</label>
+        <locationX>1491</locationX>
+        <locationY>2282</locationY>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Collect_Org_NU_IDs.NU_ADV_NU_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>,</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Collect_Org_NU_IDs.ucinn_ascendv2__Donor_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>,</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Collect_Org_NU_IDs</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>When the user returns to the input screen, File_Error_Message appears because File_Error_Checkbox is checked.
+
+File_Success_Message also appears, but the first line just reads, “You have uploaded: ”. When the user uploads a file, the file name appears. The component is visible because when the user left the screen the first time, the Id output of the File Upload component changed from null to an empty collection.</description>
+        <name>Mark_Missing_File_Error</name>
+        <label>Mark Missing File Error</label>
+        <locationX>435</locationX>
+        <locationY>1250</locationY>
+        <assignmentItems>
+            <assignToReference>File_Error_Checkbox</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Preserve_User_Input</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Preserves the user’s input by assigning the screen element’s output (including blank output from components the user did not see) to the variables used as default values (except for currentOutput, used in the defaultCurrent formula).</description>
+        <name>Preserve_User_Input</name>
+        <label>Preserve User Input</label>
+        <locationX>435</locationX>
+        <locationY>1358</locationY>
+        <assignmentItems>
+            <assignToReference>Contact_Report_Collection</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Contact_Report_IDs.recordIds</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Constituent_Collection_Research</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Constituent_IDs_Research.recordIds</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Org_Collection_Research</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Organization_IDs_Research.recordIds</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>defaultConstituentType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Constituent_Type_Picklist</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>defaultPublication</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Publication</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>defaultOpportunityType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Opportunity_Type_Picklist</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>defaultProposalType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Proposal_Type_Picklist</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>defaultDesignationType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Designation_Type_Picklist</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>defaultContactReportType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Contact_Report_Type_Picklist</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>defaultSender</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Ack_Letter_Sender</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>defaultPosition</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Position</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>defaultResearchType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Research_Type_Picklist</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>defaultTags</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Additional_Tags</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>currentOutput</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Current_Version</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>defaultCaption</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Caption</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Main_Screen</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Tagging Salesforce IDs in SharePoint is not ideal, since they&apos;d change in a migration to a new org; however, proposals don&apos;t have any other unique identifier.</description>
+        <name>Proposal_Associated_Records</name>
+        <label>Proposal Associated Records</label>
+        <locationX>1931</locationX>
+        <locationY>1466</locationY>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>,</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Get_Household.ucinn_ascendv2__Donor_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Uploaded_File</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>This isn&apos;t technically necessary, but it was going to bother me.</description>
+        <name>Remove_Final_Comma</name>
+        <label>Remove Final Comma</label>
+        <locationX>1051</locationX>
+        <locationY>2366</locationY>
+        <assignmentItems>
+            <assignToReference>associatedRecords</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Trimmed_Associated_Records</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Uploaded_File</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>Acknowledgement_Letter</name>
+        <choiceText>Acknowledgement Letter</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Acknowledgement Letter</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Annual_Giving_Statement</name>
+        <choiceText>Annual Giving Statement</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Annual Giving Statement</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Application</name>
+        <choiceText>Application</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Application</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Beneficiary_Designation</name>
+        <choiceText>Beneficiary Designation</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Beneficiary Designation</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>BOT_Giving_Summary</name>
+        <choiceText>Board of Trustees Giving Summary</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Board of Trustees Giving Summary</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Charitable_Gift_Annuity</name>
+        <choiceText>Charitable Gift Annuity</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Charitable Gift Annuity</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Charitable_Trust</name>
+        <choiceText>Charitable Trust</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Charitable Trust</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Closing_Memo</name>
+        <choiceText>Closing Memo</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Closing Memo</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Complex_Asset</name>
+        <choiceText>Complex Asset</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Complex Asset</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Condolence_Letter</name>
+        <choiceText>Condolence Letter</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Condolence Letter</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Congratulation_Letter</name>
+        <choiceText>Congratulation Letter</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Congratulation Letter</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Dean</name>
+        <choiceText>Dean</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Dean</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Detail_Codes</name>
+        <choiceText>Detail Codes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Detail Codes</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Estate_Gift_Intention</name>
+        <choiceText>Estate Gift Intention</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Estate Gift Intention</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Financial_Report</name>
+        <choiceText>Financial Report</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Financial Report</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Fund_Terms</name>
+        <choiceText>Fund Terms</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Fund Terms</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Gift_Adjustment_Documentation</name>
+        <choiceText>Gift Adjustment Documentation</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Gift Adjustment Documentation</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Gift_Documentation</name>
+        <choiceText>Gift Documentation</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Gift Documentation</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Gift_Planning_Correspondence</name>
+        <choiceText>Gift Planning Correspondence</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Gift Planning Correspondence</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Image</name>
+        <choiceText>Image</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Image</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Informational_Material</name>
+        <choiceText>Informational Material</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Informational Material</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Invitation</name>
+        <choiceText>Invitation</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Invitation</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Life_Insurance_Policy</name>
+        <choiceText>Life Insurance Policy</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Life Insurance Policy</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>MOU</name>
+        <choiceText>MOU</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>MOU</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Name_Change</name>
+        <choiceText>Name Change</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Name Change</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Narrative_Report</name>
+        <choiceText>Narrative Report</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Narrative Report</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>News_Article</name>
+        <choiceText>News Article</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>News Article</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Notes</name>
+        <choiceText>Notes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Notes</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NU_Donor_Advised_Fund</name>
+        <choiceText>NU Donor Advised Fund</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>NU Donor Advised Fund</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Obituary</name>
+        <choiceText>Obituary</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Obituary</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>OGP_Survey</name>
+        <choiceText>OGP Survey</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>OGP Survey</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Other</name>
+        <choiceText>Other</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Other</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Personal_Property</name>
+        <choiceText>Personal Property</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Personal Property</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>President</name>
+        <choiceText>President</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>President</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Real_Estate</name>
+        <choiceText>Real Estate</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Real Estate</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Research_Evaluation</name>
+        <choiceText>Research Evaluation</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Research Evaluation</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Research_Memo</name>
+        <choiceText>Research Memo</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Research Memo</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Research_Misc</name>
+        <choiceText>Research Misc</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Research Misc</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Research_News</name>
+        <choiceText>Research News</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Research News</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Research_Profile</name>
+        <choiceText>Research Profile</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Research Profile</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Research_Project</name>
+        <choiceText>Research Project</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Research Project</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Research_Rating</name>
+        <choiceText>Research Rating</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Research Rating</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ResearchPoint_Report</name>
+        <choiceText>ResearchPoint Report</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>ResearchPoint Report</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Response_to_Fund_Report</name>
+        <choiceText>Response to Fund Report</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Response to Fund Report</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Senior_Year_Experience_Board</name>
+        <choiceText>Senior Year Experience Board</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Senior Year Experience Board</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Setup_Paperwork</name>
+        <choiceText>Setup Paperwork</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Setup Paperwork</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Spending_Plan</name>
+        <choiceText>Spending Plan</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Spending Plan</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Student_Philanthropy_Council</name>
+        <choiceText>Student Philanthropy Council</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Student Philanthropy Council</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>SVP</name>
+        <choiceText>SVP</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>SVP</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Tax_Receipt</name>
+        <choiceText>Tax Receipt</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Tax Receipt</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Tribute_Notification</name>
+        <choiceText>Tribute Notification</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Tribute Notification</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Wills_and_Trusts</name>
+        <choiceText>Wills and Trusts</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Wills and Trusts</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Young_Alumni_Advisory_Board</name>
+        <choiceText>Young Alumni Advisory Board</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Young Alumni Advisory Board</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <description>A contact report relation connects a contact report with either a constituent or an organization, so this decision element is necessary to determine which NU ID and ascend ID fields to add to the associatedRecords variable.</description>
+        <name>Constituent_or_Organization</name>
+        <label>Constituent or Organization?</label>
+        <locationX>1271</locationX>
+        <locationY>1982</locationY>
+        <defaultConnector>
+            <targetReference>Add_Organization_NU_ID</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Organization</defaultConnectorLabel>
+        <rules>
+            <name>Constituent_CR_Relation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Collect_NU_IDs.ucinn_ascendv2__Contact__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Add_Constituent_NU_ID</targetReference>
+            </connector>
+            <label>Constituent</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>User selected constituents and/or organizations in the input screen. Attempting to get records from an empty collection and loop through them results in an error, so it is necessary to determine whether the user selected constituents.</description>
+        <name>Constituents_Selected</name>
+        <label>Constituents Selected?</label>
+        <locationX>1535</locationX>
+        <locationY>1358</locationY>
+        <defaultConnector>
+            <targetReference>Organizations_Selected</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>User_Selected_Constituents</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Research_Constituents_Selected</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Associated_Constituents</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Expendable</name>
+        <label>Expendable?</label>
+        <locationX>1238</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>Main_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Expendable_Fund</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>initialFundClass</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Expendable</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Permission_Denied_Expendable</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>The File Upload component cannot be made required; this is the workaround.</description>
+        <name>File_Uploaded</name>
+        <label>File Uploaded?</label>
+        <locationX>1029</locationX>
+        <locationY>1142</locationY>
+        <defaultConnector>
+            <targetReference>Object_Launching_Flow</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes</defaultConnectorLabel>
+        <rules>
+            <name>File_Not_Uploaded</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Number_for_File_Count</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>2.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Mark_Missing_File_Error</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Fund_Management_User</name>
+        <label>Fund Management User?</label>
+        <locationX>1040</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>Expendable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes</defaultConnectorLabel>
+        <rules>
+            <name>Not_Fund_Management_User</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Fund_Management_Permission_Set</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Permission_Denied_Fund_Management</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Contact report documents, research documents, and gift planning documents require extra steps to populate the associatedRecords variable.</description>
+        <name>Object_Launching_Flow</name>
+        <label>Secondary Steps</label>
+        <locationX>1623</locationX>
+        <locationY>1250</locationY>
+        <defaultConnector>
+            <targetReference>Uploaded_File</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Contact_Report_Launch</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordObject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Contact Report</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Associated_Contact_Reports</targetReference>
+            </connector>
+            <label>Contact Report</label>
+        </rules>
+        <rules>
+            <name>Research_Launch</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>isResearchUpload</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>True</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Constituents_Selected</targetReference>
+            </connector>
+            <label>Research</label>
+        </rules>
+        <rules>
+            <name>Proposal_Launch</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>isProposalUpload</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>True</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Household</targetReference>
+            </connector>
+            <label>Proposal</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>User selected constituents and/or organizations in the input screen. Attempting to get records from an empty collection and loop through them results in an error, so it is necessary to determine whether the user selected organizations.</description>
+        <name>Organizations_Selected</name>
+        <label>Organizations Selected?</label>
+        <locationX>1535</locationX>
+        <locationY>1958</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Remove_Final_Comma</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>User_Selected_Organizations</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Research_Orgs_Selected</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Associated_Organizations</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Preliminary_Steps</name>
+        <label>Preliminary Steps</label>
+        <locationX>1029</locationX>
+        <locationY>134</locationY>
+        <defaultConnector>
+            <targetReference>Main_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Launch_From_Research</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>isResearchUpload</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>True</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Research_Permission_Set</targetReference>
+            </connector>
+            <label>Research</label>
+        </rules>
+        <rules>
+            <name>Designation_Preliminary</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordObject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Designation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Fund_Management_Permission_Set</targetReference>
+            </connector>
+            <label>Designation</label>
+        </rules>
+        <rules>
+            <name>Contact_Report_Preliminary</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordObject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Contact Report</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_CR_Id_to_Collection</targetReference>
+            </connector>
+            <label>Contact Report</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Research documents can be associated with constituents and/or organizations. The initial constituent/org&apos;s NU ID must be added to a collection before being used as a default input in the main screen.</description>
+        <name>Research_Constituent_or_Organization</name>
+        <label>Constituent or Organization?</label>
+        <locationX>446</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>Add_Org_Id_to_Collection</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Organization</defaultConnectorLabel>
+        <rules>
+            <name>Constituent_Launch_Research</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordObject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Constituent</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Id_and_Spouse_Id_to_Collection</targetReference>
+            </connector>
+            <label>Constituent</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Research_User</name>
+        <label>Research User?</label>
+        <locationX>248</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>Research_Constituent_or_Organization</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes</defaultConnectorLabel>
+        <rules>
+            <name>Not_Research_User</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Research_Permission_Set</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Permission_Denied_Research</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <description>Users must go through this screen flow to upload files in Salesforce. Files do not stay in Salesforce but are moved by the integration tool Informatica to the Advancement Resources SharePoint site. Informatica will use the metadata assigned in this flow to move files to the correct SharePoint folder; it will map the metadata to SharePoint columns so that users can search for files by clicking custom links in Salesforce. See Confirmation_Screen element for the list of custom links.
+
+The flow is launched from one of seven custom buttons:
+
+Constituent: NU_ADV_Upload_from_Constituent
+Opportunity: NU_ADV_Upload_from_Opportunity
+Opportunity: NU_ADV_Upload_from_Proposal
+Designation: NU_ADV_Upload_from_Designation
+Contact Report: NU_ADV_Upload_from_Contact_Report
+Constituent: NU_ADV_Upload_Constituent_Research
+Organization: NU_ADV_Upload_Research_from_Org
+
+Each button passes certain parameters to the flow. In particular, recordObject (the object from which the user is uploading the document) in conjunction with isResearchUpload and isProposalUpload determines the flow&apos;s basic path.
+
+The flow must run in a system context because most users don&apos;t have sufficient access to the Content Version object.
+
+V8 adds three picklist values (Informational Material; Invitation; Tax Receipt) for Contact Reports.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Research documents can be associated with constituents and/or organizations. If the user launches the flow from a constituent, this formula makes the Constituents screen component required, to ensure the user selects at least one associated record. The inverse of this formula is Organization_Required.</description>
+        <name>Constituent_Required</name>
+        <dataType>Boolean</dataType>
+        <expression>IF({!recordObject} = &quot;Constituent&quot;, True, False)</expression>
+    </formulas>
+    <formulas>
+        <description>The Current_Version checkbox on the Salesforce file should only be checked if the user selected the Fund Terms or MOU document type and left the Current checkbox checked.</description>
+        <name>Current_Checkbox</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(({!Designation_Type_Picklist} = &quot;Fund Terms&quot; || {!Designation_Type_Picklist} = &quot;MOU&quot;) &amp;&amp; {!Current_Version} = True, True, False)</expression>
+    </formulas>
+    <formulas>
+        <description>Default date should be, in priority order:
+1. The date the user entered on the input screen (no-file-uploaded error path only)
+2. The date the custom button set for initialContactReportDate (Contact Report uploads only) or initialCloseDate (booked Opportunity uploads only)
+3. Today&apos;s date</description>
+        <name>Default_Date</name>
+        <dataType>Date</dataType>
+        <expression>IF(NOT(ISBLANK({!Date})), {!Date},
+   IF(NOT(ISBLANK({!initialContactReportDate})), {!initialContactReportDate}, 
+       IF(NOT(ISBLANK({!initialCloseDate})), {!initialCloseDate},
+           TODAY())))</expression>
+    </formulas>
+    <formulas>
+        <description>The Fund Management department often uploads multiple versions of fund terms or MOUs to a designation. Only one fund terms/MOU is active, but the others are saved for historical reasons. Informatica uses the Current_Version__c checkbox to determine which document is active and append &quot;OLD DO NOT USE&quot; to the beginning of names of old files in SharePoint.
+
+If Fund Management is uploading a document, it&apos;s probably the newest version. The Current_Version checkbox screen component should usually be checked by default.
+
+If the user selects Fund Terms or MOU as the document type, deliberately unchecks the Current checkbox because they&apos;re uploading a historical version, and then forgets to upload a file, their input should be preserved when they&apos;re returned to the input screen. This formula ensures that the Current checkbox is unchecked by default only in that specific circumstance.</description>
+        <name>defaultCurrent</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(({!defaultDesignationType} = &quot;Fund Terms&quot; || {!defaultDesignationType} = &quot;MOU&quot;) &amp;&amp; {!currentOutput} = False, False, True)</expression>
+    </formulas>
+    <formulas>
+        <name>Document_Type</name>
+        <dataType>String</dataType>
+        <expression>CASE({!recordObject},
+&quot;Organization&quot;, {!Research_Type_Picklist},
+&quot;Constituent&quot;, IF({!isResearchUpload} = &quot;True&quot;, {!Research_Type_Picklist}, {!Constituent_Type_Picklist}),
+&quot;Opportunity&quot;, IF({!isProposalUpload} = &quot;True&quot;, {!Proposal_Type_Picklist}, {!Opportunity_Type_Picklist}),
+&quot;Designation&quot;, {!Designation_Type_Picklist},
+&quot;Contact Report&quot;, CASE({!Contact_Report_Type_Picklist},
+                             &quot;Acknowledgement Letter&quot;, CASE({!Ack_Letter_Sender},
+                                                                         &quot;President&quot;, &quot;Presidential Ack Letter&quot;,
+                                                                         &quot;SVP&quot;, &quot;SVP Ack Letter&quot;,
+                                                                         &quot;Dean&quot;, &quot;Dean Ack Letter&quot;,
+                                                                         &quot;Ack Letter&quot;),
+                             &quot;Application&quot;, CASE({!Position},
+                                                   &quot;Senior Year Experience Board&quot;, &quot;SYEB Application&quot;,
+                                                    &quot;Student Philanthropy Council&quot;, &quot;SPC Application&quot;,
+                                                    &quot;Young Alumni Advisory Board&quot;, &quot;YAAB Application&quot;,
+                                                    null),
+                             &quot;Image&quot;, &quot;Contact Report Image&quot;,
+                             {!Contact_Report_Type_Picklist}),
+null)</expression>
+    </formulas>
+    <formulas>
+        <description>This CASE statement deliberately lists each document type separately. It serves as a comprehensive list of document types and their SharePoint folders, and it should be easy to update when document types are added, removed, or changed.</description>
+        <name>Folder</name>
+        <dataType>String</dataType>
+        <expression>CASE({!Document_Type},
+&quot;Ack Letter&quot;, &quot;Acknowledgement Letters&quot;,
+&quot;Annual Giving Statement&quot;, &quot;Giving Statements&quot;,
+&quot;Beneficiary Designation&quot;, &quot;Gift Planning&quot;,
+&quot;Board of Trustees Giving Summary&quot;, &quot;Giving Statements&quot;,
+&quot;Charitable Gift Annuity&quot;, &quot;Gift Planning&quot;,
+&quot;Charitable Trust&quot;, &quot;Gift Planning&quot;,
+&quot;Closing Memo&quot;, &quot;Fund Management&quot;,
+&quot;Complex Asset&quot;, &quot;Gift Planning&quot;,
+&quot;Condolence Letter&quot;, &quot;Other Letters&quot;,
+&quot;Congratulation Letter&quot;, &quot;Other Letters&quot;,
+&quot;Contact Report Image&quot;, &quot;Images&quot;,
+&quot;Dean Ack Letter&quot;, &quot;Acknowledgement Letters&quot;,
+&quot;Detail Codes&quot;, &quot;Fund Management&quot;,
+&quot;Estate Gift Intention&quot;, &quot;Gift Planning&quot;,
+&quot;Financial Report&quot;, &quot;Fund Reports&quot;,
+&quot;Fund Terms&quot;, &quot;Fund Management&quot;,
+&quot;Gift Adjustment Documentation&quot;, &quot;Gift Documentation&quot;,
+&quot;Gift Documentation&quot;, &quot;Gift Documentation&quot;,
+&quot;Gift Planning Correspondence&quot;, &quot;Gift Planning&quot;,
+&quot;Informational Material&quot;, &quot;Other Letters&quot;,
+&quot;Invitation&quot;, &quot;Other Letters&quot;,
+&quot;Life Insurance Policy&quot;, &quot;Gift Planning&quot;,
+&quot;MOU&quot;, &quot;Fund Management&quot;,
+&quot;Name Change&quot;, &quot;BioDem Updates&quot;,
+&quot;Narrative Report&quot;, &quot;Fund Reports&quot;,
+&quot;News Article&quot;, &quot;News Articles&quot;,
+&quot;Notes&quot;, &quot;Fund Management&quot;,
+&quot;NU Donor Advised Fund&quot;, &quot;Gift Planning&quot;,
+&quot;Obituary&quot;, &quot;BioDem Updates&quot;,
+&quot;OGP Survey&quot;, &quot;Gift Planning&quot;,
+&quot;Personal Property&quot;, &quot;Gift Planning&quot;,
+&quot;Presidential Ack Letter&quot;, &quot;Acknowledgement Letters&quot;,
+&quot;Real Estate&quot;, &quot;Gift Planning&quot;,
+&quot;Research Evaluation&quot;, &quot;Research&quot;,
+&quot;Research Memo&quot;, &quot;Research&quot;,
+&quot;Research Misc&quot;, &quot;Research&quot;,
+&quot;Research News&quot;, &quot;Research&quot;,
+&quot;Research Profile&quot;, &quot;Research&quot;,
+&quot;Research Project&quot;, &quot;Research&quot;,
+&quot;Research Rating&quot;, &quot;Research&quot;,
+&quot;ResearchPoint Report&quot;, &quot;Research&quot;,
+&quot;Response to Fund Report&quot;, &quot;Fund Reports&quot;,
+&quot;Setup Paperwork&quot;, &quot;Fund Management&quot;,
+&quot;SPC Application&quot;, &quot;Applications&quot;,
+&quot;Spending Plan&quot;, &quot;Fund Management&quot;,
+&quot;SVP Ack Letter&quot;, &quot;Acknowledgement Letters&quot;,
+&quot;SYEB Application&quot;, &quot;Applications&quot;,
+&quot;Tax Receipt&quot;, &quot;Gift Documentation&quot;,
+&quot;Tribute Notification&quot;, &quot;Other Letters&quot;,
+&quot;Wills and Trusts&quot;, &quot;Gift Planning&quot;,
+&quot;YAAB Application&quot;, &quot;Applications&quot;,
+null)</expression>
+    </formulas>
+    <formulas>
+        <description>The File Upload component has an output called File_Upload.contentDocIds that lists the IDs of all the files it uploaded. If it received no files, File_Upload.contentDocIds = [] (an empty collection). If it did receive a file, the output is of course a longer string. This formula calculates the length of File_Upload.contentDocIds; a length of 2 represents the two bracket characters that are the output if no files were received. Therefore, the user uploaded a file if Number_for_File_Count &gt; 2.</description>
+        <name>Number_for_File_Count</name>
+        <dataType>Number</dataType>
+        <expression>LEN({!File_Upload.contentDocIds})</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <description>Research documents can be associated with constituents and/or organizations. If the user launches the flow from an organization, this formula makes the Organizations screen component required, to ensure the user selects at least one associated record. The inverse of this formula is Constituent_Required.</description>
+        <name>Organization_Required</name>
+        <dataType>Boolean</dataType>
+        <expression>IF({!recordObject} = &quot;Organization&quot;, True, False)</expression>
+    </formulas>
+    <formulas>
+        <name>Research_Constituents_Selected</name>
+        <dataType>Boolean</dataType>
+        <expression>NOT(ISBLANK({!Constituent_IDs_Research.recordIds}))</expression>
+    </formulas>
+    <formulas>
+        <name>Research_Orgs_Selected</name>
+        <dataType>Boolean</dataType>
+        <expression>NOT(ISBLANK({!Organization_IDs_Research.recordIds}))</expression>
+    </formulas>
+    <formulas>
+        <description>&quot;Caption&quot; and &quot;Additional Tags&quot; are equivalent fields. Caption replaces Tags on the main screen only when &quot;Image&quot; is selected, so that the user is required to provide information on the content of the image. Collapsing Caption and Additional Tags into the same Tags fields on the Content Version object and in SharePoint limits the customization needed.</description>
+        <name>Tags_or_Caption</name>
+        <dataType>String</dataType>
+        <expression>IF(NOT(ISBLANK({!Caption})), {!Caption}, {!Additional_Tags})</expression>
+    </formulas>
+    <formulas>
+        <description>Removes final character of the text string; used in the Remove_Final_Comma element.</description>
+        <name>Trimmed_Associated_Records</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!associatedRecords}, LEN({!associatedRecords}) - 1)</expression>
+    </formulas>
+    <interviewLabel>Upload Documents {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Upload Documents</label>
+    <loops>
+        <name>Collect_Constituent_NU_IDs</name>
+        <label>Collect Constituent IDs</label>
+        <locationX>1403</locationX>
+        <locationY>1574</locationY>
+        <collectionReference>Associated_Constituents</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Add_Constituent_NU_ID_Research</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Organizations_Selected</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Collect_CR_Names</name>
+        <label>Collect CR Names</label>
+        <locationX>1051</locationX>
+        <locationY>1466</locationY>
+        <collectionReference>Associated_Contact_Reports</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Add_CR_Name</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Associated_CR_Relations</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Collect_NU_IDs</name>
+        <label>Collect IDs</label>
+        <locationX>1051</locationX>
+        <locationY>1874</locationY>
+        <collectionReference>Associated_CR_Relations</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Constituent_or_Organization</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Remove_Final_Comma</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Collect_Org_NU_IDs</name>
+        <label>Collect Org IDs</label>
+        <locationX>1403</locationX>
+        <locationY>2174</locationY>
+        <collectionReference>Associated_Organizations</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Add_Organization_NU_ID_Research</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Remove_Final_Comma</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <description>The user running the flow is the owner of the uploaded document; in order for Informatica to access it, it must be moved to a public library. This element creates a platform event to trigger the Create Library Document flow, which will clone the Content Document as a Library Document in the library Files for SharePoint, which has been shared with the Admins public group.</description>
+        <name>Share_with_Informatica</name>
+        <label>Share with Informatica</label>
+        <locationX>1623</locationX>
+        <locationY>2924</locationY>
+        <connector>
+            <targetReference>Confirmation_Screen</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Document_ID__c</field>
+            <value>
+                <elementReference>Uploaded_File.ContentDocumentId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Library_ID__c</field>
+            <value>
+                <stringValue>0588c000000CB31AAG</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Document_Uploaded__e</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>all constituents selected in the input screen</description>
+        <name>Associated_Constituents</name>
+        <label>Associated Constituents</label>
+        <locationX>1403</locationX>
+        <locationY>1466</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Collect_Constituent_NU_IDs</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>Constituent_IDs_Research.recordIds</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Contact</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>NU_ADV_NU_ID__c</queriedFields>
+        <queriedFields>ucinn_ascendv2__Donor_ID__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>all contact reports selected in the input screen</description>
+        <name>Associated_Contact_Reports</name>
+        <label>Associated Contact Reports</label>
+        <locationX>1051</locationX>
+        <locationY>1358</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Collect_CR_Names</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>Contact_Report_IDs.recordIds</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>ucinn_ascendv2__Contact_Report__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>all contact report relations associated with the contact reports selected in the input screen</description>
+        <name>Associated_CR_Relations</name>
+        <label>Associated CR Relations</label>
+        <locationX>1051</locationX>
+        <locationY>1766</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Collect_NU_IDs</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ucinn_ascendv2__Contact_Report__c</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>Contact_Report_IDs.recordIds</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>ucinn_ascendv2__Contact_Report_Relation__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>ucinn_ascendv2__Contact__c</queriedFields>
+        <queriedFields>ucinn_ascendv2__Account__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>all organizations selected in the input screen</description>
+        <name>Associated_Organizations</name>
+        <label>Associated Organizations</label>
+        <locationX>1403</locationX>
+        <locationY>2066</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Collect_Org_NU_IDs</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>Organization_IDs_Research.recordIds</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Account</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>NU_ADV_NU_ID__c</queriedFields>
+        <queriedFields>ucinn_ascendv2__Donor_ID__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>The permission sets indicated are Fund Management, Donor Relations &amp; Stewardship, and Gift Processing Supervisor.</description>
+        <name>Fund_Management_Permission_Set</name>
+        <label>Fund Management Permission Set</label>
+        <locationX>1040</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Fund_Management_User</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4)</filterLogic>
+        <filters>
+            <field>AssigneeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>PermissionSetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0PS8c000005EFCp</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>PermissionSetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0PS8c000005EFCl</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>PermissionSetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0PS8c000005EFCr</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PermissionSetAssignment</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>The button can pass in the Id in the initial proposal&apos;s Organization field, but no fields from that organization. The flow has to get the organization (household) to retrieve its ascend Id.</description>
+        <name>Get_Household</name>
+        <label>Get Household</label>
+        <locationX>1931</locationX>
+        <locationY>1358</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Proposal_Associated_Records</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>initialHouseholdId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>ucinn_ascendv2__Donor_ID__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>The permission sets indicated are Prospect Identification, Prospect Management, Prospect Management Approval, and Prospect Research.</description>
+        <name>Research_Permission_Set</name>
+        <label>Research Permission Set</label>
+        <locationX>248</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Research_User</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5)</filterLogic>
+        <filters>
+            <field>AssigneeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>PermissionSetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0PS8c000005EFCw</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>PermissionSetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0PS8c000005EFCx</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>PermissionSetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0PS8c000005EFCy</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>PermissionSetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0PS8c000005EFCz</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PermissionSetAssignment</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Since the File Upload component uploads files instantaneously, the file must be retrieved.</description>
+        <name>Uploaded_File</name>
+        <label>Uploaded File</label>
+        <locationX>1623</locationX>
+        <locationY>2708</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Metadata</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>File_Upload.contentVersionIds</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ContentVersion</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Informatica uses the SharePoint Folder field to place the file in the correct folder. It maps the remaining fields to SharePoint columns:
+
+Associated Records &gt; SFDC Records
+Current Fund Terms &gt; Current [specific to Fund Terms]
+Date &gt; Date
+Document Type &gt; Document Type
+Publication &gt; Publication [specific to News Articles]
+TagCsv &gt; Tags</description>
+        <name>Populate_Metadata</name>
+        <label>Populate Metadata</label>
+        <locationX>1623</locationX>
+        <locationY>2816</locationY>
+        <connector>
+            <targetReference>Share_with_Informatica</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Uploaded_File.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Associated_Records__c</field>
+            <value>
+                <elementReference>associatedRecords</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Current_Version__c</field>
+            <value>
+                <elementReference>Current_Checkbox</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Date__c</field>
+            <value>
+                <elementReference>Date</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Document_Type__c</field>
+            <value>
+                <elementReference>Document_Type</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Publication__c</field>
+            <value>
+                <elementReference>Publication</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SharePoint_Folder__c</field>
+            <value>
+                <elementReference>Folder</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TagCsv</field>
+            <value>
+                <elementReference>Tags_or_Caption</elementReference>
+            </value>
+        </inputAssignments>
+        <object>ContentVersion</object>
+    </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <description>Users can access files in SharePoint through custom links:
+
+Constituent:
+NU_ADV_Acknowledgement_Letter
+NU_ADV_Applications
+NU_ADV_BioDem_Updates
+NU_ADV_Fund_Reports
+NU_ADV_Gift_Planning_Correspondence
+NU_Giving_Statements
+NU_ADV_News_Articles
+NU_ADV_Other_Letters
+NU_ADV_Research
+
+Organization:
+NU_ADV_Ack_Letters_Org
+NU_ADV_Applications_Org
+NU_ADV_BioDem_Updates_Org
+NU_ADV_Fund_Reports_Org
+NU_ADV_Giving_Statements
+NU_ADV_News_Articles_Org
+NU_ADV_OGP_Docs_Org
+NU_ADV_Other_Letters_Org
+NU_ADV_Research_Org
+
+Opportunity:
+NU_ADV_Gift_Documentation
+NU_ADV_Gift_planning_documentation
+
+Designation:
+NU_ADV_Fund_Documentation
+
+Contact Report:
+NU_ADV_Attachments</description>
+        <name>Confirmation_Screen</name>
+        <label>Confirmation Screen</label>
+        <locationX>1623</locationX>
+        <locationY>3032</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Confirmation_Message</name>
+            <fieldText>&lt;p&gt;Your file has been uploaded.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <description>Input screen; relies heavily on component visibility. The user only sees 5 or 6 components at first.
+
+The File Upload component uploads files instantaneously. File_Success_Message will appear as soon as the user uploads a file. The user cannot be prevented from uploading multiple files, but the success message warns them against it. If multiple files are uploaded, only the most recent will proceed through the flow and be tagged appropriately.</description>
+        <name>Main_Screen</name>
+        <label>Main Screen</label>
+        <locationX>1029</locationX>
+        <locationY>1034</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>File_Uploaded</targetReference>
+        </connector>
+        <fields>
+            <name>displayConstituentName</name>
+            <fieldText>&lt;p&gt;Constituent: {!initialConstituentName}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>recordObject</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Constituent</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>isResearchUpload</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>False</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>displayOpportunityName</name>
+            <fieldText>&lt;p&gt;Opportunity: {!associatedRecords}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>recordObject</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Opportunity</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>isProposalUpload</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>False</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>displayProposalName</name>
+            <fieldText>&lt;p&gt;Opportunity: {!initialOpportunityName}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>isProposalUpload</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>True</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>displayDesignationName</name>
+            <fieldText>&lt;p&gt;Designation: {!initialDesignationName}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>recordObject</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Designation</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Contact_Report_IDs</name>
+            <extensionName>flowruntime:lookup</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldApiName</name>
+                <value>
+                    <stringValue>ucinn_ascendv2__Contact_Report__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Contact Reports</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>objectApiName</name>
+                <value>
+                    <stringValue>ucinn_ascendv2__Contact_Report_Relation__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>maxValues</name>
+                <value>
+                    <numberValue>10.0</numberValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordIds</name>
+                <value>
+                    <elementReference>Contact_Report_Collection</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>recordObject</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Contact Report</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Constituent_IDs_Research</name>
+            <extensionName>flowruntime:lookup</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldApiName</name>
+                <value>
+                    <stringValue>ContactId</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Constituents</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>objectApiName</name>
+                <value>
+                    <stringValue>Asset</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>maxValues</name>
+                <value>
+                    <numberValue>5.0</numberValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordIds</name>
+                <value>
+                    <elementReference>Constituent_Collection_Research</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <elementReference>Constituent_Required</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>isResearchUpload</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>True</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Organization_IDs_Research</name>
+            <extensionName>flowruntime:lookup</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldApiName</name>
+                <value>
+                    <stringValue>AccountId</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Organizations</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>objectApiName</name>
+                <value>
+                    <stringValue>Asset</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>maxValues</name>
+                <value>
+                    <numberValue>5.0</numberValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordIds</name>
+                <value>
+                    <elementReference>Org_Collection_Research</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <elementReference>Organization_Required</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>isResearchUpload</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>True</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Constituent_Type_Picklist</name>
+            <choiceReferences>Name_Change</choiceReferences>
+            <choiceReferences>News_Article</choiceReferences>
+            <choiceReferences>Obituary</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>defaultConstituentType</elementReference>
+            </defaultValue>
+            <fieldText>Document Type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>recordObject</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Constituent</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>isResearchUpload</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>False</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Publication</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>defaultPublication</elementReference>
+            </defaultValue>
+            <fieldText>Publication</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Constituent_Type_Picklist</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>News_Article</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Opportunity_Type_Picklist</name>
+            <choiceReferences>Gift_Documentation</choiceReferences>
+            <choiceReferences>Tax_Receipt</choiceReferences>
+            <choiceReferences>Gift_Adjustment_Documentation</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>defaultOpportunityType</elementReference>
+            </defaultValue>
+            <fieldText>Document Type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>recordObject</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Opportunity</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>isProposalUpload</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>False</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Proposal_Type_Picklist</name>
+            <choiceReferences>Beneficiary_Designation</choiceReferences>
+            <choiceReferences>Charitable_Gift_Annuity</choiceReferences>
+            <choiceReferences>Charitable_Trust</choiceReferences>
+            <choiceReferences>Complex_Asset</choiceReferences>
+            <choiceReferences>Estate_Gift_Intention</choiceReferences>
+            <choiceReferences>Life_Insurance_Policy</choiceReferences>
+            <choiceReferences>NU_Donor_Advised_Fund</choiceReferences>
+            <choiceReferences>OGP_Survey</choiceReferences>
+            <choiceReferences>Personal_Property</choiceReferences>
+            <choiceReferences>Real_Estate</choiceReferences>
+            <choiceReferences>Wills_and_Trusts</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>defaultProposalType</elementReference>
+            </defaultValue>
+            <fieldText>Document Type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>isProposalUpload</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>True</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Designation_Type_Picklist</name>
+            <choiceReferences>Closing_Memo</choiceReferences>
+            <choiceReferences>Detail_Codes</choiceReferences>
+            <choiceReferences>Fund_Terms</choiceReferences>
+            <choiceReferences>MOU</choiceReferences>
+            <choiceReferences>Notes</choiceReferences>
+            <choiceReferences>Setup_Paperwork</choiceReferences>
+            <choiceReferences>Spending_Plan</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>defaultDesignationType</elementReference>
+            </defaultValue>
+            <fieldText>Document Type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>recordObject</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Designation</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Current_Version</name>
+            <dataType>Boolean</dataType>
+            <defaultValue>
+                <elementReference>defaultCurrent</elementReference>
+            </defaultValue>
+            <fieldText>Current</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>or</conditionLogic>
+                <conditions>
+                    <leftValueReference>Designation_Type_Picklist</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>Fund_Terms</elementReference>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Designation_Type_Picklist</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>MOU</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Contact_Report_Type_Picklist</name>
+            <choiceReferences>Acknowledgement_Letter</choiceReferences>
+            <choiceReferences>Annual_Giving_Statement</choiceReferences>
+            <choiceReferences>Application</choiceReferences>
+            <choiceReferences>BOT_Giving_Summary</choiceReferences>
+            <choiceReferences>Condolence_Letter</choiceReferences>
+            <choiceReferences>Congratulation_Letter</choiceReferences>
+            <choiceReferences>Financial_Report</choiceReferences>
+            <choiceReferences>Gift_Planning_Correspondence</choiceReferences>
+            <choiceReferences>Image</choiceReferences>
+            <choiceReferences>Informational_Material</choiceReferences>
+            <choiceReferences>Invitation</choiceReferences>
+            <choiceReferences>Narrative_Report</choiceReferences>
+            <choiceReferences>Response_to_Fund_Report</choiceReferences>
+            <choiceReferences>Tax_Receipt</choiceReferences>
+            <choiceReferences>Tribute_Notification</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>defaultContactReportType</elementReference>
+            </defaultValue>
+            <fieldText>Document Type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>recordObject</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Contact Report</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Ack_Letter_Sender</name>
+            <choiceReferences>President</choiceReferences>
+            <choiceReferences>SVP</choiceReferences>
+            <choiceReferences>Dean</choiceReferences>
+            <choiceReferences>Other</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>defaultSender</elementReference>
+            </defaultValue>
+            <fieldText>Sender</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Contact_Report_Type_Picklist</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>Acknowledgement_Letter</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Position</name>
+            <choiceReferences>Senior_Year_Experience_Board</choiceReferences>
+            <choiceReferences>Student_Philanthropy_Council</choiceReferences>
+            <choiceReferences>Young_Alumni_Advisory_Board</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>defaultPosition</elementReference>
+            </defaultValue>
+            <fieldText>Position</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Contact_Report_Type_Picklist</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>Application</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Research_Type_Picklist</name>
+            <choiceReferences>Research_Evaluation</choiceReferences>
+            <choiceReferences>Research_Memo</choiceReferences>
+            <choiceReferences>Research_Misc</choiceReferences>
+            <choiceReferences>Research_News</choiceReferences>
+            <choiceReferences>Research_Profile</choiceReferences>
+            <choiceReferences>Research_Project</choiceReferences>
+            <choiceReferences>Research_Rating</choiceReferences>
+            <choiceReferences>ResearchPoint_Report</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>defaultResearchType</elementReference>
+            </defaultValue>
+            <fieldText>Document Type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>isResearchUpload</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>True</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Date</name>
+            <dataType>Date</dataType>
+            <defaultValue>
+                <elementReference>Default_Date</elementReference>
+            </defaultValue>
+            <fieldText>Date</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Additional_Tags</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>defaultTags</elementReference>
+            </defaultValue>
+            <fieldText>Additional Tags</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Contact_Report_Type_Picklist</leftValueReference>
+                    <operator>NotEqualTo</operator>
+                    <rightValue>
+                        <elementReference>Image</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Caption</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>defaultCaption</elementReference>
+            </defaultValue>
+            <fieldText>Caption</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Contact_Report_Type_Picklist</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>Image</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>File_Success_Message</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You have uploaded: {!File_Upload.fileNames}&lt;/p&gt;&lt;p&gt;Please do not upload more than one file.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>File_Upload.contentDocIds</leftValueReference>
+                    <operator>IsNull</operator>
+                    <rightValue>
+                        <booleanValue>false</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>File_Upload</name>
+            <extensionName>forceContent:fileUpload</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>File Upload</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>multiple</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>File_Error_Message</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 12px; color: rgb(234, 0, 30);&quot;&gt;Please upload a file.﻿&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>File_Error_Checkbox</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Every expendable fund has an associated endowed fund. The user should upload documents through the endowed fund. The documents will be accessible through custom links on both the endowed and the expendable fund&apos;s record.
+
+Uploads from expendable funds are forbidden to prevent users from mistakenly uploading the same documents on both the endowed and the expendable fund.</description>
+        <name>Permission_Denied_Expendable</name>
+        <label>Permission Denied</label>
+        <locationX>1106</locationX>
+        <locationY>566</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Insufficient_Privileges_Error_Message_Expendable</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(234, 0, 30);&quot;&gt;You may not upload documents to an expendable fund.﻿&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Permission_Denied_Fund_Management</name>
+        <label>Permission Denied</label>
+        <locationX>842</locationX>
+        <locationY>458</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Insufficient_Privileges_Error_Message_Fund_Management</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(234, 0, 30);&quot;&gt;You do not have permission to upload documents to designations.&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Permission_Denied_Research</name>
+        <label>Permission Denied</label>
+        <locationX>50</locationX>
+        <locationY>458</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Insufficient_Privileges_Error_Message_Research</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(234, 0, 30);&quot;&gt;You do not have permission to upload research documents.&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>903</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Preliminary_Steps</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>The associatedRecords variable, mapped to the Associated Records metadata field and ultimately the SFDC Records SharePoint column, should contain a comma-separated list of unique identifiers for all the Salesforce records associated with the document. This is necessary when the custom links search SharePoint. 
+
+Three buttons pass in a value for associatedRecords:
+Constituent: NU ID
+Opportunity (booked): Opportunity Name
+Designation: either 6-digit Designation Name or (for placeholder designations) Donor Relations Number
+
+The flow performs secondary steps to populate associatedRecords for contact report documents, research documents, and gift planning documents.</description>
+        <name>associatedRecords</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Constituent_Collection_Research</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Contact_Report_Collection</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Initially blank; populated in Preserve_User_Input element if the user neglects to upload a file.</description>
+        <name>currentOutput</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Initially blank; populated in Preserve_User_Input element if the user neglects to upload a file.</description>
+        <name>defaultCaption</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Initially blank; populated in Preserve_User_Input element if the user neglects to upload a file.</description>
+        <name>defaultConstituentType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Initially blank; populated in Preserve_User_Input element if the user neglects to upload a file.</description>
+        <name>defaultContactReportType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Initially blank; populated in Preserve_User_Input element if the user neglects to upload a file.</description>
+        <name>defaultDesignationType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Initially blank; populated in Preserve_User_Input element if the user neglects to upload a file.</description>
+        <name>defaultOpportunityType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Initially blank; populated in Preserve_User_Input element if the user neglects to upload a file.</description>
+        <name>defaultPosition</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Initially blank; populated in Preserve_User_Input element if the user neglects to upload a file.</description>
+        <name>defaultProposalType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Initially blank; populated in Preserve_User_Input element if the user neglects to upload a file.</description>
+        <name>defaultPublication</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Initially blank; populated in Preserve_User_Input element if the user neglects to upload a file.</description>
+        <name>defaultResearchType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Initially blank; populated in Preserve_User_Input element if the user neglects to upload a file.</description>
+        <name>defaultSender</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Initially blank; populated in Preserve_User_Input element if the user neglects to upload a file.</description>
+        <name>defaultTags</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>File_Error_Checkbox</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Populated by custom button in uploads from booked Opportunities.</description>
+        <name>initialCloseDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Populated by custom button on non-research uploads from Constituent.</description>
+        <name>initialConstituentName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Populated by custom button in uploads from Contact Report.</description>
+        <name>initialContactReportDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Populated by custom button in uploads from Designation.</description>
+        <name>initialDesignationName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Populated by custom button in uploads from Designation.</description>
+        <name>initialFundClass</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Populated by custom button in uploads from proposal (Opportunity).</description>
+        <name>initialHouseholdId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Populated by custom button in uploads from Opportunity (booked).</description>
+        <name>initialOpportunityName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Populated by custom button in research uploads from Constituent.</description>
+        <name>initialSpouseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Custom button passes in &quot;True&quot; in uploads from proposals and &quot;False&quot; in uploads from booked gifts. This is a text field because of known issues with component visibility based on checkbox fields.</description>
+        <name>isProposalUpload</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Custom button passes in &quot;True&quot; in research uploads and &quot;False&quot; in non-research uploads from Constituents. This is a text field because of known issues with component visibility based on checkbox fields.</description>
+        <name>isResearchUpload</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Org_Collection_Research</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Populated by custom button.</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Populated by custom button.</description>
+        <name>recordObject</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

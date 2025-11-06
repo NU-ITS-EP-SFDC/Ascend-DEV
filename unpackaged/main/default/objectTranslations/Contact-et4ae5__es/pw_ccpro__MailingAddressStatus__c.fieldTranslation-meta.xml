@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Mailing Address Status --></label>
+        <name>pw_ccpro__MailingAddressStatus__c</name>
+        <picklistValues>
+            <masterLabel>Ambiguous</masterLabel>
+            <translation><!-- Ambiguous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corrected</masterLabel>
+            <translation><!-- Corrected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not checked</masterLabel>
+            <translation><!-- Not checked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not matched</masterLabel>
+            <translation><!-- Not matched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parsed but not found</masterLabel>
+            <translation><!-- Parsed but not found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verified</masterLabel>
+            <translation><!-- Verified --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

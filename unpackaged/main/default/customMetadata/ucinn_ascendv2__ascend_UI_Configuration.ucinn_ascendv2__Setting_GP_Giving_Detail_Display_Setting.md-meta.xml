@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP Giving Detail Display Setting</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Only 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+   [
+      {
+         &quot;fieldName&quot;: &quot;Label&quot;,
+         &quot;required&quot;: true,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;text&quot;,
+            &quot;label&quot;: &quot;Label&quot;
+         },
+         &quot;criteria&quot;: [
+            {
+               &quot;isCreation&quot;: true
+            }
+         ]
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Page_Record_Type__c&quot;,
+         &quot;toolTip&quot;: &quot;The name of the donor type.&quot;,
+         &quot;required&quot;: true,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;text&quot;,
+            &quot;label&quot;: &quot;Page Record Type&quot;
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;BLANK_PAGE_RECORD_TYPE&quot;
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Util_Table_Column_Order__c&quot;,
+         &quot;toolTip&quot;: &quot;All values listed are the column header labels for the Giving Details Util Table. They will be rendered from left to right according to the specified order, separated by commas.&quot;,
+         &quot;jsonFieldParams&quot;: {
+            &quot;label&quot;: &quot;Util Table Column Order&quot;,
+            &quot;allowReorder&quot;:true,
+            &quot;type&quot;: &quot;listNotJSON&quot;,
+            &quot;listNotJSONSeperator&quot;: &quot;,&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+               &quot;type&quot;: &quot;text&quot;
+            }
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;BLANK_UTIL_TABLE_COLUMN_ORDER&quot;
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Sort_by_Column__c&quot;,
+         &quot;toolTip&quot;: &quot;The default column for the Giving Details Table to order by.&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;text&quot;,
+            &quot;label&quot;: &quot;Order by Column&quot;
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;BLANK_SORT_BY_COLUMN&quot;
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Order_by_Direction__c&quot;,
+         &quot;toolTip&quot;: &quot;The ordering of the data for the default column to sort by. The possible values: ASC, DESC. If undefined, the ordering is ASC.&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;text&quot;,
+            &quot;label&quot;: &quot;Order by Direction&quot;
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;BLANK_ORDER_BY&quot;
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Giving_Totals_Table_Title__c&quot;,
+         &quot;toolTip&quot;: &quot;Customized table title for Giving Totals table.&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;text&quot;,
+            &quot;label&quot;: &quot;Giving Totals Table Title&quot;
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;BLANK_GIVING_TOTALS_TABLE_TITLE&quot;
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Pledges_Table_Title__c&quot;,
+         &quot;toolTip&quot;: &quot;Customized table title for Pledges table.&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;text&quot;,
+            &quot;label&quot;: &quot;Pledges Table Title&quot;
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;BLANK_PLEDGE_TABLE_TITLE&quot;
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Pledges_Recurring_Gift_Table_Title__c&quot;,
+         &quot;toolTip&quot;: &quot;Customized table title for Pledge / Recurring Gift Commitments table. This title only renders if Recurring Gift is enabled in the org.&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;text&quot;,
+            &quot;label&quot;: &quot;Pledges/Recurring Gift Table Title&quot;
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;BLANK_PLEDGE_RECURRING_TABLE_TITLE&quot;
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Pledge_Payments_Table_Title__c&quot;,
+         &quot;toolTip&quot;: &quot;Customized table title for Pledge Payment table.&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;text&quot;,
+            &quot;label&quot;: &quot;Pledge Payments Table Title&quot;
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;BLANK_PLEDGE_PAYMENT_TABLE_TITLE&quot;
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Gift_Table_Title__c&quot;,
+         &quot;toolTip&quot;: &quot;Customized table title for Gift table.&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;text&quot;,
+            &quot;label&quot;: &quot;Gift Table Title&quot;
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;BLANK_GIFT_TABLE_TITLE&quot;
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Giving_Details_Table_Headers__c&quot;,
+         &quot;toolTip&quot;: &quot;Row and column headers for giving details tables. Ex:{\&quot;giving_totals\&quot;:{\&quot;columns\&quot;:[\&quot;col1\&quot;,\&quot;col2\&quot;], \&quot;rows\&quot;: [\&quot;row1\&quot;,\&quot;row2\&quot;]}} The four table names are: giving_totals, pledge_recurring, pledges, pledge_payments, gifts&quot;,
+         &quot;jsonFieldParams&quot;: {
+            &quot;label&quot;: &quot;Giving Details Table Headers&quot;,
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;jsonKeysToValueList&quot;: [
+               {
+                  &quot;key&quot;: &quot;giving_totals&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                     &quot;type&quot;: &quot;object&quot;,
+                     &quot;jsonKeysToValueList&quot;: [
+                        {
+                           &quot;key&quot;: &quot;columns&quot;,
+                           &quot;valueJsonFieldParams&quot;: {
+                              &quot;type&quot;: &quot;list&quot;,
+                              &quot;listType&quot;: &quot;value&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                 &quot;type&quot;: &quot;text&quot;
+                              }
+                           }
+                        },
+                        {
+                           &quot;key&quot;: &quot;rows&quot;,
+                           &quot;valueJsonFieldParams&quot;: {
+                              &quot;type&quot;: &quot;list&quot;,
+                              &quot;listType&quot;: &quot;value&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                 &quot;type&quot;: &quot;text&quot;
+                              }
+                           }
+                        }
+                     ]
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;pledge_recurring&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                     &quot;type&quot;: &quot;object&quot;,
+                     &quot;jsonKeysToValueList&quot;: [
+                        {
+                           &quot;key&quot;: &quot;columns&quot;,
+                           &quot;valueJsonFieldParams&quot;: {
+                              &quot;type&quot;: &quot;list&quot;,
+                              &quot;listType&quot;: &quot;value&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                 &quot;type&quot;: &quot;text&quot;
+                              }
+                           }
+                        },
+                        {
+                           &quot;key&quot;: &quot;rows&quot;,
+                           &quot;valueJsonFieldParams&quot;: {
+                              &quot;type&quot;: &quot;list&quot;,
+                              &quot;listType&quot;: &quot;value&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                 &quot;type&quot;: &quot;text&quot;
+                              }
+                           }
+                        }
+                     ]
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;pledges&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                     &quot;type&quot;: &quot;object&quot;,
+                     &quot;jsonKeysToValueList&quot;: [
+                        {
+                           &quot;key&quot;: &quot;columns&quot;,
+                           &quot;valueJsonFieldParams&quot;: {
+                              &quot;type&quot;: &quot;list&quot;,
+                              &quot;listType&quot;: &quot;value&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                 &quot;type&quot;: &quot;text&quot;
+                              }
+                           }
+                        },
+                        {
+                           &quot;key&quot;: &quot;rows&quot;,
+                           &quot;valueJsonFieldParams&quot;: {
+                              &quot;type&quot;: &quot;list&quot;,
+                              &quot;listType&quot;: &quot;value&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                 &quot;type&quot;: &quot;text&quot;
+                              }
+                           }
+                        }
+                     ]
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;pledge_payments&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                     &quot;type&quot;: &quot;object&quot;,
+                     &quot;jsonKeysToValueList&quot;: [
+                        {
+                           &quot;key&quot;: &quot;columns&quot;,
+                           &quot;valueJsonFieldParams&quot;: {
+                              &quot;type&quot;: &quot;list&quot;,
+                              &quot;listType&quot;: &quot;value&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                 &quot;type&quot;: &quot;text&quot;
+                              }
+                           }
+                        },
+                        {
+                           &quot;key&quot;: &quot;rows&quot;,
+                           &quot;valueJsonFieldParams&quot;: {
+                              &quot;type&quot;: &quot;list&quot;,
+                              &quot;listType&quot;: &quot;value&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                 &quot;type&quot;: &quot;text&quot;
+                              }
+                           }
+                        }
+                     ]
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;gifts&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                     &quot;type&quot;: &quot;object&quot;,
+                     &quot;jsonKeysToValueList&quot;: [
+                        {
+                           &quot;key&quot;: &quot;columns&quot;,
+                           &quot;valueJsonFieldParams&quot;: {
+                              &quot;type&quot;: &quot;list&quot;,
+                              &quot;listType&quot;: &quot;value&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                 &quot;type&quot;: &quot;text&quot;
+                              }
+                           }
+                        },
+                        {
+                           &quot;key&quot;: &quot;rows&quot;,
+                           &quot;valueJsonFieldParams&quot;: {
+                              &quot;type&quot;: &quot;list&quot;,
+                              &quot;listType&quot;: &quot;value&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                 &quot;type&quot;: &quot;text&quot;
+                              }
+                           }
+                        }
+                     ]
+                  }
+               }
+            ]
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;BLANK_GIVING_DETAILS_TABLE_HEADER&quot;
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Order_by_String_for_Record_Retrieval__c&quot;,
+         &quot;toolTip&quot;: &quot;Used to internally sort the util table records before any frontend processing.&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;text&quot;,
+            &quot;label&quot;: &quot;Order by String for Record Retrieval&quot;
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;BLANK_ORDER_BY_STRING_RETRIEVAL&quot;
+      }
+   ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Giving_Details_Display_Setting__mdt&quot;,
+  &quot;title&quot;: &quot;Giving Details Display Setting&quot;,
+  &quot;helpText&quot;: &quot;Configuration pertaining to the giving details display setting on bio demo.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

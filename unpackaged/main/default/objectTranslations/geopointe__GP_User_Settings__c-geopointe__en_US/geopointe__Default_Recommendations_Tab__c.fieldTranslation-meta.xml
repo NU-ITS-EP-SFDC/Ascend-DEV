@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The default starting tab for Recommendations --></help>
+        <label><!-- Default Recommendations Tab --></label>
+        <name>geopointe__Default_Recommendations_Tab__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comprehensive_Campaign</fullName>
+    <active>true</active>
+    <label>Comprehensive Campaign</label>
+    <picklistValues>
+        <picklist>NU_ADV_Audience__c</picklist>
+        <values>
+            <fullName>Alumni</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faculty%2FStaff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Campaign_Pillars__c</picklist>
+        <values>
+            <fullName>Diversity Across Campuses and Disciplines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Innovation and Research Impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entrepreneurship Ecosystem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faculty Excellence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Experience and Exploration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Experience and Opportunity</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Channel__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Text</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Cvent_Template__c</picklist>
+        <values>
+            <fullName>TEMPLATE - ADV - Global Perspectives Virtual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - ADV - PLC Meet %26 Greet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - ADV - Standard Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - AR - Beanpot Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - AR - Golden Graduates Weekend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - AR - Huskies vs%2E Red Sox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - AR - NU%40Noon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - AR - Senior Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - AR - Standard Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - AR - Student Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - AR - Student Virtual Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - AR - Virtual Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - ATH - Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - NU - FOR TRAINING ONLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - NU - Presidential</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - NUSL - Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - NUSL - No Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - NUSL - Women in the Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - RXI - Standard Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEMPLATE - VMN - Virtual Events</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Experience_Campaign_Event__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Purpose__c</picklist>
+        <values>
+            <fullName>Acquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEP-Experiential Learning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEP-External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEP-Global Opportunities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEP-Institutional Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEP-Intellectual %26 Creative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEP-Interdisciplinary %26 Translational Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEP-Revenue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEP-Student Centered Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEP-Urban Engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cultivation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundraising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Governance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guest Speaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jobs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stewardship</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Tier_Level__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Time_Zone__c</picklist>
+        <values>
+            <fullName>%28GMT%29 GMT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B01%3A00%29 Africa West Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B01%3A00%29 Europe Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B01%3A00%29 Europe Western</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B01%3A00%29 Greenwich %28London%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B01%3A00%29 Romance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B02%3A00%29 Africa South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B02%3A00%29 Egypt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B02%3A00%29 Europe Eastern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B02%3A00%29 FLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B02%3A00%29 GTB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B02%3A00%29 Israel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B03%3A00%29 Africa Eastern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B03%3A00%29 Arab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B03%3A00%29 Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B03%3A00%29 Russian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B03%3A30%29 Iran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B04%3A00%29 Arabian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B04%3A00%29 Caucasus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B04%3A30%29 Afghanistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B05%3A00%29 Asia Western</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B05%3A00%29 Ekaterinburg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B05%3A30%29 India</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B05%3A45%29 Nepal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B06%3A00%29 Asia Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B06%3A00%29 Asia North Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B06%3A00%29 Sri Lanka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B06%3A30%29 Myanmar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B07%3A00%29 Asia North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B07%3A00%29 Asia South East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B08%3A00%29 AUS Western</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B08%3A00%29 Asia North East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B08%3A00%29 China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B08%3A00%29 Malay Peninsula</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B08%3A00%29 Taipei</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B09%3A00%29 Korea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B09%3A00%29 Tokyo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B09%3A00%29 Yakutsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B09%3A30%29 AUS Central %5BAdelaide%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B09%3A30%29 AUS Central %5BDarwin%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B10%3A00%29 AUS Eastern %5BBrisbane%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B10%3A00%29 AUS Eastern %5BSydney%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B10%3A00%29 Tasmania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B10%3A00%29 Vladivostok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B10%3A00%29 West Pacific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B11%3A00%29 Central Pacific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B12%3A00%29 Fiji</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B12%3A00%29 New Zealand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B13%3A00%29 Tonga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-01%3A00%29 Azores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-01%3A00%29 Cape Verde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-02%3A00%29 Mid-Atlantic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-03%3A00%29 Brasilia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-03%3A00%29 Eastern SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-03%3A00%29 Greenland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-03%3A30%29 Newfoundland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-04%3A00%29 Atlantic %5BCanada%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-04%3A00%29 Pacific SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-04%3A00%29 Western SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-04%3A30%29 Venezuela</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-05%3A00%29 Eastern %5BUS %26 Canada%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-05%3A00%29 Indiana %5BEast%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-05%3A00%29 SA Pacific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-06%3A00%29 Central %5BUS %26 Canada%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-06%3A00%29 Central America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-06%3A00%29 Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-06%3A00%29 Saskatchewan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-07%3A00%29 Arizona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-07%3A00%29 Mountain %5BMexico%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-07%3A00%29 Mountain %5BUS %26 Canada%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-08%3A00%29 Pacific %5BUS %26 Canada%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-09%3A00%29 Alaska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-10%3A00%29 Hawaii</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-11%3A00%29 Samoa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-12%3A00%29 Dateline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coordinated Universal Time %28UTC%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Type_of_Event_Transaction__c</picklist>
+        <values>
+            <fullName>Additional Donation Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High-End</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Unit__c</picklist>
+        <values>
+            <fullName>Academic Ceremonies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alumni Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annual Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arlington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Board of Trustees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burlington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%26F Advancement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charlotte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMSB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer Engagement and Career Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KCCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Libraries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>London</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nahant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oakland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>President%27s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SGS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Francisco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seattle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silicon Valley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toronto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vancouver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women Who Empower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%E2%80%99s Entrepreneurship Initiatives</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Overarching Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Goal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Org Type --></label>
+        <name>NU_ADV_Org_Type__c</name>
+        <picklistValues>
+            <masterLabel>Association</masterLabel>
+            <translation><!-- Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporation</masterLabel>
+            <translation><!-- Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundation</masterLabel>
+            <translation><!-- Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund Raising Consortia</masterLabel>
+            <translation><!-- Fund Raising Consortia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital</masterLabel>
+            <translation><!-- Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Profit</masterLabel>
+            <translation><!-- Non Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulatory Agency</masterLabel>
+            <translation><!-- Regulatory Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Religious Organization</masterLabel>
+            <translation><!-- Religious Organization --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

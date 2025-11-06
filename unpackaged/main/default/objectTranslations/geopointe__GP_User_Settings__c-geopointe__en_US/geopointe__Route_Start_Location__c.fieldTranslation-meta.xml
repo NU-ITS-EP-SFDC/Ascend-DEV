@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When set to &apos;currentLocation&apos;, appends Current Location (if available) to start of Route --></help>
+        <label><!-- Start Location --></label>
+        <name>geopointe__Route_Start_Location__c</name>
+    </CustomFieldTranslation>

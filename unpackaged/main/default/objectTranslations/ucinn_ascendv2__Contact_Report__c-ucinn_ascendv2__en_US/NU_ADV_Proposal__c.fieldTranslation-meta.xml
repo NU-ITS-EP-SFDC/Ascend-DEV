@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Search for any related proposals here. --></help>
+        <label><!-- Proposal --></label>
+        <name>NU_ADV_Proposal__c</name>
+        <relationshipLabel><!-- Contact Reports (Proposal) --></relationshipLabel>
+    </CustomFieldTranslation>

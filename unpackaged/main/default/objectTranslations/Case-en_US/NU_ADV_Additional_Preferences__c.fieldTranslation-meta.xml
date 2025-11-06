@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please list any additional preferences for the fund --></help>
+        <label><!-- Additional Preferences --></label>
+        <name>NU_ADV_Additional_Preferences__c</name>
+    </CustomFieldTranslation>

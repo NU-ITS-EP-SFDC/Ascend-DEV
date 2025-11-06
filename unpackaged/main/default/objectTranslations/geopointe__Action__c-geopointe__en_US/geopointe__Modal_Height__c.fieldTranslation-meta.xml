@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The height of the modal popup. Values can be defined in pixels such as &quot;800px&quot; or percent of window height, &quot;80%&quot;. Modal window size will be automatically adjusted if the values defined are larger than users viewable window size. --></help>
+        <label><!-- Modal Height --></label>
+        <name>geopointe__Modal_Height__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Badge Contact</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+                {
+                  &quot;enableDelete&quot;: true,
+                  &quot;sobjectName&quot;: &quot;Contact&quot;,
+              &quot;badgeNotificationList&quot;: [
+                {
+                  &quot;badgeNotificationConfig&quot;: {
+                    &quot;style&quot;: {
+                      &quot;background-color&quot;: &quot;#FF0000&quot;,
+                      &quot;padding&quot;: &quot;0 8px;&quot;
+                    },
+                    &quot;sobjectName&quot;: &quot;ucinn_ascendv2__Relationship__c&quot;,
+                    &quot;parentLookupField&quot;: &quot;ucinn_ascendv2__Contact__c&quot;,
+                    &quot;whereClause&quot;: &quot;ucinn_ascendv2__Apply_Soft_Credit__c = true&quot;,
+                    &quot;fieldsToQuery&quot;: [
+                      &quot;Name&quot;
+                    ],
+                    &quot;fieldsToDisplay&quot;: [
+                      &quot;&quot;
+                    ]
+                  },
+                  &quot;default&quot;: true
+                }
+              ],
+                  &quot;default&quot;: true
+                }
+              ]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;Name&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;style&quot;: {
+          &quot;font-size&quot;: &quot;13px&quot;,
+          &quot;font-family&quot;: &quot;Arial, sans-serif&quot;,
+          &quot;font-weight&quot;: &quot;bold&quot;,
+          &quot;font-color&quot;: &quot;black&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Contact_Type__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;style&quot;: {
+          &quot;font-size&quot;: &quot;13px&quot;,
+          &quot;font-family&quot;: &quot;Arial, sans-serif&quot;,
+          &quot;font-weight&quot;: &quot;normal&quot;,
+          &quot;font-color&quot;: &quot;black&quot;
+        },
+        &quot;prepend&quot;: &quot;(&quot;,
+        &quot;append&quot;: &quot;)&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;MobilePhone&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;style&quot;: {
+          &quot;font-size&quot;: &quot;11px&quot;,
+          &quot;font-family&quot;: &quot;Arial, sans-serif&quot;,
+          &quot;font-weight&quot;: &quot;normal&quot;,
+          &quot;font-color&quot;: &quot;black&quot;
+        },&quot;type&quot;:&quot;phone&quot;,
+        &quot;prepend&quot;: &quot;m:&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Personal_Email__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;style&quot;: {
+          &quot;font-size&quot;: &quot;11px&quot;,
+          &quot;font-family&quot;: &quot;Arial, sans-serif&quot;,
+          &quot;font-weight&quot;: &quot;normal&quot;,
+          &quot;font-color&quot;: &quot;black&quot;
+        },
+        &quot;prepend&quot;: &quot; / e:&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Lifetime_Cash__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;style&quot;: {
+          &quot;font-size&quot;: &quot;11px&quot;,
+          &quot;font-family&quot;: &quot;Arial, sans-serif&quot;,
+          &quot;font-weight&quot;: &quot;normal&quot;,
+          &quot;font-color&quot;: &quot;black&quot;
+        },
+        &quot;type&quot;:&quot;number&quot;,
+        &quot;prepend&quot;: &quot;LF:$&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Lifetime_Cash__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;style&quot;: {
+          &quot;font-size&quot;: &quot;11px&quot;,
+          &quot;font-family&quot;: &quot;Arial, sans-serif&quot;,
+          &quot;font-weight&quot;: &quot;normal&quot;,
+          &quot;font-color&quot;: &quot;black&quot;
+        },
+        &quot;type&quot;:&quot;number&quot;,
+        &quot;prepend&quot;: &quot; LC:$&quot;
+      }
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  {
+    &quot;iconName&quot;: &quot;standard:user&quot;,
+    &quot;criteria&quot;: [{&quot;showInputField&quot;:false}]
+  }
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  {
+    &quot;style&quot;: {
+      &quot;height&quot;: &quot;45px&quot;,
+      &quot;width&quot;: &quot;95%&quot;,
+      &quot;align-items&quot;: &quot;center&quot;,
+      &quot;text-align&quot;: &quot;left&quot;,
+      &quot;background-color&quot;: &quot;#transparent&quot;,
+      &quot;border&quot;: &quot;2px solid blue&quot;,
+      &quot;border-radius&quot;: &quot;8px&quot;,
+      &quot;color&quot;: &quot;#013862&quot;,
+      &quot;display&quot;: &quot;flex&quot;,
+      &quot;font-family&quot;: &quot;Arial, sans-serif&quot;,
+      &quot;font-size&quot;: &quot;12px&quot;,
+      &quot;font-weight&quot;: &quot;normal&quot;
+    },
+    &quot;default&quot;: true
+  },
+  {
+    &quot;style&quot;: {
+      &quot;height&quot;: &quot;45px&quot;,
+      &quot;width&quot;: &quot;95%&quot;,
+      &quot;align-items&quot;: &quot;center&quot;,
+      &quot;text-align&quot;: &quot;left&quot;,
+      &quot;background-color&quot;: &quot;#transparent&quot;,
+      &quot;border&quot;: &quot;2px solid pink&quot;,
+      &quot;border-radius&quot;: &quot;8px&quot;,
+      &quot;color&quot;: &quot;#013862&quot;,
+      &quot;display&quot;: &quot;flex&quot;,
+      &quot;font-family&quot;: &quot;Arial, sans-serif&quot;,
+      &quot;font-size&quot;: &quot;12px&quot;,
+      &quot;font-weight&quot;: &quot;normal&quot;
+    },
+    &quot;criteria&quot;: [
+      {
+        &quot;badgeData.ucinn_ascendv2__Gender__c&quot;: &quot;Female&quot;
+      }
+    ]
+  },
+  {
+    &quot;style&quot;: {
+      &quot;height&quot;: &quot;45px&quot;,
+      &quot;width&quot;: &quot;95%&quot;,
+      &quot;align-items&quot;: &quot;center&quot;,
+      &quot;text-align&quot;: &quot;left&quot;,
+      &quot;background-color&quot;: &quot;#transparent&quot;,
+      &quot;border&quot;: &quot;2px solid orange&quot;,
+      &quot;border-radius&quot;: &quot;8px&quot;,
+      &quot;color&quot;: &quot;#013862&quot;,
+      &quot;display&quot;: &quot;flex&quot;,
+      &quot;font-family&quot;: &quot;Arial, sans-serif&quot;,
+      &quot;font-size&quot;: &quot;12px&quot;,
+      &quot;font-weight&quot;: &quot;normal&quot;
+    },
+    &quot;criteria&quot;: [
+      {
+        &quot;badgeData.ucinn_ascendv2__Gender__c&quot;: &quot;Prefer Not to Disclose&quot;
+      }
+    ]
+  }
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">Badge</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

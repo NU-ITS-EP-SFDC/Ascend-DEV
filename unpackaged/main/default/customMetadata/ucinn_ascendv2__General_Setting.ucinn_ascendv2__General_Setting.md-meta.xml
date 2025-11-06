@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>General Setting</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Clippify_Analytics_Export_Field__c</field>
+        <value xsi:type="xsd:string">ClippifyExport</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Functionality_Toggle_Map__c</field>
+        <value xsi:type="xsd:string">{
+&quot;BIO_Contact_Change_Record_Type&quot;:true,
+&quot;BIO_Stage_of_Readiness_has_Changed&quot;:true,
+&quot;BIO_Update_Business_Unit_for_Constituent&quot;:true,
+&quot;BIO_Update_Fields_if_there_is_a_spouse&quot;:true,
+&quot;BIO_Update_Fields_if_there_is_no_spouse&quot;:true,
+&quot;GIFT_Opportunity_Tribute&quot;:false,
+&quot;GIFT_Opportunity_Soft_Credit&quot;:false,
+&quot;GIFT_Populate_Original_Proposal_ID&quot;:true,
+&quot;GIFT_Rename_Opportunity&quot;:true,
+&quot;GIFT_Set_Pledge_Status_to_Paid&quot;:true,
+&quot;GIFT_Set_Pledge_Status_to_Active&quot;:true,
+&quot;GIFT_Populate_Amount_for_Matching_Gifts&quot;:true,
+&quot;GIFT_Assign_Task_Upon_Closing_Session&quot;:true,
+&quot;GIFT_ascend_Filter_PledgeGift&quot;:false,
+&quot;GIFT_ascend_Filter_Proposal&quot;:false,
+&quot;GIFT_ascend_Update_Funded_Date&quot;:true,
+&quot;GIFT_ascend_Update_Matching_Gift_Status_To_Confirmed&quot;:true,
+&quot;GIFT_ascend_Update_Matching_Gift_Status_To_Funded&quot;:true
+}</value>
+    </values>
+</CustomMetadata>

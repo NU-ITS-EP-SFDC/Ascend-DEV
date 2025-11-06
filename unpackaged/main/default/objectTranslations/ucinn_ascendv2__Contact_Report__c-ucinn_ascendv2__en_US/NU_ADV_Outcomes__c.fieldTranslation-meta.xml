@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Engagement Outcomes --></label>
+        <name>NU_ADV_Outcomes__c</name>
+        <picklistValues>
+            <masterLabel>Continued Engagement</masterLabel>
+            <translation><!-- Continued Engagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No further action needed</masterLabel>
+            <translation><!-- No further action needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profile Created</masterLabel>
+            <translation><!-- Profile Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refer to Enrollment Management</masterLabel>
+            <translation><!-- Refer to Enrollment Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refer to Prospect Management</masterLabel>
+            <translation><!-- Refer to Prospect Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volunteer</masterLabel>
+            <translation><!-- Volunteer --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

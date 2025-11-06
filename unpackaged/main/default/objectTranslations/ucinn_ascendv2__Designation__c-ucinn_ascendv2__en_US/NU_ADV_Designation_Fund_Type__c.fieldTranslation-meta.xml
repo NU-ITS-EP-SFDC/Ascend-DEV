@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Designation Fund Type --></label>
+        <name>NU_ADV_Designation_Fund_Type__c</name>
+        <picklistValues>
+            <masterLabel>Athletics NU</masterLabel>
+            <translation><!-- Athletics NU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capstone</masterLabel>
+            <translation><!-- Capstone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certificate</masterLabel>
+            <translation><!-- Certificate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checkbook Fund</masterLabel>
+            <translation><!-- Checkbook Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-op</masterLabel>
+            <translation><!-- Co-op --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deanship</masterLabel>
+            <translation><!-- Deanship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discretionary</masterLabel>
+            <translation><!-- Discretionary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diversity &amp; Inclusion</masterLabel>
+            <translation><!-- Diversity &amp; Inclusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Domestic</masterLabel>
+            <translation><!-- Domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency</masterLabel>
+            <translation><!-- Emergency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emerging Priorities</masterLabel>
+            <translation><!-- Emerging Priorities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entrepreneurship</masterLabel>
+            <translation><!-- Entrepreneurship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facilities</masterLabel>
+            <translation><!-- Facilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faculty</masterLabel>
+            <translation><!-- Faculty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fellowship</masterLabel>
+            <translation><!-- Fellowship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Aid NU</masterLabel>
+            <translation><!-- Financial Aid NU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate</masterLabel>
+            <translation><!-- Graduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Student</masterLabel>
+            <translation><!-- International Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lecture Series</masterLabel>
+            <translation><!-- Lecture Series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation><!-- Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Military</masterLabel>
+            <translation><!-- Military --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Naming Gift</masterLabel>
+            <translation><!-- Naming Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-doc</masterLabel>
+            <translation><!-- Post-doc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professorship</masterLabel>
+            <translation><!-- Professorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruitment</masterLabel>
+            <translation><!-- Recruitment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research NU</masterLabel>
+            <translation><!-- Research NU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schedule G</masterLabel>
+            <translation><!-- Schedule G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Group</masterLabel>
+            <translation><!-- Student Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Torch</masterLabel>
+            <translation><!-- Torch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undergraduate</masterLabel>
+            <translation><!-- Undergraduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrealized Bequest</masterLabel>
+            <translation><!-- Unrealized Bequest --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

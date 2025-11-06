@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ID of the record that the list assignment belongs to. --></help>
+        <label><!-- Record ID --></label>
+        <name>geopointe__Record_ID__c</name>
+    </CustomFieldTranslation>

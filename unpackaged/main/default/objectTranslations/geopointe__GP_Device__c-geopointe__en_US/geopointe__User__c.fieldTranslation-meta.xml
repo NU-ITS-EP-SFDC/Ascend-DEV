@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The user associated to this device.  e.g. the driver --></help>
+        <label><!-- User --></label>
+        <name>geopointe__User__c</name>
+        <relationshipLabel><!-- Geopointe Devices --></relationshipLabel>
+    </CustomFieldTranslation>

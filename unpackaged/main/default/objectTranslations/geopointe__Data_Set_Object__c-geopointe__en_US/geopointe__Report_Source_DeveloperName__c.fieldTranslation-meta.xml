@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Holds the DeveloperName of the Salesforce Report used to source the Data Set.  If not blank, the Data Set will use filter and field values derived from the Report. --></help>
+        <label><!-- Report Source DeveloperName --></label>
+        <name>geopointe__Report_Source_DeveloperName__c</name>
+    </CustomFieldTranslation>

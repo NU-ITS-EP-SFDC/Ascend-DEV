@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- On Behalf Of --></label>
+        <name>NU_ADV_On_Behalf_of__c</name>
+        <relationshipLabel><!-- Cases (On Behalf Of) --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Role --></label>
+        <name>ucinn_ascendv2__Role__c</name>
+        <picklistValues>
+            <masterLabel>Assistant Dean</masterLabel>
+            <translation><!-- Assistant Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Director</masterLabel>
+            <translation><!-- Assistant Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Vice President</masterLabel>
+            <translation><!-- Assistant Vice President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate Director</masterLabel>
+            <translation><!-- Associate Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development Associate</masterLabel>
+            <translation><!-- Development Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director</masterLabel>
+            <translation><!-- Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Director</masterLabel>
+            <translation><!-- Executive Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Associate Director</masterLabel>
+            <translation><!-- Senior Associate Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Associate Vice President</masterLabel>
+            <translation><!-- Senior Associate Vice President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Director</masterLabel>
+            <translation><!-- Senior Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Vice President</masterLabel>
+            <translation><!-- Senior Vice President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President</masterLabel>
+            <translation><!-- Vice President --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

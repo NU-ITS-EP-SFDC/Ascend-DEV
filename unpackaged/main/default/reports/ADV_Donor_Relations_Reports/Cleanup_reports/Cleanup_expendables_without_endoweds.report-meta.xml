@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Expendable__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.ucinn_ascendv2__Designation_Name__c</field>
+    </columns>
+    <description>Run this report to identify expendable funds that don&apos;t have associated endowed funds.</description>
+    <filter>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Designation__c.NU_ADV_Expendable__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Designation__c.NU_ADV_Associated_Designation__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Cleanup - expendables without endoweds</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ucinn_ascendv2__Designation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ucinn_ascendv2__Designation__c.NU_ADV_Advancement_Set_Up_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

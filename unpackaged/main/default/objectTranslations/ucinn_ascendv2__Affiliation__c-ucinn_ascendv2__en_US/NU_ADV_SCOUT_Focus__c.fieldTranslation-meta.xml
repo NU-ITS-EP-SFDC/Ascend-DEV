@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- SCOUT Focus --></label>
+        <name>NU_ADV_SCOUT_Focus__c</name>
+        <picklistValues>
+            <masterLabel>Conference</masterLabel>
+            <translation><!-- Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management</masterLabel>
+            <translation><!-- Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing and Events</masterLabel>
+            <translation><!-- Marketing and Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Officers</masterLabel>
+            <translation><!-- Officers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCOUT Labs</masterLabel>
+            <translation><!-- SCOUT Labs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCOUT Studio</masterLabel>
+            <translation><!-- SCOUT Studio --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

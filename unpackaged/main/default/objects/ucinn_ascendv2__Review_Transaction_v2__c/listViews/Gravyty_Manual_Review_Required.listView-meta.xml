@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gravyty_Manual_Review_Required</fullName>
+    <columns>NAME</columns>
+    <columns>ucinn_ascendv2__Manual_Review_Reason__c</columns>
+    <columns>ucinn_ascendv2__Status__c</columns>
+    <columns>ucinn_ascendv2__Contact__c</columns>
+    <columns>ucinn_ascendv2__Account__c</columns>
+    <columns>ucinn_ascendv2__Session__c</columns>
+    <columns>ucinn_ascendv2__Is_Keep_Session_Open__c</columns>
+    <columns>ucinn_ascendv2__Campaign_External_ID__c</columns>
+    <columns>ucinn_ascendv2__Campaign__c</columns>
+    <columns>ucinn_ascendv2__Transaction_Date__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>ucinn_ascendv2__Review_Transaction_v2__c.Gravyty</value>
+    </filters>
+    <filters>
+        <field>ucinn_ascendv2__Status__c</field>
+        <operation>notEqual</operation>
+        <value>Posted,Awaiting Approval</value>
+    </filters>
+    <label>Gravyty Manual Review Required</label>
+</ListView>

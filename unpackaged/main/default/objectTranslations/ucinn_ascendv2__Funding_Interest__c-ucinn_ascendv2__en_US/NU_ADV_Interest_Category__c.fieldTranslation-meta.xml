@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Interest Category --></label>
+        <name>NU_ADV_Interest_Category__c</name>
+        <picklistValues>
+            <masterLabel>Animal, Agricultural, Zoological</masterLabel>
+            <translation><!-- Animal, Agricultural, Zoological --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arts, Culture, Humanities</masterLabel>
+            <translation><!-- Arts, Culture, Humanities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Development</masterLabel>
+            <translation><!-- Community Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diversity Equity and Inclusion</masterLabel>
+            <translation><!-- Diversity Equity and Inclusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entrepreneurship</masterLabel>
+            <translation><!-- Entrepreneurship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Care</masterLabel>
+            <translation><!-- Health Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Services</masterLabel>
+            <translation><!-- Human Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Political</masterLabel>
+            <translation><!-- Political --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Religion</masterLabel>
+            <translation><!-- Religion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Science and Research</masterLabel>
+            <translation><!-- Science and Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports and Recreations</masterLabel>
+            <translation><!-- Sports and Recreations --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

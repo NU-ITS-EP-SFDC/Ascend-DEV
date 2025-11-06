@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- DAF Funding Assets --></label>
+        <name>NUN_ADV_DAF_Funding_Assets__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash and Complex Assets</masterLabel>
+            <translation><!-- Cash and Complex Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash and Securities</masterLabel>
+            <translation><!-- Cash and Securities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complex Assets</masterLabel>
+            <translation><!-- Complex Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Securities</masterLabel>
+            <translation><!-- Securities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Securities and Complex Assets</masterLabel>
+            <translation><!-- Securities and Complex Assets --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

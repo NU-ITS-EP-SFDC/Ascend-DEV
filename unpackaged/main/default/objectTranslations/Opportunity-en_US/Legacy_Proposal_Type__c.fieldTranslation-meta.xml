@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Legacy Proposal Type --></label>
+        <name>Legacy_Proposal_Type__c</name>
+        <picklistValues>
+            <masterLabel>Charitable Gift Annuity</masterLabel>
+            <translation><!-- Charitable Gift Annuity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charitable Gift Annuity - CA</masterLabel>
+            <translation><!-- Charitable Gift Annuity - CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charitable Gift Annuity - FL</masterLabel>
+            <translation><!-- Charitable Gift Annuity - FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charitable Gift Annuity - OS</masterLabel>
+            <translation><!-- Charitable Gift Annuity - OS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charitable IRA Rollover</masterLabel>
+            <translation><!-- Charitable IRA Rollover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charitable Remainder UniTrust</masterLabel>
+            <translation><!-- Charitable Remainder UniTrust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charitable Remaindr Annuity Tr</masterLabel>
+            <translation><!-- Charitable Remaindr Annuity Tr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred Gift</masterLabel>
+            <translation><!-- Deferred Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred Gift Annuity</masterLabel>
+            <translation><!-- Deferred Gift Annuity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred Gift Annuity - OS</masterLabel>
+            <translation><!-- Deferred Gift Annuity - OS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ext Managed Charitable Trust</masterLabel>
+            <translation><!-- Ext Managed Charitable Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift</masterLabel>
+            <translation><!-- Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift-in-Kind</masterLabel>
+            <translation><!-- Gift-in-Kind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grantor Charitable Lead Trust</masterLabel>
+            <translation><!-- Grantor Charitable Lead Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Irrevocable PG Pledge</masterLabel>
+            <translation><!-- Irrevocable PG Pledge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life Insurance Policy</masterLabel>
+            <translation><!-- Life Insurance Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life Insurance Premium</masterLabel>
+            <translation><!-- Life Insurance Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matching Gift</masterLabel>
+            <translation><!-- Matching Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Grantor Charitable Lead Tr</masterLabel>
+            <translation><!-- Non Grantor Charitable Lead Tr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pledge</masterLabel>
+            <translation><!-- Pledge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pledge Payments</masterLabel>
+            <translation><!-- Pledge Payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pooled Income Fund</masterLabel>
+            <translation><!-- Pooled Income Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Realized Bequest</masterLabel>
+            <translation><!-- Realized Bequest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recurring Gift</masterLabel>
+            <translation><!-- Recurring Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retained Life Estate</masterLabel>
+            <translation><!-- Retained Life Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revocable Bequest</masterLabel>
+            <translation><!-- Revocable Bequest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revocable Pledge</masterLabel>
+            <translation><!-- Revocable Pledge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revocable Trust</masterLabel>
+            <translation><!-- Revocable Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Outright Gift</masterLabel>
+            <translation><!-- Vehicle Outright Gift --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

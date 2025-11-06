@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Is Using Round Robin Assignment --></label>
+        <name>geopointe__Is_Using_Round_Robin_Assignment__c</name>
+    </CustomFieldTranslation>

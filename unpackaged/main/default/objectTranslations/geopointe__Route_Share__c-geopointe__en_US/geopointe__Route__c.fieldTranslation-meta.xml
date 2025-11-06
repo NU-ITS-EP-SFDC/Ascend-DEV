@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Route --></label>
+        <name>geopointe__Route__c</name>
+        <relationshipLabel><!-- Geopointe Route Shares --></relationshipLabel>
+    </CustomFieldTranslation>

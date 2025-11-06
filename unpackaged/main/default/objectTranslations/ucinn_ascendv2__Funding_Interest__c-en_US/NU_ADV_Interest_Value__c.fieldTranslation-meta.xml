@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Interest Value --></label>
+        <name>NU_ADV_Interest_Value__c</name>
+        <picklistValues>
+            <masterLabel>Academic Research</masterLabel>
+            <translation><!-- Academic Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adult Education</masterLabel>
+            <translation><!-- Adult Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Animal Rescue and Care</masterLabel>
+            <translation><!-- Animal Rescue and Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Animal Welfare and Rights</masterLabel>
+            <translation><!-- Animal Welfare and Rights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Architecture</masterLabel>
+            <translation><!-- Architecture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aviation</masterLabel>
+            <translation><!-- Aviation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Climate Change</masterLabel>
+            <translation><!-- Climate Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Sports</masterLabel>
+            <translation><!-- Club Sports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Foundations</masterLabel>
+            <translation><!-- Community Foundations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Recreation</masterLabel>
+            <translation><!-- Community Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Computer and Technology Support</masterLabel>
+            <translation><!-- Computer and Technology Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conservation Centers</masterLabel>
+            <translation><!-- Conservation Centers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cooperative Organizations</masterLabel>
+            <translation><!-- Cooperative Organizations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cultural Awareness</masterLabel>
+            <translation><!-- Cultural Awareness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cultural Programs</masterLabel>
+            <translation><!-- Cultural Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Democracy</masterLabel>
+            <translation><!-- Democracy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diseases</masterLabel>
+            <translation><!-- Diseases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disorders</masterLabel>
+            <translation><!-- Disorders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Childhood Development</masterLabel>
+            <translation><!-- Early Childhood Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education Policy and Reform</masterLabel>
+            <translation><!-- Education Policy and Reform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education Services</masterLabel>
+            <translation><!-- Education Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Services</masterLabel>
+            <translation><!-- Emergency Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental Law</masterLabel>
+            <translation><!-- Environmental Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fisheries and Wildlife</masterLabel>
+            <translation><!-- Fisheries and Wildlife --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foreign Policy</masterLabel>
+            <translation><!-- Foreign Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gardening</masterLabel>
+            <translation><!-- Gardening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gender and Sexuality Equity</masterLabel>
+            <translation><!-- Gender and Sexuality Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate and Professional Education</masterLabel>
+            <translation><!-- Graduate and Professional Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Care Administration and Financing</masterLabel>
+            <translation><!-- Health Care Administration and Financing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Historical Artifacts and Antiques</masterLabel>
+            <translation><!-- Historical Artifacts and Antiques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Historical Societies</masterLabel>
+            <translation><!-- Historical Societies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing and Development</masterLabel>
+            <translation><!-- Housing and Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Affairs</masterLabel>
+            <translation><!-- International Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Economics and Trade</masterLabel>
+            <translation><!-- International Economics and Trade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Humanitarian Relief Services</masterLabel>
+            <translation><!-- International Humanitarian Relief Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Peace and Security</masterLabel>
+            <translation><!-- International Peace and Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Services</masterLabel>
+            <translation><!-- Job Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LBGQIA2S+</masterLabel>
+            <translation><!-- LBGQIA2S+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libraries</masterLabel>
+            <translation><!-- Libraries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marine Science</masterLabel>
+            <translation><!-- Marine Science --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental Health</masterLabel>
+            <translation><!-- Mental Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mentorship Programs</masterLabel>
+            <translation><!-- Mentorship Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Museums</masterLabel>
+            <translation><!-- Museums --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Security</masterLabel>
+            <translation><!-- National Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parks and Nature Centers</masterLabel>
+            <translation><!-- Parks and Nature Centers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient and Family Support</masterLabel>
+            <translation><!-- Patient and Family Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peer Leader</masterLabel>
+            <translation><!-- Peer Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performing Arts</masterLabel>
+            <translation><!-- Performing Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmaceutical and Vaccine Research and Discovery</masterLabel>
+            <translation><!-- Pharmaceutical and Vaccine Research and Discovery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philately</masterLabel>
+            <translation><!-- Philately --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Handicaps	Diversity</masterLabel>
+            <translation><!-- Physical Handicaps	Diversity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Political Party or Canidate Support</masterLabel>
+            <translation><!-- Political Party or Canidate Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Sports</masterLabel>
+            <translation><!-- Professional Sports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Administration</masterLabel>
+            <translation><!-- Public Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Broadcasting</masterLabel>
+            <translation><!-- Public Broadcasting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Health</masterLabel>
+            <translation><!-- Public Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Policy</masterLabel>
+            <translation><!-- Public Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Safety</masterLabel>
+            <translation><!-- Public Safety --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Speaking</masterLabel>
+            <translation><!-- Public Speaking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public or Private Ventures</masterLabel>
+            <translation><!-- Public or Private Ventures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Race Based Initiatives</masterLabel>
+            <translation><!-- Race Based Initiatives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rehabilitation</masterLabel>
+            <translation><!-- Rehabilitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Religious Activities and Spiritual Organizations</masterLabel>
+            <translation><!-- Religious Activities and Spiritual Organizations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Religious Media and Broadcasting</masterLabel>
+            <translation><!-- Religious Media and Broadcasting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STEM</masterLabel>
+            <translation><!-- STEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sailing and Maritime Participation</masterLabel>
+            <translation><!-- Sailing and Maritime Participation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scholarships, Grants, and Financial Support</masterLabel>
+            <translation><!-- Scholarships, Grants, and Financial Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shelter and Housing/Residential Care</masterLabel>
+            <translation><!-- Shelter and Housing/Residential Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Services</masterLabel>
+            <translation><!-- Social Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Education</masterLabel>
+            <translation><!-- Special Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sustainability</masterLabel>
+            <translation><!-- Sustainability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sustainable Development</masterLabel>
+            <translation><!-- Sustainable Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traditional Medicine and Holistic Medicine</masterLabel>
+            <translation><!-- Traditional Medicine and Holistic Medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Athletics</masterLabel>
+            <translation><!-- University Athletics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visual Arts</masterLabel>
+            <translation><!-- Visual Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volunteering</masterLabel>
+            <translation><!-- Volunteering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Youth Development</masterLabel>
+            <translation><!-- Youth Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Youth Education</masterLabel>
+            <translation><!-- Youth Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Youth and Family Services</masterLabel>
+            <translation><!-- Youth and Family Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zoos and Aquariums</masterLabel>
+            <translation><!-- Zoos and Aquariums --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

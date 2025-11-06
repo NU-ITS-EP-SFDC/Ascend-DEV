@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Buffer Search Range --></label>
+        <name>geopointe__Buffer_Search_Range__c</name>
+    </CustomFieldTranslation>

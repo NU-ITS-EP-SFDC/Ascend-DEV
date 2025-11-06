@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Auto Check Out Status --></label>
+        <name>geopointe__Auto_Check_Out_Status__c</name>
+        <picklistValues>
+            <masterLabel>Initiating</masterLabel>
+            <translation><!-- Initiating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Enabled</masterLabel>
+            <translation><!-- Not Enabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nothing Nearby</masterLabel>
+            <translation><!-- Nothing Nearby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

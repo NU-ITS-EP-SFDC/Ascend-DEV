@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A Salesforce ID referring to the record that the check-in is against --></help>
+        <label><!-- What ID --></label>
+        <name>geopointe__What_ID__c</name>
+    </CustomFieldTranslation>

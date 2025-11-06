@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If Lightning Page Layout is selected, the action will only be visible in Lightning Experience. --></help>
+        <label><!-- Form Type --></label>
+        <name>geopointe__Form_Type__c</name>
+        <picklistValues>
+            <masterLabel>Field Set</masterLabel>
+            <translation><!-- Field Set --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lightning Page Layout</masterLabel>
+            <translation><!-- Lightning Page Layout --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

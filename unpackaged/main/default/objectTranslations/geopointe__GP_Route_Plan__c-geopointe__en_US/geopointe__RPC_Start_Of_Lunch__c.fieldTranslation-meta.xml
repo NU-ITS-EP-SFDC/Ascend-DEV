@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Business Lunch Start Time --></label>
+        <name>geopointe__RPC_Start_Of_Lunch__c</name>
+    </CustomFieldTranslation>

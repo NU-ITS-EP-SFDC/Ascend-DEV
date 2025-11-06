@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Enrollment Status --></label>
+        <name>NU_ADV_Enrollment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Clinical</masterLabel>
+            <translation><!-- Clinical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligible to Register</masterLabel>
+            <translation><!-- Eligible to Register --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leave of Absence</masterLabel>
+            <translation><!-- Leave of Absence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Show</masterLabel>
+            <translation><!-- No Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not allowed to Register</masterLabel>
+            <translation><!-- Not allowed to Register --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Coop</masterLabel>
+            <translation><!-- On Coop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Vacation</masterLabel>
+            <translation><!-- On Vacation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Study Abroad</masterLabel>
+            <translation><!-- Study Abroad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn After Stats</masterLabel>
+            <translation><!-- Withdrawn After Stats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn Prior to Stats</masterLabel>
+            <translation><!-- Withdrawn Prior to Stats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WithdrawnDONOTUSE</masterLabel>
+            <translation><!-- WithdrawnDONOTUSE --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

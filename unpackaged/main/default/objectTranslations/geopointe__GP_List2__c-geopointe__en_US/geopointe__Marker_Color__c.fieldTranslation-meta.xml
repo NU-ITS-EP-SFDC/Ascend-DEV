@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The HEX color that the active List markers should be in --></help>
+        <label><!-- Color --></label>
+        <name>geopointe__Marker_Color__c</name>
+    </CustomFieldTranslation>

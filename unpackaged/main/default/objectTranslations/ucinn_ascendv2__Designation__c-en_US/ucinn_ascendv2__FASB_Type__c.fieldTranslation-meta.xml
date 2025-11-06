@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- FASB Type --></label>
+        <name>ucinn_ascendv2__FASB_Type__c</name>
+        <picklistValues>
+            <masterLabel>Expendable</masterLabel>
+            <translation><!-- Expendable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanent Restricted</masterLabel>
+            <translation><!-- Permanent Restricted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporary Restricted</masterLabel>
+            <translation><!-- Temporary Restricted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrestricted</masterLabel>
+            <translation><!-- Unrestricted --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

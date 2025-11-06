@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Pledge Length Time --></label>
+        <name>NU_ADV_Pledge_Length_Time__c</name>
+        <picklistValues>
+            <masterLabel>Months</masterLabel>
+            <translation><!-- Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Years</masterLabel>
+            <translation><!-- Years --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

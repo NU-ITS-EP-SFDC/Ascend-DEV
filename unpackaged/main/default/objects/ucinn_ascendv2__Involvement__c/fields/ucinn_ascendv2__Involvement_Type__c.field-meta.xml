@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ucinn_ascendv2__Involvement_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Involvement Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Advisor</fullName>
+                <default>false</default>
+                <label>Advisor</label>
+            </value>
+            <value>
+                <fullName>Advisory Board Member</fullName>
+                <default>false</default>
+                <label>Advisory Board Member</label>
+            </value>
+            <value>
+                <fullName>Assistant Director of Communications</fullName>
+                <default>false</default>
+                <label>Assistant Director of Communications</label>
+            </value>
+            <value>
+                <fullName>Assistant Program Director</fullName>
+                <default>false</default>
+                <label>Assistant Program Director</label>
+            </value>
+            <value>
+                <fullName>Assistant Vice President for Academic Affairs</fullName>
+                <default>false</default>
+                <label>Assistant Vice President for Academic Affairs</label>
+            </value>
+            <value>
+                <fullName>Assistant Vice President for Student Affairs</fullName>
+                <default>false</default>
+                <label>Assistant Vice President for Student Affairs</label>
+            </value>
+            <value>
+                <fullName>Assistant Vice President for Student Involvement</fullName>
+                <default>false</default>
+                <label>Assistant Vice President for Student Involvement</label>
+            </value>
+            <value>
+                <fullName>Assistant Vice President for Student Services</fullName>
+                <default>false</default>
+                <label>Assistant Vice President for Student Services</label>
+            </value>
+            <value>
+                <fullName>Board Member</fullName>
+                <default>false</default>
+                <label>Board Member</label>
+            </value>
+            <value>
+                <fullName>Campus Liaison</fullName>
+                <default>false</default>
+                <label>Campus Liaison</label>
+            </value>
+            <value>
+                <fullName>Campus Outreach Coordinator</fullName>
+                <default>false</default>
+                <label>Campus Outreach Coordinator</label>
+            </value>
+            <value>
+                <fullName>Captain</fullName>
+                <default>false</default>
+                <label>Captain</label>
+            </value>
+            <value>
+                <fullName>CEO</fullName>
+                <default>false</default>
+                <label>CEO</label>
+            </value>
+            <value>
+                <fullName>Chair</fullName>
+                <default>false</default>
+                <label>Chair</label>
+            </value>
+            <value>
+                <fullName>Chief of Staff</fullName>
+                <default>false</default>
+                <label>Chief of Staff</label>
+            </value>
+            <value>
+                <fullName>Coach</fullName>
+                <default>false</default>
+                <label>Coach</label>
+            </value>
+            <value>
+                <fullName>Co-advisor</fullName>
+                <default>false</default>
+                <label>Co-advisor</label>
+            </value>
+            <value>
+                <fullName>Co-captain</fullName>
+                <default>false</default>
+                <label>Co-captain</label>
+            </value>
+            <value>
+                <fullName>Co-chair</fullName>
+                <default>false</default>
+                <label>Co-chair</label>
+            </value>
+            <value>
+                <fullName>Co-Leader</fullName>
+                <default>false</default>
+                <label>Co-Leader</label>
+            </value>
+            <value>
+                <fullName>Committee Member</fullName>
+                <default>false</default>
+                <label>Committee Member</label>
+            </value>
+            <value>
+                <fullName>Community Outreach Coordinator</fullName>
+                <default>false</default>
+                <label>Community Outreach Coordinator</label>
+            </value>
+            <value>
+                <fullName>Comptroller</fullName>
+                <default>false</default>
+                <label>Comptroller</label>
+            </value>
+            <value>
+                <fullName>Cultural Liaison</fullName>
+                <default>false</default>
+                <label>Cultural Liaison</label>
+            </value>
+            <value>
+                <fullName>Delegate</fullName>
+                <default>false</default>
+                <label>Delegate</label>
+            </value>
+            <value>
+                <fullName>Deputy Comptroller</fullName>
+                <default>false</default>
+                <label>Deputy Comptroller</label>
+            </value>
+            <value>
+                <fullName>Director</fullName>
+                <default>false</default>
+                <label>Director</label>
+            </value>
+            <value>
+                <fullName>Director of Alumni Relations</fullName>
+                <default>false</default>
+                <label>Director of Alumni Relations</label>
+            </value>
+            <value>
+                <fullName>Director of Communication</fullName>
+                <default>false</default>
+                <label>Director of Communication</label>
+            </value>
+            <value>
+                <fullName>Director of Community Service</fullName>
+                <default>false</default>
+                <label>Director of Community Service</label>
+            </value>
+            <value>
+                <fullName>Director of Design</fullName>
+                <default>false</default>
+                <label>Director of Design</label>
+            </value>
+            <value>
+                <fullName>Director of Finance</fullName>
+                <default>false</default>
+                <label>Director of Finance</label>
+            </value>
+            <value>
+                <fullName>Director of Marketing</fullName>
+                <default>false</default>
+                <label>Director of Marketing</label>
+            </value>
+            <value>
+                <fullName>Director of Marketing &amp; Communications</fullName>
+                <default>false</default>
+                <label>Director of Marketing &amp; Communications</label>
+            </value>
+            <value>
+                <fullName>Director of Member Engagement</fullName>
+                <default>false</default>
+                <label>Director of Member Engagement</label>
+            </value>
+            <value>
+                <fullName>Director of Operations</fullName>
+                <default>false</default>
+                <label>Director of Operations</label>
+            </value>
+            <value>
+                <fullName>Director of Recruitment &amp; Partnerships</fullName>
+                <default>false</default>
+                <label>Director of Recruitment &amp; Partnerships</label>
+            </value>
+            <value>
+                <fullName>Elections Committee Chair</fullName>
+                <default>false</default>
+                <label>Elections Committee Chair</label>
+            </value>
+            <value>
+                <fullName>Entrepreneur in Residence</fullName>
+                <default>false</default>
+                <label>Entrepreneur in Residence</label>
+            </value>
+            <value>
+                <fullName>Event Planner</fullName>
+                <default>false</default>
+                <label>Event Planner</label>
+            </value>
+            <value>
+                <fullName>Executive Director of Communications</fullName>
+                <default>false</default>
+                <label>Executive Director of Communications</label>
+            </value>
+            <value>
+                <fullName>Executive Vice President</fullName>
+                <default>false</default>
+                <label>Executive Vice President</label>
+            </value>
+            <value>
+                <fullName>Faculty Advisor</fullName>
+                <default>false</default>
+                <label>Faculty Advisor</label>
+            </value>
+            <value>
+                <fullName>Fellow</fullName>
+                <default>false</default>
+                <label>Fellow</label>
+            </value>
+            <value>
+                <fullName>Finance Board Member</fullName>
+                <default>false</default>
+                <label>Finance Board Member</label>
+            </value>
+            <value>
+                <fullName>Graphic Designer</fullName>
+                <default>false</default>
+                <label>Graphic Designer</label>
+            </value>
+            <value>
+                <fullName>Historian</fullName>
+                <default>false</default>
+                <label>Historian</label>
+            </value>
+            <value>
+                <fullName>Interest</fullName>
+                <default>false</default>
+                <label>Interest</label>
+            </value>
+            <value>
+                <fullName>Introducer</fullName>
+                <default>false</default>
+                <label>Introducer</label>
+            </value>
+            <value>
+                <fullName>Junior Program Director</fullName>
+                <default>false</default>
+                <label>Junior Program Director</label>
+            </value>
+            <value>
+                <fullName>Leader</fullName>
+                <default>false</default>
+                <label>Leader</label>
+            </value>
+            <value>
+                <fullName>Leadership Team</fullName>
+                <default>false</default>
+                <label>Leadership Team</label>
+            </value>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>Marketing Manager</fullName>
+                <default>false</default>
+                <label>Marketing Manager</label>
+            </value>
+            <value>
+                <fullName>Marketing Team</fullName>
+                <default>false</default>
+                <label>Marketing Team</label>
+            </value>
+            <value>
+                <fullName>Member</fullName>
+                <default>false</default>
+                <label>Member</label>
+            </value>
+            <value>
+                <fullName>Mentee</fullName>
+                <default>false</default>
+                <label>Mentee</label>
+            </value>
+            <value>
+                <fullName>Mentor</fullName>
+                <default>false</default>
+                <label>Mentor</label>
+            </value>
+            <value>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+                <label>Moderator</label>
+            </value>
+            <value>
+                <fullName>Nominee</fullName>
+                <default>false</default>
+                <label>Nominee</label>
+            </value>
+            <value>
+                <fullName>Office Assistant</fullName>
+                <default>false</default>
+                <label>Office Assistant</label>
+            </value>
+            <value>
+                <fullName>Operational Appeals Board</fullName>
+                <default>false</default>
+                <label>Operational Appeals Board</label>
+            </value>
+            <value>
+                <fullName>Parliamentarian</fullName>
+                <default>false</default>
+                <label>Parliamentarian</label>
+            </value>
+            <value>
+                <fullName>Participant</fullName>
+                <default>false</default>
+                <label>Participant</label>
+            </value>
+            <value>
+                <fullName>Photographer</fullName>
+                <default>false</default>
+                <label>Photographer</label>
+            </value>
+            <value>
+                <fullName>President</fullName>
+                <default>false</default>
+                <label>President</label>
+            </value>
+            <value>
+                <fullName>Program Director</fullName>
+                <default>false</default>
+                <label>Program Director</label>
+            </value>
+            <value>
+                <fullName>Renewable Energy Initiatives Board</fullName>
+                <default>false</default>
+                <label>Renewable Energy Initiatives Board</label>
+            </value>
+            <value>
+                <fullName>Scout Liaison</fullName>
+                <default>false</default>
+                <label>Scout Liaison</label>
+            </value>
+            <value>
+                <fullName>Secretary</fullName>
+                <default>false</default>
+                <label>Secretary</label>
+            </value>
+            <value>
+                <fullName>Senator</fullName>
+                <default>false</default>
+                <label>Senator</label>
+            </value>
+            <value>
+                <fullName>Shortlist</fullName>
+                <default>false</default>
+                <label>Shortlist</label>
+            </value>
+            <value>
+                <fullName>Social Media Director</fullName>
+                <default>false</default>
+                <label>Social Media Director</label>
+            </value>
+            <value>
+                <fullName>Speaker</fullName>
+                <default>false</default>
+                <label>Speaker</label>
+            </value>
+            <value>
+                <fullName>Staff</fullName>
+                <default>false</default>
+                <label>Staff</label>
+            </value>
+            <value>
+                <fullName>Standing Committee Delegate (Delegate)</fullName>
+                <default>false</default>
+                <label>Standing Committee Delegate (Delegate)</label>
+            </value>
+            <value>
+                <fullName>Student-at-large</fullName>
+                <default>false</default>
+                <label>Student-at-large</label>
+            </value>
+            <value>
+                <fullName>Student Involvement Board Member</fullName>
+                <default>false</default>
+                <label>Student Involvement Board Member</label>
+            </value>
+            <value>
+                <fullName>Sustaining_Member</fullName>
+                <default>false</default>
+                <label>SustainingMember</label>
+            </value>
+            <value>
+                <fullName>Treasurer</fullName>
+                <default>false</default>
+                <label>Treasurer</label>
+            </value>
+            <value>
+                <fullName>Underclassmen Representative</fullName>
+                <default>false</default>
+                <label>Underclassmen Representative</label>
+            </value>
+            <value>
+                <fullName>Vice Chair</fullName>
+                <default>false</default>
+                <label>Vice Chair</label>
+            </value>
+            <value>
+                <fullName>Vice President</fullName>
+                <default>false</default>
+                <label>Vice President</label>
+            </value>
+            <value>
+                <fullName>Vice President for Academic Affairs</fullName>
+                <default>false</default>
+                <label>Vice President for Academic Affairs</label>
+            </value>
+            <value>
+                <fullName>Vice President for Student Affairs</fullName>
+                <default>false</default>
+                <label>Vice President for Student Affairs</label>
+            </value>
+            <value>
+                <fullName>Vice President for Student Involvement</fullName>
+                <default>false</default>
+                <label>Vice President for Student Involvement</label>
+            </value>
+            <value>
+                <fullName>Vice President for Student Services</fullName>
+                <default>false</default>
+                <label>Vice President for Student Services</label>
+            </value>
+            <value>
+                <fullName>Vice President of Administration</fullName>
+                <default>false</default>
+                <label>Vice President of Administration</label>
+            </value>
+            <value>
+                <fullName>Vice President of Alumni Relations</fullName>
+                <default>false</default>
+                <label>Vice President of Alumni Relations</label>
+            </value>
+            <value>
+                <fullName>Vice President of Community Relations</fullName>
+                <default>false</default>
+                <label>Vice President of Community Relations</label>
+            </value>
+            <value>
+                <fullName>Vice President of Community Service</fullName>
+                <default>false</default>
+                <label>Vice President of Community Service</label>
+            </value>
+            <value>
+                <fullName>Vice President of Events</fullName>
+                <default>false</default>
+                <label>Vice President of Events</label>
+            </value>
+            <value>
+                <fullName>Vice President of Finance</fullName>
+                <default>false</default>
+                <label>Vice President of Finance</label>
+            </value>
+            <value>
+                <fullName>Vice President of Media &amp; Marketing</fullName>
+                <default>false</default>
+                <label>Vice President of Media &amp; Marketing</label>
+            </value>
+            <value>
+                <fullName>Vice President of Member Relations</fullName>
+                <default>false</default>
+                <label>Vice President of Member Relations</label>
+            </value>
+            <value>
+                <fullName>Vice President of Recruitment &amp; Retention</fullName>
+                <default>false</default>
+                <label>Vice President of Recruitment &amp; Retention</label>
+            </value>
+            <value>
+                <fullName>Vice President of University Relations</fullName>
+                <default>false</default>
+                <label>Vice President of University Relations</label>
+            </value>
+            <value>
+                <fullName>Volunteer</fullName>
+                <default>false</default>
+                <label>Volunteer</label>
+            </value>
+            <value>
+                <fullName>Webmaster</fullName>
+                <default>false</default>
+                <label>Webmaster</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

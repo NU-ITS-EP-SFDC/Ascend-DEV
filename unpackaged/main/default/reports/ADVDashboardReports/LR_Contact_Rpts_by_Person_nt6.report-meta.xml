@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ucinn_ascendv2__Contact_Report__c.ucinn_ascendv2__Contact_Method__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Contact_Report__c.NU_ADV_Primary_Fundraiser__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Jasinski,Machunis,Ball,Surilov,Dabhi,Ambrose,Kostousov,Bolton,Rohan,Bourdon</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ucinn_ascendv2__Contact_Report__c.NU_ADV_Primary_Fundraiser__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>LR Contact Rpts by Person</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ucinn_ascendv2__Contact_Report__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ucinn_ascendv2__Contact_Report__c.ucinn_ascendv2__Date__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

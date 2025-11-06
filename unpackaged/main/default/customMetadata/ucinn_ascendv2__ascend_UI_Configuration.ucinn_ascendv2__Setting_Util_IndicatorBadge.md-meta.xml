@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting Util IndicatorBadge</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;Label&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;Blank_NAME&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Object__c&quot;,
+      &quot;toolTip&quot;: &quot;Object associated with the indicator.&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Object&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Related_Field__c&quot;,
+      &quot;toolTip&quot;: &quot;Field associated with the indicator.&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Related Field&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Comparison_Type__c&quot;,
+      &quot;toolTip&quot;: &quot;Decides the logic to be used when evaluating whether or not a badge should be displayed on a record. For more information about comparison types, see Formula Operators and Functions: &apos;Logical Operators&apos; documentation.&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Comparison Type&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Contains&quot;,
+          &quot;Greater or Equal&quot;,
+          &quot;Less or Equal&quot;,
+          &quot;Blank or Null&quot;,
+          &quot;Not Blank or Null&quot;,
+          &quot;Use Boolean Value of Field&quot;
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Comparison_Value__c&quot;,
+      &quot;toolTip&quot;: &quot;Leave blank for &apos;Blank or Null&apos; and &apos;Not Blank or Null&apos;.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Comparison Value&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Badge_Color__c&quot;,
+      &quot;toolTip&quot;: &quot;HTML Color name for badge background color. Color samples are shown here: http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/colors/colors_names.asp.html&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Badge Color&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;AliceBlue&quot;,
+          &quot;AntiqueWhite&quot;,
+          &quot;Aqua&quot;,
+          &quot;Aquamarine&quot;,
+          &quot;Azure&quot;,
+          &quot;Beige&quot;,
+          &quot;Bisque&quot;,
+          &quot;Black&quot;,
+          &quot;BlanchedAlmond&quot;,
+          &quot;Blue&quot;,
+          &quot;BlueViolet&quot;,
+          &quot;Brown&quot;,
+          &quot;BurlyWood&quot;,
+          &quot;CadetBlue&quot;,
+          &quot;Chartreuse&quot;,
+          &quot;Chocolate&quot;,
+          &quot;Coral&quot;,
+          &quot;CornflowerBlue&quot;,
+          &quot;Cornsilk&quot;,
+          &quot;Crimson&quot;,
+          &quot;Cyan&quot;,
+          &quot;DarkBlue&quot;,
+          &quot;DarkCyan&quot;,
+          &quot;DarkGoldenRod&quot;,
+          &quot;DarkGray&quot;,
+          &quot;DarkGreen&quot;,
+          &quot;DarkGrey&quot;,
+          &quot;DarkKhaki&quot;,
+          &quot;DarkMagenta&quot;,
+          &quot;DarkOliveGreen&quot;,
+          &quot;DarkOrange&quot;,
+          &quot;DarkOrchid&quot;,
+          &quot;DarkRed&quot;,
+          &quot;DarkSalmon&quot;,
+          &quot;DarkSeaGreen&quot;,
+          &quot;DarkSlateBlue&quot;,
+          &quot;DarkSlateGray&quot;,
+          &quot;DarkSlateGrey&quot;,
+          &quot;DarkTurquoise&quot;,
+          &quot;DarkViolet&quot;,
+          &quot;DeepPink&quot;,
+          &quot;DeepSkyBlue&quot;,
+          &quot;DimGray&quot;,
+          &quot;DimGrey&quot;,
+          &quot;DodgerBlue&quot;,
+          &quot;FireBrick&quot;,
+          &quot;FloralWhite&quot;,
+          &quot;ForestGreen&quot;,
+          &quot;Fuchsia&quot;,
+          &quot;Gainsboro&quot;,
+          &quot;GhostWhite&quot;,
+          &quot;Gold&quot;,
+          &quot;GoldenRod&quot;,
+          &quot;Gray&quot;,
+          &quot;Green&quot;,
+          &quot;GreenYellow&quot;,
+          &quot;Grey&quot;,
+          &quot;HoneyDew&quot;,
+          &quot;HotPink&quot;,
+          &quot;IndianRed&quot;,
+          &quot;Indigo&quot;,
+          &quot;Ivory&quot;,
+          &quot;Khaki&quot;,
+          &quot;Lavender&quot;,
+          &quot;LavenderBlush&quot;,
+          &quot;LawnGreen&quot;,
+          &quot;LemonChiffon&quot;,
+          &quot;LightBlue&quot;,
+          &quot;LightCoral&quot;,
+          &quot;LightCyan&quot;,
+          &quot;LightGoldenRodYellow&quot;,
+          &quot;LightGray&quot;,
+          &quot;LightGreen&quot;,
+          &quot;LightGrey&quot;,
+          &quot;LightPink&quot;,
+          &quot;LightSalmon&quot;,
+          &quot;LightSeaGreen&quot;,
+          &quot;LightSkyBlue&quot;,
+          &quot;LightSlateGray&quot;,
+          &quot;LightSlateGrey&quot;,
+          &quot;LightSteelBlue&quot;,
+          &quot;LightYellow&quot;,
+          &quot;Lime&quot;,
+          &quot;LimeGreen&quot;,
+          &quot;Linen&quot;,
+          &quot;Magenta&quot;,
+          &quot;Maroon&quot;,
+          &quot;MediumAquaMarine&quot;,
+          &quot;MediumBlue&quot;,
+          &quot;MediumOrchid&quot;,
+          &quot;MediumPurple&quot;,
+          &quot;MediumSeaGreen&quot;,
+          &quot;MediumSlateBlue&quot;,
+          &quot;MediumSpringGreen&quot;,
+          &quot;MediumTurquoise&quot;,
+          &quot;MediumVioletRed&quot;,
+          &quot;MidnightBlue&quot;,
+          &quot;MintCream&quot;,
+          &quot;MistyRose&quot;,
+          &quot;Moccasin&quot;,
+          &quot;NavajoWhite&quot;,
+          &quot;Navy&quot;,
+          &quot;OldLace&quot;,
+          &quot;Olive&quot;,
+          &quot;OliveDrab&quot;,
+          &quot;Orange&quot;,
+          &quot;OrangeRed&quot;,
+          &quot;Orchid&quot;,
+          &quot;PaleGoldenRod&quot;,
+          &quot;PaleGreen&quot;,
+          &quot;PaleTurquoise&quot;,
+          &quot;PaleVioletRed&quot;,
+          &quot;PapayaWhip&quot;,
+          &quot;PeachPuff&quot;,
+          &quot;Peru&quot;,
+          &quot;Pink&quot;,
+          &quot;Plum&quot;,
+          &quot;PowderBlue&quot;,
+          &quot;Purple&quot;,
+          &quot;RebeccaPurple&quot;,
+          &quot;Red&quot;,
+          &quot;RosyBrown&quot;,
+          &quot;RoyalBlue&quot;,
+          &quot;SaddleBrown&quot;,
+          &quot;Salmon&quot;,
+          &quot;SandyBrown&quot;,
+          &quot;SeaGreen&quot;,
+          &quot;SeaShell&quot;,
+          &quot;Sienna&quot;,
+          &quot;Silver&quot;,
+          &quot;SkyBlue&quot;,
+          &quot;SlateBlue&quot;,
+          &quot;SlateGray&quot;,
+          &quot;SlateGrey&quot;,
+          &quot;Snow&quot;,
+          &quot;SpringGreen&quot;,
+          &quot;SteelBlue&quot;,
+          &quot;Tan&quot;,
+          &quot;Teal&quot;,
+          &quot;Thistle&quot;,
+          &quot;Tomato&quot;,
+          &quot;Turquoise&quot;,
+          &quot;Violet&quot;,
+          &quot;Wheat&quot;,
+          &quot;White&quot;,
+          &quot;WhiteSmoke&quot;,
+          &quot;Yellow&quot;,
+          &quot;YellowGreen&quot;
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Badge_Icon_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;Salesforce Lightning Design System (SLDS) name of icon to display. Should follow &lt;lightning:icon /&gt; naming convention (ex: standard:user, action:freeze_user). Icons are located here: https://www.lightningdesignsystem.com/icons/&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Badge Icon Name&quot;
+      }
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+&quot;objectApiName&quot;: &quot;ucinn_ascendv2__Indicator_Badge__mdt&quot;,
+&quot;allowCreate&quot;:true,
+&quot;title&quot;: &quot;Indicator Badge&quot;,
+&quot;helpText&quot;: &quot;Configuration pertaining to Custom metadata Indicator Badge.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

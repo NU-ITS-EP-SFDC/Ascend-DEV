@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ucinn_ascendv2__Involvement__c.ucinn_ascendv2__Involvement_Code__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.ucinn_ascendv2__Donor_ID__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.ucinn_ascendv2__Expanded_Name_Formula__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Involvement__c.ucinn_ascendv2__Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Involvement__c.ucinn_ascendv2__End_Date__c</field>
+    </columns>
+    <description>Use with Ascend ID&apos;s and Involvement names to ascertain involvement</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>FK_$Contact.ucinn_ascendv2__Donor_ID__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>00034645,00035676,00036339,00056161,00073205,00092635,00092662,00093486,00114262,00123214,00128069,00128563,00131885,00140950,00146437,00180798,00184558,00191193,00196120,00203503,00203510,00210167,00218318,00230655,00234244,00236748,00260250,00282042,00283226,00286414,00294387,00355447,00359098,00374606,00379366,00383556,00389652,00407770,00425820,00426139,00426850,00436325,00516321,00563125,00567260,00573278,00591358,00632442,00636218,00641786,00655583,00656125,00658056,00666254,00669699,00700655,00715526,00725783,00725791,00726469,00742038,00743591,00745594,00765012,00774082,00776559,00792055,00794904,00800992,00801877,00801880,00801889,00816995,00828482,00832507,00842131,00846150,00850957,00852560,00855252,00875392,00929241,00936193,00940922,00942477,00946087,00956929,00963597,00964165,00964297,00972403,00975182,00975183,00975624,00978635,00987607,00997557,01019242,01035179,01035680,01051450,01071340,01071498,01102749,01137350,01141419,01141934,01147647,01169717,01187405,01201357,01812828</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Involvement__c.ucinn_ascendv2__Involvement_Code__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Center Work &amp; Learning Adv Brd,ECE Capstone Jury,Friends of Tuton,High Tech Cncl Exec Comm Mbr,Inaugurations,Library Room and Plaque Donors,NU Ambassadors,Campaign Feasibility Team,Alumni Executive Forum,Alumni Mentor Volunteer,AR Event Speaker,AR Lead Dog Volunteer,Century Club,Class of 1960 50th ReunionComm,Golden Graduate Committee Member - Class of 1964,Golden Graduate Committee Member - Class of 1965,Harris Survey Respondent,Husky Club,Ind Advisory Bay Area,LA regional event volunteer,Manhattan Lifetime,Marino Center FY04,New Sigma Members 00,NH Leadership,NH regional event volunteer,NU Real Estate Club Members,NU support priority - High,NYC Chapter Mentor,P Pres Alumni Association,Past/Current Alumni Board,PCI 2010 Career Mentor Yes,PCI 2010 Directory Respondent,PCI 2010 NU Philanthropic Priority Average,PCI 2010 NU Philanthropic Priority High,PCI 2010 NU Philanthropic Priority Highest,PCI 2010 NU Pos Impact Strongly Agree,Perception of NU - Positive,Perception of NU - V Positive,Quarter Century Club,Regional Advisory Committee,Reunion Committee Member,Student Experience - Positive,Student Experience- V Positive,Athletics Hall of Fame,Athletics Resource Committee,Friends of Baseball,Friends of Hockey,Friends of NU Rugby - FONUR,N Club Through 1993,N Club Through 1994,PM Varsity Club</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Involvement__c.ucinn_ascendv2__Involvement_Code__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Varsity Club,Varsity Club 99-00,Varsity Club FY 95-96,Varsity Club FY96-97,Varsity Club FY97-98,Varsity Club FY98-99,BHS Health Sciences Entrepreneurs Member,Bouve 1,Bouve Deans Circle 2015 - 2016,Bouve Dean&apos;s Circle 2016-2017,Bouve Lifetime Member,Bouve Resource Committee,Health Care Roundtable Members,Nursing Alumni Assoc - active,Physical Therapy Centennial Ambassadors 2015,Executive Committee,Overseers Committee,TOC,Trustees Committee,CAS Resource Council,Center For The Arts,Civil Eng Members &apos;95,COE Graduate Student Ambassador,Engg Resource Committee,Engg Scholarship Donor,Engineering Leadership,Ind Advisory Engineering,Lowell Mem,MIME Capstone Jury,Minority Eng Alumni,NUCEAO Life Membership,NUEAS Eng Alumni Society,NUMEAC 95-96,Sherman Center Participant,Biotechnology Steering Comm,CPS Event Attendee,CPS Mentor,CPS Volunteer,Sigma Epsilon Rho Honor Soc,Sigma Life Member,Friend of the Library,Library Patron,Snell Library 1990 Campaign Volunteer,HNW - $10M - $19.9 M,HNW - $1M - $9.9M,HNW - $20 million +,National Annual Fund Committee,Empower Campus Campaign Volunteers,Global Leadership Summit Special Guest,NU West Coast Council Shortlist,President&apos;s Circle Member,President&apos;s Circle Sponsor,Women Who Empower Event Speaker</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>KE - Prospects with key involvement</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ucinn_ascendv2__Involvement__c@ucinn_ascendv2__Involvement__c.ucinn_ascendv2__Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>FK_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>ucinn_ascendv2__Involvement__c.ucinn_ascendv2__Start_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

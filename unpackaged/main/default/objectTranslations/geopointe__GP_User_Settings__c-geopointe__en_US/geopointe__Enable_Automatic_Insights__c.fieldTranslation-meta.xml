@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When enabled, recommendations will be automatically applied when a data set loads --></help>
+        <label><!-- Enable Automatic Insights in Focus Tab --></label>
+        <name>geopointe__Enable_Automatic_Insights__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- For Estate Gift Intentions where Northeastern does not know the value, default estimate is $50,000. --></help>
+        <label><!-- PG is estimate --></label>
+        <name>NU_ADV_PG_is_estimate__c</name>
+    </CustomFieldTranslation>

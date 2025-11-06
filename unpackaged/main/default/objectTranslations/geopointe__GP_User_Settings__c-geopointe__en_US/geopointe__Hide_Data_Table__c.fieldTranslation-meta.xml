@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If checked, will hide the Data Table on the map for the User. --></help>
+        <label><!-- Hide Data Table --></label>
+        <name>geopointe__Hide_Data_Table__c</name>
+    </CustomFieldTranslation>

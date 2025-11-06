@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Reason --></label>
+        <name>NU_ADV_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Event Attendee</masterLabel>
+            <translation><!-- Event Attendee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Donor</masterLabel>
+            <translation><!-- New Donor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Engagement Relationship</masterLabel>
+            <translation><!-- New Engagement Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Subsidiary</masterLabel>
+            <translation><!-- New Subsidiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent of Current Student</masterLabel>
+            <translation><!-- Parent of Current Student --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

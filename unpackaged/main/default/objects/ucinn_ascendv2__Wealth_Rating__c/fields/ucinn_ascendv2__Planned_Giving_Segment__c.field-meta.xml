@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ucinn_ascendv2__Planned_Giving_Segment__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Planned Giving Segment</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not a Planned Giver</fullName>
+                <default>false</default>
+                <label>Not a Planned Giver</label>
+            </value>
+            <value>
+                <fullName>Potential Planned Giver</fullName>
+                <default>false</default>
+                <label>Potential Planned Giver</label>
+            </value>
+            <value>
+                <fullName>Strong Planned Giving Prospect</fullName>
+                <default>false</default>
+                <label>Strong Planned Giving Prospect</label>
+            </value>
+            <value>
+                <fullName>Ideal Planned Giver</fullName>
+                <default>false</default>
+                <label>Ideal Planned Giver</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

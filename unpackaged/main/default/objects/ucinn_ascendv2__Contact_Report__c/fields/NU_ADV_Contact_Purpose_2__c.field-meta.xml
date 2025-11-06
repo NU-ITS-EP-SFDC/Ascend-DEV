@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NU_ADV_Contact_Purpose_2__c</fullName>
+    <inlineHelpText>The purpose of the interaction.</inlineHelpText>
+    <label>Contact Purpose</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Constituent Initiated Contact</fullName>
+                <default>false</default>
+                <label>Constituent Initiated Contact</label>
+            </value>
+            <value>
+                <fullName>Cultivation</fullName>
+                <default>false</default>
+                <label>Cultivation</label>
+            </value>
+            <value>
+                <fullName>Engagement</fullName>
+                <default>false</default>
+                <label>Engagement</label>
+            </value>
+            <value>
+                <fullName>Impromptu Interaction</fullName>
+                <default>false</default>
+                <label>Impromptu Interaction</label>
+            </value>
+            <value>
+                <fullName>Introductory</fullName>
+                <default>false</default>
+                <label>Introductory</label>
+            </value>
+            <value>
+                <fullName>Marketing Content Referral</fullName>
+                <default>false</default>
+                <label>Marketing Content Referral</label>
+            </value>
+            <value>
+                <fullName>Qualification</fullName>
+                <default>false</default>
+                <label>Qualification</label>
+            </value>
+            <value>
+                <fullName>Solicitation</fullName>
+                <default>false</default>
+                <label>Solicitation</label>
+            </value>
+            <value>
+                <fullName>Stewardship</fullName>
+                <default>false</default>
+                <label>Stewardship</label>
+            </value>
+            <value>
+                <fullName>Volunteer</fullName>
+                <default>false</default>
+                <label>Volunteer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

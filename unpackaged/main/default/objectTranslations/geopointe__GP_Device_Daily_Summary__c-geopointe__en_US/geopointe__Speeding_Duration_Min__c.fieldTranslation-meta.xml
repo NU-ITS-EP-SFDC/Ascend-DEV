@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The total amount of time the device was traveling above the speed limit. Set to -1 if unknown. --></help>
+        <label><!-- Speeding Duration (min) --></label>
+        <name>geopointe__Speeding_Duration_Min__c</name>
+    </CustomFieldTranslation>

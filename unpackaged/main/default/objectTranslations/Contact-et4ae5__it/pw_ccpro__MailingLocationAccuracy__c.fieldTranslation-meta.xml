@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Mailing Location Accuracy --></label>
+        <name>pw_ccpro__MailingLocationAccuracy__c</name>
+        <picklistValues>
+            <masterLabel>Ambiguous</masterLabel>
+            <translation><!-- Ambiguous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Country</masterLabel>
+            <translation><!-- Country --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not checked</masterLabel>
+            <translation><!-- Not checked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not matched</masterLabel>
+            <translation><!-- Not matched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parsed but not found</masterLabel>
+            <translation><!-- Parsed but not found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postal Code</masterLabel>
+            <translation><!-- Postal Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premise</masterLabel>
+            <translation><!-- Premise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State</masterLabel>
+            <translation><!-- State --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

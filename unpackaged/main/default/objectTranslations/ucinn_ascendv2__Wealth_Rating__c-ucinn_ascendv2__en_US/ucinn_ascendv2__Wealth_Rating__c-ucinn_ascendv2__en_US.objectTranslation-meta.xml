@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rating</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ratings</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Account Wealth Rating Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect Research --></label>
+            <section>Prospect Research</section>
+        </sections>
+        <sections>
+            <label><!-- Vendor Scoring --></label>
+            <section>Vendor Scoring</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Wealth Rating Layout V1</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Annual Giving Ask Details</layout>
+        <sections>
+            <label><!-- Ask Amounts --></label>
+            <section>Ask Amounts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Target Designations --></label>
+            <section>Target Designations</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Wealth Rating Layout</layout>
+        <sections>
+            <label><!-- Additional Wealth Engine Information --></label>
+            <section>Additional Wealth Engine Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Wealth Rating Layout V1</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Kindsight Rating</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Kindsight Insights --></label>
+            <section>Kindsight Insights</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Model Scores</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor Rating Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Vendor Scoring --></label>
+            <section>Vendor Scoring</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Annual Giving Ask Details --></label>
+        <name>NU_ADV_Annual_Giving_Ask_Details</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Model Score --></label>
+        <name>NU_ADV_Model_Score</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- lakisdjf --></description>
+        <label><!-- TVRating --></label>
+        <name>TVRating</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vendor Rating --></label>
+        <name>Vendor_Rating</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A household&apos;s wealth rating. --></description>
+        <label><!-- Account Wealth Rating --></label>
+        <name>ucinn_ascendv2__Account_Wealth_Rating</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A constituent&apos;s wealth rating. --></description>
+        <label><!-- Contact Wealth Rating --></label>
+        <name>ucinn_ascendv2__Contact_Wealth_Rating</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Kindsight --></label>
+        <name>ucinn_ascendv2__Kindsight</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Do not change the Name field. Upon creation, the Name field should read [Default Name]. --></errorMessage>
+        <name>Name_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please populate either the wealth rating field or the estimated total giving capacity field. --></errorMessage>
+        <name>ucinn_ascendv2__Must_Populate_Either_WR_Or_EGC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the owner of the record can edit fields. --></errorMessage>
+        <name>ucinn_ascendv2__Only_Edit_Own_Wealth_Ratings</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Profile value should match user&apos;s profile. --></errorMessage>
+        <name>ucinn_ascendv2__Profile_Name_Does_Not_Match_Picklist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The wealth rating profile cannot be changed from its original value. --></errorMessage>
+        <name>ucinn_ascendv2__Wealth_Rating_Profile_Cannot_Be_Changed</name>
+    </validationRules>
+</CustomObjectTranslation>

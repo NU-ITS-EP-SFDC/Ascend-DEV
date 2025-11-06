@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Last Use Type --></label>
+        <name>geopointe__Last_Use_Type__c</name>
+        <picklistValues>
+            <masterLabel>API</masterLabel>
+            <translation><!-- API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Map Tab</masterLabel>
+            <translation><!-- Map Tab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce1</masterLabel>
+            <translation><!-- Salesforce1 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

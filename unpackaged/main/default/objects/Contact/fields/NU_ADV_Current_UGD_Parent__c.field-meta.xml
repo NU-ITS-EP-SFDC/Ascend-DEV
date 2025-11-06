@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NU_ADV_Current_UGD_Parent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Is this a parent of a full-time undergraduate day student?</inlineHelpText>
+    <label>Current UGD Parent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

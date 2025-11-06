@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Disqualification Reason --></label>
+        <name>NU_ADV_Disqualification_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Financially Unable</masterLabel>
+            <translation><!-- Financially Unable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of Closeness</masterLabel>
+            <translation><!-- Lack of Closeness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not the right time</masterLabel>
+            <translation><!-- Not the right time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timing</masterLabel>
+            <translation><!-- Timing --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Bequest Type --></label>
+        <name>NU_ADV_Bequest_Type__c</name>
+        <picklistValues>
+            <masterLabel>Contingent</masterLabel>
+            <translation><!-- Contingent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent of Estate</masterLabel>
+            <translation><!-- Percent of Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residual</masterLabel>
+            <translation><!-- Residual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specific</masterLabel>
+            <translation><!-- Specific --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- NU Unit(s) --></label>
+        <name>NU_Unit_s__c</name>
+        <picklistValues>
+            <masterLabel>ADV</masterLabel>
+            <translation><!-- ADV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATH</masterLabel>
+            <translation><!-- ATH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All University</masterLabel>
+            <translation><!-- All University --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alumni Relations</masterLabel>
+            <translation><!-- Alumni Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHS</masterLabel>
+            <translation><!-- BHS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnett Institute</masterLabel>
+            <translation><!-- Barnett Institute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAM</masterLabel>
+            <translation><!-- CAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAMD</masterLabel>
+            <translation><!-- CAMD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAS</masterLabel>
+            <translation><!-- CAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCJ</masterLabel>
+            <translation><!-- CCJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF</masterLabel>
+            <translation><!-- CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COE</masterLabel>
+            <translation><!-- COE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPS</masterLabel>
+            <translation><!-- CPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSC</masterLabel>
+            <translation><!-- CSC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSH</masterLabel>
+            <translation><!-- CSH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMSB</masterLabel>
+            <translation><!-- DMSB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMSA</masterLabel>
+            <translation><!-- EMSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISSI</masterLabel>
+            <translation><!-- ISSI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KCCS</masterLabel>
+            <translation><!-- KCCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libraries</masterLabel>
+            <translation><!-- Libraries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marine Science Institute</masterLabel>
+            <translation><!-- Marine Science Institute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NUSL</masterLabel>
+            <translation><!-- NUSL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OAR</masterLabel>
+            <translation><!-- OAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PG</masterLabel>
+            <translation><!-- PG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Policy School CURP</masterLabel>
+            <translation><!-- Policy School CURP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roux</masterLabel>
+            <translation><!-- Roux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STE</masterLabel>
+            <translation><!-- STE --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

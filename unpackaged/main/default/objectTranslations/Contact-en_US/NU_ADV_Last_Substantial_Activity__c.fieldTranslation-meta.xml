@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Date of the most recent submitted contact report --></help>
+        <label><!-- Last Substantial Activity --></label>
+        <name>NU_ADV_Last_Substantial_Activity__c</name>
+    </CustomFieldTranslation>

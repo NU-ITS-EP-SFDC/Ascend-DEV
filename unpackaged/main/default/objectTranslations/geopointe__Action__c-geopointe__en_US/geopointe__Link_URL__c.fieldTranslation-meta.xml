@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The webpage address navigated to when this action is selected. For internal salesforce.com pages it is best to use relative URLs. For Inline actions, external pages must use https. --></help>
+        <label><!-- Link URL --></label>
+        <name>geopointe__Link_URL__c</name>
+    </CustomFieldTranslation>

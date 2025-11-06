@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Nickname First Name --></label>
+        <name>ucinn_portal_Nickname_First_Name__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Recently Used Map Items (Mobile) --></label>
+        <name>geopointe__Recently_Used_SF1_Items__c</name>
+    </CustomFieldTranslation>

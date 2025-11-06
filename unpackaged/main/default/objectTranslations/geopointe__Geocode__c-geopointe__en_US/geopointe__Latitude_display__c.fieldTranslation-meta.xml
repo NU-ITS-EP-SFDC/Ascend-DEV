@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Used for displaying the location on a map --></help>
+        <label><!-- Latitude (display) --></label>
+        <name>geopointe__Latitude_display__c</name>
+    </CustomFieldTranslation>

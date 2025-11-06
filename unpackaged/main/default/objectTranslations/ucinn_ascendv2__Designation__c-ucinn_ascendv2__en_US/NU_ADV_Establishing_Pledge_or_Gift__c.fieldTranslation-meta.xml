@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Establishing Pledge or Gift --></label>
+        <name>NU_ADV_Establishing_Pledge_or_Gift__c</name>
+        <relationshipLabel><!-- Designations --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Target Gift Range --></label>
+        <name>NU_ADV_Target_Gift_Range__c</name>
+        <picklistValues>
+            <masterLabel>$1,001-$2,500</masterLabel>
+            <translation><!-- $1,001-$2,500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$1-$50</masterLabel>
+            <translation><!-- $1-$50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$10,001-$25,000</masterLabel>
+            <translation><!-- $10,001-$25,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$100,001 +</masterLabel>
+            <translation><!-- $100,001 + --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$101-$250</masterLabel>
+            <translation><!-- $101-$250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$2,501-$5,000</masterLabel>
+            <translation><!-- $2,501-$5,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$25,001-$50,000</masterLabel>
+            <translation><!-- $25,001-$50,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$251-$500</masterLabel>
+            <translation><!-- $251-$500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$5,001-$10,000</masterLabel>
+            <translation><!-- $5,001-$10,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$50,001-$100,000</masterLabel>
+            <translation><!-- $50,001-$100,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$501-$1,000</masterLabel>
+            <translation><!-- $501-$1,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$51-$100</masterLabel>
+            <translation><!-- $51-$100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

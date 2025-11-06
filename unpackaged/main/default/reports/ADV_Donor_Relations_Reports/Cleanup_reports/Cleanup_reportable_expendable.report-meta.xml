@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.ucinn_ascendv2__Designation_Name__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_No_Reporting_Necessary__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Reporting_Information__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Fund_Class__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Associated_Designation__c</field>
+    </columns>
+    <description>Run this report to identify expendable funds that are coded as reportable. No expendables should be reportable. The associated endowed funds MAY be reportable.</description>
+    <filter>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Designation__c.NU_ADV_Associated_Designation__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Designation__c.NU_ADV_Fund_Class__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Expendable</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Designation__c.NU_ADV_Reporting_Information__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Reportable,Reportable if</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Cleanup - reportable expendable</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ucinn_ascendv2__Designation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ucinn_ascendv2__Designation__c.NU_ADV_Advancement_Set_Up_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

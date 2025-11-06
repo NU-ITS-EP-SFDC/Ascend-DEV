@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Designation 5 --></label>
+        <name>NU_ADV_Designation_5__c</name>
+        <relationshipLabel><!-- Cases (Designation 5) --></relationshipLabel>
+    </CustomFieldTranslation>

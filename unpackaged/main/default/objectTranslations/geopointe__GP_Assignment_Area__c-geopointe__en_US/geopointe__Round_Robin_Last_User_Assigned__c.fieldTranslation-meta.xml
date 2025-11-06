@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- User --></label>
+        <name>geopointe__Round_Robin_Last_User_Assigned__c</name>
+        <relationshipLabel><!-- Geopointe Assignment Areas (User) --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Involvement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Involvements</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Account Involvement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Involvement Layout v1</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Involvement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Involvement Layout v1</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- A corporation/organization&apos;s involvement in a specified club/society. --></description>
+        <label><!-- Account Involvement --></label>
+        <name>ucinn_ascendv2__Account_Involvement</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A constituent&apos;s involvement in a specified club/society. --></description>
+        <label><!-- Contact Involvement --></label>
+        <name>ucinn_ascendv2__Contact_Involvement</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Do not change the Name field. Upon creation, the Name field should read [Default Name]. --></errorMessage>
+        <name>Name_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Award/honor rec&apos;d date is required for involvement type of award/honor. --></errorMessage>
+        <name>ucinn_ascendv2__Award_Honor_Received_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start date can&apos;t be after the end date. --></errorMessage>
+        <name>ucinn_ascendv2__Start_Date_Before_End_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

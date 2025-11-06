@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Student Level --></label>
+        <name>Student_Level__c</name>
+        <picklistValues>
+            <masterLabel>CPS - Graduate</masterLabel>
+            <translation><!-- CPS - Graduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPS - Undergraduate Semester</masterLabel>
+            <translation><!-- CPS - Undergraduate Semester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate</masterLabel>
+            <translation><!-- Graduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Law</masterLabel>
+            <translation><!-- Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undergrad Special</masterLabel>
+            <translation><!-- Undergrad Special --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undergraduate</masterLabel>
+            <translation><!-- Undergraduate --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

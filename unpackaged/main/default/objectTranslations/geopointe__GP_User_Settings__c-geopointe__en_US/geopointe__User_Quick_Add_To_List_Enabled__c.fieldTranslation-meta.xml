@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- User Quick Add To List Enabled --></label>
+        <name>geopointe__User_Quick_Add_To_List_Enabled__c</name>
+    </CustomFieldTranslation>

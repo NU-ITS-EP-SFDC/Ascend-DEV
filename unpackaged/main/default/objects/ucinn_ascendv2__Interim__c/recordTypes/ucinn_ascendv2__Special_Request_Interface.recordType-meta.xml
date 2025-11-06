@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ucinn_ascendv2__Special_Request_Interface</fullName>
+    <active>true</active>
+    <description>Interims originating from a Special Request Interface.</description>
+    <label>Special Request Interface</label>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Data_Source__c</picklist>
+        <values>
+            <fullName>Google Place API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interim Interface</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payroll</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Reported</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SmartyStreets API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USPS API</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Marital__c</picklist>
+        <values>
+            <fullName>Divorced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domestic Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Married</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Separated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Widowed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Physician_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Preferred_Address__c</picklist>
+        <values>
+            <fullName>Address 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Address 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Address 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Preferred_Email__c</picklist>
+        <values>
+            <fullName>Email 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Preferred_Phone__c</picklist>
+        <values>
+            <fullName>Phone 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone 5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Status__c</picklist>
+        <values>
+            <fullName>Assigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supervisor Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Visa_Type__c</picklist>
+        <values>
+            <fullName>F1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Wealth_Rating_Currency_Iso_Code__c</picklist>
+        <values>
+            <fullName>AED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GBP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JPY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SGD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

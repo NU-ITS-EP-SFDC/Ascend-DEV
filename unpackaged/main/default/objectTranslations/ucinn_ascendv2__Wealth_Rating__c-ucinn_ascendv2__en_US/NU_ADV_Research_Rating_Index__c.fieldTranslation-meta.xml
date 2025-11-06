@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- TEMP Research Rating Index --></label>
+        <name>NU_ADV_Research_Rating_Index__c</name>
+    </CustomFieldTranslation>

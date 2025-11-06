@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The conversational name of the parent record (e.g. Account Name, Opportunity Name, Case Number, etc.) --></help>
+        <label><!-- Parent Record Name --></label>
+        <name>geopointe__Parent_Record_Name__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Geopointe Map Layer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Geopointe Map Layers</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Geopointe Map Layer Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- One column --></label>
+            <section>One column</section>
+        </sections>
+        <sections>
+            <label><!-- Two column --></label>
+            <section>Two column</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Detail__c field is required for data layers. --></errorMessage>
+        <name>geopointe__Data_Layer_Detail_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Data layers must be associated with a folder if they are not personal. --></errorMessage>
+        <name>geopointe__Data_Layer_Folder_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Select the type of Point this action can be applied to. Record, salesforce records. Places, the results of a places search, i.e. &apos;coffee shops&apos;. Map, apply any location on the map with an address search or right click. Route Stop, actions for route stops. --></help>
+        <label><!-- Point Type --></label>
+        <name>geopointe__Point_Type__c</name>
+        <picklistValues>
+            <masterLabel>Calendar</masterLabel>
+            <translation><!-- Calendar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Map</masterLabel>
+            <translation><!-- Map --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Place</masterLabel>
+            <translation><!-- Place --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Record</masterLabel>
+            <translation><!-- Record --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Route Stop</masterLabel>
+            <translation><!-- Route Stop --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NU_ADV_CC_Priorities__c</fullName>
+    <label>Priorities</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>diverse-and-inclusive-communities</fullName>
+                <default>false</default>
+                <label>Diverse and Inclusive Communities</label>
+            </value>
+            <value>
+                <fullName>entrepreneurship</fullName>
+                <default>false</default>
+                <label>Entrepreneurship</label>
+            </value>
+            <value>
+                <fullName>faculty-excellence</fullName>
+                <default>false</default>
+                <label>Faculty Excellence</label>
+            </value>
+            <value>
+                <fullName>global-exploration</fullName>
+                <default>false</default>
+                <label>Global Exploration</label>
+            </value>
+            <value>
+                <fullName>research</fullName>
+                <default>false</default>
+                <label>Research</label>
+            </value>
+            <value>
+                <fullName>student-opportunities</fullName>
+                <default>false</default>
+                <label>Student Opportunities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

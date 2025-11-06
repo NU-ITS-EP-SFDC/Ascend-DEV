@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Geopointe Assignment Plan --></label>
+        <name>geopointe__GP_Assignment_Plan__c</name>
+        <relationshipLabel><!-- Geopointe AP Config Batch Jobs --></relationshipLabel>
+    </CustomFieldTranslation>

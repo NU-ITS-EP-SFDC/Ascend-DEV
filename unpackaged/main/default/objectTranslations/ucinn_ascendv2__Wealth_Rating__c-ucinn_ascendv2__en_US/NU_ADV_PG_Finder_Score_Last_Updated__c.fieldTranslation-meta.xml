@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- PG Finder Score Last Updated --></label>
+        <name>NU_ADV_PG_Finder_Score_Last_Updated__c</name>
+    </CustomFieldTranslation>

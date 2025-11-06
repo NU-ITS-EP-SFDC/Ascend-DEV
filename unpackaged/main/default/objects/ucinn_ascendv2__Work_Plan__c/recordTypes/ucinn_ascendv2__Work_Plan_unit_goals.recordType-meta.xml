@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ucinn_ascendv2__Work_Plan_unit_goals</fullName>
+    <active>false</active>
+    <description>Used for HSC Work Plan Unit goals.</description>
+    <label>HSC Work Plan Unit Goals</label>
+    <picklistValues>
+        <picklist>NU_ADV_Type__c</picklist>
+        <values>
+            <fullName>Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Input_Currency_ISO_Code__c</picklist>
+        <values>
+            <fullName>AED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GBP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JPY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SGD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Role__c</picklist>
+        <values>
+            <fullName>Assistant Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistant Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistant Vice President</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Associate Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development Associate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior Associate Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior Associate Vice President</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior Vice President</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

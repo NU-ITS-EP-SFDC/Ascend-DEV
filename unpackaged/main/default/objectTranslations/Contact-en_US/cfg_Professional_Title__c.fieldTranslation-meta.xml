@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Professional Title at Primary Place of Employment to be displayed on Affinity Group pages. --></help>
+        <label><!-- Professional Title --></label>
+        <name>cfg_Professional_Title__c</name>
+    </CustomFieldTranslation>

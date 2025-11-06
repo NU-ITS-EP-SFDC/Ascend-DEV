@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Control if this Layer is active and can be added to map by users. --></help>
+        <label><!-- Active --></label>
+        <name>geopointe__Active__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Recurring Gift</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;title&quot;: &quot;Use as Donor&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;criteria&quot;: [
+    {
+      &quot;opportunityDeletionEnabled&quot;: true,
+      &quot;isWizardStep&quot;: false,
+      &quot;isView&quot;: true,
+      &quot;transactionRecords.TransactionInformation.Opportunity.ucinn_ascendv2__Session__c&quot;: &quot;transactionRecords.SessionInformation.Id&quot;,
+      &quot;transactionRecords.TransactionInformation.Opportunity.ucinn_ascendv2__Created_In_External_Payment_Gateway__c&quot;: false
+    }
+  ]
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;criteria&quot;: [
+    {
+      &quot;transactionRecords.TransactionInformation.Opportunity.ucinn_ascendv2__Session__c&quot;: &quot;transactionRecords.SessionInformation.Id&quot;
+    },
+    {
+      &quot;transactionRecords.TransactionInformation.Opportunity.ucinn_ascendv2__Session_Approval_Date_Formula__c&quot;: &quot;$notEqual(null)&quot;
+    }
+  ]
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Contact__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;transactionRecords.TransactionInformation.Opportunity.ucinn_ascendv2__Contact__c&quot;: &quot;$notEqual(null)&quot;,
+          &quot;isView&quot;: true
+        }
+      ],
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;customMetadata&quot;: &quot;Gift_Processing_Contact_Lookup&quot;,
+        &quot;label&quot;: &quot;Donor&quot;,
+        &quot;sobjectName&quot;: &quot;Opportunity&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;AccountId&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;transactionRecords.TransactionInformation.Opportunity.AccountId&quot;: &quot;$notEqual(null)&quot;,
+          &quot;isView&quot;: true
+        }
+      ],
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;customMetadata&quot;: &quot;Gift_Processing_Account_Lookup&quot;,
+        &quot;label&quot;: &quot;Donor&quot;,
+        &quot;sobjectName&quot;: &quot;Opportunity&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;Type&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: true,
+      &quot;required&quot;: true,
+      &quot;changeLayout&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Card_Number__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: false
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Encrypted_Payment_Information__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Routing_Number__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Cardholder_Encrypted__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;customMetadata&quot;: &quot;Gift_Processing_Contact_Lookup&quot;,
+        &quot;additionalFieldsToQuery&quot;: [
+          &quot;FirstName&quot;,
+          &quot;LastName&quot;
+        ],
+        &quot;transactionRecordPath&quot;: &quot;constituentCardHolder&quot;,
+        &quot;label&quot;: &quot;Card Holder&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true,
+          &quot;transactionRecords.isContactDonor&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Tender_Type_for_Gifts__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: true,
+      &quot;required&quot;: true,
+      &quot;changeLayout&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Subscription_ID__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Account_Number__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Payer_Address_Encrypted__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;customMetadata&quot;: &quot;GP_Address_Lookup_Setting&quot;,
+        &quot;additionalFieldsToQuery&quot;: [
+          &quot;ucinn_ascendv2__City__c&quot;,
+          &quot;ucinn_ascendv2__Country__c&quot;,
+          &quot;ucinn_ascendv2__Postal_Code__c&quot;,
+          &quot;ucinn_ascendv2__State__c&quot;
+        ],
+        &quot;transactionRecordPath&quot;: &quot;payerAddressRec&quot;,
+        &quot;label&quot;: &quot;Payer Address&quot;,
+        &quot;constituentId&quot;: &quot;transactionRecords.constituentCardHolder.Id&quot;,
+        &quot;organizationId&quot;: &quot;transactionRecords.DonorInformation.Id&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;Amount&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: true,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;formatter&quot;: &quot;currency&quot;,
+        &quot;eventOnBlur&quot;: true,
+        &quot;eventOnChange&quot;: false,
+        &quot;step&quot;: &quot;.01&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__SEC_Code__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Card_Expiration_Date__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Frequency__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: true,
+      &quot;required&quot;: true
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Account_Type__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Start_Date__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: true,
+      &quot;required&quot;: true
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__End_Date__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: true
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Acknowledgement__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__CCV__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Post_to_G_L_Date__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Proposal__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;customMetadata&quot;: &quot;Gift_Processing_Opp_Contact_Lookup&quot;,
+        &quot;recordId&quot;: &quot;transactionRecords.DonorInformation.Id&quot;,
+        &quot;donorRecord&quot;: &quot;transactionRecords.DonorInformation&quot;,
+        &quot;label&quot;: &quot;Proposal&quot;,
+        &quot;sobjectName&quot;: &quot;Opportunity&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;transactionRecords.isContactDonor&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Proposal__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;customMetadata&quot;: &quot;Gift_Processing_Opp_Account_Lookup&quot;,
+        &quot;recordId&quot;: &quot;transactionRecords.DonorInformation.Id&quot;,
+        &quot;label&quot;: &quot;Proposal&quot;,
+        &quot;donorRecord&quot;: &quot;transactionRecords.DonorInformation&quot;,
+        &quot;sobjectName&quot;: &quot;Opportunity&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;transactionRecords.isContactDonor&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Notes__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Send_to_G_L__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Is_Anonymous__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Authorize_and_Charge__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Responsible_Person__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;customMetadata&quot;: &quot;Gift_Processing_User_Lookup&quot;,
+        &quot;label&quot;: &quot;Responsible Person&quot;,
+        &quot;sobjectName&quot;: &quot;Opportunity&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;opportunityTeamEnabled&quot;: false,
+          &quot;opportunityTeamContactRoleEnabled&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Adjustment_Reason_v1__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;required&quot;: true,
+      &quot;changeLayout&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;multiselectpicklist&quot;,
+        &quot;customPicklistExclusions&quot;: [
+          &quot;Void&quot;,
+          &quot;WrittenOff&quot;
+        ]
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;transactionRecords.TransactionInformation.Opportunity.ucinn_ascendv2__Amount_Paid_to_Date_Roll_Up__c&quot;: &quot;$Equal(0)&quot;,
+          &quot;isAdjustment&quot;: true,
+          &quot;isView&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Adjustment_Reason_v1__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;required&quot;: true,
+      &quot;changeLayout&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;multiselectpicklist&quot;,
+        &quot;customPicklistExclusions&quot;: [
+          &quot;Void&quot;,
+          &quot;Cancelled&quot;,
+          &quot;WrittenOff&quot;
+        ]
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;transactionRecords.TransactionInformation.Opportunity.ucinn_ascendv2__Amount_Paid_to_Date_Roll_Up__c&quot;: &quot;$notEqual(0)&quot;,
+          &quot;isAdjustment&quot;: true,
+          &quot;isView&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Adjustment_Reason_Other__c&quot;,
+      &quot;objectApiName&quot;: &quot;Opportunity&quot;,
+      &quot;important&quot;: false,
+      &quot;required&quot;: true,
+      &quot;criteria&quot;: [
+        {
+          &quot;isAdjustment&quot;: true,
+          &quot;isView&quot;: false,
+          &quot;transactionRecords.TransactionInformation.Opportunity.ucinn_ascendv2__Adjustment_Reason_v1__c&quot;: &quot;$includes(&apos;Other&apos;)&quot;
+        }
+      ]
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;criteria&quot;: [
+    {
+      &quot;transactionRecords.TransactionInformation.Opportunity.ucinn_ascendv2__Session__c&quot;: &quot;transactionRecords.SessionInformation.Id&quot;
+    },
+    {
+      &quot;transactionRecords.TransactionInformation.Opportunity.ucinn_ascendv2__Session_Approval_Date_Formula__c&quot;: &quot;$notEqual(null)&quot;
+    }
+  ]
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;sectionName&quot;: &quot;SessionInformation&quot;
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;DonorSearch&quot;
+    },
+    {
+      &quot;sectionName&quot;: &quot;DonorInformation&quot;
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;PayerSearch&quot;,
+      &quot;title&quot;: &quot;Donor Search&quot;,
+      &quot;criteria&quot;: [
+        {
+          &quot;isDefault&quot;: false,
+          &quot;isView&quot;: false
+        }
+      ]
+    },
+    {
+      &quot;sectionName&quot;: &quot;PayerInformation&quot;,
+      &quot;collapsed&quot;: true,
+      &quot;title&quot;: &quot;Donor Information&quot;,
+      &quot;criteria&quot;: [
+        {
+          &quot;isDefault&quot;: false,
+          &quot;isView&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;TransactionInformation&quot;
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;DesignationDetailInformation&quot;
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;PaymentInformation&quot;,
+      &quot;criteria&quot;: [
+        {
+          &quot;isView&quot;: true
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;HardAndSoftCreditInformation&quot;,
+      &quot;criteria&quot;: [
+        {
+          &quot;isDefault&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;TributeInformation&quot;
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;OpportunityTeamInformation&quot;,
+      &quot;criteria&quot;: [
+        {
+          &quot;opportunityTeamEnabled&quot;: true
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;OpportunityTeamContactRoleInformation&quot;,
+      &quot;criteria&quot;: [
+        {
+          &quot;opportunityTeamContactRoleEnabled&quot;: true
+        }
+      ]
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">Transaction GP</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

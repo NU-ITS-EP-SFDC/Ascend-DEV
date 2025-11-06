@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Can add additional non-Salesforce license users/constituent(s) to the interaction, if applicable. --></help>
+        <label><!-- Constituent --></label>
+        <name>ucinn_ascendv2__Contact__c</name>
+        <relationshipLabel><!-- Contact Reports --></relationshipLabel>
+    </CustomFieldTranslation>

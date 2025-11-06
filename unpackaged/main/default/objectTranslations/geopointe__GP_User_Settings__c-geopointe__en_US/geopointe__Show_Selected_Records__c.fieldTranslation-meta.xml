@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If checked, will show the selected records for the selected shapes when using the Multi Shape Editor for the User. --></help>
+        <label><!-- Show Selected Records in Shape Editor --></label>
+        <name>geopointe__Show_Selected_Records__c</name>
+    </CustomFieldTranslation>

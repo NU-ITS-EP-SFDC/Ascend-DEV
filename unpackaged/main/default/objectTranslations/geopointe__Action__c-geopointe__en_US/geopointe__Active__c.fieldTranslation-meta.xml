@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Deprecated. Use the &quot;Available (Web)&quot; and &quot;Available (Mobile)&quot; fields to control usage in the app. --></help>
+        <label><!-- Deprecated --></label>
+        <name>geopointe__Active__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- YGL Nomination Type --></label>
+        <name>NU_ADV_YGL_Nomination_Type__c</name>
+        <picklistValues>
+            <masterLabel>Advancement/NU Staff</masterLabel>
+            <translation><!-- Advancement/NU Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified by Research</masterLabel>
+            <translation><!-- Identified by Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Nominated</masterLabel>
+            <translation><!-- Self-Nominated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown (Historical)</masterLabel>
+            <translation><!-- Unknown (Historical) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YGL Member</masterLabel>
+            <translation><!-- YGL Member --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

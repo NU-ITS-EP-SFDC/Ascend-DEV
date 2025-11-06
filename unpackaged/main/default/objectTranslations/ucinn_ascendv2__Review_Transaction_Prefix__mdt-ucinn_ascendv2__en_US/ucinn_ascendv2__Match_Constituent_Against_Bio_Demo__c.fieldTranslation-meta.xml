@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Matching the constituent using the bio information on the review transaction.  Default is match against first name, last name and email. --></help>
+        <label><!-- Match Constituent Against Bio Info --></label>
+        <name>ucinn_ascendv2__Match_Constituent_Against_Bio_Demo__c</name>
+    </CustomFieldTranslation>

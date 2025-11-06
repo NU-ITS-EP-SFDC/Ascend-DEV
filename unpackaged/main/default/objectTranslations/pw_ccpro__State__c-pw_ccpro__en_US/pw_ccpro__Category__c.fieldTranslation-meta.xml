@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Category --></label>
+        <name>pw_ccpro__Category__c</name>
+        <picklistValues>
+            <masterLabel>County</masterLabel>
+            <translation><!-- County --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Province</masterLabel>
+            <translation><!-- Province --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State</masterLabel>
+            <translation><!-- State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory</masterLabel>
+            <translation><!-- Territory --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

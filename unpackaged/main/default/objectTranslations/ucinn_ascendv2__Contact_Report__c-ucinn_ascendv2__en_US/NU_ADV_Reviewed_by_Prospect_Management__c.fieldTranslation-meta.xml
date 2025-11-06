@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Reviewed by Prospect Management --></label>
+        <name>NU_ADV_Reviewed_by_Prospect_Management__c</name>
+    </CustomFieldTranslation>

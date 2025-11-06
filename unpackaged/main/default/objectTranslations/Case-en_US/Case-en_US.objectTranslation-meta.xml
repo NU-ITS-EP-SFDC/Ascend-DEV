@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Adjustments</layout>
+        <sections>
+            <label><!-- Changes --></label>
+            <section>Changes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Information --></label>
+            <section>Web Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assignments</layout>
+        <sections>
+            <label><!-- Household Information --></label>
+            <section>Household Information</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect Management Internal Information --></label>
+            <section>Prospect Management Internal Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Data Upload</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Information --></label>
+            <section>Web Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Donor Relations</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fund Request</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internal Fund Report</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Licensing</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Marketing Cloud Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Issue --></label>
+            <section>Issue</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Contact or Org</layout>
+        <sections>
+            <label><!-- Information To Be Updated --></label>
+            <section>Information To Be Updated</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Functionality</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Pledge</layout>
+        <sections>
+            <label><!-- Soft Credits --></label>
+            <section>Soft Credits</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Other</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Points of Contact</layout>
+        <sections>
+            <label><!-- New Information --></label>
+            <section>New Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Regression Testing</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Technology Change</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Info --></label>
+            <section>Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Interface</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Info --></label>
+            <section>Info</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- CloseCaseLightning --></label>
+        <name>CloseCaseLightning</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Used when an adjustment is needed to a booked gift or pledge. --></description>
+        <label><!-- Adjustments --></label>
+        <name>Adjustments</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Assignment/Reassignment/Unassignment Requests --></description>
+        <label><!-- Assignments --></label>
+        <name>Assignments</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to submit requests to have spreadsheets of data uploaded into ascend. --></description>
+        <label><!-- Data Upload --></label>
+        <name>Data_Upload</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to request a new fund created in ascend. --></description>
+        <label><!-- Fund Management Request --></label>
+        <name>Fund_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to request new access, change existing access, or terminate access. --></description>
+        <label><!-- Licensing --></label>
+        <name>Licensing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to request support with issues relating to data extensions, sender profiles, email content build issues, and Marketing Cloud analytics. --></description>
+        <label><!-- Marketing Cloud Requests --></label>
+        <name>Marketing_Cloud_Requests</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Updates to contact information for constituents and organizations --></description>
+        <label><!-- Bio Demo Request --></label>
+        <name>NU_ADV_Bio_Demo_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- ﻿Request pricing for named spaces, stewardship plans, special gifts, donor/student meetings, fund reporting changes, and ad hoc reports. --></description>
+        <label><!-- Donor Relations --></label>
+        <name>NU_ADV_Donor_Relations</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For Donor Relations Internal Use --></description>
+        <label><!-- DR Internal Fund Report --></label>
+        <name>NU_ADV_Internal_Fund_Report</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to request a new report/dashboard or modification to an existing report/dashboard. Also used to request a list of constituents to be invited to an event. --></description>
+        <label><!-- Report Request --></label>
+        <name>NU_ADV_Report_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to request a new contact or organization record to be created. --></description>
+        <label><!-- New Contact or Org --></label>
+        <name>New_Contact_or_Org</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to request functionality that currently does not exist --></description>
+        <label><!-- New Functionality --></label>
+        <name>New_Functionality</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used when booking a new pledge, gift or pledge payment --></description>
+        <label><!-- New Pledge Or Gift --></label>
+        <name>New_Pledge</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to request guidance on functionality, all other requests that don’t fit into other case types --></description>
+        <label><!-- Other --></label>
+        <name>Other</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to log activities associated with regression testing. --></description>
+        <label><!-- Regression Testing --></label>
+        <name>Regression_Testing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Request for prospect research --></description>
+        <label><!-- Prospect Development Request --></label>
+        <name>Reseach_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to request a change to existing technology. --></description>
+        <label><!-- Technology Change --></label>
+        <name>Technology_Change</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to request layout changes in ascend. --></description>
+        <label><!-- User Interface --></label>
+        <name>User_Interface</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You must provide an address when requesting an Address request type --></errorMessage>
+        <name>Address_Info_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter an Address Type for this Address. --></errorMessage>
+        <name>Address_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot fund a named space with a planned gift. --></errorMessage>
+        <name>Cannot_Select_PG_funding_type_Naming_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select a constituent type value if Constituent Type Update is checked. --></errorMessage>
+        <name>Constituent_Type_Must_Be_Selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide an email when requesting an Email request type --></errorMessage>
+        <name>Email_Info_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter an Email Type for this Email. --></errorMessage>
+        <name>Email_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a designation. --></errorMessage>
+        <name>Fund_Term_Revision_Requires_Designation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If this fund is established by donors in multiple households, please fill in the donor names and the city and state. --></errorMessage>
+        <name>Multiple_Donors</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select an existing or name a new designation/fund --></errorMessage>
+        <name>Must_Have_Designation_Realized_PG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide an address, an email, or a phone. --></errorMessage>
+        <name>Must_Provide_At_Least_One_POC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide additional information when Deceased is selected. --></errorMessage>
+        <name>Must_Provide_Deceased_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill in a name field if you are requesting a name change. --></errorMessage>
+        <name>Name_Information_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill in the field for Constituent or Organization or List of Records to be Updated --></errorMessage>
+        <name>POC_Required_fields_are_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a phone number when requesting an Phone request type --></errorMessage>
+        <name>Phone_Info_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a Phone Type for this Phone. --></errorMessage>
+        <name>Phone_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill in the field for Link to Existing Report or Existing Report Name --></errorMessage>
+        <name>Report_Required_fields_are_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to edit the status of this case. --></errorMessage>
+        <name>Select_Users_Can_Edit_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide social media info when requesting a Social Media request type --></errorMessage>
+        <name>Social_Info_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- LOOP --></label>
+        <name>Loop__LOOP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP_Merge --></label>
+        <name>Loop__LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOPlus --></label>
+        <name>Loop__LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOP_Merge --></label>
+        <name>Loop__Mass_LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOPlus --></label>
+        <name>Loop__Mass_LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map --></label>
+        <name>geopointe__Map</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map_Records_Case --></label>
+        <name>geopointe__Map_Records_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map_newWindow --></label>
+        <name>geopointe__Map_newWindow</name>
+    </webLinks>
+</CustomObjectTranslation>

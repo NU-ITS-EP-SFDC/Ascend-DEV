@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When enabled, geolocation fields (latitude and longitude) are shown in address edit mode. --></help>
+        <label><!-- Enable geolocation --></label>
+        <name>pw_ccpro__EnableGeolocation__c</name>
+    </CustomFieldTranslation>

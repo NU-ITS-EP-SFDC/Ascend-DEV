@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Fund Type --></label>
+        <name>ucinn_ascendv2__Fund_Type__c</name>
+        <picklistValues>
+            <masterLabel>Academic Programs</masterLabel>
+            <translation><!-- Academic Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Academic Research</masterLabel>
+            <translation><!-- Academic Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fellowship</masterLabel>
+            <translation><!-- Fellowship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations/Maintenance</masterLabel>
+            <translation><!-- Operations/Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professorship</masterLabel>
+            <translation><!-- Professorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scholarship</masterLabel>
+            <translation><!-- Scholarship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Support</masterLabel>
+            <translation><!-- Student Support --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

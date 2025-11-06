@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Is All Day Field --></label>
+        <name>geopointe__Is_All_Day_Field__c</name>
+    </CustomFieldTranslation>

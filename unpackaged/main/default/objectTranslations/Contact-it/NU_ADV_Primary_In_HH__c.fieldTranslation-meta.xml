@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Constituent is primary household member --></help>
+        <label><!-- Primary In HH --></label>
+        <name>NU_ADV_Primary_In_HH__c</name>
+    </CustomFieldTranslation>

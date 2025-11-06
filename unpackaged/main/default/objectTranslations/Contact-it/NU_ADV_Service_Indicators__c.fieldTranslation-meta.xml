@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Service Indicator(s) --></label>
+        <name>NU_ADV_Service_Indicators__c</name>
+        <picklistValues>
+            <masterLabel>Bypass from Athletics</masterLabel>
+            <translation><!-- Bypass from Athletics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bypass from Hillel</masterLabel>
+            <translation><!-- Bypass from Hillel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Contact by WhatsApp</masterLabel>
+            <translation><!-- Do Not Contact by WhatsApp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Invite to Alumni Events</masterLabel>
+            <translation><!-- Do Not Invite to Alumni Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Invite to College Specific Events</masterLabel>
+            <translation><!-- Do Not Invite to College Specific Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Send Alum Magazine</masterLabel>
+            <translation><!-- Do Not Send Alum Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Send Parent Communications</masterLabel>
+            <translation><!-- Do Not Send Parent Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Send Parents Newsletter</masterLabel>
+            <translation><!-- Do Not Send Parents Newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Send Reunion Invite</masterLabel>
+            <translation><!-- Do Not Send Reunion Invite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not Invite to Events</masterLabel>
+            <translation><!-- Do not Invite to Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not Invite to Special Events</masterLabel>
+            <translation><!-- Do not Invite to Special Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not mail Bouve Vital Signs</masterLabel>
+            <translation><!-- Do not mail Bouve Vital Signs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate - Record Flag</masterLabel>
+            <translation><!-- Duplicate - Record Flag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Hard Bounce</masterLabel>
+            <translation><!-- Email Hard Bounce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Opt Out</masterLabel>
+            <translation><!-- Email Opt Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Connection Opt Out</masterLabel>
+            <translation><!-- Global Connection Opt Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NF - No Second Asks</masterLabel>
+            <translation><!-- NF - No Second Asks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NF - Solicit Infrequently</masterLabel>
+            <translation><!-- NF - Solicit Infrequently --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Contact</masterLabel>
+            <translation><!-- Never Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Contact by Phone</masterLabel>
+            <translation><!-- Never Contact by Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Solicit</masterLabel>
+            <translation><!-- Never Solicit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Solicit by Phone</masterLabel>
+            <translation><!-- Never Solicit by Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Alumni Directory</masterLabel>
+            <translation><!-- No Alumni Directory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Annual Giving Appeals</masterLabel>
+            <translation><!-- No Annual Giving Appeals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Annual Ldrship Gift Circle</masterLabel>
+            <translation><!-- No Annual Ldrship Gift Circle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Broadcast Text Messages</masterLabel>
+            <translation><!-- No Broadcast Text Messages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Catalyst Magazine</masterLabel>
+            <translation><!-- No Catalyst Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Donor List</masterLabel>
+            <translation><!-- No Donor List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Email Solicitations</masterLabel>
+            <translation><!-- No Email Solicitations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Experience Magazine</masterLabel>
+            <translation><!-- No Experience Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No External Alumni Association Contact</masterLabel>
+            <translation><!-- No External Alumni Association Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Giving Day Solicitations</masterLabel>
+            <translation><!-- No Giving Day Solicitations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Mills Eucalyptus</masterLabel>
+            <translation><!-- No Mills Eucalyptus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Mobile Directory</masterLabel>
+            <translation><!-- No Mobile Directory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No NLS Communications</masterLabel>
+            <translation><!-- No NLS Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Northeastern Contact</masterLabel>
+            <translation><!-- No Northeastern Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No On-Line Community</masterLabel>
+            <translation><!-- No On-Line Community --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Physical Mail</masterLabel>
+            <translation><!-- No Physical Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Planned Giving Email</masterLabel>
+            <translation><!-- No Planned Giving Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Planned Giving Mailing</masterLabel>
+            <translation><!-- No Planned Giving Mailing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Solicit - Capital Pledge</masterLabel>
+            <translation><!-- No Solicit - Capital Pledge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Solicitations by Mail</masterLabel>
+            <translation><!-- No Solicitations by Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Stewardship Swag</masterLabel>
+            <translation><!-- No Stewardship Swag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Village of Belonging</masterLabel>
+            <translation><!-- No Village of Belonging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NoAffinity VendorMailings</masterLabel>
+            <translation><!-- NoAffinity VendorMailings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt Out of Donor Relation Communications</masterLabel>
+            <translation><!-- Opt Out of Donor Relation Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt Out of NU Mission and Initiatives Communications</masterLabel>
+            <translation><!-- Opt Out of NU Mission and Initiatives Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt Out of Stewardship communications</masterLabel>
+            <translation><!-- Opt Out of Stewardship communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt Out of Volunteer Opportunity Communications</masterLabel>
+            <translation><!-- Opt Out of Volunteer Opportunity Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt Out of WWE Emails</masterLabel>
+            <translation><!-- Opt Out of WWE Emails --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt out Alumni Benefits and Resources Communications</masterLabel>
+            <translation><!-- Opt out Alumni Benefits and Resources Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt out Alumni News and Information</masterLabel>
+            <translation><!-- Opt out Alumni News and Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt out College Specific News and Updates</masterLabel>
+            <translation><!-- Opt out College Specific News and Updates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presidential Contact</masterLabel>
+            <translation><!-- Presidential Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send Experience Magazine</masterLabel>
+            <translation><!-- Send Experience Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send NU Magazine</masterLabel>
+            <translation><!-- Send NU Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send WEI Newsletter</masterLabel>
+            <translation><!-- Send WEI Newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send WWE Newsletter</masterLabel>
+            <translation><!-- Send WWE Newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Circumstances</masterLabel>
+            <translation><!-- Special Circumstances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stdnt Nurse Anest Assoc Opt Out</masterLabel>
+            <translation><!-- Stdnt Nurse Anest Assoc Opt Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsubscribe COE Magazine</masterLabel>
+            <translation><!-- Unsubscribe COE Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsubscribe GSPA Newsletter</masterLabel>
+            <translation><!-- Unsubscribe GSPA Newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsubscribe from SAIL</masterLabel>
+            <translation><!-- Unsubscribe from SAIL --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

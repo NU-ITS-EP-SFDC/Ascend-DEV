@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Assignment Type --></label>
+        <name>NU_ADV_Assignment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Leadership Giving Manager</masterLabel>
+            <translation><!-- Leadership Giving Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRM</masterLabel>
+            <translation><!-- PRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned Giving Manager</masterLabel>
+            <translation><!-- Planned Giving Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Relationship Manager</masterLabel>
+            <translation><!-- Primary Relationship Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary Relationship Manager</masterLabel>
+            <translation><!-- Secondary Relationship Manager --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

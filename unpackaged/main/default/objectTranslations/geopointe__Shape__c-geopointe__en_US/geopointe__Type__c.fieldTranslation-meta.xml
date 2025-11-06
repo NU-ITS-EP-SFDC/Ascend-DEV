@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type --></label>
+        <name>geopointe__Type__c</name>
+        <picklistValues>
+            <masterLabel>Circle</masterLabel>
+            <translation><!-- Circle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MultiPolygon</masterLabel>
+            <translation><!-- MultiPolygon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polygon</masterLabel>
+            <translation><!-- Polygon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polyline</masterLabel>
+            <translation><!-- Polyline --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

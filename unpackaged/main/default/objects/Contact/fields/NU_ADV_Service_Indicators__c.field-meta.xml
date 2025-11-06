@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NU_ADV_Service_Indicators__c</fullName>
+    <description>Rollup of constituent's active service indicators. Populated by the flows "Service Indicator Rollup to Constituent" and "Service Indicator Deletion." Picklist values should match records from the Service Indicator Value object exactly; when a Service Indicator Value is created or removed, this picklist MUST be updated.</description>
+    <label>Service Indicator(s)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Bypass from Athletics</fullName>
+                <default>false</default>
+                <label>Bypass from Athletics</label>
+            </value>
+            <value>
+                <fullName>Bypass from Hillel</fullName>
+                <default>false</default>
+                <label>Bypass from Hillel</label>
+            </value>
+            <value>
+                <fullName>Do Not Contact by WhatsApp</fullName>
+                <default>false</default>
+                <label>Do Not Contact by WhatsApp</label>
+            </value>
+            <value>
+                <fullName>Do Not Invite to Alumni Events</fullName>
+                <default>false</default>
+                <label>Do Not Invite to Alumni Events</label>
+            </value>
+            <value>
+                <fullName>Do Not Invite to College Specific Events</fullName>
+                <default>false</default>
+                <label>Do Not Invite to College Specific Events</label>
+            </value>
+            <value>
+                <fullName>Do not Invite to Events</fullName>
+                <default>false</default>
+                <label>Do not Invite to Events</label>
+            </value>
+            <value>
+                <fullName>Do not Invite to Special Events</fullName>
+                <default>false</default>
+                <label>Do not Invite to Special Events</label>
+            </value>
+            <value>
+                <fullName>Do not mail Bouve Vital Signs</fullName>
+                <default>false</default>
+                <label>Do not mail Bouve Vital Signs</label>
+            </value>
+            <value>
+                <fullName>Do Not Send Alum Magazine</fullName>
+                <default>false</default>
+                <label>Do Not Send Alum Magazine</label>
+            </value>
+            <value>
+                <fullName>Do Not Send Parent Communications</fullName>
+                <default>false</default>
+                <label>Do Not Send Parent Communications</label>
+            </value>
+            <value>
+                <fullName>Do Not Send Parents Newsletter</fullName>
+                <default>false</default>
+                <label>Do Not Send Parents Newsletter</label>
+            </value>
+            <value>
+                <fullName>Do Not Send Reunion Invite</fullName>
+                <default>false</default>
+                <label>Do Not Send Reunion Invite</label>
+            </value>
+            <value>
+                <fullName>Duplicate - Record Flag</fullName>
+                <default>false</default>
+                <label>Duplicate - Record Flag</label>
+            </value>
+            <value>
+                <fullName>Email Hard Bounce</fullName>
+                <default>false</default>
+                <label>Email Hard Bounce</label>
+            </value>
+            <value>
+                <fullName>Email Opt Out</fullName>
+                <default>false</default>
+                <label>Email Opt Out</label>
+            </value>
+            <value>
+                <fullName>Global Connection Opt Out</fullName>
+                <default>false</default>
+                <label>Global Connection Opt Out</label>
+            </value>
+            <value>
+                <fullName>Never Contact</fullName>
+                <default>false</default>
+                <label>Never Contact</label>
+            </value>
+            <value>
+                <fullName>Never Contact by Phone</fullName>
+                <default>false</default>
+                <label>Never Contact by Phone</label>
+            </value>
+            <value>
+                <fullName>Never Solicit</fullName>
+                <default>false</default>
+                <label>Never Solicit</label>
+            </value>
+            <value>
+                <fullName>Never Solicit by Phone</fullName>
+                <default>false</default>
+                <label>Never Solicit by Phone</label>
+            </value>
+            <value>
+                <fullName>NF - No Second Asks</fullName>
+                <default>false</default>
+                <label>NF - No Second Asks</label>
+            </value>
+            <value>
+                <fullName>NF - Solicit Infrequently</fullName>
+                <default>false</default>
+                <label>NF - Solicit Infrequently</label>
+            </value>
+            <value>
+                <fullName>NoAffinity VendorMailings</fullName>
+                <default>false</default>
+                <label>NoAffinity VendorMailings</label>
+            </value>
+            <value>
+                <fullName>No Alumni Directory</fullName>
+                <default>false</default>
+                <label>No Alumni Directory</label>
+            </value>
+            <value>
+                <fullName>No Annual Giving Appeals</fullName>
+                <default>false</default>
+                <label>No Annual Giving Appeals</label>
+            </value>
+            <value>
+                <fullName>No Annual Ldrship Gift Circle</fullName>
+                <default>false</default>
+                <label>No Annual Ldrship Gift Circle</label>
+            </value>
+            <value>
+                <fullName>No Broadcast Text Messages</fullName>
+                <default>false</default>
+                <label>No Broadcast Text Messages</label>
+            </value>
+            <value>
+                <fullName>No Catalyst Magazine</fullName>
+                <default>false</default>
+                <label>No Catalyst Magazine</label>
+            </value>
+            <value>
+                <fullName>No Donor List</fullName>
+                <default>false</default>
+                <label>No Donor List</label>
+            </value>
+            <value>
+                <fullName>No Email Solicitations</fullName>
+                <default>false</default>
+                <label>No Email Solicitations</label>
+            </value>
+            <value>
+                <fullName>No Experience Magazine</fullName>
+                <default>false</default>
+                <label>No Experience Magazine</label>
+            </value>
+            <value>
+                <fullName>No External Alumni Association Contact</fullName>
+                <default>false</default>
+                <label>No External Alumni Association Contact</label>
+            </value>
+            <value>
+                <fullName>No Giving Day Solicitations</fullName>
+                <default>false</default>
+                <label>No Giving Day Solicitations</label>
+            </value>
+            <value>
+                <fullName>No Mills Eucalyptus</fullName>
+                <default>false</default>
+                <label>No Mills Eucalyptus</label>
+            </value>
+            <value>
+                <fullName>No Mobile Directory</fullName>
+                <default>false</default>
+                <label>No Mobile Directory</label>
+            </value>
+            <value>
+                <fullName>No NLS Communications</fullName>
+                <default>false</default>
+                <label>No NLS Communications</label>
+            </value>
+            <value>
+                <fullName>No Northeastern Contact</fullName>
+                <default>false</default>
+                <label>No Northeastern Contact</label>
+            </value>
+            <value>
+                <fullName>No On-Line Community</fullName>
+                <default>false</default>
+                <label>No On-Line Community</label>
+            </value>
+            <value>
+                <fullName>No Physical Mail</fullName>
+                <default>false</default>
+                <label>No Physical Mail</label>
+            </value>
+            <value>
+                <fullName>No Planned Giving Email</fullName>
+                <default>false</default>
+                <label>No Planned Giving Email</label>
+            </value>
+            <value>
+                <fullName>No Planned Giving Mailing</fullName>
+                <default>false</default>
+                <label>No Planned Giving Mailing</label>
+            </value>
+            <value>
+                <fullName>No Solicitations by Mail</fullName>
+                <default>false</default>
+                <label>No Solicitations by Mail</label>
+            </value>
+            <value>
+                <fullName>No Solicit - Capital Pledge</fullName>
+                <default>false</default>
+                <label>No Solicit - Capital Pledge</label>
+            </value>
+            <value>
+                <fullName>No Stewardship Swag</fullName>
+                <default>false</default>
+                <label>No Stewardship Swag</label>
+            </value>
+            <value>
+                <fullName>No Village of Belonging</fullName>
+                <default>false</default>
+                <label>No Village of Belonging</label>
+            </value>
+            <value>
+                <fullName>Opt out Alumni Benefits and Resources Communications</fullName>
+                <default>false</default>
+                <label>Opt out Alumni Benefits and Resources Communications</label>
+            </value>
+            <value>
+                <fullName>Opt out Alumni News and Information</fullName>
+                <default>false</default>
+                <label>Opt out Alumni News and Information</label>
+            </value>
+            <value>
+                <fullName>Opt out College Specific News and Updates</fullName>
+                <default>false</default>
+                <label>Opt out College Specific News and Updates</label>
+            </value>
+            <value>
+                <fullName>Opt Out of Donor Relation Communications</fullName>
+                <default>false</default>
+                <label>Opt Out of Donor Relation Communications</label>
+            </value>
+            <value>
+                <fullName>Opt Out of NU Mission and Initiatives Communications</fullName>
+                <default>false</default>
+                <label>Opt Out of NU Mission and Initiatives Communications</label>
+            </value>
+            <value>
+                <fullName>Opt Out of Stewardship communications</fullName>
+                <default>false</default>
+                <label>Opt Out of Stewardship communications</label>
+            </value>
+            <value>
+                <fullName>Opt Out of Volunteer Opportunity Communications</fullName>
+                <default>false</default>
+                <label>Opt Out of Volunteer Opportunity Communications</label>
+            </value>
+            <value>
+                <fullName>Opt Out of WWE Emails</fullName>
+                <default>false</default>
+                <label>Opt Out of WWE Emails</label>
+            </value>
+            <value>
+                <fullName>Presidential Contact</fullName>
+                <default>false</default>
+                <label>Presidential Contact</label>
+            </value>
+            <value>
+                <fullName>Send Experience Magazine</fullName>
+                <default>false</default>
+                <label>Send Experience Magazine</label>
+            </value>
+            <value>
+                <fullName>Send NU Magazine</fullName>
+                <default>false</default>
+                <label>Send NU Magazine</label>
+            </value>
+            <value>
+                <fullName>Send WEI Newsletter</fullName>
+                <default>false</default>
+                <label>Send WEI Newsletter</label>
+            </value>
+            <value>
+                <fullName>Send WWE Newsletter</fullName>
+                <default>false</default>
+                <label>Send WWE Newsletter</label>
+            </value>
+            <value>
+                <fullName>Special Circumstances</fullName>
+                <default>false</default>
+                <label>Special Circumstances</label>
+            </value>
+            <value>
+                <fullName>Stdnt Nurse Anest Assoc Opt Out</fullName>
+                <default>false</default>
+                <label>Stdnt Nurse Anest Assoc Opt Out</label>
+            </value>
+            <value>
+                <fullName>Unsubscribe COE Magazine</fullName>
+                <default>false</default>
+                <label>Unsubscribe COE Magazine</label>
+            </value>
+            <value>
+                <fullName>Unsubscribe from SAIL</fullName>
+                <default>false</default>
+                <label>Unsubscribe from SAIL</label>
+            </value>
+            <value>
+                <fullName>Unsubscribe GSPA Newsletter</fullName>
+                <default>false</default>
+                <label>Unsubscribe GSPA Newsletter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

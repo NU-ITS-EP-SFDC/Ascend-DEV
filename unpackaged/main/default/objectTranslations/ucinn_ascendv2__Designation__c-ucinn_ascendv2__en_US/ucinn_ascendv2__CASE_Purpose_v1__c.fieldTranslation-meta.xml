@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- CASE Purpose --></label>
+        <name>ucinn_ascendv2__CASE_Purpose_v1__c</name>
+        <picklistValues>
+            <masterLabel>Academic Support</masterLabel>
+            <translation><!-- Academic Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - Athletics/Sport</masterLabel>
+            <translation><!-- Other - Athletics/Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - Libraries</masterLabel>
+            <translation><!-- Other - Libraries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - Operations &amp; maintenance</masterLabel>
+            <translation><!-- Other - Operations &amp; maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - Public Service &amp; Extension</masterLabel>
+            <translation><!-- Other - Public Service &amp; Extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scholarship/Bursaries and Student Financial Aid</masterLabel>
+            <translation><!-- Scholarship/Bursaries and Student Financial Aid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Affairs/Student Life</masterLabel>
+            <translation><!-- Student Affairs/Student Life --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrestricted</masterLabel>
+            <translation><!-- Unrestricted --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

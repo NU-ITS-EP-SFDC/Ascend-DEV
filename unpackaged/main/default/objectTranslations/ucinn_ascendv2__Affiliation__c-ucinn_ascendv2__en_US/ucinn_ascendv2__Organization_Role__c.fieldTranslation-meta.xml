@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Organization Role --></label>
+        <name>ucinn_ascendv2__Organization_Role__c</name>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Board</masterLabel>
+            <translation><!-- Corporate Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Foundation</masterLabel>
+            <translation><!-- Corporate Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donor/Company Controlled</masterLabel>
+            <translation><!-- Donor/Company Controlled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donor/Company Influenced</masterLabel>
+            <translation><!-- Donor/Company Influenced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer</masterLabel>
+            <translation><!-- Employer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estate</masterLabel>
+            <translation><!-- Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Organization</masterLabel>
+            <translation><!-- External Organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundation</masterLabel>
+            <translation><!-- Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None Indicated</masterLabel>
+            <translation><!-- None Indicated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent Company</masterLabel>
+            <translation><!-- Parent Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Corporation</masterLabel>
+            <translation><!-- Private Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Corporation</masterLabel>
+            <translation><!-- Professional Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retiree Employer</masterLabel>
+            <translation><!-- Retiree Employer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Proprietorship</masterLabel>
+            <translation><!-- Sole Proprietorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee/Company Controlled</masterLabel>
+            <translation><!-- Trustee/Company Controlled --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

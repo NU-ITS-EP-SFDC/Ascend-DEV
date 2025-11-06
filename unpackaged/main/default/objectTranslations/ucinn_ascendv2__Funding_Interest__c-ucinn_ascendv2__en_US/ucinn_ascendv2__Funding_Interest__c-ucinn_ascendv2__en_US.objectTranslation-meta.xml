@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Funding Interest</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Funding Interests</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Account Funding Interest Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Funding Interest Layout V1</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Funding Interest Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Funding Interest Layout V1</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Funding interest related to the corporation or organization. --></description>
+        <label><!-- Account Funding Interest --></label>
+        <name>ucinn_ascendv2__Account_Funding_Interest</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Funding interest related to the constituent. --></description>
+        <label><!-- Constituent Funding Interest --></label>
+        <name>ucinn_ascendv2__Contact_Funding_Interest</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Do not change the Name field. Upon creation, the Name field should read [Default Name]. --></errorMessage>
+        <name>Name_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to create a Self Reported Interest. Self Reported Interest are intended to be Created/Updated by External Users and select Admins only. --></errorMessage>
+        <name>Restricted_Access_for_Self_Reported</name>
+    </validationRules>
+</CustomObjectTranslation>

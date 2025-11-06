@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Used to define loading of a custom Google Maps URL. --></help>
+        <label><!-- Custom Google Maps URL --></label>
+        <name>geopointe__Custom_Google_Maps_URL__c</name>
+    </CustomFieldTranslation>

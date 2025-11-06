@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The longitude of the Check In location. --></help>
+        <label><!-- Where - Check Out (Longitude) --></label>
+        <name>geopointe__Where_Check_Out_Longitude__c</name>
+    </CustomFieldTranslation>

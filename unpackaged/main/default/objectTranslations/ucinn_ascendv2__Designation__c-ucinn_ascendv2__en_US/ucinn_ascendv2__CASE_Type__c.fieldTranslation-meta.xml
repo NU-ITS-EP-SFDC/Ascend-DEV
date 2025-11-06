@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- CASE Type --></label>
+        <name>ucinn_ascendv2__CASE_Type__c</name>
+        <picklistValues>
+            <masterLabel>Current Restricted</masterLabel>
+            <translation><!-- Current Restricted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Unrestricted</masterLabel>
+            <translation><!-- Current Unrestricted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endowment</masterLabel>
+            <translation><!-- Endowment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation><!-- Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Gift</masterLabel>
+            <translation><!-- Non-Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plant</masterLabel>
+            <translation><!-- Plant --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

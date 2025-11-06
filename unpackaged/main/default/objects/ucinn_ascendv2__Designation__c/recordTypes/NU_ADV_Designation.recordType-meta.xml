@@ -1,0 +1,1717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NU_ADV_Designation</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>NU_ADV</compactLayoutAssignment>
+    <description>Financial Designations</description>
+    <label>Designation</label>
+    <picklistValues>
+        <picklist>For_the_Benefit_of__c</picklist>
+        <values>
+            <fullName>Athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotech Life Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouvé College of Health Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burnes Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chancellor%E2%80%99s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-op Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Arts%2C Media and Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Professional Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Social Sciences and Humanities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%27Amore-McKim School of Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability Resource Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inclusive Computing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Students</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Khoury College of Computer Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>President%27s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provost Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School of Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Advancement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_ADV_Campaign_Priority__c</picklist>
+        <values>
+            <fullName>Diversity Across Campuses and Disciplines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education%2C Innovation%2C and Research Impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entrepreneurship Ecosystem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faculty Excellence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Holding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Experience and Exploration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Experience and Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unrestricted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Administered_By__c</picklist>
+        <values>
+            <fullName>Athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotech Life Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouvé College of Health Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burnes Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central Co-op Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chancellor%E2%80%99s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Arts%2C Media and Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Professional Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Social Sciences and Humanities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%27Amore-McKim School of Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability Resource Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inclusive Computing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Khoury College of Computer Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>President%27s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provost Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Campuses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School of Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Advancement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Associated_Academic_Organization__c</picklist>
+        <values>
+            <fullName>BHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMSB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KCCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Benefitting_Department__c</picklist>
+        <values>
+            <fullName>Annuity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotech Life Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouvé College of Health Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burnes Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central Co-op Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chancellor%E2%80%99s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College Social Sciences and Humanities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Arts%2C Media and Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Professional Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%27Amore-McKim School of Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability Resource Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Experience Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inclusive Computing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Students</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Khoury College of Computer Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>President%27s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provost%27s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Campuses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School of Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undesignated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Advancement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unrestricted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_CC_Academics__c</picklist>
+        <values>
+            <fullName>bouve-college-of-health-sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>college-of-arts-media-and-design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>college-of-engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>college-of-professional-studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>college-of-science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>college-of-social-sciences-and-humanities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>damore-mckim-school-of-business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>khoury-college-of-computer-sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>mills-college-at-northeastern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>school-of-law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>university-library</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_CC_Campuses__c</picklist>
+        <values>
+            <fullName>arlington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>boston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>burlington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>charlotte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>london</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>miami</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>nahant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>new-york</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>oakland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>roux-institute-portland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>seattle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>silicon-valley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>toronto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>vancouver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_CC_Interests__c</picklist>
+        <values>
+            <fullName>academic-enrichment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>advocacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>area-of-greatest-need</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>athletics-club-sports-and-recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>athletics-varsity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>community-impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>competition-and-skilled-based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>creative-and-visual-arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>cultural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>diversity-equity-inclusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>financial-aid-and-scholarship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>fraternity-sorority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>global-opportunities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>health-wellness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>international</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>leadership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>outdoor-adventure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>performing-arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>philanthropic-and-community-engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>political-action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>print-and-broadcast-media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>religious-and-spiritual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>science-technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>special-interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>spiritual-life</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>student-organizations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>sustainability-environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>women-at-northeastern</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_CC_Priorities__c</picklist>
+        <values>
+            <fullName>diverse-and-inclusive-communities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>entrepreneurship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>faculty-excellence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>global-exploration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>student-opportunities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Campaign__c</picklist>
+        <values>
+            <fullName>Experience</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Class_Year__c</picklist>
+        <values>
+            <fullName>Any</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freshman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sophomore</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Company__c</picklist>
+        <values>
+            <fullName>NU_CANADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NU_KRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NU_LONDON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NU_USA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Department_ID__c</picklist>
+        <values>
+            <fullName>Academic Technology Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Affirmative Action%2FDiversity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>African American Institute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>African American Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alumni Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>American Sign Language</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Art %26 Architecture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barnett Institute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campus Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CenSSIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Center Study Sports in Society</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Center for Entrepreneurship Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Center for Innovation in Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Center for Urban %26 Regional Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemistry Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil and Environmental Engg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communcations Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooperative Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMSB Accounting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMSB Finance and Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMSB General Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMSB Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Career Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability Resource Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Economics Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical and Computer Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enrollment Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAS Center for Global Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foundation Year Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graduate DMSB %26 Prof Accounting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graduate Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Sports Leisure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>History Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Humanities Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Engineering %26 Info Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Institute for Global Innovation Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interdisciplinary Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Affairs Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Student Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intramural Athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lane Health Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law Policy %26 Society Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Learning Disabilities Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine %26 Environmental Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Science Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mathematics Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical Industrial Manufacturing Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modern Languages Dept</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Music Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of Dean - DMSB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of Sr VP - Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of VP - Student Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of the President</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of the Provost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceutical Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical Plant Maint %26 Constr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical Therapy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Assistant Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physics Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Political Science Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Psychology Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Admin %26 Finance %28RAF%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STEM Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School for Public Policy and Urban Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School of Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School of Engineering Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School of Journalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School of Nursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School of Pharmacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speech Language Path%2FAudiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Center and Activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Theatre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Honors Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Libraries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Publications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Designation_Fund_Type__c</picklist>
+        <values>
+            <fullName>Athletics NU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capstone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Checkbook Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-op</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deanship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discretionary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diversity %26 Inclusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domestic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerging Priorities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entrepreneurship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faculty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fellowship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Aid NU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graduate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Student</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lecture Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Naming Gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post-doc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recruitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research NU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Torch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undergraduate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unrealized Bequest</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Fund_Class__c</picklist>
+        <values>
+            <fullName>Annuity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endowed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expendable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Fund_Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Funding_Source_Planned_Gift__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_GL_Account__c</picklist>
+        <values>
+            <fullName>1163</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1225</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5230</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5250</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Major_or_Field_of_Study__c</picklist>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fine Arts</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Open_for_Gifts__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Open_to_all_donors__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Reporting_Information__c</picklist>
+        <values>
+            <fullName>Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Reportable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reportable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reportable if</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Reporting_Unit__c</picklist>
+        <values>
+            <fullName>Athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouve College of Health Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Arts%2C Media %26 Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Professional Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Social Sciences %26 Humanities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMSB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Khoury College of Computer Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roux Institute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School of Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Priorities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Revenue_Category__c</picklist>
+        <values>
+            <fullName>RC063</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RC162</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RC168</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RC243</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Scholarship_Report_Group__c</picklist>
+        <values>
+            <fullName>Multi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Narrative_Report_Type__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priority</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>Arlington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burlington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charlotte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FallRiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>London</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miami</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NewYork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oakland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seattle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SiliconValley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toronto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vancouver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cfg_Campaign_Goal__c</picklist>
+        <values>
+            <fullName>Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donors</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Alliance_Survey__c</picklist>
+        <values>
+            <fullName>Basic Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Behavioral and Social Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Humanities and Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mathematics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical Sciences</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Areas_of_Giving_CASE_Type__c</picklist>
+        <values>
+            <fullName>CR - Current Restricted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CU - Current Unrestricted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EN - Endowment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LN - Loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NG - Non-Gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL - Plant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__CASE_Purpose_v1__c</picklist>
+        <values>
+            <fullName>Academic Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Athletics%2FSport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Libraries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Operations %26 maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Public Service %26 Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarship%2FBursaries and Student Financial Aid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Affairs%2FStudent Life</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unrestricted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__CASE_Type__c</picklist>
+        <values>
+            <fullName>Current Restricted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Unrestricted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endowment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nongift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__FASB_Type__c</picklist>
+        <values>
+            <fullName>Expendable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Restricted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary Restricted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unrestricted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Fund_Type__c</picklist>
+        <values>
+            <fullName>Academic Programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Academic Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fellowship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations%2FMaintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__G_L_FASB_Type__c</picklist>
+        <values>
+            <fullName>Permanent Restricted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary Restricted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unrestricted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

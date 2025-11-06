@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When enabled additional rules are applied which force certain address parts always to the second street line.  This setting can help to keep addresses well formatted when line lengths are limited --></help>
+        <label><!-- Force street address to multi-line --></label>
+        <name>pw_ccpro__ForceMultiLine__c</name>
+    </CustomFieldTranslation>

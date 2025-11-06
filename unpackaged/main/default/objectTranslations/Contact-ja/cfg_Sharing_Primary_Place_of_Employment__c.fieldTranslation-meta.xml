@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Indicates that the Affinity Group member wants to share their Primary Place of Employment on Affinity Group sites. --></help>
+        <label><!-- Sharing: Primary Place of Employment --></label>
+        <name>cfg_Sharing_Primary_Place_of_Employment__c</name>
+    </CustomFieldTranslation>

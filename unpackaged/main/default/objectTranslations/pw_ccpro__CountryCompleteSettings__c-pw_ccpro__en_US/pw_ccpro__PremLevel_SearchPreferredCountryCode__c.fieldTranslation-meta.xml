@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Search Result Preferred Country Code --></label>
+        <name>pw_ccpro__PremLevel_SearchPreferredCountryCode__c</name>
+    </CustomFieldTranslation>

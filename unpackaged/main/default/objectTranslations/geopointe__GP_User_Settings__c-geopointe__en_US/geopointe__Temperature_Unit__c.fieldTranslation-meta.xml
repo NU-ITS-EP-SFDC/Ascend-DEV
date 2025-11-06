@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The unit used (f or c) to measure temperature. This setting is kept for each user. --></help>
+        <label><!-- Temperature Unit --></label>
+        <name>geopointe__Temperature_Unit__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Bio Demo Setting</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Account_Full_Name_Processing_Method__c</field>
+        <value xsi:type="xsd:string">Change</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Constituent_Related_Objects_To_Delete__c</field>
+        <value xsi:type="xsd:string">ucinn_ascendv2__Address_Relation__c,
+ucinn_ascendv2__Assignment__c,
+ucinn_ascendv2__Briefing__c,
+ucinn_ascendv2__Contact_Report_Relation__c,
+ucinn_ascendv2__Deductions__c,
+ucinn_ascendv2__Email__c,
+ucinn_ascendv2__Funding_Interest__c,
+ucinn_ascendv2__Home_Department_History__c,
+ucinn_ascendv2__Involvement__c,
+ucinn_ascendv2__Phone__c,
+ucinn_ascendv2__Research__c,
+ucinn_ascendv2__Relationship__c,
+ucinn_ascendv2__Salutation__c,
+ucinn_ascendv2__Service_Indicator__c,
+ucinn_ascendv2__Social_Media__c,
+ucinn_ascendv2__Society_Membership__c,
+ucinn_ascendv2__Strategy__c,
+ucinn_ascendv2__Wealth_Rating__c,
+Asset,
+Opportunity,
+Task</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Contact_Full_Name_Processing_Method__c</field>
+        <value xsi:type="xsd:string">Change</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Default_Constituent_Type__c</field>
+        <value xsi:type="xsd:string">Friend</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Degree_Information_to_Contact_Mapping__c</field>
+        <value xsi:type="xsd:string">{&quot;ucinn_ascendv2__Affinity_Class_Year__c&quot;:&quot;ucinn_ascendv2__Preferred_Class_Year__c&quot;,&quot;ucinn_ascendv2__Conferred_Degree_Year__c&quot;:&quot;ucinn_ascendv2__Preferred_Class_Year__c&quot;, &quot;ucinn_ascendv2__Degree_Type__c&quot;:&quot;ucinn_ascendv2__Preferred_Class_Year_Type__c&quot;}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Degree_Type_Mapped_Value__c</field>
+        <value xsi:type="xsd:string">[
+  {
+    &quot;object&quot;: &quot;ucinn_ascendv2__Degree_Code__c&quot;,
+    &quot;mappings&quot;: [
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Associate Degree&quot;,
+        &quot;values&quot;: [
+          &quot;AD&quot;,
+          &quot;Asc&quot;,
+          &quot;Assoc&quot;,
+          &quot;Assoc Degree&quot;,
+          &quot;Associate Degree&quot;,
+          &quot;Associates Degree&quot;,
+          &quot;A.D.&quot;,
+          &quot;A/D&quot;,
+          &quot;Client-defined Associate Degree Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Certificate&quot;,
+        &quot;values&quot;: [
+          &quot;Cert&quot;,
+          &quot;Cert.&quot;,
+          &quot;Certificate&quot;,
+          &quot;Client-defined Certificate Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Doctorate Degree&quot;,
+        &quot;values&quot;: [
+          &quot;Doctorate&quot;,
+          &quot;Doctorate Degree&quot;,
+          &quot;Doctoral&quot;,
+          &quot;Doctoral Degree&quot;,
+          &quot;JD&quot;,
+          &quot;J.D.&quot;,
+          &quot;PhD&quot;,
+          &quot;Ph.D.&quot;,
+          &quot;Client-defined Doctorate Degree Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Masters Degree&quot;,
+        &quot;values&quot;: [
+          &quot;Masters&quot;,
+          &quot;Masters Degree&quot;,
+          &quot;MA&quot;,
+          &quot;MBA&quot;,
+          &quot;MFA&quot;,
+          &quot;MS&quot;,
+          &quot;M.A.&quot;,
+          &quot;M.B.A.&quot;,
+          &quot;M.F.A.&quot;,
+          &quot;M.S.&quot;,
+          &quot;Client-defined Masters Degree Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Undergraduate Degree&quot;,
+        &quot;values&quot;: [
+          &quot;Under&quot;,
+          &quot;BA&quot;,
+          &quot;BFA&quot;,
+          &quot;BS&quot;,
+          &quot;B.A.&quot;,
+          &quot;B.F.A.&quot;,
+          &quot;B.S.&quot;,
+          &quot;Undergraduate Degree&quot;,
+          &quot;Client-defined Undergraduate Degree Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Other Degree&quot;,
+        &quot;values&quot;: [
+          &quot;NA&quot;,
+          &quot;N/A&quot;,
+          &quot;N.A.&quot;,
+          &quot;Oth&quot;,
+          &quot;Other&quot;,
+          &quot;Other Degree&quot;,
+          &quot;Client-defined Other Degree Value&quot;
+        ]
+      }
+    ]
+  },
+  {
+    &quot;object&quot;: &quot;ucinn_ascendv2__Degree_Information__c&quot;,
+    &quot;mappings&quot;: [
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Associate Degree&quot;,
+        &quot;values&quot;: [
+          &quot;AD&quot;,
+          &quot;Asc&quot;,
+          &quot;Assoc&quot;,
+          &quot;Assoc Degree&quot;,
+          &quot;Associate Degree&quot;,
+          &quot;Associates Degree&quot;,
+          &quot;A.D.&quot;,
+          &quot;A/D&quot;,
+          &quot;Client-defined Associate Degree Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Certificate&quot;,
+        &quot;values&quot;: [
+          &quot;Cert&quot;,
+          &quot;Cert.&quot;,
+          &quot;Certificate&quot;,
+          &quot;Client-defined Certificate Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Doctorate Degree&quot;,
+        &quot;values&quot;: [
+          &quot;Doctorate&quot;,
+          &quot;Doctorate Degree&quot;,
+          &quot;Doctoral&quot;,
+          &quot;Doctoral Degree&quot;,
+          &quot;JD&quot;,
+          &quot;J.D.&quot;,
+          &quot;PhD&quot;,
+          &quot;Ph.D.&quot;,
+          &quot;Client-defined Doctorate Degree Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Masters Degree&quot;,
+        &quot;values&quot;: [
+          &quot;Graduate&quot;,
+          &quot;Graduate Degree&quot;,
+          &quot;Masters&quot;,
+          &quot;Masters Degree&quot;,
+          &quot;MA&quot;,
+          &quot;MBA&quot;,
+          &quot;MFA&quot;,
+          &quot;MS&quot;,
+          &quot;M.A.&quot;,
+          &quot;M.B.A.&quot;,
+          &quot;M.F.A.&quot;,
+          &quot;M.S.&quot;,
+          &quot;Client-defined Masters Degree Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Undergraduate Degree&quot;,
+        &quot;values&quot;: [
+          &quot;Undergraduate&quot;,
+          &quot;Undergraduate Degree&quot;,
+          &quot;Bachelors&quot;,
+          &quot;Bachelors Degree&quot;,
+          &quot;BA&quot;,
+          &quot;BFA&quot;,
+          &quot;BS&quot;,
+          &quot;B.A.&quot;,
+          &quot;B.F.A.&quot;,
+          &quot;B.S.&quot;,
+          &quot;Client-defined Undergraduate Degree Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Other Degree&quot;,
+        &quot;values&quot;: [
+          &quot;NA&quot;,
+          &quot;N/A&quot;,
+          &quot;N.A.&quot;,
+          &quot;Oth&quot;,
+          &quot;Other&quot;,
+          &quot;Other Degree&quot;,
+          &quot;Client-defined Other Degree Value&quot;
+        ]
+      }
+    ]
+  },
+  {
+    &quot;object&quot;: &quot;ucinn_ascendv2__Post_Code__c&quot;,
+    &quot;mappings&quot;: [
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Associate Degree&quot;,
+        &quot;values&quot;: [
+          &quot;AD&quot;,
+          &quot;Asc&quot;,
+          &quot;Assoc&quot;,
+          &quot;Assoc.&quot;,
+          &quot;Client-defined Associate Degree Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Certificate&quot;,
+        &quot;values&quot;: [
+          &quot;Cert&quot;,
+          &quot;Cert.&quot;,
+          &quot;Client-defined Certificate Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Doctorate Degree&quot;,
+        &quot;values&quot;: [
+          &quot;Doct&quot;,
+          &quot;JD&quot;,
+          &quot;J.D.&quot;,
+          &quot;PhD&quot;,
+          &quot;Ph.D.&quot;,
+          &quot;Client-defined Doctorate Degree Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Masters Degree&quot;,
+        &quot;values&quot;: [
+          &quot;Grad&quot;,
+          &quot;Mast&quot;,
+          &quot;Mastr&quot;,
+          &quot;MA&quot;,
+          &quot;MBA&quot;,
+          &quot;MFA&quot;,
+          &quot;MS&quot;,
+          &quot;M.A.&quot;,
+          &quot;M.B.A.&quot;,
+          &quot;M.F.A.&quot;,
+          &quot;M.S.&quot;,
+          &quot;Client-defined Masters Degree Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Undergraduate Degree&quot;,
+        &quot;values&quot;: [
+          &quot;Under&quot;,
+          &quot;Bach&quot;,
+          &quot;BA&quot;,
+          &quot;BFA&quot;,
+          &quot;BS&quot;,
+          &quot;B.A.&quot;,
+          &quot;B.F.A.&quot;,
+          &quot;B.S.&quot;,
+          &quot;Client-defined Undergraduate Degree Value&quot;
+        ]
+      },
+      {
+        &quot;recordType&quot;: &quot;School Degree Information&quot;,
+        &quot;mappedValue&quot;: &quot;Other Degree&quot;,
+        &quot;values&quot;: [
+          &quot;NA&quot;,
+          &quot;N/A&quot;,
+          &quot;N.A.&quot;,
+          &quot;Other&quot;,
+          &quot;Oth&quot;,
+          &quot;Oth.&quot;,
+          &quot;Client-defined Other Degree Value&quot;
+        ]
+      }
+    ]
+  }
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Degree_Type_Mapping_Source_Field__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Degree_Type_Mapping_Source_Object__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Degree_Type_Priority_List__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Constituent_With_Opportunities__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Organization_With_Opportunities__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Department_Field_Names__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Do_Not_Delete_HH_on_Contact_Merge_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Enable_Auto_ACR_Deletion__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Enable_Auto_ACR_Deletion_v1__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Enable_International_Autocomplete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Enable_Physician_Assignment_Sharing__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Excluded_Address_Relation_Statuses__c</field>
+        <value xsi:type="xsd:string">[&quot;Former&quot;, &quot;&quot;]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Excluded_Address_Relation_Statuses_v1__c</field>
+        <value xsi:type="xsd:string">[&quot;Former&quot;,&quot;&quot;]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Excluded_Email_Statuses__c</field>
+        <value xsi:type="xsd:string">[&quot;Former&quot;,&quot;&quot;]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Excluded_Phone_Statuses__c</field>
+        <value xsi:type="xsd:string">[&quot;Former&quot;,&quot;&quot;]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_Mapping_To_Reciprocal_Related_Org__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_Mapping_to_Reciprocal_Relationship__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Hospital_Visits_Where_Count__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Hospital_Visits_trigger__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Household_Automatic_Renaming__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Household_Name_Connector__c</field>
+        <value xsi:type="xsd:string">and</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Household_Name_Overrun_Count__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Household_Name_Overrun__c</field>
+        <value xsi:type="xsd:string">Other Family Members</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Household_Naming_Convention__c</field>
+        <value xsi:type="xsd:string">{!Lastname} Household</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Household_to_Member_Mapping__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Household_to_Member_Mapping_v1__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Member_to_Household_Mapping__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Member_to_Household_Mapping_v1__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Organizations_Related_Objects_To_Delete__c</field>
+        <value xsi:type="xsd:string">ucinn_ascendv2__Account_Name__c,
+ucinn_ascendv2__Address_Relation__c,
+ucinn_ascendv2__Assignment__c,
+ucinn_ascendv2__Briefing__c,
+ucinn_ascendv2__Contact_Report_Relation__c,
+ucinn_ascendv2__Degree_Information__c,
+ucinn_ascendv2__Email__c,
+ucinn_ascendv2__Funding_Interest__c,
+ucinn_ascendv2__Involvement__c,
+ucinn_ascendv2__Phone__c,
+ucinn_ascendv2__Research__c,
+ucinn_ascendv2__Service_Indicator__c,
+ucinn_ascendv2__Society_Membership__c,
+ucinn_ascendv2__Strategy__c,
+ucinn_ascendv2__Wealth_Rating__c,
+Asset,
+Opportunity,
+Task</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Populate_Preferred_Class_Year__c</field>
+        <value xsi:type="xsd:string">Last Degree</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Populate_Preferred_Class_Year_v1__c</field>
+        <value xsi:type="xsd:string">Last Degree</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Related_Records_Separately__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Reciprocal_Constituent_Type__c</field>
+        <value xsi:type="xsd:string">{ &quot;Parent&quot; : {&quot;Current Student&quot;:&quot;Parent of Current Student&quot;,&quot;Alumni&quot;:&quot;Parent of Alumni&quot;,&quot;Alumni No Degree&quot;:&quot;Parent of Alumni No Degree&quot;}}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationships_to_Apply_Soft_Credits__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationships_to_Apply_Soft_Credits_v1__c</field>
+        <value xsi:type="xsd:string">Spouse, Partner</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Seasonal_Address_Conflict_Override__c</field>
+        <value xsi:type="xsd:string">Newest Record</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__SmartyStreet_Timeout_Limit__c</field>
+        <value xsi:type="xsd:double">60.0</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__SmartyStreets_Country_Code_Map__c</field>
+        <value xsi:type="xsd:string">{&quot;Albania&quot;: &quot;ALB&quot;,
+&quot;Algeria&quot;: &quot;DZA&quot;,
+&quot;Andorra&quot;: &quot;AND&quot;,
+&quot;Angola&quot;: &quot;AGO&quot;,
+&quot;Argentina&quot;: &quot;ARG&quot;,
+&quot;Aruba&quot;: &quot;ABW&quot;,
+&quot;Australia&quot;: &quot;AUS&quot;,
+&quot;Austria&quot;: &quot;AUT&quot;,
+&quot;Bahamas&quot;: &quot;BHS&quot;,
+&quot;Bahrain&quot;: &quot;BHR&quot;,
+&quot;Barbados&quot;: &quot;BRB&quot;,
+&quot;Belarus&quot;: &quot;BLR&quot;,
+&quot;Belgium&quot;: &quot;BEL&quot;,
+&quot;Belize&quot;: &quot;BLZ&quot;,
+&quot;Benin&quot;: &quot;BEN&quot;,
+&quot;Bermuda&quot;: &quot;BMU&quot;,
+&quot;Bolivia&quot;: &quot;BOL&quot;,
+&quot;Bosnia and Herzegovina&quot;: &quot;BIH&quot;,
+&quot;Botswana&quot;: &quot;BWA&quot;,
+&quot;Brazil&quot;: &quot;BRA&quot;,
+&quot;Brunei Darussalam&quot;: &quot;BRN&quot;,
+&quot;Bulgaria&quot;: &quot;BGR&quot;,
+&quot;Burkina Faso&quot;: &quot;BFA&quot;,
+&quot;Burundi&quot;: &quot;BDI&quot;,
+&quot;Cameroon&quot;: &quot;CMR&quot;,
+&quot;Canada&quot;: &quot;CAN&quot;,
+&quot;Chile&quot;: &quot;CHL&quot;,
+&quot;China&quot;: &quot;CHN&quot;,
+&quot;Colombia&quot;: &quot;COL&quot;,
+&quot;Congo-Brazzaville&quot;: &quot;COG&quot;,
+&quot;Congo-Kinshasa&quot;: &quot;COD&quot;,
+&quot;Costa-Rica&quot;: &quot;CRI&quot;,
+&quot;Croatia&quot;: &quot;HRV&quot;,
+&quot;Cuba&quot;: &quot;CUB&quot;,
+&quot;Cyprus&quot;: &quot;CYP&quot;,
+&quot;Czech Republic&quot;: &quot;CZE&quot;,
+&quot;Denmark&quot;: &quot;DNK&quot;,
+&quot;Dominican Republic&quot;: &quot;DOM&quot;,
+&quot;Ecuador&quot;: &quot;ECU&quot;,
+&quot;Egypt&quot;: &quot;EGY&quot;,
+&quot;El Salvador&quot;: &quot;SLV&quot;,
+&quot;Estonia&quot;: &quot;EST&quot;,
+&quot;Finland&quot;: &quot;FIN&quot;,
+&quot;France&quot;: &quot;FRA&quot;,
+&quot;Gabon&quot;: &quot;GAB&quot;,
+&quot;Germany&quot;: &quot;DEU&quot;,
+&quot;Ghana&quot;: &quot;GHA&quot;,
+&quot;Greece&quot;: &quot;GRC&quot;,
+&quot;Guatemala&quot;: &quot;GTM&quot;,
+&quot;Guyana&quot;: &quot;GUY&quot;,
+&quot;Honduras&quot;: &quot;HND&quot;,
+&quot;Hong Kong&quot;: &quot;HKG&quot;,
+&quot;Hungary&quot;: &quot;HUN&quot;,
+&quot;Iceland&quot;: &quot;ISL&quot;,
+&quot;India&quot;: &quot;IND&quot;,
+&quot;Iraq&quot;: &quot;IRQ&quot;,
+&quot;Ireland&quot;: &quot;IRL&quot;,
+&quot;Israel&quot;: &quot;ISR&quot;,
+&quot;Italy&quot;: &quot;ITA&quot;,
+&quot;Jamaica&quot;: &quot;JAM&quot;,
+&quot;Japan&quot;: &quot;JPN&quot;,
+&quot;Jordan&quot;: &quot;JOR&quot;,
+&quot;Kenya&quot;: &quot;KEN&quot;,
+&quot;Korea (South)&quot;: &quot;KOR&quot;,
+&quot;Kosovo&quot;: &quot;XKS&quot;,
+&quot;Kuwait&quot;: &quot;KWT&quot;,
+&quot;Latvia&quot;: &quot;LVA&quot;,
+&quot;Lebanon&quot;: &quot;LBN&quot;,
+&quot;Lesotho&quot;: &quot;LSO&quot;,
+&quot;Liechtenstein (Territory CHE)&quot;: &quot;LIE&quot;,
+&quot;Lithuania&quot;: &quot;LTU&quot;,
+&quot;Luxembourg&quot;: &quot;LUX&quot;,
+&quot;Macau&quot;: &quot;MAC&quot;,
+&quot;Macedonia&quot;: &quot;MKD&quot;,
+&quot;Malawi&quot;: &quot;MWI&quot;,
+&quot;Malaysia&quot;: &quot;MYS&quot;,
+&quot;Mali&quot;: &quot;MLI&quot;,
+&quot;Malta&quot;: &quot;MLT&quot;,
+&quot;Mauritania&quot;: &quot;MRT&quot;,
+&quot;Mauritius&quot;: &quot;MUS&quot;,
+&quot;Mexico&quot;: &quot;MEX&quot;,
+&quot;Montenegro&quot;: &quot;MNE&quot;,
+&quot;Morocco&quot;: &quot;MAR&quot;,
+&quot;Mozambique&quot;: &quot;MOZ&quot;,
+&quot;Namibia&quot;: &quot;NAM&quot;,
+&quot;Netherlands&quot;: &quot;NLD&quot;,
+&quot;New Zealand&quot;: &quot;NZL&quot;,
+&quot;Nicaragua&quot;: &quot;NIC&quot;,
+&quot;Niger&quot;: &quot;NER&quot;,
+&quot;Nigeria&quot;: &quot;NGA&quot;,
+&quot;Norway&quot;: &quot;NOR&quot;,
+&quot;Oman&quot;: &quot;OMN&quot;,
+&quot;Panama&quot;: &quot;PAN&quot;,
+&quot;Paraguay&quot;: &quot;PRY&quot;,
+&quot;Peru&quot;: &quot;PER&quot;,
+&quot;Philippines&quot;: &quot;PHL&quot;,
+&quot;Poland&quot;: &quot;POL&quot;,
+&quot;Portugal&quot;: &quot;PRT&quot;,
+&quot;Qatar&quot;: &quot;QAT&quot;,
+&quot;Romania&quot;: &quot;ROU&quot;,
+&quot;Russia&quot;: &quot;RUS&quot;,
+&quot;Rwanda&quot;: &quot;RWA&quot;,
+&quot;Saint Kitts and Nevis&quot;: &quot;KNA&quot;,
+&quot;Saudi Arabia&quot;: &quot;SAU&quot;,
+&quot;Senegal&quot;: &quot;SEN&quot;,
+&quot;Serbia&quot;: &quot;SRB&quot;,
+&quot;Singapore&quot;: &quot;SGP&quot;,
+&quot;Slovakia&quot;: &quot;SVK&quot;,
+&quot;Slovenia&quot;: &quot;SVN&quot;,
+&quot;South Africa&quot;: &quot;ZAF&quot;,
+&quot;Spain&quot;: &quot;ESP&quot;,
+&quot;Suriname&quot;: &quot;SUR&quot;,
+&quot;Swaziland&quot;: &quot;SWZ&quot;,
+&quot;Sweden&quot;: &quot;SWE&quot;,
+&quot;Switzerland, Liechtenstein&quot;: &quot;CHE&quot;,
+&quot;Taiwan&quot;: &quot;TWN&quot;,
+&quot;Tanzania&quot;: &quot;TZA&quot;,
+&quot;Thailand&quot;: &quot;THA&quot;,
+&quot;Togo&quot;: &quot;TGO&quot;,
+&quot;Trinidad and Tobago&quot;: &quot;TTO&quot;,
+&quot;Tunisia&quot;: &quot;TUN&quot;,
+&quot;Turkey&quot;: &quot;TUR&quot;,
+&quot;Uganda&quot;: &quot;UGA&quot;,
+&quot;Ukraine&quot;: &quot;UKR&quot;,
+&quot;United Arab Emirates&quot;: &quot;ARE&quot;,
+&quot;United Kingdom&quot;: &quot;GBR&quot;,
+&quot;United States&quot;:&quot;&quot;,
+&quot;Venezuela&quot;: &quot;VEN&quot;,
+&quot;Viet Nam&quot;: &quot;VNM&quot;,
+&quot;Yemen&quot;: &quot;YEM&quot;,
+&quot;Zambia&quot;: &quot;ZMB&quot;,
+&quot;Zimbabwe&quot;: &quot;ZWE&quot;}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__SmartyStreets_Default_Country__c</field>
+        <value xsi:type="xsd:string">United States</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__SmartyStreets_Default_Country_v1__c</field>
+        <value xsi:type="xsd:string">United States</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__SmartyStreets_Int_Address_Search_Map__c</field>
+        <value xsi:type="xsd:string">{
+   &quot;ucinn_ascendv2__Address__c&quot;:{
+      &quot;ucinn_ascendv2__Country__c&quot;:&quot;country&quot;,
+      &quot;ucinn_ascendv2__Address_Line_1__c&quot;:&quot;address1&quot;,
+      &quot;ucinn_ascendv2__Address_Line_2__c&quot;:&quot;address2&quot;,
+      &quot;ucinn_ascendv2__Address_Line_3__c&quot;:&quot;address3&quot;,
+      &quot;ucinn_ascendv2__Address_Line_4__c&quot;:&quot;address4&quot;,
+      &quot;ucinn_ascendv2__City__c&quot;:&quot;locality&quot;,
+      &quot;ucinn_ascendv2__State__c&quot;:&quot;administrative_area&quot;,
+      &quot;ucinn_ascendv2__Postal_Code__c&quot;:&quot;postal_code&quot;
+   },
+   &quot;ucinn_ascendv2__Interim__c&quot;:{
+      &quot;ucinn_ascendv2__Country_1__c&quot;:&quot;country&quot;,
+      &quot;ucinn_ascendv2__Address_1_Line_1__c&quot;:&quot;address1&quot;,
+      &quot;ucinn_ascendv2__Address_1_Line_2__c&quot;:&quot;address2&quot;,
+      &quot;ucinn_ascendv2__Address_1_Line_3__c&quot;:&quot;address3&quot;,
+      &quot;ucinn_ascendv2__Address_1_Line_4__c&quot;:&quot;address4&quot;,
+      &quot;ucinn_ascendv2__City_1__c&quot;:&quot;locality&quot;,
+      &quot;ucinn_ascendv2__State_1__c&quot;:&quot;administrative_area&quot;,
+      &quot;ucinn_ascendv2__Postal_Code_1__c&quot;:&quot;postal_code&quot;
+   }
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__SmartyStreets_International_Field_Map__c</field>
+        <value xsi:type="xsd:string">{&quot;ucinn_ascendv2__Verification_Status__c&quot;:{&quot;analysis&quot;:&quot;verification_status&quot;}, &quot;ucinn_ascendv2__Address_Precision__c&quot;:{&quot;analysis&quot;:&quot;address_precision&quot;}}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__SmartyStreets_License_Type__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__SmartyStreets_Match_Method__c</field>
+        <value xsi:type="xsd:string">invalid</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__SmartyStreets_Source__c</field>
+        <value xsi:type="xsd:string">postal</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__SmartyStreets_US_Address_Search_Map__c</field>
+        <value xsi:type="xsd:string">{
+   &quot;ucinn_ascendv2__Address__c&quot;:{
+      &quot;ucinn_ascendv2__Address_Line_1__c&quot;:&quot;street&quot;,
+      &quot;ucinn_ascendv2__Address_Line_2__c&quot;:&quot;street2&quot;,
+      &quot;ucinn_ascendv2__City__c&quot;:&quot;city&quot;,
+      &quot;ucinn_ascendv2__State__c&quot;:&quot;state&quot;,
+      &quot;ucinn_ascendv2__Postal_Code__c&quot;:&quot;zipcode&quot;
+   },
+   &quot;ucinn_ascendv2__Interim__c&quot;:{
+      &quot;ucinn_ascendv2__Address_1_Line_1__c&quot;:&quot;street&quot;,
+      &quot;ucinn_ascendv2__Address_1_Line_2__c&quot;:&quot;street2&quot;,
+      &quot;ucinn_ascendv2__City_1__c&quot;:&quot;city&quot;,
+      &quot;ucinn_ascendv2__State_1__c&quot;:&quot;state&quot;,
+      &quot;ucinn_ascendv2__Postal_Code_1__c&quot;:&quot;zipcode&quot;
+   }
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__SmartyStreets_US_Field_Map__c</field>
+        <value xsi:type="xsd:string">{&quot;ucinn_ascendv2__DPV_Match_Code__c&quot;:{&quot;analysis&quot;:&quot;dpv_match_code&quot;}, &quot;ucinn_ascendv2__DPV_Vacant__c&quot;:{&quot;analysis&quot;:&quot;dpv_vacant&quot;}, &quot;ucinn_ascendv2__Congressional_District__c&quot;:{&quot;metadata&quot;:&quot;congressional_district&quot;}, &quot;ucinn_ascendv2__Residential_Delivery_Indicator__c&quot;:{&quot;metadata&quot;:&quot;rdi&quot;}}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__State_and_Country_Picklist_ISO_Code__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__State_and_Country_Picklist_Value__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__State_and_Country_Picklist__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__USPS_Field_Map__c</field>
+        <value xsi:type="xsd:string">{&quot;ucinn_ascendv2__DPV_Match_Code__c&quot;:&quot;DPVConfirmation&quot;, &quot;ucinn_ascendv2__DPV_Vacant__c&quot;:&quot;Vacant&quot;}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Update_Constituent_Type_On_Degree_Change__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Update_Constituent_Type_on_Deg_Change_v1__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

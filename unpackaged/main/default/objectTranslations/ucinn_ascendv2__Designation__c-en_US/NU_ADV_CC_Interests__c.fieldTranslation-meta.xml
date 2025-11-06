@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Interests --></label>
+        <name>NU_ADV_CC_Interests__c</name>
+        <picklistValues>
+            <masterLabel>Academic Enrichment</masterLabel>
+            <translation><!-- Academic Enrichment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advocacy</masterLabel>
+            <translation><!-- Advocacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Area of Greatest Need</masterLabel>
+            <translation><!-- Area of Greatest Need --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Athletics – Club Sports &amp; Recreation</masterLabel>
+            <translation><!-- Athletics – Club Sports &amp; Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Athletics – Varsity</masterLabel>
+            <translation><!-- Athletics – Varsity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Impact</masterLabel>
+            <translation><!-- Community Impact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competition and Skilled Based</masterLabel>
+            <translation><!-- Competition and Skilled Based --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creative and Visual Arts</masterLabel>
+            <translation><!-- Creative and Visual Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cultural</masterLabel>
+            <translation><!-- Cultural --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diversity, Equity, and Inclusion</masterLabel>
+            <translation><!-- Diversity, Equity, and Inclusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Aid &amp; Scholarship</masterLabel>
+            <translation><!-- Financial Aid &amp; Scholarship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraternity/Sorority</masterLabel>
+            <translation><!-- Fraternity/Sorority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Opportunities</masterLabel>
+            <translation><!-- Global Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health &amp; Wellness</masterLabel>
+            <translation><!-- Health &amp; Wellness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leadership</masterLabel>
+            <translation><!-- Leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outdoor Adventure</masterLabel>
+            <translation><!-- Outdoor Adventure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performing Arts</masterLabel>
+            <translation><!-- Performing Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philanthropic and Community Engagement</masterLabel>
+            <translation><!-- Philanthropic and Community Engagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Political Action</masterLabel>
+            <translation><!-- Political Action --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print and Broadcast Media</masterLabel>
+            <translation><!-- Print and Broadcast Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Religious and Spiritual</masterLabel>
+            <translation><!-- Religious and Spiritual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Science &amp; Technology</masterLabel>
+            <translation><!-- Science &amp; Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Interest</masterLabel>
+            <translation><!-- Special Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spiritual Life</masterLabel>
+            <translation><!-- Spiritual Life --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Organizations</masterLabel>
+            <translation><!-- Student Organizations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sustainability</masterLabel>
+            <translation><!-- Sustainability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women at Northeastern</masterLabel>
+            <translation><!-- Women at Northeastern --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

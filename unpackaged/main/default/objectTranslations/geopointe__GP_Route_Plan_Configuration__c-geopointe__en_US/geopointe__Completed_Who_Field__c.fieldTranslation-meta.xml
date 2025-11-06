@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Name of lookup field to who visited the location --></help>
+        <label><!-- Completed Who Field --></label>
+        <name>geopointe__Completed_Who_Field__c</name>
+    </CustomFieldTranslation>

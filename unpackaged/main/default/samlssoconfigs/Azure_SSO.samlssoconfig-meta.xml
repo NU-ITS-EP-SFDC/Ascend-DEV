@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>https://sts.windows.net/a8eec281-aaa3-4dae-ac9b-9a398b9215e7/</issuer>
+    <loginUrl>https://login.microsoftonline.com/a8eec281-aaa3-4dae-ac9b-9a398b9215e7/saml2</loginUrl>
+    <name>Azure SSO</name>
+    <oauthTokenEndpoint>https://northeasternuniversity3--dev.sandbox.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P18c00000C4TYS</requestSigningCertId>
+    <salesforceLoginUrl>https://northeasternuniversity3--dev.sandbox.my.salesforce.com</salesforceLoginUrl>
+    <samlEntityId>https://northeasternuniversity3</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>true</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>true</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIC8DCCAdigAwIBAgIQaGgcBgNX25tJXdAWUc8VSTANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNDAxMTkxNjQyNTZaFw0yNzAxMTkxNjQyNTZaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz3Bu5RviZPGN1EaIQugPig4REdPPGLstkzSDoM/SKTVz4gI4MgC2HM0FiTMeOyNfBBv3eFFHLl/RoxgJyYhE/ybuYedS0b8QVRK402UCbKjOspa1d8zf8FWp+35JXvPYIqV2dJnExcwOy0DA+3MO98VoA+xnvwv9J1rvyIkxm19SSlcdNSKj9OTZQEidwxoMqNlsEsj7W2a4EbFpunerOs5Anwi81jfIGG6SsWjjl3Orp1CRe5L9UDNNG4AqrQZMMc8g8mjK3i9vnMbpaboKKcMuZDffIbmnpiwOVM2g4s9+pW7GPJKtmYqx49lhi4ryXzWuX0EdfIqZITx+yS3rrQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBvZdDoS/rk4NeR/vIHzeNjSJzBTx9OrTLLtohKmwKYi0Q6FZrX5xaclsSXBiTHMG/CRWbnSKyTylPtBUjUdZ+pQBJ58WG6c/KgzvDyadM5NrrnG5slb3LOpmQRB3ECgnsSmi9t3b8j2+SHfFXJC/xXn159S8zj6hTPxonJe76Ut68TvJVJSPvoHvKNeSJY3JKekYMi5A8B+4LgrRueXgDBhu2EpaA+vAxfNk3U1F4LK1mjTSWnIEHV3woYc74F0DoSCJVQBxJHVizDFdug7C/5XLfV+zt+qsbjAmYYN7y0HWIgFt2+qVJqvgcEetjWtDVdKySj5AB/3r6lY5OygRfE</validationCert>
+</SamlSsoConfig>

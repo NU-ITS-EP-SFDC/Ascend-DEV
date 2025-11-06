@@ -1,0 +1,1865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP xGPv2 TransactionInfo</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;Label&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Label&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;isCreation&quot;: true
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Field_List_Default__c&quot;,
+      &quot;toolTip&quot;: &quot;List of List of Fields to display on the UI.&quot;,
+      &quot;disabled&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Field List Default (Managed)&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Field_List_Override__c&quot;,
+      &quot;toolTip&quot;: &quot;List of List of Fields to display on the UI.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Field List Override&quot;,
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;list&quot;,
+        &quot;helpText&quot;: &quot;List of fields, each item in this list is a row of fields.&quot;,
+        &quot;allowReorder&quot;: true,
+        &quot;title&quot;: &quot;Field Rows&quot;,
+        &quot;valueJsonFieldParams&quot;: {
+          &quot;type&quot;: &quot;list&quot;,
+          &quot;listType&quot;: &quot;object&quot;,
+          &quot;helpText&quot;: &quot;Each item on this table shares the same row on the UI when it displays.&quot;,
+          &quot;title&quot;: &quot;Field Items&quot;,
+          &quot;jsonKeysToValueList&quot;: [
+            {
+              &quot;key&quot;: &quot;objectApiName&quot;,
+              &quot;required&quot;: true,
+              &quot;label&quot;: &quot;Object Api Name&quot;,
+              &quot;helpText&quot;: &quot;Object of the field to display.&quot;,
+              &quot;valueCustomFieldParams&quot;: {
+                &quot;type&quot;: &quot;text&quot;,
+                &quot;variant&quot;: &quot;label-hidden&quot;
+              },
+              &quot;valueType&quot;: &quot;text&quot;
+            },
+            {
+              &quot;key&quot;: &quot;fieldName&quot;,
+              &quot;label&quot;: &quot;Field Api Name&quot;,
+              &quot;required&quot;: true,
+              &quot;helpText&quot;: &quot;Field Api name of the field to display. If you want empty spot you can specify a unique Field Api Name that doesnt exist anywhere.&quot;,
+              &quot;valueCustomFieldParams&quot;: {
+                &quot;type&quot;: &quot;text&quot;
+              }
+            },
+            {
+              &quot;key&quot;: &quot;important&quot;,
+              &quot;label&quot;: &quot;Important&quot;,
+              &quot;helpText&quot;: &quot;Should we show field when section is collapsed.&quot;,
+              &quot;valueType&quot;: &quot;boolean&quot;,
+              &quot;valueCustomFieldParams&quot;: {
+                &quot;type&quot;: &quot;checkbox&quot;
+              }
+            },
+            {
+              &quot;key&quot;: &quot;requried&quot;,
+              &quot;label&quot;: &quot;Required&quot;,
+              &quot;helpText&quot;: &quot;This field required to save.&quot;,
+              &quot;valueType&quot;: &quot;boolean&quot;,
+              &quot;valueCustomFieldParams&quot;: {
+                &quot;type&quot;: &quot;checkbox&quot;
+              }
+            },
+            {
+              &quot;key&quot;: &quot;changeLayout&quot;,
+              &quot;label&quot;: &quot;Change Layout&quot;,
+              &quot;helpText&quot;: &quot;When this field changes should we trigger a ui refresh.&quot;,
+              &quot;valueType&quot;: &quot;boolean&quot;,
+              &quot;valueCustomFieldParams&quot;: {
+                &quot;type&quot;: &quot;checkbox&quot;
+              }
+            },
+            {
+              &quot;key&quot;: &quot;criteria&quot;,
+              &quot;label&quot;: &quot;Criteria&quot;,
+              &quot;helpText&quot;: &quot;Specify a criteria of when to show this field.&quot;,
+              &quot;valueJsonFieldParams&quot;: {
+                &quot;type&quot;: &quot;list&quot;,
+                &quot;listType&quot;: &quot;object&quot;,
+                &quot;listViewType&quot;: &quot;object&quot;,
+                &quot;title&quot;: &quot;Criteria&quot;,
+                &quot;helpText&quot;: &quot;In order for the criteria to be true. Every statement inside the object has to be true inorder for that object to be true. Any object can be true for the criteria to be true.&quot;,
+                &quot;jsonKeysToValueList&quot;: [
+                  {
+                    &quot;key&quot;: &quot;isSessionClosed&quot;,
+                    &quot;helpText&quot;: &quot;Current session that transaction is opened on is closed.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isView&quot;,
+                    &quot;helpText&quot;: &quot;Currently on the view page of the transaction.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isEdit&quot;,
+                    &quot;helpText&quot;: &quot;Currently on the correction/adjustment page of the transactions.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isCreation&quot;,
+                    &quot;helpText&quot;: &quot;Currently on the creation page of the transactions.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isContactDonor&quot;,
+                    &quot;helpText&quot;: &quot;Current donor is a Constituent.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isAdjustment&quot;,
+                    &quot;helpText&quot;: &quot;Transaction being performed is an adjustment.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isToPledgePaymentAdjustment&quot;,
+                    &quot;helpText&quot;: &quot;Transaction being performed is a Gift to Pledge correection/adjustment.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isPayment&quot;,
+                    &quot;helpText&quot;: &quot;Transaction being performed is a Payment Transaction.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isDefault&quot;,
+                    &quot;helpText&quot;: &quot;Transaction being performed is saving the defaults for xGPv2.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isPledgeToGift&quot;,
+                    &quot;helpText&quot;: &quot;Transaction being performed is pledge payment to gift correction/adjustment.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isPledgeToPledge&quot;,
+                    &quot;helpText&quot;: &quot;Transaction being performed is pledge payment to pledge payment correction/adjustment.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isWizardStep&quot;,
+                    &quot;helpText&quot;: &quot;Transaction is being performed on the wizard.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;transactionIsOverpayment&quot;,
+                    &quot;helpText&quot;: &quot;Transaction is being performed is an overpayment.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;nonGiftItemsEnabled&quot;,
+                    &quot;helpText&quot;: &quot;Non gift itemization is enabled. Defined on the Gift Processing Setting mdt&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;opportunityDeletionEnabled&quot;,
+                    &quot;helpText&quot;: &quot;Opportunity Deletion is enabled. Defined on the Gift Processing Setting mdt&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;opportunityTeamEnabled&quot;,
+                    &quot;helpText&quot;: &quot;Opportunity Team Setting is enabled. Defined on the Gift Processing Opportunity Team Setting mdt and salesforces Opportunity team selling.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;opportunityTeamContactRoleEnabled&quot;,
+                    &quot;helpText&quot;: &quot;Opportunity Team Contact Role is enabled. Defined on the Gift Processing Opportunity Team Setting mdt&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;paymentMethod&quot;,
+                    &quot;helpText&quot;: &quot;Payment Method defined on the Gift Processing Setting mdt.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;picklist&quot;,
+                      &quot;customPicklistValuesString&quot;: [
+                        &quot;Legacy&quot;,
+                        &quot;Gift Amount&quot;,
+                        &quot;Gift Amount + Non-Gift Amount&quot;
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;tenderTypeCategory&quot;,
+                    &quot;helpText&quot;: &quot;Tender Type category of the current tender type. Defined in the Gift Processing Tender Type mdt.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;picklist&quot;,
+                      &quot;customPicklistValuesString&quot;: [
+                        &quot;Cash&quot;,
+                        &quot;Credit Card&quot;,
+                        &quot;Check&quot;,
+                        &quot;Wire&quot;,
+                        &quot;Property&quot;,
+                        &quot;Check&quot;,
+                        &quot;Stock Gift&quot;
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;transactionType&quot;,
+                    &quot;helpText&quot;: &quot;Current Transaction Type that is being performed.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;wizardTransactionType&quot;,
+                    &quot;helpText&quot;: &quot;Transaction Type that is being performed on the wizard.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                    &quot;helpText&quot;: &quot;Attribute path of defined variables.\n ex) transactionRecords.TransactionInformation.ucinn_ascendv2__Payment__c.ucinn_ascendv2__Tender_Type_for_Gifts__c&quot;,
+                    &quot;valueTypeToFieldParams&quot;: {
+                      &quot;boolean&quot;: {
+                        &quot;type&quot;: &quot;checkbox&quot;
+                      },
+                      &quot;string&quot;: {
+                        &quot;type&quot;: &quot;text&quot;
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              &quot;key&quot;: &quot;customFieldParams&quot;,
+              &quot;label&quot;: &quot;Custom Field Params&quot;,
+              &quot;helpText&quot;: &quot;Specifying customizations for the field.&quot;,
+              &quot;valueJsonFieldParams&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;jsonKeysToValueList&quot;: [
+                  {
+                    &quot;key&quot;: &quot;type&quot;,
+                    &quot;required&quot;: true,
+                    &quot;helpText&quot;: &quot;Type of input field to render.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;picklist&quot;,
+                      &quot;customPicklistValuesString&quot;: [
+                        &quot;dependentpicklist&quot;,
+                        &quot;dependentradio&quot;,
+                        &quot;header&quot;,
+                        &quot;textarea&quot;,
+                        &quot;picklist&quot;,
+                        &quot;multiselectpicklist&quot;,
+                        &quot;richtext&quot;,
+                        &quot;radio&quot;,
+                        &quot;lookup&quot;,
+                        &quot;blank&quot;,
+                        &quot;checkbox&quot;,
+                        &quot;date&quot;,
+                        &quot;datetime&quot;,
+                        &quot;time&quot;,
+                        &quot;email&quot;,
+                        &quot;password&quot;,
+                        &quot;search&quot;,
+                        &quot;tel&quot;,
+                        &quot;url&quot;,
+                        &quot;number&quot;,
+                        &quot;text&quot;,
+                        &quot;toggle&quot;
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;customMetadata&quot;,
+                    &quot;helpText&quot;: &quot;Only applicable if type is &apos;lookup&apos;. Populate with the Utility Lookup mdt.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;lookup&quot;,
+                      &quot;sobjectName&quot;: &quot;ucinn_ascendv2__Utility_Lookup_Setting__mdt&quot;,
+                      &quot;uniqueValueField&quot;: &quot;DeveloperName&quot;,
+                      &quot;whereClauseString&quot;: &quot;&quot;,
+                      &quot;fieldsToDisplay&quot;: [
+                        &quot;Label&quot;
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;whereClauseString&quot;,
+                    &quot;helpText&quot;: &quot;Only applicable if type is &apos;lookup&apos;. This is the filter when looking up records.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;textarea&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;uniqueValueField&quot;,
+                    &quot;helpText&quot;: &quot;Only applicable if type is &apos;lookup&apos;. This is a Field Api Name of the record being looked up. Value to save on the input field is the field api name specified here. If value to save is &apos;Id&apos; leave blank.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;fieldsToDisplay&quot;,
+                    &quot;helpText&quot;: &quot;Only applicable if type is &apos;lookup&apos;. This is a list of fields to display when looking up a record.&quot;,
+                    &quot;valueJsonFieldParams&quot;: {
+                      &quot;type&quot;: &quot;list&quot;,
+                      &quot;valueCustomFieldParams&quot;: {
+                        &quot;type&quot;: &quot;text&quot;
+                      }
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;label&quot;,
+                    &quot;helpText&quot;: &quot;Label of the field.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;sobjectName&quot;,
+                    &quot;helpText&quot;: &quot;Only applicable if type is &apos;lookup&apos;. Object Api Name of the lookup object.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;formatter&quot;,
+                    &quot;helpText&quot;: &quot;Formatter for how numbers should be displayed..&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;picklist&quot;,
+                      &quot;customPicklistValuesString&quot;: [
+                        &quot;currency&quot;,
+                        &quot;percent&quot;,
+                        &quot;percent-fixed&quot;
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;step&quot;,
+                    &quot;helpText&quot;: &quot;Specify how many decimal.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;eventOnBlur&quot;,
+                    &quot;helpText&quot;: &quot;On field input blur we fire events saying the field has updated.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;eventOnChange&quot;,
+                    &quot;helpText&quot;: &quot;On field input changed we fire events saying field has updated.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;customPicklistValuesString&quot;,
+                    &quot;helpText&quot;: &quot;Only applicable to type &apos;Picklist&apos;. Specify a custom picklist value set.&quot;,
+                    &quot;valueJsonFieldParams&quot;: {
+                      &quot;type&quot;: &quot;list&quot;,
+                      &quot;helpText&quot;: &quot;List of picklist values.&quot;,
+                      &quot;valueCustomFieldParams&quot;: {
+                        &quot;type&quot;: &quot;text&quot;
+                      }
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;customPicklistValues&quot;,
+                    &quot;helpText&quot;: &quot;Only applicable to type &apos;Picklist&apos;. Specify a custom picklist value set.&quot;,
+                    &quot;valueJsonFieldParams&quot;: {
+                      &quot;type&quot;: &quot;list&quot;,
+                      &quot;listType&quot;: &quot;object&quot;,
+                      &quot;helpText&quot;: &quot;List of label and values for picklist.&quot;,
+                      &quot;jsonKeysToValueList&quot;: [
+                        {
+                          &quot;key&quot;: &quot;label&quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;text&quot;
+                          }
+                        },
+                        {
+                          &quot;key&quot;: &quot;value&quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;text&quot;
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;customPicklistExclusions&quot;,
+                    &quot;helpText&quot;: &quot;Only applicable to type &apos;Picklist&apos;. Specify a picklist values to exclude.&quot;,
+                    &quot;valueJsonFieldParams&quot;: {
+                      &quot;type&quot;: &quot;list&quot;,
+                      &quot;helpText&quot;: &quot;List of picklist values to exclude.&quot;,
+                      &quot;valueCustomFieldParams&quot;: {
+                        &quot;type&quot;: &quot;text&quot;
+                      }
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;variant&quot;,
+                    &quot;helpText&quot;: &quot;Specify standard salesforce input variant.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;dateStyle&quot;,
+                    &quot;helpText&quot;: &quot;Specify standard salesforce input dateStyle.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;min&quot;,
+                    &quot;helpText&quot;: &quot;Specify standard salesforce input min.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;max&quot;,
+                    &quot;helpText&quot;: &quot;Specify standard salesforce input max.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;max&quot;,
+                    &quot;helpText&quot;: &quot;Only applicable of type &apos;blank&apos;. Specify an input field type of how the blank field should be rendered.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Edit_Button_Default__c&quot;,
+      &quot;toolTip&quot;: &quot;Criteria for when the Edit button should appear.&quot;,
+      &quot;disabled&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Edit Button Default (Managed)&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Edit_Button_Override__c&quot;,
+      &quot;toolTip&quot;: &quot;Criteria for when the Edit button should appear.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Edit Button Override&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;title&quot;: &quot;Edit Button&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;criteria&quot;,
+            &quot;label&quot;: &quot;Criteria&quot;,
+            &quot;required&quot;: true,
+            &quot;helpText&quot;: &quot;Specify a criteria of when to show this button.&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;list&quot;,
+              &quot;listType&quot;: &quot;object&quot;,
+              &quot;listViewType&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;Criteria&quot;,
+              &quot;helpText&quot;: &quot;In order for the criteria to be true. Every statement inside the object has to be true inorder for that object to be true. Any object can be true for the criteria to be true.&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;isSessionClosed&quot;,
+                  &quot;helpText&quot;: &quot;Current session that transaction is opened on is closed.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isView&quot;,
+                  &quot;helpText&quot;: &quot;Currently on the view page of the transaction.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isEdit&quot;,
+                  &quot;helpText&quot;: &quot;Currently on the correction/adjustment page of the transactions.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isCreation&quot;,
+                  &quot;helpText&quot;: &quot;Currently on the creation page of the transactions.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isContactDonor&quot;,
+                  &quot;helpText&quot;: &quot;Current donor is a Constituent.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isAdjustment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is an adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isToPledgePaymentAdjustment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is a Gift to Pledge correection/adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isPayment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is a Payment Transaction.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isDefault&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is saving the defaults for xGPv2.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isPledgeToGift&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is pledge payment to gift correction/adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isPledgeToPledge&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is pledge payment to pledge payment correction/adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isWizardStep&quot;,
+                  &quot;helpText&quot;: &quot;Transaction is being performed on the wizard.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;transactionIsOverpayment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction is being performed is an overpayment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;nonGiftItemsEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Non gift itemization is enabled. Defined on the Gift Processing Setting mdt&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;opportunityDeletionEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity Deletion is enabled. Defined on the Gift Processing Setting mdt&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;opportunityTeamEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity Team Setting is enabled. Defined on the Gift Processing Opportunity Team Setting mdt and salesforces Opportunity team selling.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;opportunityTeamContactRoleEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity Team Contact Role is enabled. Defined on the Gift Processing Opportunity Team Setting mdt&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;paymentMethod&quot;,
+                  &quot;helpText&quot;: &quot;Payment Method defined on the Gift Processing Setting mdt.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;picklist&quot;,
+                    &quot;customPicklistValuesString&quot;: [
+                      &quot;Legacy&quot;,
+                      &quot;Gift Amount&quot;,
+                      &quot;Gift Amount + Non-Gift Amount&quot;
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;tenderTypeCategory&quot;,
+                  &quot;helpText&quot;: &quot;Tender Type category of the current tender type. Defined in the Gift Processing Tender Type mdt.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;picklist&quot;,
+                    &quot;customPicklistValuesString&quot;: [
+                      &quot;Cash&quot;,
+                      &quot;Credit Card&quot;,
+                      &quot;Check&quot;,
+                      &quot;Wire&quot;,
+                      &quot;Property&quot;,
+                      &quot;Check&quot;,
+                      &quot;Stock Gift&quot;
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;transactionType&quot;,
+                  &quot;helpText&quot;: &quot;Current Transaction Type that is being performed.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;wizardTransactionType&quot;,
+                  &quot;helpText&quot;: &quot;Transaction Type that is being performed on the wizard.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;helpText&quot;: &quot;Attribute path of defined variables.\n ex) transactionRecords.TransactionInformation.ucinn_ascendv2__Payment__c.ucinn_ascendv2__Tender_Type_for_Gifts__c&quot;,
+                  &quot;valueTypeToFieldParams&quot;: {
+                    &quot;boolean&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    },
+                    &quot;string&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Delete_Button_Default__c&quot;,
+      &quot;toolTip&quot;: &quot;Criteria for when the delete button should appear.&quot;,
+      &quot;disabled&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Delete Button Default (Managed)&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Delete_Button_Override__c&quot;,
+      &quot;toolTip&quot;: &quot;Criteria for when the delete button should appear.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Delete Button Override&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;title&quot;: &quot;Delete Button&quot;,
+        &quot;helpText&quot;: &quot;Specify a criteria for when the delete button should show.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;criteria&quot;,
+            &quot;label&quot;: &quot;Criteria&quot;,
+            &quot;required&quot;: true,
+            &quot;helpText&quot;: &quot;Specify a criteria of when to show this button.&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;list&quot;,
+              &quot;listType&quot;: &quot;object&quot;,
+              &quot;listViewType&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;Criteria&quot;,
+              &quot;helpText&quot;: &quot;In order for the criteria to be true. Every statement inside the object has to be true inorder for that object to be true. Any object can be true for the criteria to be true.&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;isSessionClosed&quot;,
+                  &quot;helpText&quot;: &quot;Current session that transaction is opened on is closed.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isView&quot;,
+                  &quot;helpText&quot;: &quot;Currently on the view page of the transaction.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isEdit&quot;,
+                  &quot;helpText&quot;: &quot;Currently on the correction/adjustment page of the transactions.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isCreation&quot;,
+                  &quot;helpText&quot;: &quot;Currently on the creation page of the transactions.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isContactDonor&quot;,
+                  &quot;helpText&quot;: &quot;Current donor is a Constituent.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isAdjustment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is an adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isToPledgePaymentAdjustment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is a Gift to Pledge correection/adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isPayment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is a Payment Transaction.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isDefault&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is saving the defaults for xGPv2.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isPledgeToGift&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is pledge payment to gift correction/adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isPledgeToPledge&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is pledge payment to pledge payment correction/adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isWizardStep&quot;,
+                  &quot;helpText&quot;: &quot;Transaction is being performed on the wizard.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;transactionIsOverpayment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction is being performed is an overpayment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;nonGiftItemsEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Non gift itemization is enabled. Defined on the Gift Processing Setting mdt&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;opportunityDeletionEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity Deletion is enabled. Defined on the Gift Processing Setting mdt&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;opportunityTeamEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity Team Setting is enabled. Defined on the Gift Processing Opportunity Team Setting mdt and salesforces Opportunity team selling.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;opportunityTeamContactRoleEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity Team Contact Role is enabled. Defined on the Gift Processing Opportunity Team Setting mdt&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;paymentMethod&quot;,
+                  &quot;helpText&quot;: &quot;Payment Method defined on the Gift Processing Setting mdt.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;picklist&quot;,
+                    &quot;customPicklistValuesString&quot;: [
+                      &quot;Legacy&quot;,
+                      &quot;Gift Amount&quot;,
+                      &quot;Gift Amount + Non-Gift Amount&quot;
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;tenderTypeCategory&quot;,
+                  &quot;helpText&quot;: &quot;Tender Type category of the current tender type. Defined in the Gift Processing Tender Type mdt.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;picklist&quot;,
+                    &quot;customPicklistValuesString&quot;: [
+                      &quot;Cash&quot;,
+                      &quot;Credit Card&quot;,
+                      &quot;Check&quot;,
+                      &quot;Wire&quot;,
+                      &quot;Property&quot;,
+                      &quot;Check&quot;,
+                      &quot;Stock Gift&quot;
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;transactionType&quot;,
+                  &quot;helpText&quot;: &quot;Current Transaction Type that is being performed.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;wizardTransactionType&quot;,
+                  &quot;helpText&quot;: &quot;Transaction Type that is being performed on the wizard.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;helpText&quot;: &quot;Attribute path of defined variables.\n ex) transactionRecords.TransactionInformation.ucinn_ascendv2__Payment__c.ucinn_ascendv2__Tender_Type_for_Gifts__c&quot;,
+                  &quot;valueTypeToFieldParams&quot;: {
+                    &quot;boolean&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    },
+                    &quot;string&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__To_Pledge_Button_Default__c&quot;,
+      &quot;disabled&quot;: true,
+      &quot;toolTip&quot;: &quot;Specify a criteria for when the to pledge button should show.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;To Pledge Button Default (Managed)&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__To_Pledge_Button_Override__c&quot;,
+      &quot;toolTip&quot;: &quot;Specify a criteria for when the to pledge button should show.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;To Pledge Override&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;title&quot;: &quot;To Pledge&quot;,
+        &quot;helpText&quot;: &quot;Specify a criteria for when the to pledge button should show.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;criteria&quot;,
+            &quot;label&quot;: &quot;Criteria&quot;,
+            &quot;required&quot;: true,
+            &quot;helpText&quot;: &quot;Specify a criteria of when to show this button.&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;list&quot;,
+              &quot;listType&quot;: &quot;object&quot;,
+              &quot;listViewType&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;Criteria&quot;,
+              &quot;helpText&quot;: &quot;In order for the criteria to be true. Every statement inside the object has to be true inorder for that object to be true. Any object can be true for the criteria to be true.&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;isSessionClosed&quot;,
+                  &quot;helpText&quot;: &quot;Current session that transaction is opened on is closed.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isView&quot;,
+                  &quot;helpText&quot;: &quot;Currently on the view page of the transaction.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isEdit&quot;,
+                  &quot;helpText&quot;: &quot;Currently on the correction/adjustment page of the transactions.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isCreation&quot;,
+                  &quot;helpText&quot;: &quot;Currently on the creation page of the transactions.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isContactDonor&quot;,
+                  &quot;helpText&quot;: &quot;Current donor is a Constituent.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isAdjustment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is an adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isToPledgePaymentAdjustment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is a Gift to Pledge correection/adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isPayment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is a Payment Transaction.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isDefault&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is saving the defaults for xGPv2.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isPledgeToGift&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is pledge payment to gift correction/adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isPledgeToPledge&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is pledge payment to pledge payment correction/adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isWizardStep&quot;,
+                  &quot;helpText&quot;: &quot;Transaction is being performed on the wizard.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;transactionIsOverpayment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction is being performed is an overpayment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;nonGiftItemsEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Non gift itemization is enabled. Defined on the Gift Processing Setting mdt&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;opportunityDeletionEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity Deletion is enabled. Defined on the Gift Processing Setting mdt&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;opportunityTeamEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity Team Setting is enabled. Defined on the Gift Processing Opportunity Team Setting mdt and salesforces Opportunity team selling.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;opportunityTeamContactRoleEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity Team Contact Role is enabled. Defined on the Gift Processing Opportunity Team Setting mdt&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;paymentMethod&quot;,
+                  &quot;helpText&quot;: &quot;Payment Method defined on the Gift Processing Setting mdt.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;picklist&quot;,
+                    &quot;customPicklistValuesString&quot;: [
+                      &quot;Legacy&quot;,
+                      &quot;Gift Amount&quot;,
+                      &quot;Gift Amount + Non-Gift Amount&quot;
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;tenderTypeCategory&quot;,
+                  &quot;helpText&quot;: &quot;Tender Type category of the current tender type. Defined in the Gift Processing Tender Type mdt.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;picklist&quot;,
+                    &quot;customPicklistValuesString&quot;: [
+                      &quot;Cash&quot;,
+                      &quot;Credit Card&quot;,
+                      &quot;Check&quot;,
+                      &quot;Wire&quot;,
+                      &quot;Property&quot;,
+                      &quot;Check&quot;,
+                      &quot;Stock Gift&quot;
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;transactionType&quot;,
+                  &quot;helpText&quot;: &quot;Current Transaction Type that is being performed.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;wizardTransactionType&quot;,
+                  &quot;helpText&quot;: &quot;Transaction Type that is being performed on the wizard.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;helpText&quot;: &quot;Attribute path of defined variables.\n ex) transactionRecords.TransactionInformation.ucinn_ascendv2__Payment__c.ucinn_ascendv2__Tender_Type_for_Gifts__c&quot;,
+                  &quot;valueTypeToFieldParams&quot;: {
+                    &quot;boolean&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    },
+                    &quot;string&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Process_Payment_Button_Default__c&quot;,
+      &quot;toolTip&quot;: &quot;Criteria on when to show the process payment button.&quot;,
+      &quot;disabled&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Process Payment Button Default (Managed)&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Process_Payment_Button_Override__c&quot;,
+      &quot;toolTip&quot;: &quot;Criteria on when to show the process payment button.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Process Payment Button Override&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;title&quot;: &quot;Process Payment Button&quot;,
+        &quot;helpText&quot;: &quot;Specify a criteria for when the process payment button should show.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;criteria&quot;,
+            &quot;label&quot;: &quot;Criteria&quot;,
+            &quot;required&quot;: true,
+            &quot;helpText&quot;: &quot;Specify a criteria of when to show this button.&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;list&quot;,
+              &quot;listType&quot;: &quot;object&quot;,
+              &quot;listViewType&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;Criteria&quot;,
+              &quot;helpText&quot;: &quot;In order for the criteria to be true. Every statement inside the object has to be true inorder for that object to be true. Any object can be true for the criteria to be true.&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;isSessionClosed&quot;,
+                  &quot;helpText&quot;: &quot;Current session that transaction is opened on is closed.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isView&quot;,
+                  &quot;helpText&quot;: &quot;Currently on the view page of the transaction.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isEdit&quot;,
+                  &quot;helpText&quot;: &quot;Currently on the correction/adjustment page of the transactions.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isCreation&quot;,
+                  &quot;helpText&quot;: &quot;Currently on the creation page of the transactions.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isContactDonor&quot;,
+                  &quot;helpText&quot;: &quot;Current donor is a Constituent.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isAdjustment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is an adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isToPledgePaymentAdjustment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is a Gift to Pledge correection/adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isPayment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is a Payment Transaction.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isDefault&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is saving the defaults for xGPv2.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isPledgeToGift&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is pledge payment to gift correction/adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isPledgeToPledge&quot;,
+                  &quot;helpText&quot;: &quot;Transaction being performed is pledge payment to pledge payment correction/adjustment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;isWizardStep&quot;,
+                  &quot;helpText&quot;: &quot;Transaction is being performed on the wizard.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;transactionIsOverpayment&quot;,
+                  &quot;helpText&quot;: &quot;Transaction is being performed is an overpayment.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;nonGiftItemsEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Non gift itemization is enabled. Defined on the Gift Processing Setting mdt&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;opportunityDeletionEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity Deletion is enabled. Defined on the Gift Processing Setting mdt&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;opportunityTeamEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity Team Setting is enabled. Defined on the Gift Processing Opportunity Team Setting mdt and salesforces Opportunity team selling.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;opportunityTeamContactRoleEnabled&quot;,
+                  &quot;helpText&quot;: &quot;Opportunity Team Contact Role is enabled. Defined on the Gift Processing Opportunity Team Setting mdt&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;checkbox&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;paymentMethod&quot;,
+                  &quot;helpText&quot;: &quot;Payment Method defined on the Gift Processing Setting mdt.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;picklist&quot;,
+                    &quot;customPicklistValuesString&quot;: [
+                      &quot;Legacy&quot;,
+                      &quot;Gift Amount&quot;,
+                      &quot;Gift Amount + Non-Gift Amount&quot;
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;tenderTypeCategory&quot;,
+                  &quot;helpText&quot;: &quot;Tender Type category of the current tender type. Defined in the Gift Processing Tender Type mdt.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;picklist&quot;,
+                    &quot;customPicklistValuesString&quot;: [
+                      &quot;Cash&quot;,
+                      &quot;Credit Card&quot;,
+                      &quot;Check&quot;,
+                      &quot;Wire&quot;,
+                      &quot;Property&quot;,
+                      &quot;Check&quot;,
+                      &quot;Stock Gift&quot;
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;transactionType&quot;,
+                  &quot;helpText&quot;: &quot;Current Transaction Type that is being performed.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;wizardTransactionType&quot;,
+                  &quot;helpText&quot;: &quot;Transaction Type that is being performed on the wizard.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;helpText&quot;: &quot;Attribute path of defined variables.\n ex) transactionRecords.TransactionInformation.ucinn_ascendv2__Payment__c.ucinn_ascendv2__Tender_Type_for_Gifts__c&quot;,
+                  &quot;valueTypeToFieldParams&quot;: {
+                    &quot;boolean&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    },
+                    &quot;string&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Bio_Button_Default__c&quot;,
+      &quot;toolTip&quot;: &quot;Configuration Related to the Bio Button.&quot;,
+      &quot;disabled&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Bio Button Default (Managed)&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Bio_Button_Override__c&quot;,
+      &quot;toolTip&quot;: &quot;Configuration Related to the Bio Button.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Bio Button Override&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;title&quot;: &quot;Bio Button&quot;,
+        &quot;helpText&quot;: &quot;Specify attributes for the Bio button&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;title&quot;,
+            &quot;required&quot;: true,
+            &quot;helpText&quot;: &quot;Specify a label for this button.&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Section_List_Default__c&quot;,
+      &quot;toolTip&quot;: &quot;List of List of sections that should appear on the UI.&quot;,
+      &quot;disabled&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Section List Default (Managed)&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Section_List_Override__c&quot;,
+      &quot;toolTip&quot;: &quot;List of List of sections that should appear on the UI.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Section List Override&quot;,
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;list&quot;,
+        &quot;title&quot;: &quot;Section List&quot;,
+        &quot;helpText&quot;: &quot;Configuration pertaining the related information on the transaciton.&quot;,
+        &quot;valueJsonFieldParams&quot;: {
+          &quot;type&quot;: &quot;list&quot;,
+          &quot;listType&quot;: &quot;object&quot;,
+          &quot;title&quot;: &quot;Related Information&quot;,
+          &quot;helpText&quot;: &quot;Specify the related information to render for this transaction.&quot;,
+          &quot;jsonKeysToValueList&quot;: [
+            {
+              &quot;key&quot;: &quot;sectionName&quot;,
+              &quot;label&quot;: &quot;Section Name&quot;,
+              &quot;required&quot;: true,
+              &quot;helpText&quot;: &quot;Name of the section to render. Defined in Gift Processing Setting mdt - Related Information Field Map&quot;,
+              &quot;valueCustomFieldParams&quot;: {
+                &quot;type&quot;: &quot;text&quot;
+              }
+            },
+            {
+              &quot;key&quot;: &quot;title&quot;,
+              &quot;label&quot;: &quot;Title&quot;,
+              &quot;helpText&quot;: &quot;Title of the related information&quot;,
+              &quot;valueCustomFieldParams&quot;: {
+                &quot;type&quot;: &quot;text&quot;
+              }
+            },
+            {
+              &quot;key&quot;: &quot;collapsed&quot;,
+              &quot;label&quot;: &quot;Collapsed&quot;,
+              &quot;helpText&quot;: &quot;When this section renders should it be collapsed by default.&quot;,
+              &quot;valueCustomFieldParams&quot;: {
+                &quot;type&quot;: &quot;checkbox&quot;
+              }
+            },
+            {
+              &quot;key&quot;: &quot;hideSection&quot;,
+              &quot;label&quot;: &quot;Hide Section&quot;,
+              &quot;helpText&quot;: &quot;This section is hidden but will still handle events.&quot;,
+              &quot;valueCustomFieldParams&quot;: {
+                &quot;type&quot;: &quot;checkbox&quot;
+              }
+            },
+            {
+              &quot;key&quot;: &quot;showPaymentAllocation&quot;,
+              &quot;label&quot;: &quot;Show Payment Allocation&quot;,
+              &quot;helpText&quot;: &quot;Show the pay by designation/installment buttons.&quot;,
+              &quot;valueCustomFieldParams&quot;: {
+                &quot;type&quot;: &quot;checkbox&quot;
+              }
+            },
+            {
+              &quot;key&quot;: &quot;criteria&quot;,
+              &quot;label&quot;: &quot;Criteria&quot;,
+              &quot;helpText&quot;: &quot;Specify criteria of when to show section.&quot;,
+              &quot;valueJsonFieldParams&quot;: {
+                &quot;type&quot;: &quot;list&quot;,
+                &quot;listType&quot;: &quot;object&quot;,
+                &quot;listViewType&quot;: &quot;object&quot;,
+                &quot;title&quot;: &quot;Criteria&quot;,
+                &quot;helpText&quot;: &quot;In order for the criteria to be true. Every statement inside the object has to be true inorder for that object to be true. Any object can be true for the criteria to be true.&quot;,
+                &quot;jsonKeysToValueList&quot;: [
+                  {
+                    &quot;key&quot;: &quot;isSessionClosed&quot;,
+                    &quot;helpText&quot;: &quot;Current session that transaction is opened on is closed.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isView&quot;,
+                    &quot;helpText&quot;: &quot;Currently on the view page of the transaction.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isEdit&quot;,
+                    &quot;helpText&quot;: &quot;Currently on the correction/adjustment page of the transactions.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isCreation&quot;,
+                    &quot;helpText&quot;: &quot;Currently on the creation page of the transactions.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isContactDonor&quot;,
+                    &quot;helpText&quot;: &quot;Current donor is a Constituent.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isAdjustment&quot;,
+                    &quot;helpText&quot;: &quot;Transaction being performed is an adjustment.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isToPledgePaymentAdjustment&quot;,
+                    &quot;helpText&quot;: &quot;Transaction being performed is a Gift to Pledge correection/adjustment.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isPayment&quot;,
+                    &quot;helpText&quot;: &quot;Transaction being performed is a Payment Transaction.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isDefault&quot;,
+                    &quot;helpText&quot;: &quot;Transaction being performed is saving the defaults for xGPv2.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isPledgeToGift&quot;,
+                    &quot;helpText&quot;: &quot;Transaction being performed is pledge payment to gift correction/adjustment.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isPledgeToPledge&quot;,
+                    &quot;helpText&quot;: &quot;Transaction being performed is pledge payment to pledge payment correction/adjustment.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;isWizardStep&quot;,
+                    &quot;helpText&quot;: &quot;Transaction is being performed on the wizard.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;transactionIsOverpayment&quot;,
+                    &quot;helpText&quot;: &quot;Transaction is being performed is an overpayment.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;nonGiftItemsEnabled&quot;,
+                    &quot;helpText&quot;: &quot;Non gift itemization is enabled. Defined on the Gift Processing Setting mdt&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;opportunityDeletionEnabled&quot;,
+                    &quot;helpText&quot;: &quot;Opportunity Deletion is enabled. Defined on the Gift Processing Setting mdt&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;opportunityTeamEnabled&quot;,
+                    &quot;helpText&quot;: &quot;Opportunity Team Setting is enabled. Defined on the Gift Processing Opportunity Team Setting mdt and salesforces Opportunity team selling.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;opportunityTeamContactRoleEnabled&quot;,
+                    &quot;helpText&quot;: &quot;Opportunity Team Contact Role is enabled. Defined on the Gift Processing Opportunity Team Setting mdt&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;checkbox&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;paymentMethod&quot;,
+                    &quot;helpText&quot;: &quot;Payment Method defined on the Gift Processing Setting mdt.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;picklist&quot;,
+                      &quot;customPicklistValuesString&quot;: [
+                        &quot;Legacy&quot;,
+                        &quot;Gift Amount&quot;,
+                        &quot;Gift Amount + Non-Gift Amount&quot;
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;tenderTypeCategory&quot;,
+                    &quot;helpText&quot;: &quot;Tender Type category of the current tender type. Defined in the Gift Processing Tender Type mdt.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;picklist&quot;,
+                      &quot;customPicklistValuesString&quot;: [
+                        &quot;Cash&quot;,
+                        &quot;Credit Card&quot;,
+                        &quot;Check&quot;,
+                        &quot;Wire&quot;,
+                        &quot;Property&quot;,
+                        &quot;Check&quot;,
+                        &quot;Stock Gift&quot;
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;transactionType&quot;,
+                    &quot;helpText&quot;: &quot;Current Transaction Type that is being performed.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;wizardTransactionType&quot;,
+                    &quot;helpText&quot;: &quot;Transaction Type that is being performed on the wizard.&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                    &quot;helpText&quot;: &quot;Attribute path of defined variables.\n ex) transactionRecords.TransactionInformation.ucinn_ascendv2__Payment__c.ucinn_ascendv2__Tender_Type_for_Gifts__c&quot;,
+                    &quot;valueTypeToFieldParams&quot;: {
+                      &quot;boolean&quot;: {
+                        &quot;type&quot;: &quot;checkbox&quot;
+                      },
+                      &quot;string&quot;: {
+                        &quot;type&quot;: &quot;text&quot;
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;objectApiName&quot;: &quot;ucinn_ascendv2__ascend_UI_Configuration__mdt&quot;,
+  &quot;allowCreate&quot;: true,
+  &quot;additionalConditions&quot;: &quot;ucinn_ascendv2__Type__c = &apos;Transaction GP&apos;&quot;,
+  &quot;title&quot;: &quot;Expedited Gift Processing v2 Transaction Information&quot;,
+  &quot;helpText&quot;: &quot;Configuration pertaining to how we render Expedited Gift Processing v2 transaction UI.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

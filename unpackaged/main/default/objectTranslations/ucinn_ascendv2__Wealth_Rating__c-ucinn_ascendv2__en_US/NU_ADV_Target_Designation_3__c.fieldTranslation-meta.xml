@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Target Designation 3 --></label>
+        <name>NU_ADV_Target_Designation_3__c</name>
+        <relationshipLabel><!-- Ratings (Target Designation 3) --></relationshipLabel>
+    </CustomFieldTranslation>

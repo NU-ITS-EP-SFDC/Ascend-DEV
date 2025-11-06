@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RestrictionRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>Must be updated if new record types are created.</description>
+    <enforcementType>Restrict</enforcementType>
+    <masterLabel>Restrict Vendor Rating Access</masterLabel>
+    <recordFilter>RecordType.Name=&apos;Account Wealth Rating, Annual Giving Ask Details, Contact Wealth Rating, Kindsight, Model Score&apos;</recordFilter>
+    <targetEntity>ucinn_ascendv2__Wealth_Rating__c</targetEntity>
+    <userCriteria>$Permission.Vendor_Rating_Access=false</userCriteria>
+    <version>1</version>
+</RestrictionRule>

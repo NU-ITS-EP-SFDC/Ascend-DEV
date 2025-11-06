@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Checked if this record uses geocodes provided by the customer. --></help>
+        <label><!-- Uses Customer Geocodes --></label>
+        <name>geopointe__Uses_Customer_Geocodes__c</name>
+    </CustomFieldTranslation>

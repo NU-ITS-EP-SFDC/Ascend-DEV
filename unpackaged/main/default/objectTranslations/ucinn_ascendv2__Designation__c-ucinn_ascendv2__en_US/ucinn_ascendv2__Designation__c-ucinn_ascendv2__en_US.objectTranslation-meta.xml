@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Designation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Designations</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Designation Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Commerce Cloud Configuration --></label>
+            <section>Commerce Cloud Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Department / Unit Information --></label>
+            <section>Department / Unit Information</section>
+        </sections>
+        <sections>
+            <label><!-- Endowment Report --></label>
+            <section>Endowment Report</section>
+        </sections>
+        <sections>
+            <label><!-- Gift/Pledge Defaults and Requirements --></label>
+            <section>Gift/Pledge Defaults and Requirements</section>
+        </sections>
+        <sections>
+            <label><!-- Latest Endowment Financials --></label>
+            <section>Latest Endowment Financials</section>
+        </sections>
+        <sections>
+            <label><!-- Work Plan Unit Information --></label>
+            <section>Work Plan Unit Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Designation Layout V1</layout>
+        <sections>
+            <label><!-- Commerce Cloud Configuration --></label>
+            <section>Commerce Cloud Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Designation Classification --></label>
+            <section>Designation Classification</section>
+        </sections>
+        <sections>
+            <label><!-- Miscellaneous --></label>
+            <section>Miscellaneous</section>
+        </sections>
+        <sections>
+            <label><!-- Other IDs --></label>
+            <section>Other IDs</section>
+        </sections>
+        <sections>
+            <label><!-- Reporting --></label>
+            <section>Reporting</section>
+        </sections>
+        <sections>
+            <label><!-- Terms --></label>
+            <section>Terms</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Placeholder Designation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Designation Classification --></label>
+            <section>Designation Classification</section>
+        </sections>
+        <sections>
+            <label><!-- Miscellaneous --></label>
+            <section>Miscellaneous</section>
+        </sections>
+        <sections>
+            <label><!-- Other IDs --></label>
+            <section>Other IDs</section>
+        </sections>
+        <sections>
+            <label><!-- Reporting --></label>
+            <section>Reporting</section>
+        </sections>
+        <sections>
+            <label><!-- Terms --></label>
+            <section>Terms</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Designation --></label>
+        <name>ucinn_ascendv2__Update_Designation</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Financial Designations --></description>
+        <label><!-- Designation --></label>
+        <name>NU_ADV_Designation</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For placeholder designations --></description>
+        <label><!-- Placeholder Designation --></label>
+        <name>NU_ADV_Placeholder_Designation</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If Reporting Information is Not Reportable, please input notes in No Reporting Necessary --></errorMessage>
+        <name>No_Reporting</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Endowed Fund Number must be numeric. --></errorMessage>
+        <name>Only_Numbers_Allowed_End_Fund</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Endowed Ind Number must be numeric. --></errorMessage>
+        <name>Only_Numbers_Allowed_End_Ind</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expendable Fund Number must be numeric. --></errorMessage>
+        <name>Only_Numbers_Allowed_Exp_Fund</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expendable Index Number must be numeric. --></errorMessage>
+        <name>Only_Numbers_Allowed_Exp_Ind</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Historic Index Number must be numeric. --></errorMessage>
+        <name>Only_Numbers_Allowed_Historic_Index</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Org Number must be numeric. --></errorMessage>
+        <name>Only_Numbers_Allowed_Org_Num</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please check Funding Source Planned Gift for a Placeholder Designation. --></errorMessage>
+        <name>Placeholder_must_have_Funding_Source</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Is Publicly Visible cannot be checked when G / L Effective Date is in the future and when G / L Expiration Date is in the present or past. --></errorMessage>
+        <name>ucinn_ascendv2__Status_Inactive_Rules</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unit 1 percentage + unit 2 percentage must total 100%. --></errorMessage>
+        <name>ucinn_ascendv2__Unit_Percentage_Rules</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- NU_ADV_Fund_Documentation --></label>
+        <name>NU_ADV_Fund_Documentation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Upload_from_Designation --></label>
+        <name>NU_ADV_Upload_from_Designation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_All_Booked_Opps --></label>
+        <name>View_All_Booked_Opps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_CFY_Booked_Opps --></label>
+        <name>View_CFY_Booked_Opps</name>
+    </webLinks>
+</CustomObjectTranslation>

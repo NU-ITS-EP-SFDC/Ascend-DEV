@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Does the donor intend to create this fund through a multiyear pledge, outright gift, or a planned gift? --></help>
+        <label><!-- Funding via --></label>
+        <name>NU_ADV_Funding_via__c</name>
+        <picklistValues>
+            <masterLabel>Outright gift</masterLabel>
+            <translation><!-- Outright gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned Gift</masterLabel>
+            <translation><!-- Planned Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pledge</masterLabel>
+            <translation><!-- Pledge --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

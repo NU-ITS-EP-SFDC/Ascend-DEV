@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ucinn_ascendv2__Contact_Report__c$Id</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Contact_Report__c$ucinn_ascendv2__Contact__c.ucinn_ascendv2__Donor_ID__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Contact_Report__c$ucinn_ascendv2__Contact__c.Id</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Contact_Report__c$ucinn_ascendv2__Account__c.ucinn_ascendv2__Donor_ID__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Contact_Report__c$ucinn_ascendv2__Account__c.Id</field>
+    </columns>
+    <crossFilters>
+        <operation>without</operation>
+        <primaryTableColumn>ucinn_ascendv2__Contact_Report__c$Id</primaryTableColumn>
+        <relatedTable>ucinn_ascendv2__Contact_Report_Relation__c</relatedTable>
+        <relatedTableJoinColumn>ucinn_ascendv2__Contact_Report__c</relatedTableJoinColumn>
+    </crossFilters>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ucinn_ascendv2__Contact_Report__c$ucinn_ascendv2__Description__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Contact Report Audit Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contact_Reports_custom__c</reportType>
+    <scope>user</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ucinn_ascendv2__Contact_Report__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

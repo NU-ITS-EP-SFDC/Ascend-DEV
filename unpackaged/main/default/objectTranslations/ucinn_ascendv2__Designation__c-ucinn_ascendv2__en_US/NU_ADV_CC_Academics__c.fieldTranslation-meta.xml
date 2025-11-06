@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Academics --></label>
+        <name>NU_ADV_CC_Academics__c</name>
+        <picklistValues>
+            <masterLabel>Bouve College of Health Sciences</masterLabel>
+            <translation><!-- Bouve College of Health Sciences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Arts, Media, and Design</masterLabel>
+            <translation><!-- College of Arts, Media, and Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Engineering</masterLabel>
+            <translation><!-- College of Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Professional Studies</masterLabel>
+            <translation><!-- College of Professional Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Science</masterLabel>
+            <translation><!-- College of Science --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Social Sciences and Humanities</masterLabel>
+            <translation><!-- College of Social Sciences and Humanities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D’Amore McKim School of Business</masterLabel>
+            <translation><!-- D’Amore McKim School of Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Khoury College of Computer Sciences</masterLabel>
+            <translation><!-- Khoury College of Computer Sciences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mills College at Northeastern</masterLabel>
+            <translation><!-- Mills College at Northeastern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Law</masterLabel>
+            <translation><!-- School of Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Library</masterLabel>
+            <translation><!-- University Library --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

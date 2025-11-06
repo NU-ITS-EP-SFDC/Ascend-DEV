@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <rules>
+        <fullName>ucinn_ascendv2__Contact Change Record Type</fullName>
+        <actions>
+            <name>ucinn_ascendv2__Update_Contact_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Changes the record type of the contact from "New" to "Edit"</description>
+        <formula>AND($Setup.ucinn_ascendv2__Bypass_Settings__c.ucinn_ascendv2__Bypass_Workflows__c  &lt;&gt; TRUE,  RecordType.DeveloperName  = "New_Contact")&amp;&amp; RecordType.NamespacePrefix = 'ucinn_ascendv2'</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>ucinn_ascendv2__Stage of Readiness has Changed</fullName>
+        <actions>
+            <name>ucinn_ascendv2__Update_Stage_of_Readiness_LastModifiedBy</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>ucinn_ascendv2__Update_Stage_of_Readiness_with_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Stage of Readiness has Changed for Contact</description>
+        <formula>$Setup.ucinn_ascendv2__Bypass_Settings__c.ucinn_ascendv2__Bypass_Workflows__c &lt;&gt; TRUE &amp;&amp; ISCHANGED( ucinn_ascendv2__Stage_of_Readiness__c ) &amp;&amp; OR( RecordType.DeveloperName = "Edit_Contact", RecordType.DeveloperName = "New_Contact" ) &amp;&amp; RecordType.NamespacePrefix = 'ucinn_ascendv2'</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>ucinn_ascendv2__Update Business Unit for Constituent</fullName>
+        <actions>
+            <name>ucinn_ascendv2__Update_Business_Unit_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Update the Business Unit field that is used for Integration, based on what picklist value is selected by the user.</description>
+        <formula>$Setup.ucinn_ascendv2__Bypass_Settings__c.ucinn_ascendv2__Bypass_Workflows__c &lt;&gt; TRUE  &amp;&amp; !ISPICKVAL( ucinn_ascendv2__Unit__c, "") &amp;&amp; OR( RecordType.DeveloperName = "Edit_Contact", RecordType.DeveloperName = "New_Contact" )&amp;&amp; RecordType.NamespacePrefix = 'ucinn_ascendv2'</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>ucinn_ascendv2__Update Fields if there is a spouse</fullName>
+        <actions>
+            <name>ucinn_ascendv2__Update_Marital_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>ucinn_ascendv2__Update_Salucation_Preference</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Update various fields if there is a spouse.</description>
+        <formula>$Setup.ucinn_ascendv2__Bypass_Settings__c.ucinn_ascendv2__Bypass_Workflows__c &lt;&gt; TRUE &amp;&amp; !ISBLANK(ucinn_ascendv2__Preferred_Spouse__c) &amp;&amp; OR( RecordType.DeveloperName = "Edit_Contact", RecordType.DeveloperName = "New_Contact" )&amp;&amp; RecordType.NamespacePrefix = 'ucinn_ascendv2'</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>ucinn_ascendv2__Update Fields if there is no spouse</fullName>
+        <actions>
+            <name>ucinn_ascendv2__Clear_Marital_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>ucinn_ascendv2__Update_Salutation_Preference_If_no_spous</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>$Setup.ucinn_ascendv2__Bypass_Settings__c.ucinn_ascendv2__Bypass_Workflows__c &lt;&gt; TRUE &amp;&amp; ISBLANK(ucinn_ascendv2__Preferred_Spouse__c) &amp;&amp; !(TEXT(ucinn_ascendv2__Marital_Status__c) == 'Widowed') &amp;&amp; OR( RecordType.DeveloperName = "Edit_Contact", RecordType.DeveloperName = "New_Contact" )&amp;&amp; RecordType.NamespacePrefix = 'ucinn_ascendv2'</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

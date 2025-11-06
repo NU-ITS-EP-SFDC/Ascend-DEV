@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Department ID --></label>
+        <name>NU_ADV_Department_ID__c</name>
+        <picklistValues>
+            <masterLabel>Academic Technology Services</masterLabel>
+            <translation><!-- Academic Technology Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affirmative Action/Diversity</masterLabel>
+            <translation><!-- Affirmative Action/Diversity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>African American Institute</masterLabel>
+            <translation><!-- African American Institute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>African American Studies</masterLabel>
+            <translation><!-- African American Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alumni Relations</masterLabel>
+            <translation><!-- Alumni Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>American Sign Language</masterLabel>
+            <translation><!-- American Sign Language --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Art &amp; Architecture</masterLabel>
+            <translation><!-- Art &amp; Architecture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Athletics</masterLabel>
+            <translation><!-- Athletics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnett Institute</masterLabel>
+            <translation><!-- Barnett Institute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biology</masterLabel>
+            <translation><!-- Biology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campus Recreation</masterLabel>
+            <translation><!-- Campus Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CenSSIS</masterLabel>
+            <translation><!-- CenSSIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Center Study Sports in Society</masterLabel>
+            <translation><!-- Center Study Sports in Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Center for Entrepreneurship Education</masterLabel>
+            <translation><!-- Center for Entrepreneurship Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Center for Innovation in Education</masterLabel>
+            <translation><!-- Center for Innovation in Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Center for Urban &amp; Regional Policy</masterLabel>
+            <translation><!-- Center for Urban &amp; Regional Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemical Engineering</masterLabel>
+            <translation><!-- Chemical Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemistry Department</masterLabel>
+            <translation><!-- Chemistry Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Civil and Environmental Engg</masterLabel>
+            <translation><!-- Civil and Environmental Engg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communcations Studies</masterLabel>
+            <translation><!-- Communcations Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cooperative Education</masterLabel>
+            <translation><!-- Cooperative Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMSB Accounting</masterLabel>
+            <translation><!-- DMSB Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMSB Finance and Insurance</masterLabel>
+            <translation><!-- DMSB Finance and Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMSB General Management</masterLabel>
+            <translation><!-- DMSB General Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMSB Marketing</masterLabel>
+            <translation><!-- DMSB Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Department of Career Services</masterLabel>
+            <translation><!-- Department of Career Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability Resource Center</masterLabel>
+            <translation><!-- Disability Resource Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economics Department</masterLabel>
+            <translation><!-- Economics Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical and Computer Engineering</masterLabel>
+            <translation><!-- Electrical and Computer Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English Department</masterLabel>
+            <translation><!-- English Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment Management</masterLabel>
+            <translation><!-- Enrollment Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAS Center for Global Business</masterLabel>
+            <translation><!-- FAS Center for Global Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundation Year Program</masterLabel>
+            <translation><!-- Foundation Year Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate DMSB &amp; Prof Accounting</masterLabel>
+            <translation><!-- Graduate DMSB &amp; Prof Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate Engineering</masterLabel>
+            <translation><!-- Graduate Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Sports Leisure</masterLabel>
+            <translation><!-- Health Sports Leisure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>History Department</masterLabel>
+            <translation><!-- History Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Humanities Center</masterLabel>
+            <translation><!-- Humanities Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial Engineering &amp; Info Systems</masterLabel>
+            <translation><!-- Industrial Engineering &amp; Info Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institute for Global Innovation Management</masterLabel>
+            <translation><!-- Institute for Global Innovation Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interdisciplinary Studies</masterLabel>
+            <translation><!-- Interdisciplinary Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Affairs Program</masterLabel>
+            <translation><!-- International Affairs Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Student Office</masterLabel>
+            <translation><!-- International Student Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intramural Athletics</masterLabel>
+            <translation><!-- Intramural Athletics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lane Health Center</masterLabel>
+            <translation><!-- Lane Health Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Law Policy &amp; Society Program</masterLabel>
+            <translation><!-- Law Policy &amp; Society Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Learning Disabilities Program</masterLabel>
+            <translation><!-- Learning Disabilities Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marine &amp; Environmental Science</masterLabel>
+            <translation><!-- Marine &amp; Environmental Science --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marine Science Center</masterLabel>
+            <translation><!-- Marine Science Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mathematics Department</masterLabel>
+            <translation><!-- Mathematics Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mechanical Industrial Manufacturing Engineering</masterLabel>
+            <translation><!-- Mechanical Industrial Manufacturing Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modern Languages Dept</masterLabel>
+            <translation><!-- Modern Languages Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music Department</masterLabel>
+            <translation><!-- Music Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office of Dean - DMSB</masterLabel>
+            <translation><!-- Office of Dean - DMSB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office of Sr VP - Development</masterLabel>
+            <translation><!-- Office of Sr VP - Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office of VP - Student Affairs</masterLabel>
+            <translation><!-- Office of VP - Student Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office of the President</masterLabel>
+            <translation><!-- Office of the President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office of the Provost</masterLabel>
+            <translation><!-- Office of the Provost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmaceutical Sciences</masterLabel>
+            <translation><!-- Pharmaceutical Sciences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Plant Maint &amp; Constr</masterLabel>
+            <translation><!-- Physical Plant Maint &amp; Constr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Therapy</masterLabel>
+            <translation><!-- Physical Therapy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physician Assistant Program</masterLabel>
+            <translation><!-- Physician Assistant Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physics Department</masterLabel>
+            <translation><!-- Physics Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Political Science Department</masterLabel>
+            <translation><!-- Political Science Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Psychology Department</masterLabel>
+            <translation><!-- Psychology Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Admin &amp; Finance (RAF)</masterLabel>
+            <translation><!-- Research Admin &amp; Finance (RAF) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roux</masterLabel>
+            <translation><!-- Roux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STEM Center</masterLabel>
+            <translation><!-- STEM Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School for Public Policy and Urban Affairs</masterLabel>
+            <translation><!-- School for Public Policy and Urban Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Education</masterLabel>
+            <translation><!-- School of Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Engineering Technology</masterLabel>
+            <translation><!-- School of Engineering Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Journalism</masterLabel>
+            <translation><!-- School of Journalism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Nursing</masterLabel>
+            <translation><!-- School of Nursing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Pharmacy</masterLabel>
+            <translation><!-- School of Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speech Language Path/Audiology</masterLabel>
+            <translation><!-- Speech Language Path/Audiology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Center and Activities</masterLabel>
+            <translation><!-- Student Center and Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Financial Services</masterLabel>
+            <translation><!-- Student Financial Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Theatre</masterLabel>
+            <translation><!-- Theatre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Honors Program</masterLabel>
+            <translation><!-- University Honors Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Libraries</masterLabel>
+            <translation><!-- University Libraries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Publications</masterLabel>
+            <translation><!-- University Publications --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

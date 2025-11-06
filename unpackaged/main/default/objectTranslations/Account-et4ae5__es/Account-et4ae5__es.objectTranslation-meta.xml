@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Account Mobile Layout</layout>
+        <sections>
+            <label><!-- Basic Information --></label>
+            <section>Basic Information</section>
+        </sections>
+        <sections>
+            <label><!-- Gift Matching --></label>
+            <section>Gift Matching</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary --></label>
+            <section>Giving Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Managers --></label>
+            <section>Managers</section>
+        </sections>
+        <sections>
+            <label><!-- Organization Information --></label>
+            <section>Organization Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Corporations and Organizations Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- External System ID Information --></label>
+            <section>External System ID Information</section>
+        </sections>
+        <sections>
+            <label><!-- Gift Matching --></label>
+            <section>Gift Matching</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Gifts) --></label>
+            <section>Giving Summary Information (Gifts)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Overall) --></label>
+            <section>Giving Summary Information (Overall)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledge Payments) --></label>
+            <section>Giving Summary Information (Pledge Payments)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledges) --></label>
+            <section>Giving Summary Information (Pledges)</section>
+        </sections>
+        <sections>
+            <label><!-- Presidential Address Information --></label>
+            <section>Presidential Address Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Corporations and Organizations Layout v1</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Gift Matching --></label>
+            <section>Gift Matching</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Gifts) --></label>
+            <section>Giving Summary Information (Gifts)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Overall) --></label>
+            <section>Giving Summary Information (Overall)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledges) --></label>
+            <section>Giving Summary Information (Pledges)</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect Information --></label>
+            <section>Prospect Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Educational Institution Layout v1</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Gift Matching --></label>
+            <section>Gift Matching</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Gifts) --></label>
+            <section>Giving Summary Information (Gifts)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Overall) --></label>
+            <section>Giving Summary Information (Overall)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledge Payments) --></label>
+            <section>Giving Summary Information (Pledge Payments)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledges) --></label>
+            <section>Giving Summary Information (Pledges)</section>
+        </sections>
+        <sections>
+            <label><!-- Presidential Address Information --></label>
+            <section>Presidential Address Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Household Layout</layout>
+        <sections>
+            <label><!-- External System ID Information --></label>
+            <section>External System ID Information</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Gifts) --></label>
+            <section>Giving Summary Information (Gifts)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Overall) --></label>
+            <section>Giving Summary Information (Overall)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledge Payments) --></label>
+            <section>Giving Summary Information (Pledge Payments)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledges) --></label>
+            <section>Giving Summary Information (Pledges)</section>
+        </sections>
+        <sections>
+            <label><!-- Head of Household Information --></label>
+            <section>Head of Household Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Household Layout v1</layout>
+        <sections>
+            <label><!-- Giving Summary Information (Gifts) --></label>
+            <section>Giving Summary Information (Gifts)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Overall) --></label>
+            <section>Giving Summary Information (Overall)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledge Payments) --></label>
+            <section>Giving Summary Information (Pledge Payments)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledges) --></label>
+            <section>Giving Summary Information (Pledges)</section>
+        </sections>
+        <sections>
+            <label><!-- Head of Household Information --></label>
+            <section>Head of Household Information</section>
+        </sections>
+        <sections>
+            <label><!-- Household Prospect Information --></label>
+            <section>Household Prospect Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Corporations and Organization Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Gift Matching --></label>
+            <section>Gift Matching</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner Account Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Assignment Request --></label>
+        <name>Assignment_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Research Requests --></label>
+        <name>Research_Requests</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Organization --></label>
+        <name>Update_Organization</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit Contact Update --></label>
+        <name>Submit_Contact_Update_Org</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Educational Institution --></label>
+        <name>Educational_Institution</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Accounts which represents Corporations/Organizations --></description>
+        <label><!-- Corporations and Organizations Details --></label>
+        <name>ucinn_ascendv2__Corporations_and_Organizations</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Accounts which represent a Household --></description>
+        <label><!-- Household --></label>
+        <name>ucinn_ascendv2__Household</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- The record type that is used for creating a new Corporation and Organization --></description>
+        <label><!-- Corporations and Organizations --></label>
+        <name>ucinn_ascendv2__New_Corporations_and_Organizations</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- InviteAccountToEvent --></label>
+        <name>CventEvents__InviteAccountToEvent</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ModifyCancelAccountToEvent --></label>
+        <name>CventEvents__ModifyCancelAccountToEvent</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NominateAccountToEvent --></label>
+        <name>CventEvents__NominateAccountToEvent</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RegisterAccountToEvent --></label>
+        <name>CventEvents__RegisterAccountToEvent</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP --></label>
+        <name>Loop__LOOP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP_Merge --></label>
+        <name>Loop__LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOPlus --></label>
+        <name>Loop__LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOP_Merge --></label>
+        <name>Loop__Mass_LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOPlus --></label>
+        <name>Loop__Mass_LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Ack_Letters_Org --></label>
+        <name>NU_ADV_Ack_Letters_Org</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Applications_Org --></label>
+        <name>NU_ADV_Applications_Org</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_BioDem_Updates_Org --></label>
+        <name>NU_ADV_BioDem_Updates_Org</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Fund_Reports_Org --></label>
+        <name>NU_ADV_Fund_Reports_Org</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Giving_Statements_Org --></label>
+        <name>NU_ADV_Giving_Statements_Org</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_News_Articles_Org --></label>
+        <name>NU_ADV_News_Articles_Org</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_OGP_Docs_Org --></label>
+        <name>NU_ADV_OGP_Docs_Org</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Other_Letters_Org --></label>
+        <name>NU_ADV_Other_Letters_Org</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Research_Org --></label>
+        <name>NU_ADV_Research_Org</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Upload_Research_from_Org --></label>
+        <name>NU_ADV_Upload_Research_from_Org</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label>Volver a suscribirse a Marketing Cloud</label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label>Anular suscripción de Marketing Cloud</label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label>Enviar correo electrónico de Marketing Cloud</label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label>Ver Marketing Cloud Analytics</label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map --></label>
+        <name>geopointe__Map</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map_Records_Account --></label>
+        <name>geopointe__Map_Records_Account</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map_newWindow --></label>
+        <name>geopointe__Map_newWindow</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AdvRouteVisitWindows --></label>
+        <name>maps__AdvRouteVisitWindows</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_To_Clipboard --></label>
+        <name>ucinn_ascendv2__Add_To_Clipboard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Connect_Matching_Org --></label>
+        <name>ucinn_ascendv2__Connect_Matching_Org</name>
+    </webLinks>
+</CustomObjectTranslation>

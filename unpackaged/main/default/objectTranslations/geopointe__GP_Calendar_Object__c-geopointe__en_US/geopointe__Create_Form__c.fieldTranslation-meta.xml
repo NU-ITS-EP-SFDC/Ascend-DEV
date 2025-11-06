@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Create Form --></label>
+        <name>geopointe__Create_Form__c</name>
+        <picklistValues>
+            <masterLabel>Fast Create</masterLabel>
+            <translation><!-- Fast Create --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Page Layout</masterLabel>
+            <translation><!-- Page Layout --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

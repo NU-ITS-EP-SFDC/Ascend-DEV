@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__SendDefinition__c.et4ae5__NumberofHardBounces__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>et4ae5__SendDefinition__c.et4ae5__DateSent__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>et4ae5__SendDefinition__c.et4ae5__SendStatus__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>FiscalYear</dateGranularity>
+        <field>et4ae5__SendDefinition__c.et4ae5__DateSent__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SF MC hard bounces last month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$et4ae5__SendDefinition__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>et4ae5__SendDefinition__c.et4ae5__BackupWorkflow__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

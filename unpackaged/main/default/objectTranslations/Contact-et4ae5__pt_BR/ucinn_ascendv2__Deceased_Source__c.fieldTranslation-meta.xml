@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Deceased Source --></label>
+        <name>ucinn_ascendv2__Deceased_Source__c</name>
+        <picklistValues>
+            <masterLabel>AlumniFinder</masterLabel>
+            <translation><!-- AlumniFinder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Obituary System</masterLabel>
+            <translation><!-- External Obituary System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notification Internal NU</masterLabel>
+            <translation><!-- Notification Internal NU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notification from Family</masterLabel>
+            <translation><!-- Notification from Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returned Mail</masterLabel>
+            <translation><!-- Returned Mail --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- GLS Role(s) --></label>
+        <name>NU_ADV_GLS_Role_s__c</name>
+        <picklistValues>
+            <masterLabel>Confirmed Honorary Host Committee Member</masterLabel>
+            <translation><!-- Confirmed Honorary Host Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirmed Organizing Committee Member</masterLabel>
+            <translation><!-- Confirmed Organizing Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLS Confirmed Moderator</masterLabel>
+            <translation><!-- GLS Confirmed Moderator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLS Confirmed Speaker</masterLabel>
+            <translation><!-- GLS Confirmed Speaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLS Confirmed Table Facilitator</masterLabel>
+            <translation><!-- GLS Confirmed Table Facilitator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLS Potential Moderator</masterLabel>
+            <translation><!-- GLS Potential Moderator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLS Potential Speaker</masterLabel>
+            <translation><!-- GLS Potential Speaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLS Potential Table Facilitator</masterLabel>
+            <translation><!-- GLS Potential Table Facilitator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potential Honorary Host Committee Member</masterLabel>
+            <translation><!-- Potential Honorary Host Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potential Organizing Committee Member</masterLabel>
+            <translation><!-- Potential Organizing Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WWE Confirmed Moderator</masterLabel>
+            <translation><!-- WWE Confirmed Moderator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WWE Confirmed Speaker</masterLabel>
+            <translation><!-- WWE Confirmed Speaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WWE Confirmed Table Facilitator</masterLabel>
+            <translation><!-- WWE Confirmed Table Facilitator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WWE Potential Moderator</masterLabel>
+            <translation><!-- WWE Potential Moderator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WWE Potential Speaker</masterLabel>
+            <translation><!-- WWE Potential Speaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WWE Potential Table Facilitator</masterLabel>
+            <translation><!-- WWE Potential Table Facilitator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YGL Confirmed Moderator</masterLabel>
+            <translation><!-- YGL Confirmed Moderator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YGL Confirmed Speaker</masterLabel>
+            <translation><!-- YGL Confirmed Speaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YGL Confirmed Table Facilitator</masterLabel>
+            <translation><!-- YGL Confirmed Table Facilitator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YGL Potential Moderator</masterLabel>
+            <translation><!-- YGL Potential Moderator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YGL Potential Speaker</masterLabel>
+            <translation><!-- YGL Potential Speaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YGL Potential Table Facilitator</masterLabel>
+            <translation><!-- YGL Potential Table Facilitator --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

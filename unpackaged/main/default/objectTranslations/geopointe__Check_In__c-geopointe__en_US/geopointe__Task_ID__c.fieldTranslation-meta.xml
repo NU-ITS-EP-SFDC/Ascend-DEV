@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The ID of the Task Item that was created for this CheckIn --></help>
+        <label><!-- Task ID --></label>
+        <name>geopointe__Task_ID__c</name>
+    </CustomFieldTranslation>

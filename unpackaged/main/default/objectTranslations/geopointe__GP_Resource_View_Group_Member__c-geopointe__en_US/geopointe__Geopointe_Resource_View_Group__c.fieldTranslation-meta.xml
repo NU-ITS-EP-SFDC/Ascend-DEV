@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Geopointe Resource View Group --></label>
+        <name>geopointe__Geopointe_Resource_View_Group__c</name>
+        <relationshipLabel><!-- Resource View Group Members --></relationshipLabel>
+    </CustomFieldTranslation>

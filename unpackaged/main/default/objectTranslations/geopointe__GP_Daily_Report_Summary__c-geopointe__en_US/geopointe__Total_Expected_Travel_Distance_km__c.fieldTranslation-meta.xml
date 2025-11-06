@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Total Expected Travel Distance (km) --></label>
+        <name>geopointe__Total_Expected_Travel_Distance_km__c</name>
+    </CustomFieldTranslation>

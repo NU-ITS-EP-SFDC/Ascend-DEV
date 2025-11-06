@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Check Out Source --></label>
+        <name>geopointe__Why_Type_Check_Out__c</name>
+        <picklistValues>
+            <masterLabel>Mobile Check-Out</masterLabel>
+            <translation><!-- Mobile Check-Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>geopointe.API Check-Out</masterLabel>
+            <translation><!-- geopointe.API Check-Out --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

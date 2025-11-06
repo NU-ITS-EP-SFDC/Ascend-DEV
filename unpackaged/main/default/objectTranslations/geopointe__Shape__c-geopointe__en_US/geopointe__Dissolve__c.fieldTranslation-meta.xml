@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If selected, and the shape is comprised of multiple shapes it will dissolve the shapes. --></help>
+        <label><!-- Dissolve --></label>
+        <name>geopointe__Dissolve__c</name>
+    </CustomFieldTranslation>

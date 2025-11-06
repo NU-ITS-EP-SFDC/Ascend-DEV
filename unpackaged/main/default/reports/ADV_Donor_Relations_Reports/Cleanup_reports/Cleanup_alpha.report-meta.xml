@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Advancement_Set_Up_Date__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Alpha_Sort_Name__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.ucinn_ascendv2__Designation_Name__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Reporting_Information__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_No_Reporting_Necessary__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Designation_Fund_Type__c</field>
+    </columns>
+    <description>Run to identify Reportable and Reportable If funds that do not have alpha codes</description>
+    <filter>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Designation__c.NU_ADV_Reporting_Information__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Issue,Reportable,Reportable if</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Designation__c.NU_ADV_Alpha_Sort_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Administered_By__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Cleanup - alpha</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ucinn_ascendv2__Designation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ucinn_ascendv2__Designation__c.NU_ADV_Advancement_Set_Up_Date__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>ucinn_ascendv2__Designation__c.NU_ADV_Advancement_Set_Up_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

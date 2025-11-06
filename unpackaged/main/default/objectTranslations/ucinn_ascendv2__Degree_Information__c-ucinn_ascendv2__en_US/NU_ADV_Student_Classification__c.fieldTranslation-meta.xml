@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Student Classification --></label>
+        <name>NU_ADV_Student_Classification__c</name>
+        <picklistValues>
+            <masterLabel>Continuing Education</masterLabel>
+            <translation><!-- Continuing Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Year Law Student</masterLabel>
+            <translation><!-- First Year Law Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshman</masterLabel>
+            <translation><!-- Freshman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate</masterLabel>
+            <translation><!-- Graduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Junior</masterLabel>
+            <translation><!-- Junior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Law</masterLabel>
+            <translation><!-- Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second Year Law Student</masterLabel>
+            <translation><!-- Second Year Law Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior</masterLabel>
+            <translation><!-- Senior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sophomore</masterLabel>
+            <translation><!-- Sophomore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Year Law Student</masterLabel>
+            <translation><!-- Third Year Law Student --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

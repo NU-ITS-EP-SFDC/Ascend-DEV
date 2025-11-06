@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ucinn_ascendv2__Household</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>ucinn_ascendv2__Quick_Start_Layout</compactLayoutAssignment>
+    <description>Accounts which represent a Household</description>
+    <label>Household</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture Production - Crops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture Productn-Livestock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amusement%2FRecreational Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anthracite Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel%2FOther Fabric Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto Dealers %26 Gas Stations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto Repair and Garages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bituminous Coal%26Lignite Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Materials%2FHardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction - Not Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Products - Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Products - Prsnl Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Agencies%2FNot Banks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eating and Drinking Places</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electric%2FGas%2FSanitary Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical%2FElectronic Equipmnt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabricated Metal Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fishing%2FHunting%2FTrapping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forestry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Furniture and Fixtures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Furniture%2FHome Furnish Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Merchandise Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - Except Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - Local</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - State</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holding and Investment Offices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investigation %26 Security Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leather and Leather Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lumber%2FWood Products-Not Furn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Measuring Instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Membership Organizations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metal Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining of Nonmetal Minerals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misc Repair Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misc Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misc Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion Pictures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Freight Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Museums%2FArt%2FBotanical Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nanotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonclassifiable Establishments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil and Gas Extraction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paper and Allied Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petroleum Refining %26 Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceuticals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe Lines- Except Natural Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary Metal Industries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printing%2FPublishing %26 Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Households</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R%2EE%2E%2FInsurance%2FLoan%2FLaw Ofc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Railroad Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber %26 Misc Plastic Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stock Brokers%2FExchanges%2FServ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stone%2FGlass%2FConcrete Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Textile Mill Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco Manufacturer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation by Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2ES%2E Postal Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venture Capital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale Trade - Nondurables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale Trade-Durable Goods</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Account_Site__c</picklist>
+        <values>
+            <fullName>Branch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Headquarters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Location</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Business_Account_Type__c</picklist>
+        <values>
+            <fullName>Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foundation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fund Raising Consortia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regulatory Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religious Organization</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Data_Source__c</picklist>
+        <values>
+            <fullName>Admissions System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alumni Relations Web Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AlumniFinder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banner to SVS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact with Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Marketing Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event Management System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mills Legacy Banner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NU Source</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Change of Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registrar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returned Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Reported</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SmartyStreets API</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Institution_Type__c</picklist>
+        <values>
+            <fullName>College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impact Engine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_PG_Stage_of_Readiness__c</picklist>
+        <values>
+            <fullName>Qualified Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Prospect_Classification__c</picklist>
+        <values>
+            <fullName>Annual Gifts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadership Gifts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Major Gifts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Principal Gifts</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Source_Unit__c</picklist>
+        <values>
+            <fullName>Athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouve College of Health Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Arts Media %26 Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Professional Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Social Science %26 Humanities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporations %26 Fioundations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%27Amore-McKim School of Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Khoury College of Computer Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mills College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New College of the Humanities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of the Chancellor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of the Provost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>President%27s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roux Institute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School of Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Advancement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Libraries</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>1%2E Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E Warm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E Cool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E Icy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E Unqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E Gift recently made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E Re-Solicit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>pw_ccpro__AddressBatchStatus__c</picklist>
+        <values>
+            <fullName>Ambiguous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not checked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not matched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parsed but not found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>pw_ccpro__BillingAddressStatus__c</picklist>
+        <values>
+            <fullName>Ambiguous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not checked</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not matched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parsed but not found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>pw_ccpro__BillingLocationAccuracy__c</picklist>
+        <values>
+            <fullName>Ambiguous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Country</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not checked</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not matched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parsed but not found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Postal Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>pw_ccpro__BillingLocationSource__c</picklist>
+        <values>
+            <fullName>Default</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Validated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>pw_ccpro__ShippingAddressStatus__c</picklist>
+        <values>
+            <fullName>Ambiguous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not checked</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not matched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parsed but not found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>pw_ccpro__ShippingLocationAccuracy__c</picklist>
+        <values>
+            <fullName>Ambiguous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Country</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not checked</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not matched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parsed but not found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Postal Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>pw_ccpro__ShippingLocationSource__c</picklist>
+        <values>
+            <fullName>Default</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Validated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Double_the_Donation_Matching_Status__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suggested Match</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Preferred_Address_Type__c</picklist>
+        <values>
+            <fullName>Alternate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seasonal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Permanent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student-Provided Local</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Preferred_Email_Type__c</picklist>
+        <values>
+            <fullName>Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NU Employee Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Application Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student NU Email</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Preferred_Phone_Type__c</picklist>
+        <values>
+            <fullName>Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Source_Unit__c</picklist>
+        <values>
+            <fullName>none</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Stage_of_Readiness__c</picklist>
+        <values>
+            <fullName>Cultivation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long-term Disqualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short-term Disqualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stewardship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stewardship - Permanent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ucinn_ascendv2__Top_25_Prospect__c</picklist>
+        <values>
+            <fullName>Advancement%3A CA Top 25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advancement%3A SVP%27s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Athletic Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouve College of Health Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Arts%2C Media %26 Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Professional Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College of Social Sciences and Humanities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporations Top 25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%27Amore-McKim School of Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foundations Top 25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Khoury Collge of Computer Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Libraries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mills College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New College of Humanities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of the Chancellor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of the Provost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>President%27s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roux Institute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School of Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Advancement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Advancement%3A International Top 25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Advancement%3A NY Top 25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Advancement%3A Parents Top 25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Advancement%3A SF Top 25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

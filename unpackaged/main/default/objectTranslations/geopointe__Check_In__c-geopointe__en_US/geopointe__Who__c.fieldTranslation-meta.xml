@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A reference to the user performing the check-in. --></help>
+        <label><!-- Who --></label>
+        <name>geopointe__Who__c</name>
+        <relationshipLabel><!-- Geopointe Check-Ins --></relationshipLabel>
+    </CustomFieldTranslation>

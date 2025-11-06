@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If this ZIP crosses county lines then this field contains a comma separated list of counties, otherwise it stores just a single county --></help>
+        <label><!-- Counties --></label>
+        <name>pw_ccpro__Counties__c</name>
+    </CustomFieldTranslation>

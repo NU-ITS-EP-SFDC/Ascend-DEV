@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, this Recommendation becomes available for use in the Desktop Geopointe Map. --></help>
+        <label><!-- Desktop Enabled Recommendation --></label>
+        <name>geopointe__Recommendation_Desktop_Enabled__c</name>
+    </CustomFieldTranslation>

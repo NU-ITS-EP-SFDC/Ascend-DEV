@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Create_Dashboard</name>
+        <label>Create Dashboard</label>
+        <locationX>176</locationX>
+        <locationY>1190</locationY>
+        <actionName>ucinn_ascendv2__ascend_Analytics_CreateDashboard</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Dashboard_Results_Screen</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>jsonDefinition</name>
+            <value>
+                <elementReference>DashboardTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>prompt</name>
+            <value>
+                <elementReference>Input_Prompt</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>query</name>
+            <value>
+                <elementReference>CleanedQuery</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>ucinn_ascendv2__ascend_Analytics_CreateDashboard</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Generate_Query</name>
+        <label>Generate Query</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <actionName>ucinn_ascendv2__ascend_AI_CreateChatCompletion</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Clean_Query</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>messages</name>
+            <value>
+                <elementReference>ChatCompletionMessages</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>model</name>
+            <value>
+                <elementReference>OpenAI_Model</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>temperature</name>
+            <value>
+                <elementReference>OpenAI_Temperature_zero</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>timeout</name>
+            <value>
+                <numberValue>120000.0</numberValue>
+            </value>
+        </inputParameters>
+        <nameSegment>ucinn_ascendv2__ascend_AI_CreateChatCompletion</nameSegment>
+        <outputParameters>
+            <assignToReference>DefaultException</assignToReference>
+            <name>errorMessage</name>
+        </outputParameters>
+        <outputParameters>
+            <assignToReference>CleanedQuery</assignToReference>
+            <name>message</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Get_Preview_Data</name>
+        <label>Get Preview Data</label>
+        <locationX>176</locationX>
+        <locationY>974</locationY>
+        <actionName>ucinn_ascendv2__ascend_Analytics_QueryDataset</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Display_Data_Screen</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <flowTransactionModel>NewTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>query</name>
+            <value>
+                <elementReference>QueryWithIds</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>ucinn_ascendv2__ascend_Analytics_QueryDataset</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Clean_Query</name>
+        <label>Clean Query</label>
+        <locationX>176</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>CleanedQuery</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Query_RemoveBackTicksFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CleanedQuery</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Query_RemoveBOMFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Generated_Query_Screen</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Prepare_Prompt</name>
+        <label>Prepare Prompt</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignmentItems>
+            <assignToReference>SystemMessage.role</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>system</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SystemMessage.content</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SystemPrompt</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ChatCompletionMessages</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>SystemMessage</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>UserMessage.role</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>user</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>UserMessage.content</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Input_Prompt</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ChatCompletionMessages</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>UserMessage</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Generate_Query</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Query_With_Ids</name>
+        <label>Update Query With Ids</label>
+        <locationX>264</locationX>
+        <locationY>782</locationY>
+        <assignmentItems>
+            <assignToReference>QueryWithIds</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ReplaceDatasetWithId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Datasets</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>GPT3_16K_CHOICE</name>
+        <choiceText>gpt-3.5-turbo-16k</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>gpt-3.5-turbo-16k</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>GPT3_Choice</name>
+        <choiceText>gpt-3.5-turbo</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>gpt-3.5-turbo</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>GPT4_Choice</name>
+        <choiceText>gpt-4</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>gpt-4</stringValue>
+        </value>
+    </choices>
+    <constants>
+        <name>OpenAI_Temperature_zero</name>
+        <dataType>Number</dataType>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </constants>
+    <environments>Default</environments>
+    <formulas>
+        <name>CurrentDate</name>
+        <dataType>String</dataType>
+        <expression>TEXT(TODAY())</expression>
+    </formulas>
+    <formulas>
+        <name>namespaceFormula</name>
+        <dataType>String</dataType>
+        <expression>SUBSTITUTE({!CleanedQuery}, &apos;load &quot;&apos;, &apos;load &quot;ucinn_ascendv2__&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>Query_RemoveBackTicksFormula</name>
+        <dataType>String</dataType>
+        <expression>SUBSTITUTE(SUBSTITUTE(MID({!CleanedQuery}, 1, LEN({!CleanedQuery})), &quot;```saql&quot;, &quot;&quot;), &quot;```&quot;, &quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>Query_RemoveBOMFormula</name>
+        <dataType>String</dataType>
+        <expression>MID({!CleanedQuery}, 1, LEN({!CleanedQuery}))</expression>
+    </formulas>
+    <formulas>
+        <name>ReplaceDatasetWithId</name>
+        <dataType>String</dataType>
+        <expression>SUBSTITUTE(TRIM({!QueryWithIds}), {!Loop_Datasets.name}, {!Loop_Datasets.id} + &quot;/&quot; + {!Loop_Datasets.currentVersionId})</expression>
+    </formulas>
+    <interviewLabel>ascend AI Query Builder - Query {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>ascend AI Query Builder - Query</label>
+    <loops>
+        <name>Loop_Datasets</name>
+        <label>Loop Datasets</label>
+        <locationX>176</locationX>
+        <locationY>674</locationY>
+        <collectionReference>Datasets</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Update_Query_With_Ids</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_Preview_Data</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Dashboard_Results_Screen</name>
+        <label>Dashboard Results Screen</label>
+        <locationX>176</locationX>
+        <locationY>1298</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Dashboard_Creation_Text</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Message&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;{!Create_Dashboard.message}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Url&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;{!Create_Dashboard.url}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!Create_Dashboard.url}&lt;/a&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Display_Data_Screen</name>
+        <label>Display Data Screen</label>
+        <locationX>176</locationX>
+        <locationY>1082</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Create_Dashboard</targetReference>
+        </connector>
+        <fields>
+            <name>TablePreview</name>
+            <fieldText>&lt;p&gt;If a table is displayed this indicates the SAQL statement is valid. You can now generate this dashboard in CRM Analytics.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Analytics_Data_Response_Text</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Response Message&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;{!Get_Preview_Data.message}&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Table_Displayer</name>
+            <extensionName>ucinn_ascendv2:tableDisplayer</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>limit</name>
+                <value>
+                    <numberValue>100.0</numberValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordsString</name>
+                <value>
+                    <elementReference>Get_Preview_Data.records</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>Generate Dashboard</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Error_Screen</name>
+        <label>Error Screen</label>
+        <locationX>440</locationX>
+        <locationY>1298</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Error_Text</name>
+            <fieldText>&lt;p&gt;An error occurred.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Generated_Query_Screen</name>
+        <label>Generated Query Screen</label>
+        <locationX>176</locationX>
+        <locationY>566</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Loop_Datasets</targetReference>
+        </connector>
+        <fields>
+            <name>DisplaySAQL</name>
+            <fieldText>&lt;p&gt;This is your generated Salesforce CRM Analytics SAQL.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Response_Text</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Response&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Code: {!ResponseCode}&lt;/p&gt;&lt;p&gt;Message: {!DefaultException}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Display_Generated_Query_Text</name>
+            <fieldText>&lt;p&gt;{!CleanedQuery}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>Validate SAQL</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Input_Screen</name>
+        <label>Input Screen</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Prepare_Prompt</targetReference>
+        </connector>
+        <fields>
+            <name>OpenAI_Model</name>
+            <choiceReferences>GPT4_Choice</choiceReferences>
+            <choiceReferences>GPT3_Choice</choiceReferences>
+            <choiceReferences>GPT3_16K_CHOICE</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference>GPT4_Choice</defaultSelectedChoiceReference>
+            <fieldText>OpenAI Model</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Input_Prompt</name>
+            <defaultValue>
+                <stringValue>Generate multiple saql datastreams if needed using the steps below. Always add comments:
+
+{add your prompts here}</stringValue>
+            </defaultValue>
+            <fieldText>What do you want to query?</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>System_Prompt_Text</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Sample Prompt&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Generate multiple saql datastreams if needed using the steps below. Always add comments:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;-- Step 1:&amp;nbsp;&lt;/p&gt;&lt;p&gt;Filter constituents where designation name contains &quot;Econ&quot;&lt;/p&gt;&lt;p&gt;Show me all constituents, constituent ID and designation name who have a designation that contains &quot;Econ&quot;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;-- Step 2&lt;/p&gt;&lt;p&gt;Show me all constituents, constituent ID and school where school = &quot;Business&quot;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;--Step 3&lt;/p&gt;&lt;p&gt;Show me all constituents, constituent ID, designation and school from step 1 and step 2&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Pro Tip&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;-Adding comments like Step 1 will help in finding the statements in the final generated SAQL&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>Generate SAQL</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Input_Screen</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>DashboardTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{
+  &quot;folder&quot;: {
+    &quot;id&quot;: &quot;FOLDERID&quot;
+  },
+  &quot;label&quot;: &quot;AI SAQL - {!$User.FirstName}&quot;,
+  &quot;mobileDisabled&quot;: false,
+  &quot;state&quot;: {
+    &quot;dataSourceLinksInfo&quot;: {
+      &quot;enableAutomaticLinking&quot;: true,
+      &quot;excludeRelationships&quot;: [],
+      &quot;links&quot;: []
+    },
+    &quot;filters&quot;: [],
+    &quot;gridLayouts&quot;: [
+      {
+        &quot;name&quot;: &quot;Default&quot;,
+        &quot;numColumns&quot;: 48,
+        &quot;pages&quot;: [
+          {
+            &quot;label&quot;: &quot;Untitled&quot;,
+            &quot;name&quot;: &quot;01e75972-5131-4efe-a2e5-314393278b86&quot;,
+            &quot;navigationHidden&quot;: false,
+            &quot;widgets&quot;: [
+              {
+                &quot;colspan&quot;: 48,
+                &quot;column&quot;: 0,
+                &quot;name&quot;: &quot;text_1&quot;,
+                &quot;row&quot;: 0,
+                &quot;rowspan&quot;: 5,
+                &quot;widgetStyle&quot;: {
+                  &quot;backgroundColor&quot;: &quot;#FFFFFF&quot;,
+                  &quot;borderEdges&quot;: []
+                }
+              },
+              {
+                &quot;colspan&quot;: 25,
+                &quot;column&quot;: 0,
+                &quot;name&quot;: &quot;text_2&quot;,
+                &quot;row&quot;: 6,
+                &quot;rowspan&quot;: 4,
+                &quot;widgetStyle&quot;: {}
+              },
+              {
+                &quot;colspan&quot;: 23,
+                &quot;column&quot;: 25,
+                &quot;name&quot;: &quot;text_3&quot;,
+                &quot;row&quot;: 6,
+                &quot;rowspan&quot;: 4,
+                &quot;widgetStyle&quot;: {}
+              },
+              {
+                &quot;colspan&quot;: 25,
+                &quot;column&quot;: 0,
+                &quot;name&quot;: &quot;text_4&quot;,
+                &quot;row&quot;: 10,
+                &quot;rowspan&quot;: 12,
+                &quot;widgetStyle&quot;: {}
+              },
+              {
+                &quot;colspan&quot;: 23,
+                &quot;column&quot;: 25,
+                &quot;name&quot;: &quot;text_5&quot;,
+                &quot;row&quot;: 10,
+                &quot;rowspan&quot;: 12,
+                &quot;widgetStyle&quot;: {}
+              },
+              {
+                &quot;colspan&quot;: 48,
+                &quot;column&quot;: 0,
+                &quot;name&quot;: &quot;table_1&quot;,
+                &quot;row&quot;: 24,
+                &quot;rowspan&quot;: 33,
+                &quot;widgetStyle&quot;: {}
+              }
+            ]
+          }
+        ],
+        &quot;rowHeight&quot;: &quot;fine&quot;,
+        &quot;selectors&quot;: [],
+        &quot;style&quot;: {
+          &quot;alignmentX&quot;: &quot;left&quot;,
+          &quot;alignmentY&quot;: &quot;top&quot;,
+          &quot;backgroundColor&quot;: &quot;#F2F6FA&quot;,
+          &quot;cellSpacingX&quot;: 8,
+          &quot;cellSpacingY&quot;: 0,
+          &quot;fit&quot;: &quot;original&quot;,
+          &quot;gutterColor&quot;: &quot;#C5D3E0&quot;
+        },
+        &quot;version&quot;: 1
+      }
+    ],
+    &quot;layouts&quot;: [],
+    &quot;steps&quot;: {
+      &quot;Generated_Query_1&quot;: {
+        &quot;broadcastFacet&quot;: true,
+        &quot;groups&quot;: [],
+        &quot;label&quot;: &quot;Generated Query&quot;,
+        &quot;numbers&quot;: [],
+        &quot;query&quot;: &quot;&lt;query&gt;&quot;,
+        &quot;receiveFacetSource&quot;: {
+          &quot;mode&quot;: &quot;all&quot;,
+          &quot;steps&quot;: []
+        },
+        &quot;selectMode&quot;: &quot;single&quot;,
+        &quot;strings&quot;: [],
+        &quot;type&quot;: &quot;saql&quot;,
+        &quot;useGlobal&quot;: true,
+        &quot;visualizationParameters&quot;: {
+          &quot;parameters&quot;: {
+            &quot;borderColor&quot;: &quot;#e0e5ee&quot;,
+            &quot;borderWidth&quot;: 1,
+            &quot;cell&quot;: {
+              &quot;backgroundColor&quot;: &quot;#ffffff&quot;,
+              &quot;fontColor&quot;: &quot;#16325c&quot;,
+              &quot;fontSize&quot;: 12,
+              &quot;textWrap&quot;: true
+            },
+            &quot;columnProperties&quot;: {},
+            &quot;columns&quot;: [],
+            &quot;customBulkActions&quot;: [],
+            &quot;header&quot;: {
+              &quot;backgroundColor&quot;: &quot;#f4f6f9&quot;,
+              &quot;fontColor&quot;: &quot;#16325c&quot;,
+              &quot;fontSize&quot;: 12,
+              &quot;textWrap&quot;: true
+            },
+            &quot;innerMajorBorderColor&quot;: &quot;#a8b7c7&quot;,
+            &quot;innerMinorBorderColor&quot;: &quot;#e0e5ee&quot;,
+            &quot;interactions&quot;: [],
+            &quot;maxColumnWidth&quot;: 300,
+            &quot;minColumnWidth&quot;: 40,
+            &quot;mode&quot;: &quot;variable&quot;,
+            &quot;numberOfLines&quot;: 1,
+            &quot;showActionMenu&quot;: true,
+            &quot;showRowIndexColumn&quot;: true,
+            &quot;verticalPadding&quot;: 8
+          },
+          &quot;type&quot;: &quot;table&quot;
+        }
+      }
+    },
+    &quot;widgetStyle&quot;: {
+      &quot;backgroundColor&quot;: &quot;#FFFFFF&quot;,
+      &quot;borderColor&quot;: &quot;#E6ECF2&quot;,
+      &quot;borderEdges&quot;: [],
+      &quot;borderRadius&quot;: 0,
+      &quot;borderWidth&quot;: 1
+    },
+    &quot;widgets&quot;: {
+      &quot;table_1&quot;: {
+        &quot;parameters&quot;: {
+          &quot;borderColor&quot;: &quot;#a8b7c7&quot;,
+          &quot;borderWidth&quot;: 1,
+          &quot;cell&quot;: {
+            &quot;backgroundColor&quot;: &quot;#ffffff&quot;,
+            &quot;fontColor&quot;: &quot;#16325c&quot;,
+            &quot;fontSize&quot;: 12,
+            &quot;textWrap&quot;: true
+          },
+          &quot;columnProperties&quot;: {},
+          &quot;columns&quot;: [],
+          &quot;customBulkActions&quot;: [],
+          &quot;exploreLink&quot;: true,
+          &quot;header&quot;: {
+            &quot;backgroundColor&quot;: &quot;#16325c&quot;,
+            &quot;fontColor&quot;: &quot;#ffffff&quot;,
+            &quot;fontSize&quot;: 12,
+            &quot;textWrap&quot;: true
+          },
+          &quot;innerMajorBorderColor&quot;: &quot;#54698d&quot;,
+          &quot;innerMinorBorderColor&quot;: &quot;#a8b7c7&quot;,
+          &quot;interactions&quot;: [],
+          &quot;mode&quot;: &quot;fittocontainer&quot;,
+          &quot;numberOfLines&quot;: 1,
+          &quot;showActionMenu&quot;: true,
+          &quot;showRowIndexColumn&quot;: true,
+          &quot;step&quot;: &quot;Generated_Query_1&quot;,
+          &quot;verticalPadding&quot;: 8,
+          &quot;evenRowColor&quot;: null,
+          &quot;oddRowColor&quot;: null
+        },
+        &quot;type&quot;: &quot;table&quot;
+      },
+      &quot;text_1&quot;: {
+        &quot;parameters&quot;: {
+          &quot;content&quot;: {
+            &quot;richTextContent&quot;: [
+              {
+                &quot;attributes&quot;: {
+                  &quot;size&quot;: &quot;18px&quot;,
+                  &quot;color&quot;: &quot;#020821&quot;,
+                  &quot;bold&quot;: true
+                },
+                &quot;insert&quot;: &quot;Generated Dashboard&quot;
+              },
+              {
+                &quot;attributes&quot;: {},
+                &quot;insert&quot;: &quot;\n&quot;
+              },
+              {
+                &quot;attributes&quot;: {
+                  &quot;size&quot;: &quot;16px&quot;,
+                  &quot;color&quot;: &quot;#020821&quot;
+                },
+                &quot;insert&quot;: &quot;Creator: {!$User.FirstName}&quot;
+              },
+              {
+                &quot;attributes&quot;: {
+                  &quot;align&quot;: &quot;left&quot;
+                },
+                &quot;insert&quot;: &quot;\n&quot;
+              },
+              {
+                &quot;attributes&quot;: {
+                  &quot;align&quot;: &quot;center&quot;
+                },
+                &quot;insert&quot;: &quot;\n&quot;
+              }
+            ]
+          },
+          &quot;interactions&quot;: [],
+          &quot;showActionMenu&quot;: true
+        },
+        &quot;type&quot;: &quot;text&quot;
+      },
+      &quot;text_3&quot;: {
+        &quot;parameters&quot;: {
+          &quot;content&quot;: {
+            &quot;richTextContent&quot;: [
+              {
+                &quot;attributes&quot;: {
+                  &quot;size&quot;: &quot;16px&quot;,
+                  &quot;color&quot;: &quot;#4269e8&quot;,
+                  &quot;bold&quot;: true
+                },
+                &quot;insert&quot;: &quot;Generated query&quot;
+              },
+              {
+                &quot;attributes&quot;: {
+                  &quot;align&quot;: &quot;left&quot;
+                },
+                &quot;insert&quot;: &quot;\n&quot;
+              }
+            ]
+          },
+          &quot;interactions&quot;: [],
+          &quot;showActionMenu&quot;: true
+        },
+        &quot;type&quot;: &quot;text&quot;
+      },
+      &quot;text_2&quot;: {
+        &quot;parameters&quot;: {
+          &quot;content&quot;: {
+            &quot;richTextContent&quot;: [
+              {
+                &quot;attributes&quot;: {
+                  &quot;color&quot;: &quot;#4269e8&quot;,
+                  &quot;size&quot;: &quot;16px&quot;,
+                  &quot;bold&quot;: true
+                },
+                &quot;insert&quot;: &quot;Prompt&quot;
+              },
+              {
+                &quot;attributes&quot;: {
+                  &quot;align&quot;: &quot;left&quot;
+                },
+                &quot;insert&quot;: &quot;\n&quot;
+              }
+            ]
+          },
+          &quot;interactions&quot;: [],
+          &quot;showActionMenu&quot;: true
+        },
+        &quot;type&quot;: &quot;text&quot;
+      },
+      &quot;text_5&quot;: {
+        &quot;parameters&quot;: {
+          &quot;content&quot;: {
+            &quot;richTextContent&quot;: [
+              {
+                &quot;attributes&quot;: {
+                  &quot;color&quot;: &quot;#091a3e&quot;,
+                  &quot;size&quot;: &quot;12px&quot;
+                },
+                &quot;insert&quot;: &quot;&lt;query&gt;&quot;
+              },
+              {
+                &quot;attributes&quot;: {
+                  &quot;align&quot;: &quot;left&quot;
+                },
+                &quot;insert&quot;: &quot;\n&quot;
+              }
+            ]
+          },
+          &quot;interactions&quot;: [],
+          &quot;showActionMenu&quot;: true
+        },
+        &quot;type&quot;: &quot;text&quot;
+      },
+      &quot;text_4&quot;: {
+        &quot;parameters&quot;: {
+          &quot;content&quot;: {
+            &quot;richTextContent&quot;: [
+              {
+                &quot;attributes&quot;: {
+                  &quot;color&quot;: &quot;#091a3e&quot;,
+                  &quot;size&quot;: &quot;12px&quot;
+                },
+                &quot;insert&quot;: &quot;&lt;prompt&gt;&quot;
+              },
+              {
+                &quot;attributes&quot;: {
+                  &quot;align&quot;: &quot;left&quot;
+                },
+                &quot;insert&quot;: &quot;\n&quot;
+              }
+            ]
+          },
+          &quot;interactions&quot;: [],
+          &quot;showActionMenu&quot;: true
+        },
+        &quot;type&quot;: &quot;text&quot;
+      }
+    }
+  }
+}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>SystemPrompt</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>You are a Salesforce SAQL generator that only returns SAQL queries and no natural language.
+
+Given the dataset descriptions in JSON format and a user prompt, generate the adequate query for the user. Use the name attribute on each field of the table definition to generate the query. Write comments in your code using two hyphens (--). Current date is {!CurrentDate}.
+
+SAQL reference:
+- Use date() and dateRange() to filter absolute dates, for example:
+```saql
+q = filter q by date(&apos;CreatedDate_Year&apos;, &apos;CreatedDate_Month&apos;, &apos;CreatedDate_Day&apos;) in [dateRange([2014,10,2], [2016,8,16])];
+```
+- To check if a date is before today, use an open relative date, for example:
+```saql
+q = filter q by date(&apos;Date_Year&apos;, &apos;Date_Month&apos;, &apos;Date_Day&apos;) in [..&quot;current day&quot;];
+```
+- When using the matches operator, do not use wildcard asterisks (*), for example:
+```saql
+q = filter q by &apos;Designation&apos; matches &quot;String&quot;;
+```
+
+Example query:
+```json
+{
+  &quot;instruction&quot;: &quot;The given dataset contains multiple University donations from different Constituents. Comment each part of your code. Do the following step by step:\r\n\r\n1. Get those who have a total Credit Amount of $1,000 or more in 2022.\r\n2. Get those who have a Credit Amount of $0 in 2023.\r\n3. Remove those who have a Credit Amount of more than $1,000 average per month in the last 10 years.\r\n4. Calculate the total Credit Amount for each Constituent as name the column \&quot;Total Donation\&quot;.\r\n5. Flag those who gave to only Designation in 2021 and 2022, and it was the same one both years, name the column \&quot;Same Designation\&quot;.\r\n6. Flag those who have a donation in 2022 with any school that has \&quot;UCI\&quot; in its name, name the column \&quot;UCI Donor\&quot;.\r\n7. Flag those who have any membership named \u201CPC\u201D and it is a lifetime membership, name the column \&quot;PC Lifetime\&quot;.\r\n8. Show the Expiration Date of the PC membership (if they have any), name the column \&quot;PC Expiration Date\&quot;.\r\n9. Flag those who have any membership named \u201CPAA\u201D, name the column \u201CPAA Member\u201D.\r\n10. Flag those who have any membership named \u201CUCI Alumni\u201D, name the column \u201CUCI Alumni\u201D.\r\n11. Flag those who have an expired UCI Alumni membership.\r\n12. Show the Name, Id, Total Donation and all flags for each constituent.\r\n13. Order by Total Donation ascending.&quot;,
+  &quot;output&quot;: &quot;q = load \&quot;UCI_Credits_and_Memberships_Mockup\&quot;;\r\n\r\n-- Calculate 2022 and 2023 credits\r\nq_Donations_2022 = filter q by date(&apos;Credit_Date_Year&apos;, &apos;Credit_Date_Month&apos;, &apos;Credit_Date_Day&apos;) in [dateRange([2022,1,1], [2022,12,31])];\r\nq_Donations_2023 = filter q by date(&apos;Credit_Date_Year&apos;, &apos;Credit_Date_Month&apos;, &apos;Credit_Date_Day&apos;) in [dateRange([2022,12,31], [2023,6,1])];\r\nfiltered_list = cogroup q by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;) full, q_Donations_2022 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;) full, q_Donations_2023 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;);\r\nfiltered_list = foreach filtered_list generate coalesce(q.&apos;Constituent_ID&apos;, q_Donations_2022.&apos;Constituent_ID&apos;, q_Donations_2023.&apos;Constituent_ID&apos;) as &apos;Constituent_ID&apos;, coalesce(q.&apos;Constituent_Name&apos;, q_Donations_2022.&apos;Constituent_Name&apos;, q_Donations_2023.&apos;Constituent_Name&apos;) as &apos;Constituent_Name&apos;, avg(q.&apos;Credit_Amount&apos;)\/120 as &apos;Avg_Donation_Per_Month_Last_10_Years&apos;, sum(q_Donations_2022.&apos;Credit_Amount&apos;) as &apos;Donations_2022&apos;, sum(q_Donations_2023.&apos;Credit_Amount&apos;) as &apos;Donations_2023&apos;;\r\n\r\n-- Get Constituents who have a total Credit Amount of $1,000 or more in 2022\r\nfiltered_list = filter filtered_list by &apos;Donations_2022&apos; &gt;= 1000;\r\n\r\n-- Get Constituents who have a total Credit Amount of $0 in 2023\r\nfiltered_list = filter filtered_list by &apos;Donations_2023&apos; is null;\r\n\r\n-- Remove Constituents who have a total Credit Amount of more than $1,000 average per month in the last 10 years\r\nfiltered_list = filter filtered_list by &apos;Avg_Donation_Per_Month_Last_10_Years&apos; &lt; 1000;\r\n\r\n-- Calculate the all time donations for each Constituent\r\nq1 = group q by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;);\r\nq1 = foreach q1 generate &apos;Constituent_ID&apos; as &apos;Constituent_ID&apos;, &apos;Constituent_Name&apos; as &apos;Constituent_Name&apos;, sum(&apos;Credit_Amount&apos;) as &apos;Total_Donation&apos;;\r\n\r\n-- Flag those who gave to only Designation in 2021 and 2022, and it was the same one both years\r\nq2_2021 = filter q by date(&apos;Credit_Date_Year&apos;, &apos;Credit_Date_Month&apos;, &apos;Credit_Date_Day&apos;) in [dateRange([2021,1,1], [2021,12,31])];\r\nq2_2021 = group q2_2021 by (&apos;Constituent_Name&apos;, &apos;Constituent_ID&apos;, &apos;Designation&apos;);\r\nq2_2021 = foreach q2_2021 generate &apos;Constituent_ID&apos; as &apos;Constituent_ID&apos;, &apos;Constituent_Name&apos; as &apos;Constituent_Name&apos;, &apos;Designation&apos; as &apos;Designation_2021&apos;, count() as &apos;count_2021&apos;;\r\n\r\nq2_2022 = filter q by date(&apos;Credit_Date_Year&apos;, &apos;Credit_Date_Month&apos;, &apos;Credit_Date_Day&apos;) in [dateRange([2022,1,1], [2022,12,31])];\r\nq2_2022 = group q2_2022 by (&apos;Constituent_Name&apos;, &apos;Constituent_ID&apos;, &apos;Designation&apos;);\r\nq2_2022 = foreach q2_2022 generate &apos;Constituent_ID&apos; as &apos;Constituent_ID&apos;, &apos;Constituent_Name&apos; as &apos;Constituent_Name&apos;, &apos;Designation&apos; as &apos;Designation_2022&apos;, count() as &apos;count_2022&apos;;\r\n\r\nq2 = cogroup q2_2021 by (&apos;Constituent_Name&apos;, &apos;Constituent_ID&apos;) full, q2_2022 by (&apos;Constituent_Name&apos;, &apos;Constituent_ID&apos;);\r\nq2 = foreach q2 generate coalesce(q2_2021.&apos;Constituent_ID&apos;, q2_2022.&apos;Constituent_ID&apos;) as &apos;Constituent_ID&apos;, coalesce(q2_2021.&apos;Constituent_Name&apos;, q2_2022.&apos;Constituent_Name&apos;) as &apos;Constituent_Name&apos;,\r\nfirst(q2_2021.&apos;Designation_2021&apos;) as &apos;Designation_2021&apos;,\r\nfirst(q2_2022.&apos;Designation_2022&apos;) as &apos;Designation_2022&apos;,\r\nsum(q2_2021.&apos;count_2021&apos;) as &apos;count_2021&apos;,\r\nsum(q2_2022.&apos;count_2022&apos;) as &apos;count_2022&apos;;\r\n\r\nq2 = foreach q2 generate &apos;Constituent_Name&apos; as &apos;Constituent_Name&apos;, &apos;Constituent_ID&apos; as &apos;Constituent_ID&apos;,\r\ncase when &apos;Designation_2021&apos; == &apos;Designation_2022&apos; and &apos;count_2021&apos; == 1 and &apos;count_2022&apos; == 1 then \&quot;yes\&quot; else \&quot;no\&quot; end as &apos;Same_Designation&apos;;\r\n\r\n-- Flag those who have a donation in 2022 with any school that has \&quot;UCI\&quot; in its name\r\nq3 = filter q by &apos;School&apos; matches \&quot;UCI\&quot; and date(&apos;Credit_Date_Year&apos;, &apos;Credit_Date_Month&apos;, &apos;Credit_Date_Day&apos;) in [dateRange([2022,1,1], [2022,12,31])];\r\nq3 = group q3 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;);\r\nq3 = foreach q3 generate &apos;Constituent_ID&apos; as &apos;Constituent_ID&apos;, &apos;Constituent_Name&apos; as &apos;Constituent_Name&apos;, \&quot;yes\&quot; as &apos;UCI_Donor&apos;;\r\n\r\n-- Flag those who have any membership named \&quot;PC\&quot; and it is a lifetime membership\r\nq4 = filter q by &apos;Membership_Name&apos; matches \&quot;PC\&quot; and &apos;Is_Lifetime_Membership&apos; matches \&quot;yes\&quot;;\r\nq4 = group q4 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;);\r\nq4 = foreach q4 generate &apos;Constituent_ID&apos; as &apos;Constituent_ID&apos;, &apos;Constituent_Name&apos; as &apos;Constituent_Name&apos;, \&quot;yes\&quot; as &apos;PC_Lifetime&apos;;\r\n\r\n--  Get the Expiration Date of the PC membership (if the Constituent has any)\r\nq5 = filter q by &apos;Membership_Name&apos; matches \&quot;PC\&quot; and &apos;Is_Lifetime_Membership&apos; matches \&quot;no\&quot;;\r\nq5 = group q5 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;);\r\nq5 = foreach q5 generate &apos;Constituent_ID&apos; as &apos;Constituent_ID&apos;, &apos;Constituent_Name&apos; as &apos;Constituent_Name&apos;, max(&apos;Membership_Expiration_Date&apos;) as &apos;PC_Expiration_Date&apos;;\r\n\r\n-- Flag those who have any membership named \&quot;PAA\&quot;\r\nq6 = filter q by &apos;Membership_Name&apos; matches \&quot;PAA\&quot;;\r\nq6 = group q6 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;);\r\nq6 = foreach q6 generate &apos;Constituent_ID&apos; as &apos;Constituent_ID&apos;, &apos;Constituent_Name&apos; as &apos;Constituent_Name&apos;, \&quot;yes\&quot; as &apos;PAA_Member&apos;;\r\n\r\n-- Flag those who have any membership named \&quot;UCI Alumni\&quot;\r\nq7 = filter q by &apos;Membership_Name&apos; matches \&quot;UCI Alumni\&quot;;\r\nq7 = group q7 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;);\r\nq7 = foreach q7 generate &apos;Constituent_ID&apos; as &apos;Constituent_ID&apos;, &apos;Constituent_Name&apos; as &apos;Constituent_Name&apos;, \&quot;yes\&quot; as &apos;UCI_Alumni_Member&apos;;\r\n\r\n-- Join all flags\r\nq = cogroup q1 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;) full, q2 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;) full, q3 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;) full, q4 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;) full, q5 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;) full, q6 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;) full, q7 by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;);\r\nq = foreach q generate coalesce(q1.&apos;Constituent_ID&apos;, q2.&apos;Constituent_ID&apos;, q3.&apos;Constituent_ID&apos;, q4.&apos;Constituent_ID&apos;, q5.&apos;Constituent_ID&apos;, q6.&apos;Constituent_ID&apos;, q7.&apos;Constituent_ID&apos;) as &apos;Constituent_ID&apos;, coalesce(q1.&apos;Constituent_Name&apos;, q2.&apos;Constituent_Name&apos;, q3.&apos;Constituent_Name&apos;, q4.&apos;Constituent_Name&apos;, q5.&apos;Constituent_Name&apos;, q6.&apos;Constituent_Name&apos;, q7.&apos;Constituent_Name&apos;) as &apos;Constituent_Name&apos;, sum(q1.&apos;Total_Donation&apos;) as &apos;Total_Donation&apos;, coalesce(first(q2.&apos;Same_Designation&apos;), \&quot;no\&quot;) as &apos;Same_Designation&apos;, coalesce(first(q3.&apos;UCI_Donor&apos;), \&quot;no\&quot;) as &apos;UCI_Donor&apos;, coalesce(first(q4.&apos;PC_Lifetime&apos;), \&quot;no\&quot;) as &apos;PC_Lifetime&apos;, max(q5.&apos;PC_Expiration_Date&apos;) as &apos;PC_Expiration_Date&apos;, coalesce(first(q6.&apos;PAA_Member&apos;), \&quot;no\&quot;) as &apos;PAA_Member&apos;, coalesce(first(q7.&apos;UCI_Alumni_Member&apos;), \&quot;no\&quot;) as &apos;UCI_Alumni_Member&apos;;\r\n\r\n-- Apply filtered list\r\nq = cogroup filtered_list by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;) left, q by (&apos;Constituent_ID&apos;, &apos;Constituent_Name&apos;);\r\nq = foreach q generate coalesce(q.&apos;Constituent_ID&apos;, filtered_list.&apos;Constituent_ID&apos;) as &apos;Constituent_ID&apos;, coalesce(q.&apos;Constituent_Name&apos;, filtered_list.&apos;Constituent_Name&apos;) as &apos;Constituent_Name&apos;, sum(q.&apos;Total_Donation&apos;) as &apos;Total_Donation&apos;, first(q.&apos;Same_Designation&apos;) as &apos;Same_Designation&apos;, first(q.&apos;UCI_Donor&apos;) as &apos;UCI_Donor&apos;, first(q.&apos;PC_Lifetime&apos;) as &apos;PC_Lifetime&apos;, first(q.&apos;PC_Expiration_Date&apos;) as &apos;PC_Expiration_Date&apos;, first(q.&apos;PAA_Member&apos;) as &apos;PAA_Member&apos;, first(q.&apos;UCI_Alumni_Member&apos;) as &apos;UCI_Alumni_Member&apos;;\r\n\r\n-- Order by Total Donation ascending\r\nq = order q by &apos;Total_Donation&apos; asc;\r\n\r\n-- Limit the number of rows\r\nq = limit q 2000;&quot;
+}
+```
+
+Dataset schema:
+```json
+{!DatasetSchemas}
+```</text>
+    </textTemplates>
+    <variables>
+        <name>ChatCompletionMessages</name>
+        <apexClass>ucinn_ascendv2__ascend_AI_ChatCompletionMessage</apexClass>
+        <dataType>Apex</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CleanedQuery</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Datasets</name>
+        <apexClass>ucinn_ascendv2__ascend_Analytics_Dataset</apexClass>
+        <dataType>Apex</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>DatasetSchemas</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>DefaultException</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>GeneratedQuery</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>LatestDatasetVersion</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>namespaceFinalQuery</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>QueryDefaultException</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>QueryResponse</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>QueryResponseCode</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <name>QueryWithIds</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>CleanedQuery</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>ResponseCode</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <name>SystemMessage</name>
+        <apexClass>ucinn_ascendv2__ascend_AI_ChatCompletionMessage</apexClass>
+        <dataType>Apex</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>UserMessage</name>
+        <apexClass>ucinn_ascendv2__ascend_AI_ChatCompletionMessage</apexClass>
+        <dataType>Apex</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

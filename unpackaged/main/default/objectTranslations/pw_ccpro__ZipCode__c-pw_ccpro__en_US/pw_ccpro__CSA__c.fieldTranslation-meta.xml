@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Core Statistical Area. This area is a group of MSA&apos;s combined into a population core area. --></help>
+        <label><!-- CSA --></label>
+        <name>pw_ccpro__CSA__c</name>
+    </CustomFieldTranslation>

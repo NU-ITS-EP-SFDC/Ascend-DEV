@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- New Window - This link will open a new window or tab in the user&apos;s browser.
+
+Same Window - This link will redirect the user away from the current Map page.
+
+Modal - The URL will be opened in a popup (modal) window within the map page. --></help>
+        <label><!-- Desktop Behavior --></label>
+        <name>geopointe__Behavior__c</name>
+        <picklistValues>
+            <masterLabel>Modal Window</masterLabel>
+            <translation><!-- Modal Window --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Window</masterLabel>
+            <translation><!-- New Window --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same Window</masterLabel>
+            <translation><!-- Same Window --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

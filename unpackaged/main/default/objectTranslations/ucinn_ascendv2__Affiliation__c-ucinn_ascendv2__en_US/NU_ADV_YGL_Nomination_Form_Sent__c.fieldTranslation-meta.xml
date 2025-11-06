@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- YGL Nomination Form Sent --></label>
+        <name>NU_ADV_YGL_Nomination_Form_Sent__c</name>
+    </CustomFieldTranslation>

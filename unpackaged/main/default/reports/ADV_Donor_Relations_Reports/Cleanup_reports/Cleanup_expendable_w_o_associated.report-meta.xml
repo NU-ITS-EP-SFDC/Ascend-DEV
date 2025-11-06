@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.ucinn_ascendv2__Designation_Name__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Associated_Designation__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Administered_By__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Advancement_Set_Up_Date__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Fund_Class__c</field>
+    </columns>
+    <description>This report pulls expendable funds that do not have an associated designation. There should be no funds on this report. All expendables should have an associated endowed.</description>
+    <filter>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Designation__c.NU_ADV_Fund_Class__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Expendable</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Designation__c.NU_ADV_Associated_Designation__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Cleanup - expendable w/o associated</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ucinn_ascendv2__Designation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ucinn_ascendv2__Designation__c.NU_ADV_Advancement_Set_Up_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Create Record Default Field Values --></label>
+        <name>geopointe__Create_Record_Default_Field_Values__c</name>
+    </CustomFieldTranslation>

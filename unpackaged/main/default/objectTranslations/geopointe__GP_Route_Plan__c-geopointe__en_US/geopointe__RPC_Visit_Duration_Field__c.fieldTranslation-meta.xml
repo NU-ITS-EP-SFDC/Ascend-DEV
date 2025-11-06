@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Name of field to use to override Visit Duration --></help>
+        <label><!-- Visit Duration Field --></label>
+        <name>geopointe__RPC_Visit_Duration_Field__c</name>
+    </CustomFieldTranslation>

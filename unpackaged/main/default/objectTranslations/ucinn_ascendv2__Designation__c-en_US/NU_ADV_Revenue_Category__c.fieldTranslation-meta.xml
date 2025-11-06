@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Revenue Category --></label>
+        <name>NU_ADV_Revenue_Category__c</name>
+        <picklistValues>
+            <masterLabel>RC063</masterLabel>
+            <translation><!-- RC063 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RC162</masterLabel>
+            <translation><!-- RC162 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RC168</masterLabel>
+            <translation><!-- RC168 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RC243</masterLabel>
+            <translation><!-- RC243 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

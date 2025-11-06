@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Enter the donor&apos;s name here if they do not currently have a record in the system. --></help>
+        <label><!-- Donor 1 (Text Only) --></label>
+        <name>NU_ADV_Donor_1_Text_Only__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- State --></label>
+        <name>pw_ccpro__State__c</name>
+        <relationshipLabel><!-- ZIP Codes --></relationshipLabel>
+    </CustomFieldTranslation>

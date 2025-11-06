@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Units --></label>
+        <name>geopointe__Units__c</name>
+        <picklistValues>
+            <masterLabel>k</masterLabel>
+            <translation><!-- k --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>m</masterLabel>
+            <translation><!-- m --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

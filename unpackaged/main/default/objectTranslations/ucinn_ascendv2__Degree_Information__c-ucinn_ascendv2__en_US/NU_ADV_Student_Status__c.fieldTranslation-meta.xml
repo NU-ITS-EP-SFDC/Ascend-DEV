@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Student Status --></label>
+        <name>NU_ADV_Student_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active Not Registered</masterLabel>
+            <translation><!-- Active Not Registered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Active Registered</masterLabel>
+            <translation><!-- Active Registered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive Due to Graduation</masterLabel>
+            <translation><!-- Inactive Due to Graduation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn</masterLabel>
+            <translation><!-- Withdrawn --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NU_ADV_Disqualification_Reason__c</fullName>
+    <label>Disqualification Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not the right time</fullName>
+                <default>false</default>
+                <label>Not the right time</label>
+            </value>
+            <value>
+                <fullName>Timing</fullName>
+                <default>false</default>
+                <label>Timing</label>
+            </value>
+            <value>
+                <fullName>Lack of Closeness</fullName>
+                <default>false</default>
+                <label>Lack of Closeness</label>
+            </value>
+            <value>
+                <fullName>Financially Unable</fullName>
+                <default>false</default>
+                <label>Financially Unable</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Unassignment</controllingFieldValue>
+            <valueName>Timing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unassignment</controllingFieldValue>
+            <valueName>Lack of Closeness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unassignment</controllingFieldValue>
+            <valueName>Financially Unable</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

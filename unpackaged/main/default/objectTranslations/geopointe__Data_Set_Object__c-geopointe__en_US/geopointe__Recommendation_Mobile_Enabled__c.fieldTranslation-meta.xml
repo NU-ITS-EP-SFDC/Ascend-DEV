@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, this Recommendation Data Set becomes available for use in the Mobile Geopointe Map. --></help>
+        <label><!-- Mobile Enabled Recommendation --></label>
+        <name>geopointe__Recommendation_Mobile_Enabled__c</name>
+    </CustomFieldTranslation>

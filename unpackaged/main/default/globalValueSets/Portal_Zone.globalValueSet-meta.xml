@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>All</fullName>
+        <default>true</default>
+        <label>All</label>
+    </customValue>
+    <customValue>
+        <fullName>Village of Belonging</fullName>
+        <default>false</default>
+        <label>Village of Belonging</label>
+    </customValue>
+    <customValue>
+        <fullName>Young Global Leaders</fullName>
+        <default>false</default>
+        <label>Young Global Leaders</label>
+    </customValue>
+    <customValue>
+        <fullName>Women Who Empower</fullName>
+        <default>false</default>
+        <label>Women Who Empower</label>
+    </customValue>
+    <customValue>
+        <fullName>Mills College Alumni</fullName>
+        <default>false</default>
+        <label>Mills College Alumni</label>
+    </customValue>
+    <customValue>
+        <fullName>Alumni Club of Irvine</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Alumni Club of Irvine</label>
+    </customValue>
+    <customValue>
+        <fullName>Main</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Main</label>
+    </customValue>
+    <masterLabel>Portal Zone</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

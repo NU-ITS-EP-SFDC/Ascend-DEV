@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Date and time the last Assignment Plan Inactive batch job ran. This field should not be modified by users. --></help>
+        <label><!-- Last Inactive Batch Run Date --></label>
+        <name>geopointe__Last_Inactive_Batch_Run_Date__c</name>
+    </CustomFieldTranslation>

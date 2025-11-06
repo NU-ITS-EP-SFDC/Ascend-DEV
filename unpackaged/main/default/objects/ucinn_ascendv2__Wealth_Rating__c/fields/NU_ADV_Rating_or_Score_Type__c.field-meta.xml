@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NU_ADV_Rating_or_Score_Type__c</fullName>
+    <label>Rating Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prospect Research</fullName>
+                <default>false</default>
+                <label>Research Rating</label>
+            </value>
+            <value>
+                <fullName>Vendor Screening</fullName>
+                <default>false</default>
+                <label>Vendor Rating</label>
+            </value>
+            <value>
+                <fullName>Unverified</fullName>
+                <default>false</default>
+                <label>Unverified</label>
+            </value>
+            <value>
+                <fullName>Baseline</fullName>
+                <default>false</default>
+                <label>Baseline</label>
+            </value>
+            <value>
+                <fullName>Preliminary</fullName>
+                <default>false</default>
+                <label>Preliminary</label>
+            </value>
+            <value>
+                <fullName>Full</fullName>
+                <default>false</default>
+                <label>Full</label>
+            </value>
+            <value>
+                <fullName>Point Scoring</fullName>
+                <default>false</default>
+                <label>Point Scoring</label>
+            </value>
+            <value>
+                <fullName>Giving Likelihood</fullName>
+                <default>false</default>
+                <label>Giving Likelihood</label>
+            </value>
+            <value>
+                <fullName>Predictive</fullName>
+                <default>false</default>
+                <label>Predictive</label>
+            </value>
+            <value>
+                <fullName>Segmentation</fullName>
+                <default>false</default>
+                <label>Segmentation</label>
+            </value>
+            <value>
+                <fullName>EFC</fullName>
+                <default>false</default>
+                <label>EFC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

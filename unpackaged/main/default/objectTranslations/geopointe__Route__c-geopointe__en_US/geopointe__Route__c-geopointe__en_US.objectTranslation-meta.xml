@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Geopointe Route</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Geopointe Routes</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Route Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Locations XML --></label>
+            <section>Locations XML</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label><!-- Geopointe Manual Share --></label>
+        <name>geopointe__Manual_Share</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

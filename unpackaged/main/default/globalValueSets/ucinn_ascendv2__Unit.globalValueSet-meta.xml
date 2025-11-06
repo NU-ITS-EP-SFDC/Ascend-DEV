@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advancement Communications</fullName>
+        <default>false</default>
+        <label>Advancement Communications</label>
+    </customValue>
+    <customValue>
+        <fullName>Advancement Events</fullName>
+        <default>false</default>
+        <label>Advancement Events</label>
+    </customValue>
+    <customValue>
+        <fullName>Advancement Information Systems</fullName>
+        <default>false</default>
+        <label>Advancement Information Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Advancement Operations</fullName>
+        <default>false</default>
+        <label>Advancement Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>Advancement Services</fullName>
+        <default>false</default>
+        <label>Advancement Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Advancement Technology</fullName>
+        <default>false</default>
+        <label>Advancement Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Alumni Relations</fullName>
+        <default>false</default>
+        <label>Alumni Relations</label>
+    </customValue>
+    <customValue>
+        <fullName>Annual Giving</fullName>
+        <default>false</default>
+        <label>Annual Giving</label>
+    </customValue>
+    <customValue>
+        <fullName>Athletics</fullName>
+        <default>false</default>
+        <label>Athletics</label>
+    </customValue>
+    <customValue>
+        <fullName>BHS</fullName>
+        <default>false</default>
+        <label>BHS</label>
+    </customValue>
+    <customValue>
+        <fullName>Board of Trustees</fullName>
+        <default>false</default>
+        <label>Board of Trustees</label>
+    </customValue>
+    <customValue>
+        <fullName>Burnes Center</fullName>
+        <default>false</default>
+        <label>Burnes Center</label>
+    </customValue>
+    <customValue>
+        <fullName>C&amp;F</fullName>
+        <default>false</default>
+        <label>C&amp;F</label>
+    </customValue>
+    <customValue>
+        <fullName>CAMD</fullName>
+        <default>false</default>
+        <label>CAMD</label>
+    </customValue>
+    <customValue>
+        <fullName>COE</fullName>
+        <default>false</default>
+        <label>COE</label>
+    </customValue>
+    <customValue>
+        <fullName>COS</fullName>
+        <default>false</default>
+        <label>COS</label>
+    </customValue>
+    <customValue>
+        <fullName>CPS</fullName>
+        <default>false</default>
+        <label>CPS</label>
+    </customValue>
+    <customValue>
+        <fullName>CSSH</fullName>
+        <default>false</default>
+        <label>CSSH</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Strategy &amp; Analytics</fullName>
+        <default>false</default>
+        <label>Data Strategy &amp; Analytics</label>
+    </customValue>
+    <customValue>
+        <fullName>Development Research</fullName>
+        <default>false</default>
+        <label>Development Research</label>
+    </customValue>
+    <customValue>
+        <fullName>DMSB</fullName>
+        <default>false</default>
+        <label>DMSB</label>
+    </customValue>
+    <customValue>
+        <fullName>Donor Relations</fullName>
+        <default>false</default>
+        <label>Donor Relations</label>
+    </customValue>
+    <customValue>
+        <fullName>Family Philanthropy</fullName>
+        <default>false</default>
+        <label>Family Philanthropy</label>
+    </customValue>
+    <customValue>
+        <fullName>Fund Management</fullName>
+        <default>false</default>
+        <label>Fund Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Gift Planning</fullName>
+        <default>false</default>
+        <label>Gift Planning</label>
+    </customValue>
+    <customValue>
+        <fullName>Headless User</fullName>
+        <default>false</default>
+        <label>Headless User</label>
+    </customValue>
+    <customValue>
+        <fullName>Individual Giving</fullName>
+        <default>false</default>
+        <label>Individual Giving</label>
+    </customValue>
+    <customValue>
+        <fullName>International Advancement</fullName>
+        <default>false</default>
+        <label>International Advancement</label>
+    </customValue>
+    <customValue>
+        <fullName>Leadership Relations</fullName>
+        <default>false</default>
+        <label>Leadership Relations</label>
+    </customValue>
+    <customValue>
+        <fullName>Library</fullName>
+        <default>false</default>
+        <label>Library</label>
+    </customValue>
+    <customValue>
+        <fullName>none</fullName>
+        <default>false</default>
+        <label>none</label>
+    </customValue>
+    <customValue>
+        <fullName>NUSL</fullName>
+        <default>false</default>
+        <label>NUSL</label>
+    </customValue>
+    <customValue>
+        <fullName>Oakland Advancement</fullName>
+        <default>false</default>
+        <label>Oakland Advancement</label>
+    </customValue>
+    <customValue>
+        <fullName>President&apos;s Office</fullName>
+        <default>false</default>
+        <label>President&apos;s Office</label>
+    </customValue>
+    <customValue>
+        <fullName>SVP</fullName>
+        <default>false</default>
+        <label>SVP</label>
+    </customValue>
+    <customValue>
+        <fullName>Third Party Vendor</fullName>
+        <default>false</default>
+        <label>Third Party Vendor</label>
+    </customValue>
+    <customValue>
+        <fullName>Women&apos;s Entrepreneurship</fullName>
+        <default>false</default>
+        <label>Women&apos;s Entrepreneurship</label>
+    </customValue>
+    <customValue>
+        <fullName>School of Education</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>School of Education</label>
+    </customValue>
+    <customValue>
+        <fullName>School of Gerontology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>School of Gerontology</label>
+    </customValue>
+    <customValue>
+        <fullName>University Relations</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>University Relations</label>
+    </customValue>
+    <customValue>
+        <fullName>School of Engineering</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>School of Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>University Radio</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>University Radio</label>
+    </customValue>
+    <customValue>
+        <fullName>University Libraries</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>University Libraries</label>
+    </customValue>
+    <customValue>
+        <fullName>University Hospital</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>University Hospital</label>
+    </customValue>
+    <customValue>
+        <fullName>University Advancement</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>University Advancement</label>
+    </customValue>
+    <customValue>
+        <fullName>School of Social Work</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>School of Social Work</label>
+    </customValue>
+    <customValue>
+        <fullName>School of Public Policy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>School of Public Policy</label>
+    </customValue>
+    <customValue>
+        <fullName>School of Pharmacy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>School of Pharmacy</label>
+    </customValue>
+    <customValue>
+        <fullName>School of Music</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>School of Music</label>
+    </customValue>
+    <customValue>
+        <fullName>School of Medicine</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>School of Medicine</label>
+    </customValue>
+    <customValue>
+        <fullName>School of Law</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>School of Law</label>
+    </customValue>
+    <description>List of units/departments of a university</description>
+    <masterLabel>Unit</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

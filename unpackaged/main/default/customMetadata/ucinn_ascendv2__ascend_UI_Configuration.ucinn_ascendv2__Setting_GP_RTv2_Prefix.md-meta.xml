@@ -1,0 +1,1941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP RTv2 Prefix</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;Label&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Label&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;isCreation&quot;: true
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Prefix__c&quot;,
+      &quot;required&quot;: true,
+      &quot;toolTip&quot;: &quot;Four digit letter used to denote the record type to use. The external system ID must start with this prefix.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Prefix&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Record_Type_API_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;The record type label that corresponds to the prefix value.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Record Type Label&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Skip_Giving_Summary_Calculation_v1__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Skip Giving Summary Calculation&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Hard_Soft_Credit_Calculation_Type__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Hard/Soft Credit Calculation Type&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Inherited&quot;,
+          &quot;Legacy&quot;,
+          &quot;Payment Amount&quot;,
+          &quot;Gift Amount / Non-Gift Amount / Payment Amount&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;BLANK_ADDITIONAL_INFO&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Additional Information&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Require_Reviewed_Before_Posting__c&quot;,
+      &quot;toolTip&quot;: &quot;When checked, the review transaction will always go to Manual Review until \&quot;Reviewed\&quot; is set as the status.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Require Reviewed Before Posting&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Use_Design_on_Pledge_Gift_if_No_Design__c&quot;,
+      &quot;toolTip&quot;: &quot;Override designations on review transaction with designations specified on the pledge/gift only if designations are not already specified.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Use Design on Pledge/Gift if No Design&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Default_to_Manual_Review__c&quot;,
+      &quot;toolTip&quot;: &quot;Whether or not to always set status to Manual Review instead of trying to automatically process it.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Default to Manual Review&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Use_Designation_on_Pledge_Gift_Always__c&quot;,
+      &quot;toolTip&quot;: &quot;Always override designations on review transaction with designations specified on the pledge/gift.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Use Designation on Pledge/Gift Always&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Process_Separately_From_Load__c&quot;,
+      &quot;toolTip&quot;: &quot;Inserts review transaction records first and then uses future methods to process the records.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Process Separately From Load&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Clear_Remaining_Designation__c&quot;,
+      &quot;toolTip&quot;: &quot;Clears the remaining designations on the review transactions that are not on the pledge/gift.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Clear Remaining Designation&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Keep_Original_Comments__c&quot;,
+      &quot;toolTip&quot;: &quot;Useful if we want to keep a history of the comments as the review transaction is being updated.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Keep Original Comments&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Allow_Design_Mismatch_for_Pledge_Payment__c&quot;,
+      &quot;toolTip&quot;: &quot;If the designation on the pledge payment does not match the designation on the pledge/gift, the pledge payment will apply to the one of the designation on the pledge/gift.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Allow Design Mismatch for Pledge Payment&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Match_Against_Any_Pledge_Gift__c&quot;,
+      &quot;toolTip&quot;: &quot;Uncheck if we only want to pay against the donor&apos;s pledges/gifts. Check means the donor can pay other people&apos;s pledges/gifts.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Match Against Any Pledge/Gift&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Use_Appeal_on_Pledge_Gift_if_No_Appeal__c&quot;,
+      &quot;toolTip&quot;: &quot;Override appeal on review transaction with appeal specified on the pledge/gift only if appeal is not already specified.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Use Appeal on Pledge/Gift if No Appeal&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Match_Designation_If_No_Pledge_Gift__c&quot;,
+      &quot;toolTip&quot;: &quot;This is only applicable if we are only allowing payment to the donor&apos;s pledges/gifts, not others. In this case, if we can&apos;t find the donor&apos;s pledge/gift specified by the review transaction, then we try to find one that matches the designations.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Match Designation If No Pledge/Gift&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Use_Appeal_on_Gift_Pledge_Always__c&quot;,
+      &quot;toolTip&quot;: &quot;Always override appeal on review transaction with appeal specified on the pledge/gift.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Use Appeal on Pledge/Gift Always&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Matching_Order__c&quot;,
+      &quot;toolTip&quot;: &quot;Overrides behavior involving the options listed, determining execution and order of priority.\nMatch Against Any Pledge/Gift\nMatch Against Donor Pledge/Gift (default behavior)\nMatch Designation If No Pledge/Gift\nCreate Gift If Pledge Not Found\n\nFormat: [\&quot;Match Against Any Pledge/Gift\&quot;, \&quot;Match Against Donor Pledge/Gift\&quot;, \&quot;Create Gift If Pledge Not Found\&quot;]&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Matching Order&quot;,
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;picklist&quot;,
+          &quot;customPicklistValuesString&quot;: [
+            &quot;Match Against Any Pledge/Gift&quot;,
+            &quot;Match Against Donor Pledge/Gift&quot;,
+            &quot;Match Designation If No Pledge/Gift&quot;,
+            &quot;Create Gift If Pledge Not Found&quot;
+          ]
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Only_Query_for_Active_Appeals__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Only Query for Active Appeals&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Only_Query_for_Active_Designations__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Only Query for Active Designations&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Do_Not_Use_Approval_Process__c&quot;,
+      &quot;toolTip&quot;: &quot;Disable approval process. Session will still close and giving summary will still be calculated.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Do Not Use Approval Process&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Pledge_Gift_Stage_Query_Override__c&quot;,
+      &quot;toolTip&quot;: &quot;Overrides the stage condition that is used to query for pledges/gifts. Default is &apos;Active&apos;, &apos;Confirmed&apos;, &apos;Paid&apos; and &apos;Funded&apos;. Format is [\&quot;Funded\&quot;,\&quot;Active\&quot;].&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Pledge/Gift Stage Query Override&quot;,
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;picklist&quot;,
+          &quot;customPicklistValuesString&quot;: [
+            &quot;Active&quot;,
+            &quot;Confirmed&quot;,
+            &quot;Paid&quot;,
+            &quot;Funded&quot;
+          ]
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Create_Gift_If_Pledge_Not_Found_v1__c&quot;,
+      &quot;toolTip&quot;: &quot;Creates an outright gift instead of pledge payment if the pledge is not found. Should update Pledge/Gift Stage Query Override to use [\&quot;Active\&quot;] only.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Create Gift If Pledge Not Found&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Use_Pledge_for_Payment_Amount_if_No_Amt__c&quot;,
+      &quot;toolTip&quot;: &quot;Use the pledge to determine the payment amount only if the payment amount is not specified. This is based on the next installment for each designation that has not been fully paid yet, or the amount for each designation if recurring gift.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Use Pledge for Payment Amount if No Amt&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Do_Not_Use_Hard_Credit__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Do Not Use Hard Credit&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Use_Pledge_for_Payment_Amount_Always__c&quot;,
+      &quot;toolTip&quot;: &quot;Always use the pledge to determine the payment amount. This is based on the next installment for each designation that has not been fully paid yet, or the amount for each designation if recurring gift.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Use Pledge for Payment Amount Always&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Do_Not_Use_Source_Contact_Soft_Credit__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Do Not Use Source Contact Soft Credit&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Create_Matching_Gift_From_Payments__c&quot;,
+      &quot;toolTip&quot;: &quot;True, allows the creation of matching gifts from inserted payments. False, prevents the creation of matching gifts from inserted payments.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Create Matching Gift From Payments&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Payment_Method__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Payment Method&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Inherited&quot;,
+          &quot;Legacy&quot;,
+          &quot;Gift Amount&quot;,
+          &quot;Gift Amount + Non-Gift Amount&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Double_The_Donation_Account__c&quot;,
+      &quot;toolTip&quot;: &quot;If multiple Double the Donation accounts are enabled, enter the DTD account API name associated with Double the Donation account to be used with this RTV2 prefix.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Double The Donation Account&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Auto_Apply_Opp_Hard_Soft_Credits__c&quot;,
+      &quot;toolTip&quot;: &quot;Transaction Types that will auto apply manual credits from the parent opportunity. Use any combination of \&quot;Pledge Payment\&quot; , \&quot;Recurring Gift Payment\&quot;, \&quot;Matching Gift Payment\&quot;, \&quot;Auto Renewing Membership Payment\&quot;, \&quot;Installment Based Membership Payment\&quot;, \&quot;Auto Renewing POS Payment\&quot;, \&quot;Installment Based POS Payment\&quot;, \&quot;Partial Payment POS Payment\&quot; delimited by \&quot;;\&quot;.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Auto Apply Opp Hard/Soft Credits&quot;,
+        &quot;type&quot;: &quot;listNotJSON&quot;,
+        &quot;listNotJSONSeperator&quot;: &quot;;&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;picklist&quot;,
+          &quot;customPicklistValuesString&quot;: [
+            &quot;Pledge Payment&quot;,
+            &quot;Recurring Gift Payment&quot;,
+            &quot;Matching Gift Payment&quot;,
+            &quot;Auto Renewing Membership Payment&quot;,
+            &quot;Installment Based Membership Payment&quot;,
+            &quot;Auto Renewing POS Payment&quot;,
+            &quot;Installment Based POS Payment&quot;,
+            &quot;Partial Payment POS Payment&quot;
+          ]
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;BLANK_BIO_DEMO_INFO&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Bio Demo Information&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Match_Constituent_Against_Bio_Demo__c&quot;,
+      &quot;toolTip&quot;: &quot;Matching the constituent using the bio information on the review transaction. Default is match against first name, last name and email. Cannot be used in conjunction with Match Organization Against Bio Demo.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Match Constituent Against Bio Info&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Donor_External_ID_Override__c&quot;,
+      &quot;toolTip&quot;: &quot;Specify another external ID to use to find constituents or organizations. Sample format is: [\&quot;External_System_ID__c\&quot;,\&quot;Donor_ID__c\&quot;,\&quot;Payroll_ID__c\&quot;]&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Donor External ID Override&quot;,
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Match_Constituent_Override_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Defines what fields to compare against between Review Transaction and Constituent to determine match. Format is {\&quot;Constituent Field API Name\&quot;:\&quot;Review Transaction Field API Name\&quot;}. Must include at least {\&quot;Email\&quot;:\&quot;Email_1__c\&quot;}.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Match Constituent Override Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Constituent Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Constituent_Fields_Query_Addition__c&quot;,
+      &quot;toolTip&quot;: &quot;Additional fields to use when querying constituents. Used in conjunction with &apos;Create Constituent Map&apos;, &apos;Create Interim Map&apos; and &apos;Match Constituent Map&apos; when additional fields are needed for these. Format is [\&quot;Field API Name 1\&quot;, \&quot;Field API Name 2\&quot;].&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Constituent Fields Query Addition&quot;,
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Create_Constituent_If_Bio_Info_Not_Match__c&quot;,
+      &quot;toolTip&quot;: &quot;Create constituent if bio information does not match. Needs to be used with &apos;Match Constituent Against Bio Info&apos; checked.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Create Constituent If Bio Info Not Match&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Use_Constit_on_Pledge_Gift_If_No_Donor__c&quot;,
+      &quot;toolTip&quot;: &quot;Override constituent on review transaction with constituent specified on the pledge/gift only if the donor is not already specified.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Use Constit on Pledge/Gift If No Donor&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Create_Constituent_Override_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Defines what fields to use in Review Transaction to create corresponding fields in Constituent. Format is {“Constituent Field API Name”:“Review Transaction Field API Name”}.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Create Constituent Override Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Constituent Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Use_Constituent_on_Pledge_Gift_Always__c&quot;,
+      &quot;toolTip&quot;: &quot;Always override constituent on review transaction with constituent specified on the pledge/gift.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Use Constituent on Pledge/Gift Always&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Create_Interim_If_No_Constituent__c&quot;,
+      &quot;toolTip&quot;: &quot;Create interim record if constituent is not found after no match from Match Constituent Against Bio Info and not created with Create Constituent If Bio Info Not Match.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Create Con Interim If No Con or Org&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Create_Interim_Override_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Defines what fields to use in Review Transaction to create corresponding fields in Interim. Format is {“Interim Field API Name”:”Review Transaction Field API Name”}. RecordTypeId supports specifying record type ID or API Name.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Create Constituent Interim Override Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Interim Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_INTERIM_OVERRDE_MAP&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;blank&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Interim_Record_Type_Prefix__c&quot;,
+      &quot;toolTip&quot;: &quot;Defines what record type to use in Review Transaction in conjunction with Create Interim If No Constituent setting.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Constituent Interim Record Type Prefix&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Interim_Record_Type_Prefix&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;blank&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Match_Organization_Against_Bio_Demo__c&quot;,
+      &quot;toolTip&quot;: &quot;Matching the organization using the bio information on the review transaction. Default is match against organization name. Cannot be used in conjunction with Match Constituent Against Bio Info.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Match Organization Against Bio Demo&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Organization_Fields_Query_Addition__c&quot;,
+      &quot;toolTip&quot;: &quot;Additional fields to use when querying organizations. Format is [\&quot;Field API Name 1\&quot;, \&quot;Field API Name 2\&quot;].&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Organization Fields Query Addition&quot;,
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Match_Organization_Override_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Defines what fields to compare against between Review Transaction and Organization to determine match. Format is {\&quot;Organization Field API Name\&quot;:\&quot;Review Transaction Field API Name\&quot;}. Must include at least {\&quot;Name\&quot;:\&quot;Organization_Name__c\&quot;}&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Match Organization Override Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Organization Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Use_Org_on_Pledge_Gift_If_No_Donor__c&quot;,
+      &quot;toolTip&quot;: &quot;Override organization on review transaction with organization specified on the pledge/gift only if the donor is not already specified.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Use Org on Pledge/Gift If No Donor&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Create_Org_If_Bio_Info_Not_Match__c&quot;,
+      &quot;toolTip&quot;: &quot;Create organization if bio information does not match. Needs to be used with &apos;Match Organization Against Bio Info&apos; checked.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Create Org If Bio Info Not Match&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Use_Organization_On_Pledge_Gift_Always__c&quot;,
+      &quot;toolTip&quot;: &quot;Always override organization on review transaction with organization specified on the pledge/gift.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Use Organization On Pledge/Gift Always&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Create_Organization_Override_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Defines what fields to use in Review Transaction to create corresponding fields in Organization. Format is {“Organization Field API Name”:”Review Transaction Field API Name”}. RecordTypeId supports specifying record type ID or API Name.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Create Organization Override Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Organization Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_CREATE_ORG_OVERRIDE_MAP&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Create_Interim_If_No_Organization__c&quot;,
+      &quot;toolTip&quot;: &quot;Create interim record if organization is not found after no match from Match Organization Against Bio Info and not created with Create Org If Bio Info Not Match.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Create Org Interim If No Con or Org&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Create_Organization_Interim_Override_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Defines what fields to use in Review Transaction to create corresponding fields in Interim. Format is {“Interim Field API Name”:”Review Transaction Field API Name”}.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Create Organization Interim Override Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Interim Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_CREATE_ORG_INTERIM_OVERRIDE_MAP&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Organization_Interim_Record_Type_Prefix__c&quot;,
+      &quot;toolTip&quot;: &quot;Defines what record type to use in Review Transaction in conjunction with Create Interim If No Organization setting.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;label&quot;: &quot;Organization Interim Record Type Prefix&quot;,
+        &quot;type&quot;: &quot;text&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_ORG_INTERIM_RECORD_TYPE_PREFIX&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;BLANK_FREQUENCY_INFO_SECTION&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Frequency Information&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Installment_Frequency_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;For overriding the standard frequency that is supported. Example format is {\&quot;Annual\&quot;:12,\&quot;Monthly\&quot;:1}&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Installment Frequency Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Frequency&quot;,
+        &quot;valueLabel&quot;: &quot;Number&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;number&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Installment_Frequency_Map&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;BLANK_FIELD_MAP_INFO_SECTION&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Field Map Information&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Session_Field_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Map additional fields to be copied between the session and review transaction. Format is {\&quot;Session Field API Name\&quot;:\&quot;Review Transaction Field API Name\&quot;}.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Session Field Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Session Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Designation_Detail_Field_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Map additional fields to be copied between the designation detail and review transaction. Format is {\&quot;Designation Detail Field API Name\&quot;:\&quot;Review Transaction Field API Name\&quot;}.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Designation Detail Field Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Designation Detail Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Pledge_Gift_Field_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Map additional fields to be copied between the pledge/gift and review transaction. Format is {\&quot;Pledge/Gift Field API Name\&quot;:\&quot;Review Transaction Field API Name\&quot;}.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Pledge/Gift Field Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Pledge/Gift Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Hard_and_Soft_Credit_Field_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Map additional fields to be copied between the hard/soft credit and review transaction. Format is {\&quot;Hard and Soft Credit Field API Name\&quot;:\&quot;Review Transaction Field API Name\&quot;}.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Hard and Soft Credit Field Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Hard and Soft Credit Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Payment_Field_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Map additional fields to be copied between the payment and review transaction. Format is {\&quot;Payment Field API Name\&quot;:\&quot;Review Transaction Field API Name\&quot;}.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Payment Field Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Payment Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Tribute_Field_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Map additional fields to be copied between the tribute and review transaction. Format is {\&quot;Tribute Field API Name\&quot;:\&quot;Review Transaction Field API Name\&quot;}.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Tribute Field Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Tribute Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Installment_Field_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Map additional fields to be copied between the installment and review transaction. Format is {\&quot;Installment Field API Name\&quot;:\&quot;Review Transaction Field API Name\&quot;}.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Installment Field Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Installment Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Stock_Field_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Map additional fields to be copied between the stock and review transaction. Format is {\&quot;Stock Field API Name\&quot;:\&quot;Review Transaction Field API Name\&quot;}.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Stock Field Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Stock Field&quot;,
+        &quot;valueLabel&quot;: &quot;Review Transaction Field&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Give_Campus_Field_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Field Mapping for Give Campus&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Give Campus Field Map&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;override&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;email_type&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;phone_type&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;address_type&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;tender_type&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;payment&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;custom_fields&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;payer_email&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;anonymous&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;currency&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;constituent_identifer&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;crypto_transaction_hash_id&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;crypto_value_usd_at_time_of_donation&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;checkout_id&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;donor_covered_payment_fee&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;failure_reason&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;give_full_match_challenge_amount&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;id&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;phone_number&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;tender_type&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;card_type&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;joint_gift&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;joint_year&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;maiden_name&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;name_title&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;note_content&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;paid_email&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;paid_name&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;payer_email&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;payer_name&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;payment_method&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;payment_service_fee&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;refund_reason&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;refund_recovery_transfer&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;refund_status&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;spouse&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;state&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;stripe_deposit&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;stripe_refund&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;terminal_gift&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;terminal_type&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;value&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;value_in_currency&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;value_orig_currency&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;value_usd&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;subscription&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;id&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;state&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;period&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;length&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;installment_number&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;indefinite&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;matching_company&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;id&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;name&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;search_status&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;search_text&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;incentive&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;id&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;headline&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;description&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;market_value&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;tax_deductible_amount&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;project&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;unique_identifier&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;id&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;name&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;type&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;advocate&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;id&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;source&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;link&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;description&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;address&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;line1&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;line2&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;city&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;country&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;state&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;postal_code&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;timestamps&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;created_at&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;deposited_at&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;updated_at&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;recurringGift&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;cancel_reason&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;constituent_id&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;failure_reason&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;frequency&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;id&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;installment_amount&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;max_charges&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;recurs_indefinitely&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;state&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;total&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;total_charges&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;total_paid&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;total_remaining&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;zipcode&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;payment&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;processor&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;type&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;user&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;id&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;name&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;timestamps&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;created_at&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;updated_at&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;tender_type&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Stage_Name_To_Adjustment_Reason_Map__c&quot;,
+      &quot;toolTip&quot;: &quot;Applies the specified values in the adjustment reason to the stage name. Format is [\&quot;Written Off\&quot;,\&quot;Void\&quot;,\&quot;Cancelled\&quot;].&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Stage Name To Adjustment Reason Map&quot;,
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;BLANK_SOFT_CREDIT_INFO_SECTION&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Soft Credit Information&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Do_Not_Use_Apply_Soft_Credit__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Do Not Use Apply Soft Credit&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Do_Not_Use_Household_Soft_Credit__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Do Not Use Household Soft Credit&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Do_Not_Use_Donor_Control_Soft_Credit__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Do Not Use Donor Control Soft Credit&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Do_Not_Soft_Credit_Donor_If_Payer_Diff__c&quot;,
+      &quot;toolTip&quot;: &quot;If the constituent paying is not the one making the pledge, then do not soft credit to the one making the pledge.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Do Not Soft Credit Donor If Payer Diff&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Create_SC_For_Relationship_on_MG__c&quot;,
+      &quot;toolTip&quot;: &quot;Include soft credits for relationships on matching gift generation and during matching gift payments&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Create SC For Relationship on MG&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;BLANK_SUMMARY_INFO_SECTION&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Summary Information&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Is_Summary_Record__c&quot;,
+      &quot;toolTip&quot;: &quot;Enable to use this prefix to generate summary records.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Is Summary Record&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Summary_Prefix__c&quot;,
+      &quot;toolTip&quot;: &quot;Prefix used to generate summary review transactions.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Summary Prefix&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Is_Create_Summary__c&quot;,
+      &quot;toolTip&quot;: &quot;Enable to generate summary records for review transactions that use this prefix.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Create Summary&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;BLANK_SESSION_INFO_SECTION&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Session Information&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Is_Enable_Special_Condition_Batching__c&quot;,
+      &quot;toolTip&quot;: &quot;Enable to automatically filter review transactions into sessions based on the Special Criteria field.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Special Condition Batching&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Special_Condition_Criteria_Field__c&quot;,
+      &quot;toolTip&quot;: &quot;The field on the review transactions to filter by. Must evaluate to either true or false.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Special Condition Criteria Field&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Review_Reason_for_Special_Conditions__c&quot;,
+      &quot;toolTip&quot;: &quot;Custom manual review reason to be populated for filtered review transactions. If blank, will default to \&quot;Flagged for Review.\&quot;&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Review Reason for Special Conditions&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Special_Condition_Batch_Size__c&quot;,
+      &quot;toolTip&quot;: &quot;Number of review transactions that meet the special requirements to fit into one session.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;label&quot;: &quot;Special Condition Batch Size&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;BLANK_NON_SPECIAL_CONDITION&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;blank&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Non_Special_Condition_Batch_Size__c&quot;,
+      &quot;toolTip&quot;: &quot;Number of review transactions that do not meet the special requirements to fit into one session.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;label&quot;: &quot;Non Special Condition Batch Size&quot;
+      }
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Review_Transaction_Prefix__mdt&quot;,&quot;allowCreate&quot;:true,
+  &quot;title&quot;: &quot;Review Transaction Prefix&quot;,
+  &quot;helpText&quot;: &quot;Controls the different Review Transaction Prefix Configurations.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

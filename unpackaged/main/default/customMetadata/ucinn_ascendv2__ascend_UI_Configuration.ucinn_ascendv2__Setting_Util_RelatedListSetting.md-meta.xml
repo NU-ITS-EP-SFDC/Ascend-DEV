@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting Util RelatedListSetting</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;Label&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Label&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;isCreation&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_LABEL&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Display_Name__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Display Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Household_Records_To_Display__c&quot;,
+      &quot;toolTip&quot;: &quot;Selects which records should be displayed on the related list for Household pages.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Records To Display for HH Related List&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Household&quot;,
+          &quot;Constituent&quot;,
+          &quot;Household and Constituent&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Icon_Name__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Icon Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Additional_Fields_to_Populate__c&quot;,
+      &quot;toolTip&quot;: &quot;Use this to set default values on creation of new records. i.e. {\&quot;Name\&quot; : \&quot;[Default Name]\&quot;}&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Additional Fields to Populate&quot;,
+        &quot;keyLabel&quot;: &quot;Field&quot;,
+        &quot;valueLabel&quot;: &quot;Default Value&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__SObject_Name__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Object API Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Override_New_Button__c&quot;,
+      &quot;toolTip&quot;: &quot;If using a custom component in place of the standard new button, populate this with the name of the custom component. i.e.\&quot;c:newOpportunityForm\&quot;&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;New Button Custom Component Name&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Headers_Override__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Override Headers&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Override_New_Button_Parameters__c&quot;,
+      &quot;toolTip&quot;: &quot;Contains attributes on the override component and their values.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Override New Button Parameters&quot;,
+        &quot;helpText&quot;: &quot;Contains attributes on the override component and their values.&quot;,
+        &quot;keyLabel&quot;: &quot;Override Component Attribute&quot;,
+        &quot;valueLabel&quot;: &quot;Attribute Value&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Headers__c&quot;,
+      &quot;toolTip&quot;: &quot;List of headers for the table.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;label&quot;: &quot;Headers&quot;,
+        &quot;helpText&quot;: &quot;List of headers for the table. In the order they are defined.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Headers&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Fields_To_Display_2__c&quot;,
+      &quot;toolTip&quot;: &quot;List of fields for the table.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;label&quot;: &quot;Fields To Display&quot;,
+        &quot;helpText&quot;: &quot;List of fields for the table.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Fields_To_Display_2&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Field_Type_Dict__c&quot;,
+      &quot;toolTip&quot;: &quot;Configuration to determine how we should show the fields to display.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Field Type Dict&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+        &quot;helpText&quot;: &quot;Configuration to determine how we should show the fields to display.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Id&quot;,
+                &quot;REFERENCE&quot;,
+                &quot;REFERENCE-URL&quot;,
+                &quot;REFERENCE-READONLY&quot;,
+                &quot;READONLY&quot;,
+                &quot;EMAIL&quot;,
+                &quot;PHONE&quot;,
+                &quot;DATE&quot;,
+                &quot;DATETIME&quot;,
+                &quot;INTEGER&quot;,
+                &quot;DOUBLE&quot;,
+                &quot;BOOLEAN&quot;,
+                &quot;STRING&quot;,
+                &quot;URL&quot;,
+                &quot;CURRENCY&quot;,
+                &quot;CURRENCY-READONLY&quot;,
+                &quot;DATE-READONLY&quot;,
+                &quot;DATETIME-READONLY&quot;,
+                &quot;NUMBER-READONLY&quot;,
+                &quot;PERCENTAGE-READONLY&quot;,
+                &quot;PHONE-READONLY&quot;,
+                &quot;RICHTEXT-READONLY&quot;,
+                &quot;URL-READONLY&quot;,
+                &quot;TEXTAREA-READONLY&quot;,
+                &quot;BOOLEAN-READONLY&quot;,
+                &quot;UNESCAPED-HTML&quot;,
+                &quot;Compound-Address&quot;,
+                &quot;ADDRESS-READONLY&quot;,
+                &quot;PICKLIST-READONLY&quot;,
+                &quot;MULTIPICKLIST-READONLY&quot;,
+                &quot;TIME-READONLY&quot;,
+                &quot;GEOLOCATION-READONLY&quot;,
+                &quot;ENCRYPTED-READONLY&quot;
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Field_Type_Dict&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Disable_Delete_Button__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Disable Delete Button&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Disable_New_Button__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Disable New Button&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Disable_Edit_Button__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Disable Edit Button&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Disable_New_Button_Array__c&quot;,
+      &quot;toolTip&quot;: &quot;List of objects to disable the new object on.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;label&quot;: &quot;Disable New Button Array&quot;,
+        &quot;helpText&quot;: &quot;List of objects to disable the new object on.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;picklist&quot;,
+          &quot;customPicklistValuesString&quot;: [
+            &quot;ORG&quot;,
+            &quot;HOUSEHOLD&quot;,
+            &quot;CONTACT&quot;,
+            &quot;OTHER&quot;
+          ]
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Disable_New_Button_Array&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Parent_Lookup_API_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;Parent record&apos;s lookup API name.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Parent Lookup API Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_PARENT_LOOKUP&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Query_By_Record_Type__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Query By Record Type&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_Search_Bar__c&quot;,
+      &quot;toolTip&quot;: &quot;Shows the search bar on the top right corner of the related list.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Search Bar&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Filter_Criteria__c&quot;,
+      &quot;toolTip&quot;: &quot;The filter criteria supports the WHERE clause specified at https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql_select_conditionexpression.htm.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Filter Criteria&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Filter_Criteria&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;HEADER_CONTACT_SPECIFIC&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Contact Specific Configuration&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Contact_Specific_Record_ID_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;Use &apos;CHOICE&apos; to use the record type selection screen.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Contact Specific Record ID Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Contact_Specific_Fields_To_Display__c&quot;,
+      &quot;toolTip&quot;: &quot;List of fields for the table.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;label&quot;: &quot;Contact Specific Fields To Display&quot;,
+        &quot;helpText&quot;: &quot;List of fields for the table.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Contact_Specific_Lookup_API_Name__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Contact Specific Lookup API Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Contact_Specific_Field_Type_Dict__c&quot;,
+      &quot;toolTip&quot;: &quot;Configuration to determine how we should show the fields to display.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Contact Specific Field Type Dict&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+        &quot;helpText&quot;: &quot;Configuration to determine how we should show the fields to display.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Id&quot;,
+                &quot;REFERENCE&quot;,
+                &quot;REFERENCE-URL&quot;,
+                &quot;REFERENCE-READONLY&quot;,
+                &quot;READONLY&quot;,
+                &quot;EMAIL&quot;,
+                &quot;PHONE&quot;,
+                &quot;DATE&quot;,
+                &quot;DATETIME&quot;,
+                &quot;INTEGER&quot;,
+                &quot;DOUBLE&quot;,
+                &quot;BOOLEAN&quot;,
+                &quot;STRING&quot;,
+                &quot;URL&quot;,
+                &quot;CURRENCY&quot;,
+                &quot;CURRENCY-READONLY&quot;,
+                &quot;DATE-READONLY&quot;,
+                &quot;DATETIME-READONLY&quot;,
+                &quot;NUMBER-READONLY&quot;,
+                &quot;PERCENTAGE-READONLY&quot;,
+                &quot;PHONE-READONLY&quot;,
+                &quot;RICHTEXT-READONLY&quot;,
+                &quot;URL-READONLY&quot;,
+                &quot;TEXTAREA-READONLY&quot;,
+                &quot;BOOLEAN-READONLY&quot;,
+                &quot;UNESCAPED-HTML&quot;,
+                &quot;Compound-Address&quot;,
+                &quot;ADDRESS-READONLY&quot;,
+                &quot;PICKLIST-READONLY&quot;,
+                &quot;MULTIPICKLIST-READONLY&quot;,
+                &quot;TIME-READONLY&quot;,
+                &quot;GEOLOCATION-READONLY&quot;,
+                &quot;ENCRYPTED-READONLY&quot;
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Contact_Specific_Headers_Override__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Contact Specific Headers Override&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Contact_Specific_Headers__c&quot;,
+      &quot;toolTip&quot;: &quot;List of headers for the table.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;label&quot;: &quot;Contact Specific Headers&quot;,
+        &quot;helpText&quot;: &quot;List of headers for the table. In the order they are defined.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_CONTACT_SPECIFIC_HEADERS&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;HEADER_ACCOUNT_SPECIFIC&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Account Specific Configuration&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Account_Specific_Record_ID_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;Use &apos;CHOICE&apos; to use the record type selection screen.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Account Specific Record ID Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Account_Specific_Fields_To_Display__c&quot;,
+      &quot;toolTip&quot;: &quot;List of fields for the table.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;label&quot;: &quot;Account Specific Fields To Display&quot;,
+        &quot;helpText&quot;: &quot;List of fields for the table.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Account_Specific_Lookup_API_Name__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Account Specific Lookup API Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Account_Specific_Field_Type_Dict__c&quot;,
+      &quot;toolTip&quot;: &quot;Configuration to determine how we should show the fields to display.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Account Specific Field Type Dict&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+        &quot;helpText&quot;: &quot;Configuration to determine how we should show the fields to display.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Id&quot;,
+                &quot;REFERENCE&quot;,
+                &quot;REFERENCE-URL&quot;,
+                &quot;REFERENCE-READONLY&quot;,
+                &quot;READONLY&quot;,
+                &quot;EMAIL&quot;,
+                &quot;PHONE&quot;,
+                &quot;DATE&quot;,
+                &quot;DATETIME&quot;,
+                &quot;INTEGER&quot;,
+                &quot;DOUBLE&quot;,
+                &quot;BOOLEAN&quot;,
+                &quot;STRING&quot;,
+                &quot;URL&quot;,
+                &quot;CURRENCY&quot;,
+                &quot;CURRENCY-READONLY&quot;,
+                &quot;DATE-READONLY&quot;,
+                &quot;DATETIME-READONLY&quot;,
+                &quot;NUMBER-READONLY&quot;,
+                &quot;PERCENTAGE-READONLY&quot;,
+                &quot;PHONE-READONLY&quot;,
+                &quot;RICHTEXT-READONLY&quot;,
+                &quot;URL-READONLY&quot;,
+                &quot;TEXTAREA-READONLY&quot;,
+                &quot;BOOLEAN-READONLY&quot;,
+                &quot;UNESCAPED-HTML&quot;,
+                &quot;Compound-Address&quot;,
+                &quot;ADDRESS-READONLY&quot;,
+                &quot;PICKLIST-READONLY&quot;,
+                &quot;MULTIPICKLIST-READONLY&quot;,
+                &quot;TIME-READONLY&quot;,
+                &quot;GEOLOCATION-READONLY&quot;,
+                &quot;ENCRYPTED-READONLY&quot;
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Account_Specific_Headers_Override__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Override Account Specific Headers&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Account_Specific_Headers__c&quot;,
+      &quot;toolTip&quot;: &quot;List of headers for the table.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;label&quot;: &quot;Account Specific Headers&quot;,
+        &quot;helpText&quot;: &quot;List of headers for the table. In the order they are defined.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_ACCOUNT_SPECIFIC_HEADERS&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;HEADER_HOUSEHOLD_SPECIFIC&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Household Specific Configuration&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Household_Specific_Record_ID_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;Use &apos;CHOICE&apos; to use the record type selection screen.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Household Specific Record ID Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Household_Specific_Fields_To_Display__c&quot;,
+      &quot;toolTip&quot;: &quot;List of fields for the table.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;label&quot;: &quot;Household Specific Fields To Display&quot;,
+        &quot;helpText&quot;: &quot;List of fields for the table.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Household_Specific_Headers_Override__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Override Household Specific Headers&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Household_Specific_Field_Type_Dict__c&quot;,
+      &quot;toolTip&quot;: &quot;Configuration to determine how we should show the fields to display.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Household Specific Field Type Dict&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+        &quot;helpText&quot;: &quot;Configuration to determine how we should show the fields to display.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Id&quot;,
+                &quot;REFERENCE&quot;,
+                &quot;REFERENCE-URL&quot;,
+                &quot;REFERENCE-READONLY&quot;,
+                &quot;READONLY&quot;,
+                &quot;EMAIL&quot;,
+                &quot;PHONE&quot;,
+                &quot;DATE&quot;,
+                &quot;DATETIME&quot;,
+                &quot;INTEGER&quot;,
+                &quot;DOUBLE&quot;,
+                &quot;BOOLEAN&quot;,
+                &quot;STRING&quot;,
+                &quot;URL&quot;,
+                &quot;CURRENCY&quot;,
+                &quot;CURRENCY-READONLY&quot;,
+                &quot;DATE-READONLY&quot;,
+                &quot;DATETIME-READONLY&quot;,
+                &quot;NUMBER-READONLY&quot;,
+                &quot;PERCENTAGE-READONLY&quot;,
+                &quot;PHONE-READONLY&quot;,
+                &quot;RICHTEXT-READONLY&quot;,
+                &quot;URL-READONLY&quot;,
+                &quot;TEXTAREA-READONLY&quot;,
+                &quot;BOOLEAN-READONLY&quot;,
+                &quot;UNESCAPED-HTML&quot;,
+                &quot;Compound-Address&quot;,
+                &quot;ADDRESS-READONLY&quot;,
+                &quot;PICKLIST-READONLY&quot;,
+                &quot;MULTIPICKLIST-READONLY&quot;,
+                &quot;TIME-READONLY&quot;,
+                &quot;GEOLOCATION-READONLY&quot;,
+                &quot;ENCRYPTED-READONLY&quot;
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Household_Specific_Headers__c&quot;,
+      &quot;toolTip&quot;: &quot;List of headers for the table.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;label&quot;: &quot;Household Specific Headers&quot;,
+        &quot;helpText&quot;: &quot;List of headers for the table. In the order they are defined.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Household_SPECIFIC_HEADERS&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;HEADER_RECORD_CREATE_CONFIG&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Record Create Configuration&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Record_Create_Custom_Components__c&quot;,
+      &quot;toolTip&quot;: &quot;Custom component to be leveraged within the record create component.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Record Create Custom Components&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Record_Create_Custom_Components&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Record_Create_Custom_Events__c&quot;,
+      &quot;toolTip&quot;: &quot;Events to be handled from the record create custom component.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Record Create Custom Events&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Record_Create_Custom_Events&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Record_Create_Custom_Event_Handlers__c&quot;,
+      &quot;toolTip&quot;: &quot;Event handlers for the events from the record create custom component.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Record Create Custom Event Handlers&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Record_Create_Custom_Event_Handlers&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Record_Create_Field_Mapping__c&quot;,
+      &quot;toolTip&quot;: &quot;Field mapping from an ascend field to a key provided by an external address lookup.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Record Create Field Mapping&quot;,
+        &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+        &quot;valueLabel&quot;: &quot;Key&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Record_Create_Field_Mapping&quot;
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Related_List_Setting__mdt&quot;,
+  &quot;title&quot;: &quot;Related List Setting&quot;,
+  &quot;allowCreate&quot;: true,
+  &quot;helpText&quot;: &quot;Configuration pertaining to the custom metadata Related List Setting.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

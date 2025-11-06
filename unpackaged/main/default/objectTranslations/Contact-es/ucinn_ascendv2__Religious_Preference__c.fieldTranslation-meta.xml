@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Religious Preference --></label>
+        <name>ucinn_ascendv2__Religious_Preference__c</name>
+        <picklistValues>
+            <masterLabel>Afro-Caribbean Religions</masterLabel>
+            <translation><!-- Afro-Caribbean Religions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly of God</masterLabel>
+            <translation><!-- Assembly of God --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Atheist/Agnostic/Humanist</masterLabel>
+            <translation><!-- Atheist/Agnostic/Humanist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baha'i</masterLabel>
+            <translation><!-- Baha&apos;i --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baptist</masterLabel>
+            <translation><!-- Baptist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buddhist</masterLabel>
+            <translation><!-- Buddhist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christian Science</masterLabel>
+            <translation><!-- Christian Science --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confucian</masterLabel>
+            <translation><!-- Confucian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Earth-based Spirituality/Pagan</masterLabel>
+            <translation><!-- Earth-based Spirituality/Pagan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eastern Orthodox Christian</masterLabel>
+            <translation><!-- Eastern Orthodox Christian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Episcopal / Anglican</masterLabel>
+            <translation><!-- Episcopal / Anglican --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evangelical Christian</masterLabel>
+            <translation><!-- Evangelical Christian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hindu</masterLabel>
+            <translation><!-- Hindu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interfaith</masterLabel>
+            <translation><!-- Interfaith --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jain</masterLabel>
+            <translation><!-- Jain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jehovah's Witness</masterLabel>
+            <translation><!-- Jehovah&apos;s Witness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jewish</masterLabel>
+            <translation><!-- Jewish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latter Day Saints (Mormon)</masterLabel>
+            <translation><!-- Latter Day Saints (Mormon) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liberal/Progressive Christian</masterLabel>
+            <translation><!-- Liberal/Progressive Christian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lutheran</masterLabel>
+            <translation><!-- Lutheran --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Methodist</masterLabel>
+            <translation><!-- Methodist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Preference</masterLabel>
+            <translation><!-- Multiple Preference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muslim</masterLabel>
+            <translation><!-- Muslim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native American Spirituality</masterLabel>
+            <translation><!-- Native American Spirituality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Preference</masterLabel>
+            <translation><!-- No Preference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pentecostal/Holiness Christian</masterLabel>
+            <translation><!-- Pentecostal/Holiness Christian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presbyterian</masterLabel>
+            <translation><!-- Presbyterian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roman Catholic</masterLabel>
+            <translation><!-- Roman Catholic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seventh Day Adventist</masterLabel>
+            <translation><!-- Seventh Day Adventist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shinto</masterLabel>
+            <translation><!-- Shinto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sikh</masterLabel>
+            <translation><!-- Sikh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Society of Friends/Quakers</masterLabel>
+            <translation><!-- Society of Friends/Quakers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spiritual with no preference</masterLabel>
+            <translation><!-- Spiritual with no preference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taoist</masterLabel>
+            <translation><!-- Taoist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traditional African Religions</masterLabel>
+            <translation><!-- Traditional African Religions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unitarian Universalist</masterLabel>
+            <translation><!-- Unitarian Universalist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Church of Christ</masterLabel>
+            <translation><!-- United Church of Christ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zoroastrian</masterLabel>
+            <translation><!-- Zoroastrian --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Gift Level --></label>
+        <name>NU_ADV_Leadership_Annual_Giving_Picklist__c</name>
+        <picklistValues>
+            <masterLabel>Leadership Gift</masterLabel>
+            <translation><!-- Leadership Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Gift</masterLabel>
+            <translation><!-- Major Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned Gift</masterLabel>
+            <translation><!-- Planned Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Principal Gift</masterLabel>
+            <translation><!-- Principal Gift --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

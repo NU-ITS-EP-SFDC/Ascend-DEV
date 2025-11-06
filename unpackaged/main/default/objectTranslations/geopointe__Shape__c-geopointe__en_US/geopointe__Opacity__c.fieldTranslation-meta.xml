@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The opacity value for this shape. Valid ranges are 0.00 - 1.00 --></help>
+        <label><!-- Opacity --></label>
+        <name>geopointe__Opacity__c</name>
+    </CustomFieldTranslation>

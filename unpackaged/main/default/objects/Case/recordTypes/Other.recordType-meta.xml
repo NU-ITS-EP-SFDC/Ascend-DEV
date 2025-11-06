@@ -1,0 +1,1624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other</fullName>
+    <active>true</active>
+    <businessProcess>Other</businessProcess>
+    <description>Used to request guidance on functionality, all other requests that don’t fit into other case types</description>
+    <label>Other</label>
+    <picklistValues>
+        <picklist>Change_Type__c</picklist>
+        <values>
+            <fullName>Bug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enhancement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Deployment__c</picklist>
+        <values>
+            <fullName>Change Set</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Address_Type__c</picklist>
+        <values>
+            <fullName>Alternate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seasonal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Assigned_Department__c</picklist>
+        <values>
+            <fullName>Advancement Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Strategy and Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mills Data Team</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Assignment_Type__c</picklist>
+        <values>
+            <fullName>Leadership Giving Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Giving Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary Relationship Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary Relationship Manager</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Bio_Request_Type__c</picklist>
+        <values>
+            <fullName>Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constituent Type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deceased</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Name Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Dashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Dashboard Change or Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Report Change or Update</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_College_Restriction__c</picklist>
+        <values>
+            <fullName>Open to all graduates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open to all students</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open to all undergraduates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted to Bouvé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted to CAMD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted to COE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted to COS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted to CPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted to CSSH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted to DMSB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted to Khoury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted to NUSL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Constituent_Type__c</picklist>
+        <values>
+            <fullName>Alumni</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alumni %28Non-Degreed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faculty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Faculty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent of Current UGD Student</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Current_Stage_of_Readiness__c</picklist>
+        <values>
+            <fullName>Cultivation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disqualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long-term Disqualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short-term Disqualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stewardship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stewardship - Permanent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Disqualification_Reason__c</picklist>
+        <values>
+            <fullName>Financially Unable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Closeness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not the right time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Document_Format__c</picklist>
+        <values>
+            <fullName>DocuSign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printed and Mailed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Donor_Relations_Request_Type__c</picklist>
+        <values>
+            <fullName>Ad Hoc Fund Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beneficiary for Meeting%2FEvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Designation or Stewardship Data Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift for a Donor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Stewardship %26 Engagement Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price for a Naming Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Correspondence</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Email_Type__c</picklist>
+        <values>
+            <fullName>Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Established_by_mult_households__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Fund_Name_Change__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Fund_Type__c</picklist>
+        <values>
+            <fullName>Current Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endowed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Fund_Use__c</picklist>
+        <values>
+            <fullName>Club Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-op fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dean or Department Discretionary Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graduate fellowship fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professorship fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarship fund</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Funding_via__c</picklist>
+        <values>
+            <fullName>Outright gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pledge</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Gifts_to_Expendable__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Major_Restriction__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Merit_Based__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Name_Type__c</picklist>
+        <values>
+            <fullName>Former</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nickname</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phonetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Need_Based__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_New_Constituent_Donor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_New_Org_Donor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_New_Stage_of_Readiness__c</picklist>
+        <values>
+            <fullName>Cultivation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long-term Disqualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short-term Disqualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stewardship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stewardship - Permanent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Opportunity_Type__c</picklist>
+        <values>
+            <fullName>Bequest Intention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrevocable Pledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadership Annual Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payroll</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Org_Type__c</picklist>
+        <values>
+            <fullName>Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foundation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fund Raising Consortia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regulatory Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religious Organization</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Payment_Month__c</picklist>
+        <values>
+            <fullName>Apr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jun</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>May</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Reminders Necessary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nov</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sep</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Payment_Schedule__c</picklist>
+        <values>
+            <fullName>2 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 years</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Phone_Type__c</picklist>
+        <values>
+            <fullName>Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Pledge_Length_Time__c</picklist>
+        <values>
+            <fullName>Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Years</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Prof_Holder_Selected_By__c</picklist>
+        <values>
+            <fullName>Bouve Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMD Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COE Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COS Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPS Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSSH Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMSB Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Khoury Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUSL Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provost</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Prospect_Management_Project_Task__c</picklist>
+        <values>
+            <fullName>Portfolio Prospecting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Realized_Gift_Received__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Reason__c</picklist>
+        <values>
+            <fullName>Event Attendee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Donor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Engagement Relationship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Subsidiary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent of Current Student</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Reminder_Schedule__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bi-Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bi-Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bi-Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irregular</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Reminders Necessary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One-Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Request_Type__c</picklist>
+        <values>
+            <fullName>New Dashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect identification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Dashboard Change or Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Report Change or Update</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Research_Product__c</picklist>
+        <values>
+            <fullName>Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecting Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wealth Screening Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Research_Rating__c</picklist>
+        <values>
+            <fullName>1%2E %2410 million %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%2E Less than %242%2C500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E %241%2C000%2C000-9%2C999%2C999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E %24500%2C000-999%2C999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E %24250%2C000-499%2C999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E %24100%2C000-249%2C999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E %2450%2C000-99%2C999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E %2425%2C000-49%2C999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E %2410%2C000-24%2C999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%2E %242%2C500-9%2C999</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_SOI_Needed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Scholarship_Recipient_Chosen_By__c</picklist>
+        <values>
+            <fullName>Bouve Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMD Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COE Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COS Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPS Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSSH Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMSB Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Khoury Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUSL Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Financial Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Social_Media_Type__c</picklist>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>URL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Spending_Discretion__c</picklist>
+        <values>
+            <fullName>Bouve Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMD Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COE%2C Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COS Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPS Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSSH Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMSB Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Khoury Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUSL Dean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The fund is to support a specific department</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Tender_Type__c</picklist>
+        <values>
+            <fullName>Bond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift-in-Kind</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Feed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Securities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_ADV_Tribute_Type__c</picklist>
+        <values>
+            <fullName>In Honor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Memory</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NU_Designation_Stewardship_Request_Type__c</picklist>
+        <values>
+            <fullName>Adding Stewardee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changing Communication Method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changing Reporting Type or Level</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nu_ADV_Fund_Request_Type__c</picklist>
+        <values>
+            <fullName>Detail Code Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fund Clean-Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fund Term Revision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift-in-Kind or Deed of Gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Named Space Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New MOU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Statement of Intent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Realized Planned Gift</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nu_ADV_Report_Type__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Object__c</picklist>
+        <values>
+            <fullName>Activity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Affiliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awards%2FHonors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campaigns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constituent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constituent Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Degree%2FMajor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Designation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Giving Society</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Involvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knowtify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Naming Opportunities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nomination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relationship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salutation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Indicator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Task</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watchlist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iWave</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Constituent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ascend Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Urgent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Scope_Rank__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Requestor_s_Department__c</picklist>
+        <values>
+            <fullName>Adv Marketing %26 Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advancement Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advancement Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alumni Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annual Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Board of Trustees Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporations %26 Foundations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Strategy %26 Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donor Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family Philanthropy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fund Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interdisciplinary Initiatives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadership Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVP%E2%80%99s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signature University Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Leadership Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VP%E2%80%99s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%E2%80%99s Entrepreneurship Program</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Add%2FRemove Soft Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baseline Rating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%26F Profile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Outright Gift to Pledge Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Pledge Payment to Outright Gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Designation change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluation update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fund Term Revision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Assignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Fund Terms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New MOU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Pledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Pledge Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Statement of Intent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philanthropic Activity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pledge Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preliminary Rating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reassignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request a Gift in Kind%2FDeed of Gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request a Realized Planned Gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unassignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong donor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

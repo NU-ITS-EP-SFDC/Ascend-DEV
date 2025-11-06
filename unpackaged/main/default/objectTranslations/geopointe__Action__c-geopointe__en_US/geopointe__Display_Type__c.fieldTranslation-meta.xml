@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Actions appear in the record detail bubble on the Map page in the following order: Inline, Buttons, then Links. 
+
+Buttons are typically used for the most commonly used actions.
+
+Inline actions will display a specified URL within an iframe. --></help>
+        <label><!-- Display Type --></label>
+        <name>geopointe__Display_Type__c</name>
+        <picklistValues>
+            <masterLabel>Button</masterLabel>
+            <translation><!-- Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inline</masterLabel>
+            <translation><!-- Inline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Link</masterLabel>
+            <translation><!-- Link --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

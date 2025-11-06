@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>iWave_PROscores__Screening_Project_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Screening Project Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>pending</fullName>
+                <default>true</default>
+                <label>pending</label>
+            </value>
+            <value>
+                <fullName>processing</fullName>
+                <default>false</default>
+                <label>processing</label>
+            </value>
+            <value>
+                <fullName>submitted</fullName>
+                <default>false</default>
+                <label>submitted</label>
+            </value>
+            <value>
+                <fullName>validated</fullName>
+                <default>false</default>
+                <label>validated</label>
+            </value>
+            <value>
+                <fullName>scores ready</fullName>
+                <default>false</default>
+                <label>scores ready</label>
+            </value>
+            <value>
+                <fullName>scores processing</fullName>
+                <default>false</default>
+                <label>scores processing</label>
+            </value>
+            <value>
+                <fullName>completed</fullName>
+                <default>false</default>
+                <label>completed</label>
+            </value>
+            <value>
+                <fullName>failed</fullName>
+                <default>false</default>
+                <label>failed</label>
+            </value>
+            <value>
+                <fullName>canceled</fullName>
+                <default>false</default>
+                <label>canceled</label>
+            </value>
+            <value>
+                <fullName>queued</fullName>
+                <default>false</default>
+                <label>queued</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

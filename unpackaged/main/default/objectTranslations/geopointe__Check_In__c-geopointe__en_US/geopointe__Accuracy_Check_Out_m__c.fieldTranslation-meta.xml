@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Approximate accuracy of the Check Out position in meters. This is the highest margin of error reported by the device, results are typically much more accurate than value reported. --></help>
+        <label><!-- Accuracy - Check Out (m) --></label>
+        <name>geopointe__Accuracy_Check_Out_m__c</name>
+    </CustomFieldTranslation>

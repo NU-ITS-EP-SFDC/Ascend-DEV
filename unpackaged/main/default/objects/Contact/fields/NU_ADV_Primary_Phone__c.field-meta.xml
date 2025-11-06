@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NU_ADV_Primary_Phone__c</fullName>
+    <description>Value of the corresponding Primary Phone Type</description>
+    <externalId>false</externalId>
+    <formula>If (
+ISBLANK(TEXT(ucinn_ascendv2__Preferred_Phone_Type__c)),
+'',
+CASE (
+ucinn_ascendv2__Preferred_Phone_Type__c,
+'Mobile', MobilePhone,
+'Home', HomePhone,
+'Assistant', AssistantPhone,
+'Other', OtherPhone,
+''
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Primary Phone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

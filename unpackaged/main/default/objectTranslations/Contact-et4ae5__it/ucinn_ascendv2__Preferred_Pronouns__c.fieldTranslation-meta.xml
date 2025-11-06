@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Preferred Pronouns --></label>
+        <name>ucinn_ascendv2__Preferred_Pronouns__c</name>
+        <picklistValues>
+            <masterLabel>Ae/Aer/Aers</masterLabel>
+            <translation><!-- Ae/Aer/Aers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E/Em/Eirs</masterLabel>
+            <translation><!-- E/Em/Eirs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ey/Em/Eirs</masterLabel>
+            <translation><!-- Ey/Em/Eirs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fae/Faer/Faers</masterLabel>
+            <translation><!-- Fae/Faer/Faers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>He/Him/His</masterLabel>
+            <translation><!-- He/Him/His --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per/Per/Pers</masterLabel>
+            <translation><!-- Per/Per/Pers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prefer Not to Disclose</masterLabel>
+            <translation><!-- Prefer Not to Disclose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>She/Her/Hers</masterLabel>
+            <translation><!-- She/Her/Hers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>They/Them/Theirs</masterLabel>
+            <translation><!-- They/Them/Theirs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ve/Ver/Vis</masterLabel>
+            <translation><!-- Ve/Ver/Vis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Xe/Xem/Xyr</masterLabel>
+            <translation><!-- Xe/Xem/Xyr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ze/Hir/Hirs</masterLabel>
+            <translation><!-- Ze/Hir/Hirs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zie/Hir/Hirs</masterLabel>
+            <translation><!-- Zie/Hir/Hirs --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

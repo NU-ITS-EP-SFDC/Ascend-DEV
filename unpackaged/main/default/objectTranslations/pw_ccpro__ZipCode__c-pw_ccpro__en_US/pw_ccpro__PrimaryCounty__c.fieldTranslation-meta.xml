@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The primary county this ZIP Code resides within --></help>
+        <label><!-- Primary County --></label>
+        <name>pw_ccpro__PrimaryCounty__c</name>
+    </CustomFieldTranslation>

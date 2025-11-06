@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Interim</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interims</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Athletics Interface Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Interim To Interim Dedupe --></label>
+            <section>Interim To Interim Dedupe</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Bank of America Interface Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Interim To Interim Dedupe --></label>
+            <section>Interim To Interim Dedupe</section>
+        </sections>
+        <sections>
+            <label><!-- SmartyStreets Information --></label>
+            <section>SmartyStreets Information</section>
+        </sections>
+        <sections>
+            <label><!-- Verification Information --></label>
+            <section>Verification Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Bio Information</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Name --></label>
+            <section>Name</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Event Layout</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Name --></label>
+            <section>Name</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>General Interface Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Constituent Information --></label>
+            <section>Constituent Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Interim To Interim Dedupe --></label>
+            <section>Interim To Interim Dedupe</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label><!-- Related Interim Information --></label>
+            <section>Related Interim Information</section>
+        </sections>
+        <sections>
+            <label><!-- SmartyStreets Information --></label>
+            <section>SmartyStreets Information</section>
+        </sections>
+        <sections>
+            <label><!-- Verification Information --></label>
+            <section>Verification Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Hospital Interface Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Employment Information --></label>
+            <section>Employment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Interim To Interim Dedupe --></label>
+            <section>Interim To Interim Dedupe</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Information --></label>
+            <section>Personal Information</section>
+        </sections>
+        <sections>
+            <label><!-- SO Information --></label>
+            <section>SO Information</section>
+        </sections>
+        <sections>
+            <label><!-- SmartyStreets Information --></label>
+            <section>SmartyStreets Information</section>
+        </sections>
+        <sections>
+            <label><!-- Verification Information --></label>
+            <section>Verification Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Kindsight Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Affiliation Information --></label>
+            <section>Affiliation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Email Information --></label>
+            <section>Email Information</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Information --></label>
+            <section>Personal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Information --></label>
+            <section>Phone Information</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Information --></label>
+            <section>Relationship Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Login Request Layout</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Name --></label>
+            <section>Name</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OOTB Constituent Processing Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Email Information --></label>
+            <section>Email Information</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Information --></label>
+            <section>Personal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Information --></label>
+            <section>Phone Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Online Donation Interface Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Interim To Interim Dedupe --></label>
+            <section>Interim To Interim Dedupe</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Information --></label>
+            <section>Relationship Information</section>
+        </sections>
+        <sections>
+            <label><!-- SmartyStreets Information --></label>
+            <section>SmartyStreets Information</section>
+        </sections>
+        <sections>
+            <label><!-- Verification Information --></label>
+            <section>Verification Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Organization Interface Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Interim To Interim Dedupe --></label>
+            <section>Interim To Interim Dedupe</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label><!-- SmartyStreets Information --></label>
+            <section>SmartyStreets Information</section>
+        </sections>
+        <sections>
+            <label><!-- Verification Information --></label>
+            <section>Verification Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ruffalo Cody Interface Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Email Information --></label>
+            <section>Email Information</section>
+        </sections>
+        <sections>
+            <label><!-- Employer Information --></label>
+            <section>Employer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Interim To Interim Dedupe --></label>
+            <section>Interim To Interim Dedupe</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Information --></label>
+            <section>Phone Information</section>
+        </sections>
+        <sections>
+            <label><!-- SmartyStreets Information --></label>
+            <section>SmartyStreets Information</section>
+        </sections>
+        <sections>
+            <label><!-- Verification Information --></label>
+            <section>Verification Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SIS Interface Layout</layout>
+        <sections>
+            <label><!-- Academic Information --></label>
+            <section>Academic Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Email Information --></label>
+            <section>Email Information</section>
+        </sections>
+        <sections>
+            <label><!-- Interim To Interim Dedupe --></label>
+            <section>Interim To Interim Dedupe</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Information --></label>
+            <section>Personal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Information --></label>
+            <section>Phone Information</section>
+        </sections>
+        <sections>
+            <label><!-- SmartyStreets Information --></label>
+            <section>SmartyStreets Information</section>
+        </sections>
+        <sections>
+            <label><!-- Verification Information --></label>
+            <section>Verification Information</section>
+        </sections>
+        <sections>
+            <label><!-- Work Information --></label>
+            <section>Work Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>School Radio Interface Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Interim To Interim --></label>
+            <section>Interim To Interim</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label><!-- SmartyStreets Information --></label>
+            <section>SmartyStreets Information</section>
+        </sections>
+        <sections>
+            <label><!-- Verification Information --></label>
+            <section>Verification Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Special Request Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Email Information --></label>
+            <section>Email Information</section>
+        </sections>
+        <sections>
+            <label><!-- Interim To Interim Dedupe --></label>
+            <section>Interim To Interim Dedupe</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Information --></label>
+            <section>Phone Information</section>
+        </sections>
+        <sections>
+            <label><!-- SmartyStreets Information --></label>
+            <section>SmartyStreets Information</section>
+        </sections>
+        <sections>
+            <label><!-- Verification Information --></label>
+            <section>Verification Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Workday Interface Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Employment Information --></label>
+            <section>Employment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Interim To Interim Dedupe --></label>
+            <section>Interim To Interim Dedupe</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Information Section --></label>
+            <section>Personal Information Section</section>
+        </sections>
+        <sections>
+            <label><!-- SO Information --></label>
+            <section>SO Information</section>
+        </sections>
+        <sections>
+            <label><!-- SmartyStreets Information --></label>
+            <section>SmartyStreets Information</section>
+        </sections>
+        <sections>
+            <label><!-- Verification Information --></label>
+            <section>Verification Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Portal User --></label>
+        <name>Create_Portal_User</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Bio Information --></label>
+        <name>Bio_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Bio Information Self Report --></label>
+        <name>Bio_Information_Self_Report</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Interims originating from Events. --></description>
+        <label><!-- Event --></label>
+        <name>Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Hiring Manager Request --></label>
+        <name>Hiring_Manager_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Login Request --></label>
+        <name>Login_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Interims originating from Athletics / Advantage CRM. --></description>
+        <label><!-- Advantage Interface --></label>
+        <name>ucinn_ascendv2__Advantage_Interface</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Interims originating from Bank of America. --></description>
+        <label><!-- Bank Of America Interface --></label>
+        <name>ucinn_ascendv2__Bank_Of_America_Interface</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Interims originating from the Hospital/Healthsci interface. --></description>
+        <label><!-- Hospital Interface --></label>
+        <name>ucinn_ascendv2__Hospital_Interface</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Interims originating from Kindsight. --></description>
+        <label><!-- Kindsight Interface --></label>
+        <name>ucinn_ascendv2__Kindsight_Interface</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Interims originating from Online Donations. --></description>
+        <label><!-- Online Donation Interface --></label>
+        <name>ucinn_ascendv2__Online_Donation_Interface</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type for tracking Organization Interims. --></description>
+        <label><!-- Organization Interface --></label>
+        <name>ucinn_ascendv2__Organization_Interface</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Interims originating from the Ruffalo Cody Interface. --></description>
+        <label><!-- Ruffalo Cody Interface --></label>
+        <name>ucinn_ascendv2__Ruffalo_Cody_Interface</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Interims originating from the Student Information System interface. --></description>
+        <label><!-- SIS Interface --></label>
+        <name>ucinn_ascendv2__SIS_Interface</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Interims originating from the School Radio interface. --></description>
+        <label><!-- School Radio Interface --></label>
+        <name>ucinn_ascendv2__School_Radio_Interface</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Interims originating from a Special Request Interface. --></description>
+        <label><!-- Special Request Interface --></label>
+        <name>ucinn_ascendv2__Special_Request_Interface</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Interims originating from the Workday Interface. --></description>
+        <label><!-- Workday Interface --></label>
+        <name>ucinn_ascendv2__Workday_Interface</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Comments to supervisor is required when status is set to supervisor review. --></errorMessage>
+        <name>ucinn_ascendv2__Require_Supervisor_Comments</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Briefing Component</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Briefing Components</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Account Briefing Layout</layout>
+        <sections>
+            <label><!-- Audience --></label>
+            <section>Audience</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Briefing Layout V1</layout>
+        <sections>
+            <label><!-- Audience --></label>
+            <section>Audience</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Briefing Layout</layout>
+        <sections>
+            <label><!-- Audience --></label>
+            <section>Audience</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Briefing Layout V1</layout>
+        <sections>
+            <label><!-- Audience --></label>
+            <section>Audience</section>
+        </sections>
+        <sections>
+            <label><!-- Briefing Paragraph --></label>
+            <section>Briefing Paragraph</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Briefing Component Name</nameFieldLabel>
+    <recordTypes>
+        <description><!-- A briefing for a household or corporation/organization. --></description>
+        <label><!-- Account Briefing --></label>
+        <name>ucinn_ascendv2__Account_Briefing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A briefing for a constituent. --></description>
+        <label><!-- Contact Briefing --></label>
+        <name>ucinn_ascendv2__Contact_Briefing</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Do not change the Name field. Upon creation, the Name field should read [Default Name]. --></errorMessage>
+        <name>Name_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The audience field can only be edited by system administrators. --></errorMessage>
+        <name>ucinn_ascendv2__Prevent_Editing_Audience_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only users who are in the unit of the audience or system administrators can edit the record. --></errorMessage>
+        <name>ucinn_ascendv2__User_Unit_Must_Equal_Audience_Unit</name>
+    </validationRules>
+</CustomObjectTranslation>

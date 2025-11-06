@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NU_ADV_Pledge_Duration__c</fullName>
+    <description>[8/22/2024]
+An integer field depicting how many FULL years it takes to get from the pledge's start date to the pledge's end date.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    /** If the YEARS are Equal, then the answer is always ZERO
+    **  ELSE if the MONTHS AND DAYS are Equal....the answer is ENDYEAR - STARTYEAR
+    **  ELSE DAYOFYEAR(EndDate) &gt; DAYOFYEAR(StartDate)....the answer is ENDYEAR - STARTYEAR + 1
+    **  ELSE ... answer is  ENDYEAR - STARTYEAR - 1
+    **/
+    OR(
+        YEAR(ucinn_ascendv2__Start_Date__c) = YEAR(ucinn_ascendv2__End_Date__c ),
+        AND(
+            MONTH(ucinn_ascendv2__Start_Date__c) = MONTH(ucinn_ascendv2__End_Date__c ), 
+            DAY(ucinn_ascendv2__Start_Date__c) = DAY(ucinn_ascendv2__End_Date__c)
+        )
+    ),
+    YEAR(ucinn_ascendv2__End_Date__c) - YEAR(ucinn_ascendv2__Start_Date__c ),
+    IF(
+        DAYOFYEAR(ucinn_ascendv2__End_Date__c) &gt; DAYOFYEAR(ucinn_ascendv2__Start_Date__c),
+        YEAR(ucinn_ascendv2__End_Date__c) - YEAR(ucinn_ascendv2__Start_Date__c ) + 1,
+        YEAR(ucinn_ascendv2__End_Date__c) - YEAR(ucinn_ascendv2__Start_Date__c ) -1
+    )        
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>How many years will it take to pay off the pledge?</inlineHelpText>
+    <label>NU ADV Pledge Duration</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

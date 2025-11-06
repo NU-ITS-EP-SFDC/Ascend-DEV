@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Constituent Role --></label>
+        <name>ucinn_ascendv2__Constituent_Role__c</name>
+        <picklistValues>
+            <masterLabel>Advancement Team Member</masterLabel>
+            <translation><!-- Advancement Team Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisor</masterLabel>
+            <translation><!-- Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisory Board Chair</masterLabel>
+            <translation><!-- Advisory Board Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisory Board Member</masterLabel>
+            <translation><!-- Advisory Board Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alumni Collaborations Chair</masterLabel>
+            <translation><!-- Alumni Collaborations Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alumni Programming Chair</masterLabel>
+            <translation><!-- Alumni Programming Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alumni Relations Chair</masterLabel>
+            <translation><!-- Alumni Relations Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ambassador</masterLabel>
+            <translation><!-- Ambassador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Applicant</masterLabel>
+            <translation><!-- Applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate</masterLabel>
+            <translation><!-- Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B Partner</masterLabel>
+            <translation><!-- B2B Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benefactor</masterLabel>
+            <translation><!-- Benefactor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board</masterLabel>
+            <translation><!-- Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campus Relations Chair</masterLabel>
+            <translation><!-- Campus Relations Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chair</masterLabel>
+            <translation><!-- Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Civic Relationship</masterLabel>
+            <translation><!-- Civic Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Director</masterLabel>
+            <translation><!-- Co-Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-President</masterLabel>
+            <translation><!-- Co-President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Vice President</masterLabel>
+            <translation><!-- Co-Vice President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-chair</masterLabel>
+            <translation><!-- Co-chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-op Mentor</masterLabel>
+            <translation><!-- Co-op Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-op Partner</masterLabel>
+            <translation><!-- Co-op Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-op Placement</masterLabel>
+            <translation><!-- Co-op Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colleague</masterLabel>
+            <translation><!-- Colleague --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Committee Member</masterLabel>
+            <translation><!-- Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Coordinator</masterLabel>
+            <translation><!-- Community Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Service Chair</masterLabel>
+            <translation><!-- Community Service Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Creator</masterLabel>
+            <translation><!-- Content Creator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coordinator</masterLabel>
+            <translation><!-- Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Relationship</masterLabel>
+            <translation><!-- Corporate Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporator</masterLabel>
+            <translation><!-- Corporator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporator Emeriti</masterLabel>
+            <translation><!-- Corporator Emeriti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegate</masterLabel>
+            <translation><!-- Delegate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director</masterLabel>
+            <translation><!-- Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diversity, Equity, and Inclusion Leader</masterLabel>
+            <translation><!-- Diversity, Equity, and Inclusion Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donor</masterLabel>
+            <translation><!-- Donor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emerita</masterLabel>
+            <translation><!-- Emerita --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emeritus</masterLabel>
+            <translation><!-- Emeritus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events Co-chair</masterLabel>
+            <translation><!-- Events Co-chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ex Officio</masterLabel>
+            <translation><!-- Ex Officio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faculty</masterLabel>
+            <translation><!-- Faculty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faculty Advisor</masterLabel>
+            <translation><!-- Faculty Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fellow</masterLabel>
+            <translation><!-- Fellow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former Administrative Board</masterLabel>
+            <translation><!-- Former Administrative Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former Member</masterLabel>
+            <translation><!-- Former Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Founding Member</masterLabel>
+            <translation><!-- Founding Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fundraising Chair</masterLabel>
+            <translation><!-- Fundraising Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fundraising Co-chair</masterLabel>
+            <translation><!-- Fundraising Co-chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Relationship</masterLabel>
+            <translation><!-- Government Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Governor</masterLabel>
+            <translation><!-- Governor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate Student</masterLabel>
+            <translation><!-- Graduate Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate Student Applicant</masterLabel>
+            <translation><!-- Graduate Student Applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Honorary Trustee</masterLabel>
+            <translation><!-- Honorary Trustee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Image/Social Media Coordinator</masterLabel>
+            <translation><!-- Image/Social Media Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest</masterLabel>
+            <translation><!-- Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Relations Chair</masterLabel>
+            <translation><!-- Internal Relations Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Judge</masterLabel>
+            <translation><!-- Judge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leader</masterLabel>
+            <translation><!-- Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leadership Team</masterLabel>
+            <translation><!-- Leadership Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lifetime Member</masterLabel>
+            <translation><!-- Lifetime Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lifetime Trustee Emeritus</masterLabel>
+            <translation><!-- Lifetime Trustee Emeritus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MVP Season Ticket Holder</masterLabel>
+            <translation><!-- MVP Season Ticket Holder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management Committee Member</masterLabel>
+            <translation><!-- Management Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing &amp; Communication Co-chair</masterLabel>
+            <translation><!-- Marketing &amp; Communication Co-chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing &amp; Social Media Co-chair</masterLabel>
+            <translation><!-- Marketing &amp; Social Media Co-chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Associate</masterLabel>
+            <translation><!-- Marketing Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Chair</masterLabel>
+            <translation><!-- Marketing Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Co-chair</masterLabel>
+            <translation><!-- Marketing Co-chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Designer</masterLabel>
+            <translation><!-- Marketing Designer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketplace Vendor</masterLabel>
+            <translation><!-- Marketplace Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mentee</masterLabel>
+            <translation><!-- Mentee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mentor</masterLabel>
+            <translation><!-- Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nominee</masterLabel>
+            <translation><!-- Nominee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overseer</masterLabel>
+            <translation><!-- Overseer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overseer Emeritus</masterLabel>
+            <translation><!-- Overseer Emeritus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panelist</masterLabel>
+            <translation><!-- Panelist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participant</masterLabel>
+            <translation><!-- Participant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership Coordinator</masterLabel>
+            <translation><!-- Partnership Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postdoc</masterLabel>
+            <translation><!-- Postdoc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>President</masterLabel>
+            <translation><!-- President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program Manager</masterLabel>
+            <translation><!-- Program Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotion Chair</masterLabel>
+            <translation><!-- Promotion Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduling/Wellness Coordinator</masterLabel>
+            <translation><!-- Scheduling/Wellness Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Season Ticket Holder</masterLabel>
+            <translation><!-- Season Ticket Holder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secretary</masterLabel>
+            <translation><!-- Secretary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shortlist</masterLabel>
+            <translation><!-- Shortlist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Co-chair</masterLabel>
+            <translation><!-- Social Media Co-chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker</masterLabel>
+            <translation><!-- Speaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff</masterLabel>
+            <translation><!-- Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summit Project Manager</masterLabel>
+            <translation><!-- Summit Project Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sustaining Member</masterLabel>
+            <translation><!-- Sustaining Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THS Spouse</masterLabel>
+            <translation><!-- THS Spouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TNF Ambassador</masterLabel>
+            <translation><!-- TNF Ambassador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasurer</masterLabel>
+            <translation><!-- Treasurer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee</masterLabel>
+            <translation><!-- Trustee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor</masterLabel>
+            <translation><!-- Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice Chair</masterLabel>
+            <translation><!-- Vice Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President</masterLabel>
+            <translation><!-- Vice President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volunteer</masterLabel>
+            <translation><!-- Volunteer --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

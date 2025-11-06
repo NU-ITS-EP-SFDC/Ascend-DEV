@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The maximimum amount by which the device exceeded the speed limit --></help>
+        <label><!-- Max Speed Limit Overage (mph) --></label>
+        <name>geopointe__Max_Speed_Overage_MPH__c</name>
+    </CustomFieldTranslation>

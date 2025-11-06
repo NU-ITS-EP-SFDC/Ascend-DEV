@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The date that the CGA was terminated and remainder interest (if not exhausted) passed to NU --></help>
+        <label><!-- CGA End Date --></label>
+        <name>NU_ADV_CGA_End_Date__c</name>
+    </CustomFieldTranslation>

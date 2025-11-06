@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Semi Colon Separated List of School Degrees area that the Constituent can be a mentor for --></help>
+        <label><!-- Mentorship Degrees --></label>
+        <name>ucinn_portal_Mentorship_Degrees__c</name>
+    </CustomFieldTranslation>

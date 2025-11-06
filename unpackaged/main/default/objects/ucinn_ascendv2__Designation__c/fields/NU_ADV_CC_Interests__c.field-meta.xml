@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NU_ADV_CC_Interests__c</fullName>
+    <label>Interests</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>academic-enrichment</fullName>
+                <default>false</default>
+                <label>Academic Enrichment</label>
+            </value>
+            <value>
+                <fullName>advocacy</fullName>
+                <default>false</default>
+                <label>Advocacy</label>
+            </value>
+            <value>
+                <fullName>area-of-greatest-need</fullName>
+                <default>false</default>
+                <label>Area of Greatest Need</label>
+            </value>
+            <value>
+                <fullName>athletics-club-sports-and-recreation</fullName>
+                <default>false</default>
+                <label>Athletics – Club Sports &amp; Recreation</label>
+            </value>
+            <value>
+                <fullName>athletics-varsity</fullName>
+                <default>false</default>
+                <label>Athletics – Varsity</label>
+            </value>
+            <value>
+                <fullName>business</fullName>
+                <default>false</default>
+                <label>Business</label>
+            </value>
+            <value>
+                <fullName>community-impact</fullName>
+                <default>false</default>
+                <label>Community Impact</label>
+            </value>
+            <value>
+                <fullName>competition-and-skilled-based</fullName>
+                <default>false</default>
+                <label>Competition and Skilled Based</label>
+            </value>
+            <value>
+                <fullName>creative-and-visual-arts</fullName>
+                <default>false</default>
+                <label>Creative and Visual Arts</label>
+            </value>
+            <value>
+                <fullName>cultural</fullName>
+                <default>false</default>
+                <label>Cultural</label>
+            </value>
+            <value>
+                <fullName>diversity-equity-inclusion</fullName>
+                <default>false</default>
+                <label>Diversity, Equity, and Inclusion</label>
+            </value>
+            <value>
+                <fullName>financial-aid-and-scholarship</fullName>
+                <default>false</default>
+                <label>Financial Aid &amp; Scholarship</label>
+            </value>
+            <value>
+                <fullName>fraternity-sorority</fullName>
+                <default>false</default>
+                <label>Fraternity/Sorority</label>
+            </value>
+            <value>
+                <fullName>global-opportunities</fullName>
+                <default>false</default>
+                <label>Global Opportunities</label>
+            </value>
+            <value>
+                <fullName>health-wellness</fullName>
+                <default>false</default>
+                <label>Health &amp; Wellness</label>
+            </value>
+            <value>
+                <fullName>international</fullName>
+                <default>false</default>
+                <label>International</label>
+            </value>
+            <value>
+                <fullName>leadership</fullName>
+                <default>false</default>
+                <label>Leadership</label>
+            </value>
+            <value>
+                <fullName>outdoor-adventure</fullName>
+                <default>false</default>
+                <label>Outdoor Adventure</label>
+            </value>
+            <value>
+                <fullName>performing-arts</fullName>
+                <default>false</default>
+                <label>Performing Arts</label>
+            </value>
+            <value>
+                <fullName>philanthropic-and-community-engagement</fullName>
+                <default>false</default>
+                <label>Philanthropic and Community Engagement</label>
+            </value>
+            <value>
+                <fullName>political-action</fullName>
+                <default>false</default>
+                <label>Political Action</label>
+            </value>
+            <value>
+                <fullName>print-and-broadcast-media</fullName>
+                <default>false</default>
+                <label>Print and Broadcast Media</label>
+            </value>
+            <value>
+                <fullName>religious-and-spiritual</fullName>
+                <default>false</default>
+                <label>Religious and Spiritual</label>
+            </value>
+            <value>
+                <fullName>science-technology</fullName>
+                <default>false</default>
+                <label>Science &amp; Technology</label>
+            </value>
+            <value>
+                <fullName>special-interest</fullName>
+                <default>false</default>
+                <label>Special Interest</label>
+            </value>
+            <value>
+                <fullName>spiritual-life</fullName>
+                <default>false</default>
+                <label>Spiritual Life</label>
+            </value>
+            <value>
+                <fullName>student-organizations</fullName>
+                <default>false</default>
+                <label>Student Organizations</label>
+            </value>
+            <value>
+                <fullName>sustainability-environment</fullName>
+                <default>false</default>
+                <label>Sustainability</label>
+            </value>
+            <value>
+                <fullName>women-at-northeastern</fullName>
+                <default>false</default>
+                <label>Women at Northeastern</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

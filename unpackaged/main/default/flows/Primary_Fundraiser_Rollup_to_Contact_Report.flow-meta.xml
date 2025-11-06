@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Primary_Fundraiser</name>
+        <label>Primary Fundraiser?</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Clear_Contact_Report_Field</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ucinn_ascendv2__Fundraiser_Role__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Primary Fundraiser</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Contact_Report_Field</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Primary Fundraiser Rollup to Contact Report {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Primary Fundraiser Rollup to Contact Report</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Clear_Contact_Report_Field</name>
+        <label>Clear Contact Report Field</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>NU_ADV_Primary_Fundraiser__c</field>
+        </inputAssignments>
+        <inputReference>$Record.ucinn_ascendv2__Contact_Report__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Contact_Report_Field</name>
+        <label>Update Contact Report Field</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>NU_ADV_Primary_Fundraiser__c</field>
+            <value>
+                <elementReference>$Record.ucinn_ascendv2__Fundraiser__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.ucinn_ascendv2__Contact_Report__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Primary_Fundraiser</targetReference>
+        </connector>
+        <filterFormula>ISNEW() &amp;&amp; TEXT({!$Record.ucinn_ascendv2__Fundraiser_Role__c}) = &apos;Primary Fundraiser&apos; ||
+ISCHANGED({!$Record.ucinn_ascendv2__Fundraiser_Role__c}) &amp;&amp; 
+                      (TEXT({!$Record.ucinn_ascendv2__Fundraiser_Role__c}) = &apos;Primary Fundraiser&apos; || 
+                      TEXT({!$Record__Prior.ucinn_ascendv2__Fundraiser_Role__c}) = &apos;Primary Fundraiser&apos;) ||
+ISCHANGED({!$Record.ucinn_ascendv2__Fundraiser__c}) &amp;&amp; TEXT({!$Record.ucinn_ascendv2__Fundraiser_Role__c}) = &apos;Primary Fundraiser&apos;</filterFormula>
+        <object>ucinn_ascendv2__Fundraiser_Contact_Report_Relation__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

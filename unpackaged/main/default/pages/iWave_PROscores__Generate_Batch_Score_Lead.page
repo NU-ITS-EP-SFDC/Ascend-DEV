@@ -1,0 +1,37 @@
+<apex:page standardController="Lead" recordSetVar="passedContacts" extensions="iWave_PROscores.BatchLeadProscoreController" lightningStylesheets="true">
+<apex:stylesheet value="{! URLFOR($Resource.ProScoreCSS) }" />
+<apex:stylesheet value="{! URLFOR($Resource.FontAwesome, '/font-awesome-4.4.0/css/font-awesome.min.css') }" />
+<apex:includeScript value="{! URLFOR($Resource.jQuery) }" />
+
+<script src="../../soap/ajax/37.0/connection.js" type="text/javascript"></script>
+<script src="../../soap/ajax/37.0/apex.js" type="text/javascript"></script>
+<script type = 'text/javascript'>
+    $(document).ready(function() {
+        doActionWithValidatedCredentials(triggerGenerateBatch);
+    });
+
+    function handleTriggerGenerateBatchResponse(request, event, data) {
+        if ($('.message').length > 0) {
+            $('[id$=scoreHeaderBlock]').hide();
+        } else {
+        	$('[id$=scoreHeaderMessage]').html('Calculating Scores. This may take several minutes. You can continue working while the calculations are processed and find the results within the selected contact records when the process is complete.');            
+        }
+	}
+
+</script>
+<apex:form >
+    <apex:pageMessages id="scoreMessages"/>
+<apex:pageBlock id="scoreHeaderBlock">
+      <div align="center">
+      <apex:outputPanel id="scoreHeaderPanel">
+        <strong><div id="scoreHeaderMessage"></div></strong>
+      </apex:outputPanel>
+      </div>
+      <apex:pageBlockButtons location="bottom" id="scoresButtons">
+        <apex:commandButton value="OK" immediate="true" id="okBtn" action="{!returnToUrl}"/>
+      </apex:pageBlockButtons>
+</apex:pageBlock>
+	<c:ProScoreCredentialsModal />
+	<apex:actionFunction action="{! generateBatch }" name="triggerGenerateBatch" immediate="true" oncomplete="handleTriggerGenerateBatchResponse(request, event, data);" rerender="" />
+</apex:form>
+</apex:page>

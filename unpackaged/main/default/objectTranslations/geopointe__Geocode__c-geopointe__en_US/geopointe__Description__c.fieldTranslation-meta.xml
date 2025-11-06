@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This field can be used by customers for any notes needed. This field has no functional significance in the application. --></help>
+        <label><!-- Description --></label>
+        <name>geopointe__Description__c</name>
+    </CustomFieldTranslation>

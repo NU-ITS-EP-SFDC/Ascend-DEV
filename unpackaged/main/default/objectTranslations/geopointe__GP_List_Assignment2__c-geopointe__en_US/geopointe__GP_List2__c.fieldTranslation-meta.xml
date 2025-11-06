@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Geopointe list that the list assignment belongs to. --></help>
+        <label><!-- Geopointe List --></label>
+        <name>geopointe__GP_List2__c</name>
+        <relationshipLabel><!-- Geopointe List Assignment --></relationshipLabel>
+    </CustomFieldTranslation>

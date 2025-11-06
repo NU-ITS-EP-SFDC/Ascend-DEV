@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.ucinn_ascendv2__G_L_Expiration_Date__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Alpha_Sort_Name__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Administered_By__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.ucinn_ascendv2__Designation_Name__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Reporting_Information__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ucinn_ascendv2__Designation__c.ucinn_ascendv2__Override_Status__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Open_to_all_donors__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Designation__c.NU_ADV_Open_for_Gifts__c</field>
+    </columns>
+    <description>Run this report monthly to identify recently closed gifts that are Reportable, Reportable If, Issue, or blank. Then make the necessary changes.</description>
+    <filter>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Designation__c.NU_ADV_Reporting_Information__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Issue,Reportable,Reportable if</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Designation__c.ucinn_ascendv2__G_L_Expiration_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2020</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>6 Cleanup - closed funds</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ucinn_ascendv2__Designation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ucinn_ascendv2__Designation__c.NU_ADV_Reporting_Information__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>ucinn_ascendv2__Designation__c.NU_ADV_Advancement_Set_Up_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

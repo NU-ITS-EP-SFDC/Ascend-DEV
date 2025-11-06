@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The field that the system should order the query by when performing a query using this Data Set. If a value is not specified, the system defaults to sorting by the field you specified as the &quot;Name Field&quot; above. --></help>
+        <label><!-- Order By Field --></label>
+        <name>geopointe__Order_By_Field__c</name>
+    </CustomFieldTranslation>

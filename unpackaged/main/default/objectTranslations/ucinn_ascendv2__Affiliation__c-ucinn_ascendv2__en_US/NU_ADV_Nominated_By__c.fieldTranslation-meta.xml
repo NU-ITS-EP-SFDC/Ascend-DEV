@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Nominated By --></label>
+        <name>NU_ADV_Nominated_By__c</name>
+        <relationshipLabel><!-- Affiliations (Nominated By) --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,1006 @@
+<apex:page controller="ADVQReportController" renderAs="{!chooserender}">
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!details}" var="a" rendered="{!details != null}" >
+            <apex:column styleClass="colDdp">
+                <Loop:processDDP parameters="{!a.params}" />                
+            </apex:column>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    <apex:form id="form">          
+        <apex:outputPanel id="DetailsPanel">
+            <!--<apex:commandButton value="Create Details PDF" action="{!runDetailsPDFReport}"  style="float:right"/>-->
+            <div style="text-align:center;font-size: 20px;font-weight:bold;background-color:#c1eefa ">
+                <apex:outputText value="Q Report Details" /> 
+            </div> 
+            <br/>
+            
+            <!--html table for Prospect List -->
+            <table width="100%" style="border: 1px solid black" cellpadding="3" cellspacing="0">
+                <tr style="background-color:#c1eefa ">
+                    <td colspan="7" style="border:2px solid black">Prospect List</td>
+                </tr> 
+                <tr>	 
+                    <th>Prospect Manager</th> 	 
+                    <th>Deceased</th> 	 
+                    <th>Donor Id</th>
+                    <th>Account Name</th>
+                    <th>Household/Org Donor Id</th>
+                    <th>Household/Org Name</th>
+                    <th>Constituent Type(s)</th>
+                    <th>Stage of Readiness</th>
+                </tr>	
+                <apex:repeat value="{!model.ProspectList}" var="p" >	 
+                    <tr>	 
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__PRM_Formula__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Account__r.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Is_Deceased__c}" /> 
+                            <br/>	 
+                        </td>
+                        	 
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Account__r.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Donor_ID__c}" /> 
+                            <br/>	 
+                        </td>
+                         <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Account__r.ucinn_ascendv2__Primary_Contact__r.Name}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Account__r.ucinn_ascendv2__Donor_ID__c}" /> 
+                            <br/>	 
+                        </td>
+                         <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Account__r.Name}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Account__r.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Primary_Contact_Type__c}" /> 
+                            <br/>	 
+                        </td>	 
+                         <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Stage_of_Readiness_Formula__c}" /> 
+                            <br/>	 
+                        </td>
+                    </tr>	 
+                </apex:repeat>	
+            </table>
+            <br/>
+            
+              <!--html table for Secondary Prospect List -->
+            <table width="100%" style="border: 1px solid black" cellpadding="3" cellspacing="0">
+                <tr style="background-color:#c1eefa ">
+                    <td colspan="7" style="border:2px solid black">Secondary Prospect List</td>
+                </tr> 
+                <tr>	 
+                    <th>Secondary Prospect Manager</th> 	 
+                    <th>Team Role</th>
+                    <th>Prospect Manager</th> 	 
+                    <th>Deceased</th> 	 
+                    <th>Donor Id</th>
+                    <th>Account Name</th>
+                     <th>Household/Org Donor Id</th>
+                    <th>Household/Org Name</th>
+                    <th>Constituent Type(s)</th>                    
+                    <th>Stage of Readiness</th>
+
+                </tr>	
+                <apex:repeat value="{!model.SecondaryProspectList}" var="p" >	 
+                    <tr>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Assigned_Relationship_Mngr_Name_Formula__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Assignment_Type__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__PRM_Formula__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Account__r.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Is_Deceased__c
+}" /> 
+                            <br/>	 
+                        </td>
+                        	 
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Account__r.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Donor_ID__c}" /> 
+                            <br/>	 
+                        </td>
+                         <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Account__r.ucinn_ascendv2__Primary_Contact__r.Name}" /> 
+                            <br/>	 
+                        </td>
+                         <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Account__r.ucinn_ascendv2__Donor_ID__c}" /> 
+                            <br/>	 
+                        </td>
+                         <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Account__r.Name}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Account__r.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" /> 
+                            <br/>	 
+                        </td>	
+                         <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Stage_of_Readiness_Formula__c}" /> 
+                            <br/>	 
+                        </td>
+                    </tr>	 
+                </apex:repeat>	
+            </table>
+            <br/>
+            
+             <!--html table for Personal Visits -->
+            <table width="100%" style="border: 1px solid black" cellspacing="0">
+                <tr style="background-color:#c1eefa ">
+                    <td colspan="13" style="border:2px solid black">Personal visits</td>
+                </tr> 
+                <tr>	
+                    <th>Type</th> 	 
+                    <th>Rev</th> 	 
+                    <th>Purpose</th> 
+                    <th>Assigned</th> 
+                    <th>Prospect Manager</th> 
+                    <th>Account Name</th> 
+                    <th>NU Id</th> 
+                    <th>Constituent Type(s)</th>
+                    <th>Primary Class Year</th> 
+                    <th>Primary Acad Unit</th> 
+                    <th>Date</th> 
+                    <th>Location</th> 
+                    <th>Subject</th> 
+                </tr>	
+                <apex:repeat value="{!model.PersonalVisits}" var="p" >	 
+                    <tr> 
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact_Method__c}" /> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.NU_ADV_Reviewed_by_Prospect_Management__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.NU_ADV_Contact_Purpose_2__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Fundraiser__r.Name}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.ucinn_ascendv2__PRM_No_Trustee_Formula__c}" /> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.Name}" /> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.NU_ADV_NU_ID__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.ucinn_ascendv2__Contact_Type__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.NU_ADV_Primary_Degree_Year__c}"/> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.NU_ADV_Primary_Academic_Unit__c}"/> 
+                            <br/>	 
+                        </td>
+                        <td>	
+                            <apex:outputText value="{0,date,MM/dd/yy}">
+                                <apex:param value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Date__c}" />
+                            </apex:outputText>                          
+                            <br/>	 
+                        </td>	 
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.Location__c}" rendered="!IF(p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact_Method__c==null)"/> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Description__c}" /> 
+                            <br/>	 
+                        </td>
+                    </tr>	 
+                </apex:repeat>	
+            </table>  
+            <br/>
+            
+              <!--html table for Phone Meetings -->
+            <table width="100%" style="border: 1px solid black" cellspacing="0">
+                <tr style="background-color:#c1eefa ">
+                    <td colspan="13" style="border:2px solid black">Phone Meetings</td>
+                </tr> 
+                <tr>	
+                    <th>Type</th> 	 
+                    <th>Rev</th> 	 
+                    <th>Purpose</th> 
+                    <th>Assigned</th> 
+                    <th>Prospect Manager</th> 
+                    <th>Account Name</th> 
+                    <th>NU Id</th> 
+                    <th>Constituent Type(s)</th>
+                    <th>Primary Class Year</th> 
+                    <th>Primary Acad Unit</th> 
+                    <th>Date</th> 
+                    <th>Location</th> 
+                    <th>Subject</th> 
+                </tr>	
+                <apex:repeat value="{!model.PhoneMeetings}" var="p" >	 
+                    <tr> 
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact_Method__c}" /> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.NU_ADV_Reviewed_by_Prospect_Management__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.NU_ADV_Contact_Purpose_2__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Fundraiser__r.Name}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.ucinn_ascendv2__PRM_No_Trustee_Formula__c}" /> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.Name}" /> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.NU_ADV_NU_ID__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.ucinn_ascendv2__Contact_Type__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.NU_ADV_Primary_Degree_Year__c}"/> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.NU_ADV_Primary_Academic_Unit__c}"/> 
+                            <br/>	 
+                        </td>
+                        <td>	
+                            <apex:outputText value="{0,date,MM/dd/yy}">
+                                <apex:param value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Date__c}" />
+                            </apex:outputText>                          
+                            <br/>	 
+                        </td>	 
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.Location__c}" rendered="!IF(p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact_Method__c==null)"/> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Description__c}" /> 
+                            <br/>	 
+                        </td>
+                    </tr>	 
+                </apex:repeat>	
+            </table>  
+            <br/>
+            
+              <!--html table for Video Meetings -->
+            <table width="100%" style="border: 1px solid black" cellspacing="0">
+                <tr style="background-color:#c1eefa ">
+                    <td colspan="13" style="border:2px solid black">Video Meetings</td>
+                </tr> 
+                <tr>	
+                    <th>Type</th> 	 
+                    <th>Rev</th> 	 
+                    <th>Purpose</th> 
+                    <th>Assigned</th> 
+                    <th>Prospect Manager</th> 
+                    <th>Account Name</th> 
+                    <th>NU Id</th> 
+                    <th>Constituent Type(s)</th>
+                    <th>Primary Class Year</th> 
+                    <th>Primary Acad Unit</th> 
+                    <th>Date</th> 
+                    <th>Location</th> 
+                    <th>Subject</th> 
+                </tr>	
+                <apex:repeat value="{!model.videoMeetings}" var="p" >	 
+                    <tr> 
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact_Method__c}" /> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.NU_ADV_Reviewed_by_Prospect_Management__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.NU_ADV_Contact_Purpose_2__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Fundraiser__r.Name}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.ucinn_ascendv2__PRM_No_Trustee_Formula__c}" /> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.Name}" /> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.NU_ADV_NU_ID__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.ucinn_ascendv2__Contact_Type__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.NU_ADV_Primary_Degree_Year__c}"/> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.NU_ADV_Primary_Academic_Unit__c}"/> 
+                            <br/>	 
+                        </td>
+                        <td>	
+                            <apex:outputText value="{0,date,MM/dd/yy}">
+                                <apex:param value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Date__c}" />
+                            </apex:outputText>                          
+                            <br/>	 
+                        </td>	 
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.Location__c}" rendered="!IF(p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact_Method__c==null)"/> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Description__c}" /> 
+                            <br/>	 
+                        </td>
+                    </tr>	 
+                </apex:repeat>	
+            </table>  
+            <br/>
+            
+              <!--html table for Solictitations -->
+            <table width="100%" style="border: 1px solid black" cellspacing="0">
+                <tr style="background-color:#c1eefa ">
+                    <td colspan="13" style="border:2px solid black">Solicitations</td>
+                </tr> 
+                <tr>	
+                    <th>Type</th> 	 
+                    <th>Rev</th> 	 
+                    <th>Purpose</th> 
+                    <th>Assigned</th> 
+                    <th>Prospect Manager</th> 
+                    <th>Account Name</th> 
+                    <th>NU Id</th> 
+                    <th>Constituent Type(s)</th>
+                    <th>Primary Class Year</th> 
+                    <th>Primary Acad Unit</th> 
+                    <th>Date</th> 
+                    <th>Location</th> 
+                    <th>Subject</th> 
+                </tr>	
+                <apex:repeat value="{!model.Solicitations}" var="p" >	 
+                    <tr> 
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact_Method__c}" /> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.NU_ADV_Reviewed_by_Prospect_Management__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.NU_ADV_Contact_Purpose_2__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Fundraiser__r.Name}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.ucinn_ascendv2__PRM_No_Trustee_Formula__c}" /> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.Name}" /> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.NU_ADV_NU_ID__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.ucinn_ascendv2__Contact_Type__c}" /> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.NU_ADV_Primary_Degree_Year__c}"/> 
+                            <br/>	 
+                        </td>	
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact__r.NU_ADV_Primary_Academic_Unit__c}"/> 
+                            <br/>	 
+                        </td>
+                        <td>	
+                            <apex:outputText value="{0,date,MM/dd/yy}">
+                                <apex:param value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Date__c}" />
+                            </apex:outputText>                          
+                            <br/>	 
+                        </td>	 
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.Location__c}" rendered="!IF(p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Contact_Method__c==null)"/> 
+                            <br/>	 
+                        </td>
+                        <td>	 
+                            <apex:outputText value="{!p.ucinn_ascendv2__Contact_Report__r.ucinn_ascendv2__Description__c}" /> 
+                            <br/>	 
+                        </td>
+                    </tr>	 
+                </apex:repeat>	
+            </table>  
+            <br/>
+            
+             <!--html table for Solicited Opportunities - Individual-->
+            <table width="100%" style="border: 1px solid black" cellspacing="0">
+                <tr style="background-color:#c1eefa ">
+                    <td colspan="16" style="border:2px solid black">Solicited Opportunities - Individual</td>
+                </tr> 
+            </table>	
+            <apex:pageBlock > 
+                <apex:pageBlockSection title="Booked" collapsible="true" columns="16" rendered="{!model.individualOppManagerBookedOpps.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.individualOppManagerBookedOpps}" var="o">
+                        <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Funded_Date__c}" headerValue="Funded Date"/>                        
+                        <apex:column value="{!o.ucinn_ascendv2__Funded_Amount__c}" headerValue="Funded Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>                
+                <apex:pageBlockSection title="Clearance Denied" collapsible="true" columns="16" rendered="{!model.individualOppManagerOpenClearanceDeniedOpps.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.individualOppManagerOpenClearanceDeniedOpps}" var="o">
+                        <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Clearance Granted" collapsible="true" columns="16"  rendered="{!model.individualOppManagerOpenClearanceGrantedOpps.size!=0}">                
+                    <apex:pageBlockTable value="{!model.individualOppManagerOpenClearanceGrantedOpps}" var="o">
+                         <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+						<apex:column value="{!o.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Declined" collapsible="true" columns="16" rendered="{!model.individualOppManagerDeclinedOpps.size!=0}" >                    
+                    <apex:pageBlockTable value="{!model.individualOppManagerDeclinedOpps}" var="o">
+                         <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+						<apex:column value="{!o.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Pending" collapsible="true" columns="16" rendered="{!model.individualOppManagerOpenPendingOpps.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.individualOppManagerOpenPendingOpps}" var="o">
+                        <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+						<apex:column value="{!o.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>                        
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Waiting for Clearance" collapsible="true" columns="16" rendered="{!model.individualOppManagerOpenWaitingForClearanceOpps.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.individualOppManagerOpenWaitingForClearanceOpps}" var="o">
+                         <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+						<apex:column value="{!o.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>                        
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+               <apex:pageBlockSection title="Withdrawn" collapsible="true" columns="16" rendered="{!model.individualOppManagerWithdrawnOpps.size!=0}" >                    
+                    <apex:pageBlockTable value="{!model.individualOppManagerWithdrawnOpps}" var="o">
+                        <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+						<apex:column value="{!o.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>                        
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+            </apex:pageBlock>     
+            <br/>
+            
+            <!--html table for Solicited Opportunities - Shared-->
+            <table width="100%" style="border: 1px solid black" cellspacing="0">
+                <tr style="background-color:#c1eefa ">
+                    <td colspan="16" style="border:2px solid black">Solicited Opportunities - Shared</td>
+                </tr> 
+            </table>	
+            <apex:pageBlock > 
+                <apex:pageBlockSection title="Booked" collapsible="true" columns="16" rendered="{!model.sharedOpportunitiesBookedOpps.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.sharedOpportunitiesBookedOpps}" var="o">
+                        <apex:column value="{!o.Opportunity.StageName}"/>
+                        <apex:column value="{!o.Opportunity.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.Opportunity.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Opportunity.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Funded_Date__c}" headerValue="Funded Date"/>                        
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Funded_Amount__c}" headerValue="Funded Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Opportunity.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Opportunity.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.Opportunity.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>                
+                <apex:pageBlockSection title="Clearance Denied" collapsible="true" columns="16" rendered="{!model.sharedOpportunitiesOpenClearanceDeniedOpps.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.sharedOpportunitiesOpenClearanceDeniedOpps}" var="o">
+                        <apex:column value="{!o.Opportunity.StageName}"/>
+                        <apex:column value="{!o.Opportunity.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.Opportunity.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Opportunity.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.Opportunity.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Opportunity.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Opportunity.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.Opportunity.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Clearance Granted" collapsible="true" columns="16"  rendered="{!model.sharedOpportunitiesOpenClearanceGrantedOpps.size!=0}">                
+                    <apex:pageBlockTable value="{!model.sharedOpportunitiesOpenClearanceGrantedOpps}" var="o">
+                         <apex:column value="{!o.Opportunity.StageName}"/>
+                        <apex:column value="{!o.Opportunity.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.Opportunity.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Opportunity.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.Opportunity.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Opportunity.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Opportunity.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.Opportunity.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Declined" collapsible="true" columns="16" rendered="{!model.sharedOpportunitiesDeclinedOpps.size!=0}" >                    
+                    <apex:pageBlockTable value="{!model.sharedOpportunitiesDeclinedOpps}" var="o">
+                         <apex:column value="{!o.Opportunity.StageName}"/>
+                        <apex:column value="{!o.Opportunity.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.Opportunity.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Opportunity.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.Opportunity.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Opportunity.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Opportunity.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.Opportunity.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Pending" collapsible="true" columns="16" rendered="{!model.sharedOpportunitiesOpenPendingOpps.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.sharedOpportunitiesOpenPendingOpps}" var="o">
+                       <apex:column value="{!o.Opportunity.StageName}"/>
+                        <apex:column value="{!o.Opportunity.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.Opportunity.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Opportunity.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.Opportunity.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Opportunity.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Opportunity.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.Opportunity.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Waiting for Clearance" collapsible="true" columns="16" rendered="{!model.sharedOpportunitiesOpenWaitingForClearanceOpps.size!=0}">                    
+                <apex:pageBlockTable value="{!model.sharedOpportunitiesOpenWaitingForClearanceOpps}" var="o">
+                        <apex:column value="{!o.Opportunity.StageName}"/>
+                        <apex:column value="{!o.Opportunity.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.Opportunity.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Opportunity.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.Opportunity.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Opportunity.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Opportunity.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.Opportunity.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Responsible_Person__r.Name}"  headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+               <apex:pageBlockSection title="Withdrawn" collapsible="true" columns="16" rendered="{!model.sharedOpportunitiesWithdrawnOpps.size!=0}" >                    
+                    <apex:pageBlockTable value="{!model.sharedOpportunitiesWithdrawnOpps}" var="o">
+                        <apex:column value="{!o.Opportunity.StageName}"/>
+                        <apex:column value="{!o.Opportunity.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.Opportunity.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Opportunity.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.Opportunity.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Opportunity.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Opportunity.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.Opportunity.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Opportunity.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.Opportunity.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>        
+                </apex:pageBlockSection>
+            </apex:pageBlock>  
+            <br/>
+            
+              <!--html table for Solicited Opportunities - Acct Teams-->
+            <table width="100%" style="border: 1px solid black" cellspacing="0">
+                <tr style="background-color:#c1eefa ">
+                    <td colspan="16" style="border:2px solid black">Opportunities - Accounts</td>
+                </tr> 
+            </table>	
+            <apex:pageBlock > 
+                <apex:pageBlockSection title="Booked" collapsible="true" columns="16" rendered="{!model.otherSolicitedBookedOpps.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.otherSolicitedBookedOpps}" var="o">
+                        <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Funded_Date__c}" headerValue="Funded Date"/>                        
+                        <apex:column value="{!o.ucinn_ascendv2__Funded_Amount__c}" headerValue="Funded Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>                
+                <apex:pageBlockSection title="Clearance Denied" collapsible="true" columns="16" rendered="{!model.otherSolicitedOpenClearanceDeniedOpps.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.otherSolicitedOpenClearanceDeniedOpps}" var="o">
+                        <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Clearance Granted" collapsible="true" columns="16"  rendered="{!model.otherSolicitedOpenClearanceGrantedOpps.size!=0}">                
+                    <apex:pageBlockTable value="{!model.otherSolicitedOpenClearanceGrantedOpps}" var="o">
+                         <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Declined" collapsible="true" columns="16" rendered="{!model.otherSolicitedDeclinedOpps.size!=0}" >                    
+                    <apex:pageBlockTable value="{!model.otherSolicitedDeclinedOpps}" var="o">
+                         <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Pending" collapsible="true" columns="16" rendered="{!model.otherSolicitedOpenPendingOpps.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.otherSolicitedOpenPendingOpps}" var="o">
+                        <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Waiting for Clearance" collapsible="true" columns="16" rendered="{!model.otherSolicitedOpenWaitingForClearanceOpps.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.otherSolicitedOpenWaitingForClearanceOpps}" var="o">
+                         <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+               <apex:pageBlockSection title="Withdrawn" collapsible="true" columns="16" rendered="{!model.otherSolicitedWithdrawnOpps.size!=0}" >                    
+                    <apex:pageBlockTable value="{!model.otherSolicitedWithdrawnOpps}" var="o">
+                        <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Expected_Close_Date__c}" headerValue="Expected Close Date"/> 
+                        <apex:column value="{!o.NU_ADV_Expected_Amount__c}" headerValue="Expected Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.Account.ucinn_ascendv2__Primary_Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>
+            </apex:pageBlock>     
+            <br/>
+            
+             <!--html table for Unsolicited Opps -->
+            <table width="100%" style="border: 1px solid black" cellspacing="0">
+                <tr style="background-color:#c1eefa ">
+                    <td colspan="16" style="border:2px solid black">Other PRM Gifts</td>
+                </tr> 
+            </table>
+            <apex:pageBlock > 
+                <apex:pageBlockSection title="Booked" collapsible="true" columns="16" rendered="{!model.UnsolicitedOpportunities.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.UnsolicitedOpportunities}" var="o">
+                       <apex:column value="{!o.StageName}"/>
+                        <apex:column value="{!o.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Funded_Date__c}" headerValue="Funded Date"/>                        
+                        <apex:column value="{!o.ucinn_ascendv2__Funded_Amount__c}" headerValue="Funded Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.Amount}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>                
+            </apex:pageBlock>
+            <br/>
+            
+             <!--html table for third party Opps -->
+            <table width="100%" style="border: 1px solid black" cellspacing="0">
+                <tr style="background-color:#c1eefa ">
+                    <td colspan="16" style="border:2px solid black">DAF Gifts</td>
+                </tr> 
+            </table>
+            <apex:pageBlock > 
+                <apex:pageBlockSection title="Booked" collapsible="true" columns="16" rendered="{!model.ThirdPartyOpportunities.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.ThirdPartyOpportunities}" var="o">
+                       <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.StageName}"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.ucinn_ascendv2__Funded_Date__c}" headerValue="Funded Date"/>                        
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.ucinn_ascendv2__Funded_Amount__c}" headerValue="Funded Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Amount__c}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>                
+            </apex:pageBlock>
+            <br/>
+            
+            <!--html table for MG  Opps -->
+            <table width="100%" style="border: 1px solid black" cellspacing="0">
+                <tr style="background-color:#c1eefa ">
+                    <td colspan="16" style="border:2px solid black">Matching Gifts</td>
+                </tr> 
+            </table>
+            <apex:pageBlock > 
+                <apex:pageBlockSection title="Booked" collapsible="true" columns="16" rendered="{!model.MGOpportunities.size!=0}">                    
+                    <apex:pageBlockTable value="{!model.MGOpportunities}" var="o">
+                       <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.StageName}"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.Name}" headerValue="Name"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.id}" headerValue="Opp Id"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.Probability}" headerValue="Prob(%)"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.ucinn_ascendv2__Funded_Date__c}" headerValue="Funded Date"/>                        
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.ucinn_ascendv2__Funded_Amount__c}" headerValue="Funded Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.ucinn_ascendv2__Credit_Date__c }" headerValue="Credit Date"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Credit_Amount__c}" headerValue="Amount"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.ucinn_ascendv2__Is_Planned_Gift__c}" headerValue="Plng Gift"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.Type}" headerValue="Type"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.NU_ADV_Solicit_Code__c}" headerValue="Appeal"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Contact__r.NU_ADV_NU_ID__c}" headerValue="NU Id"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Contact__r.Name}" headerValue="Account Name"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Contact__r.ucinn_ascendv2__Contact_Type__c}" headerValue="Const Type"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Contact__r.ucinn_ascendv2__PRM__r.Name}" headerValue="Prospect Manager"/>
+                        <apex:column value="{!o.ucinn_ascendv2__Opportunity__r.ucinn_ascendv2__Responsible_Person__r.Name}" headerValue="Opp Manager"/>
+                    </apex:pageBlockTable>         
+                </apex:pageBlockSection>                
+            </apex:pageBlock>
+            <br/>
+            
+            
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

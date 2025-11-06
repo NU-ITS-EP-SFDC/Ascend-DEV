@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please finish this sentence: The fund will be used for such expenses that include but are not limited to… --></help>
+        <label><!-- Other Fund Use --></label>
+        <name>NU_ADV_Other_Fund_Use__c</name>
+    </CustomFieldTranslation>

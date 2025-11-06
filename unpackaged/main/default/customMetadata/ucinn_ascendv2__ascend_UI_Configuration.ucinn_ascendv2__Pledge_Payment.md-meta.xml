@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Pledge Payment</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;title&quot;: &quot;Use as Payer&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Tender_Type_for_Pledges__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: true,
+      &quot;required&quot;: true,
+      &quot;changeLayout&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Routing_Number__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Encrypted_Payment_Information__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Transaction_Number__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: false
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Check_Date__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Check&quot;
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Credit_Card_Number__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Payment_Amount__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;toolTip&quot;: &quot;This is the total amount of the payment being processed at this time. &quot;,
+      &quot;required&quot;: true,
+      &quot;important&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;formatter&quot;: &quot;currency&quot;,
+        &quot;eventOnBlur&quot;: true,
+        &quot;eventOnChange&quot;: false,
+        &quot;step&quot;: &quot;.01&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Cardholder_Encrypted__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;customMetadata&quot;: &quot;Gift_Processing_Contact_Lookup&quot;,
+        &quot;additionalFieldsToQuery&quot;: [
+          &quot;FirstName&quot;,
+          &quot;LastName&quot;
+        ],
+        &quot;transactionRecordPath&quot;: &quot;constituentCardHolder&quot;,
+        &quot;label&quot;: &quot;Card Holder&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true,
+          &quot;transactionRecords.isContactDonor&quot;: false
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Bank_Reference_Number__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: false
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Account_Number__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Check_Number__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Check&quot;
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Credit_Card_Expiration_Date__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Non_Gift_Amount__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;toolTip&quot;: &quot;This is the total amount of the payment that is allocated to non-gift items.&quot;,
+      &quot;required&quot;: false,
+      &quot;important&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;formatter&quot;: &quot;currency&quot;,
+        &quot;eventOnBlur&quot;: true,
+        &quot;eventOnChange&quot;: false,
+        &quot;step&quot;: &quot;.01&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;nonGiftItemsEnabled&quot;: false,
+          &quot;tenderTypeCategory&quot;: &quot;$notEqual(&apos;Property&apos;)&quot;
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Non_Gift_Amount__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;toolTip&quot;: &quot;This is the total amount of the payment that is allocated to non-gift items.&quot;,
+      &quot;required&quot;: false,
+      &quot;disabled&quot;: true,
+      &quot;important&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;formatter&quot;: &quot;currency&quot;,
+        &quot;step&quot;: &quot;.01&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Cash&quot;,
+          &quot;nonGiftItemsEnabled&quot;: true
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;nonGiftItemsEnabled&quot;: true
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;nonGiftItemsEnabled&quot;: true
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Check&quot;,
+          &quot;nonGiftItemsEnabled&quot;: true
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Stock Gift&quot;,
+          &quot;nonGiftItemsEnabled&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Payer_Address_Encrypted__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;customMetadata&quot;: &quot;GP_Address_Lookup_Setting&quot;,
+        &quot;additionalFieldsToQuery&quot;: [
+          &quot;ucinn_ascendv2__City__c&quot;,
+          &quot;ucinn_ascendv2__Country__c&quot;,
+          &quot;ucinn_ascendv2__Postal_Code__c&quot;,
+          &quot;ucinn_ascendv2__State__c&quot;
+        ],
+        &quot;transactionRecordPath&quot;: &quot;payerAddressRec&quot;,
+        &quot;label&quot;: &quot;Payer Address&quot;,
+        &quot;constituentId&quot;: &quot;transactionRecords.constituentCardHolder.Id&quot;,
+        &quot;organizationId&quot;: &quot;transactionRecords.DonorInformation.Id&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;custom__Gift_Amount__c&quot;,
+      &quot;toolTip&quot;: &quot;This is a read-only field that is calculated based on the setting in; Custom Metadata Types | Gift Processing Settings | Payment Method to show the amount of the payment that is a gift.&quot;,
+      &quot;disabled&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;label&quot;: &quot;Gift Amount&quot;,
+        &quot;formatter&quot;: &quot;currency&quot;,
+        &quot;step&quot;: &quot;.01&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Cash&quot;
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Check&quot;
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Stock Gift&quot;
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Credit_Date__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;required&quot;: true,
+      &quot;important&quot;: false
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Subscription_ID__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__SEC_Code__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Authorization_Code__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Is_Anonymous__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Account_Type__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Is_Tax_Receipt__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Authorize_and_Charge__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Credit Card&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        },
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Wire&quot;,
+          &quot;enableForExternalPaymentGateway&quot;: true
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Post_to_G_L_Date__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Send_to_G_L__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Notes__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Adjustment_Reason_v1__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;required&quot;: true,
+      &quot;important&quot;: false,
+      &quot;changeLayout&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;multiselectpicklist&quot;,
+        &quot;customPicklistExclusions&quot;: [
+          &quot;Terminated&quot;,
+          &quot;Cancelled&quot;,
+          &quot;Written Off&quot;
+        ]
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;isAdjustment&quot;: true,
+          &quot;isView&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Adjustment_Reason_Other__c&quot;,
+      &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+      &quot;important&quot;: false,
+      &quot;required&quot;: true,
+      &quot;criteria&quot;: [
+        {
+          &quot;isAdjustment&quot;: true,
+          &quot;isView&quot;: false,
+          &quot;transactionRecords.TransactionInformation.ucinn_ascendv2__Payment__c.ucinn_ascendv2__Adjustment_Reason_v1__c&quot;: &quot;$includes(&apos;Other&apos;)&quot;
+        }
+      ]
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;sectionName&quot;: &quot;SessionInformation&quot;
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;DonorSearch&quot;
+    },
+    {
+      &quot;sectionName&quot;: &quot;DonorInformation&quot;
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;PayerSearch&quot;,
+      &quot;title&quot;: &quot;Payer Search&quot;,
+      &quot;criteria&quot;: [
+        {
+          &quot;isDefault&quot;: false,
+          &quot;isView&quot;: false
+        }
+      ]
+    },
+    {
+      &quot;sectionName&quot;: &quot;PayerInformation&quot;,
+      &quot;collapsed&quot;: true,
+      &quot;title&quot;: &quot;Payer Information&quot;,
+      &quot;criteria&quot;: [
+        {
+          &quot;isDefault&quot;: false,
+          &quot;isView&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;TransactionInformation&quot;
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;StockInformation&quot;,
+      &quot;criteria&quot;: [
+        {
+          &quot;tenderTypeCategory&quot;: &quot;Stock Gift&quot;
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;DesignationPaymentInformation&quot;,
+      &quot;showPaymentAllocation&quot;: true,
+      &quot;criteria&quot;: [
+        {
+          &quot;allocatePaymentBy&quot;: &quot;Designation&quot;
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;InstallmentPaymentInformation&quot;,
+      &quot;showPaymentAllocation&quot;: true,
+      &quot;hideSection&quot;: true,
+      &quot;criteria&quot;: [
+        {
+          &quot;isCreation&quot;: true
+        },
+        {
+          &quot;isToPledgePaymentAdjustment&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;sectionName&quot;: &quot;InstallmentPaymentInformation&quot;,
+      &quot;criteria&quot;: [
+        {
+          &quot;isEdit&quot;: true,
+          &quot;isToPledgePaymentAdjustment&quot;: false
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;DesignationPaymentInformation&quot;,
+      &quot;criteria&quot;: [
+        {
+          &quot;allocatePaymentBy&quot;: &quot;Installment&quot;
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;HardAndSoftCreditPaymentInformation&quot;
+    }
+  ],
+  [
+    {
+      &quot;sectionName&quot;: &quot;TributePaymentInformation&quot;,
+      &quot;criteria&quot;: [
+        {
+          &quot;isToPledgePaymentAdjustment&quot;: false
+        }
+      ]
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">Transaction GP</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

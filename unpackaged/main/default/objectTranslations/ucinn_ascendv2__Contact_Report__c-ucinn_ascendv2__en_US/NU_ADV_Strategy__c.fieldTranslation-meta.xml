@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Search for any related strategies here. --></help>
+        <label><!-- Strategy --></label>
+        <name>NU_ADV_Strategy__c</name>
+        <relationshipLabel><!-- Contact Reports --></relationshipLabel>
+    </CustomFieldTranslation>

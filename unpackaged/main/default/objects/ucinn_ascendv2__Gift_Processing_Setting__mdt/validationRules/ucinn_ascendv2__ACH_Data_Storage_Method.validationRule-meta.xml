@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ucinn_ascendv2__ACH_Data_Storage_Method</fullName>
+    <active>true</active>
+    <description>Confirm "Unmasked &amp; Unencrypted" storage method.</description>
+    <errorConditionFormula>ISPICKVAL(ucinn_ascendv2__Account_Number_Storage_Method__c, 'Unmasked &amp; Unencrypted') &amp;&amp;
+ucinn_ascendv2__Account_Number_Storage_Mthd_Conf_Phrase__c != 'I confirm Unmasked _&amp;AND&amp;_ Unencrypted ACH / Direct Debit Account Numbers in ascend.'</errorConditionFormula>
+    <errorDisplayField>ucinn_ascendv2__Account_Number_Storage_Method__c</errorDisplayField>
+    <errorMessage>Account Number Confirmation must be "I confirm Unmasked _&amp;AND&amp;_ Unencrypted ACH / Direct Debit Account Numbers in ascend." for the selected storage method.</errorMessage>
+</ValidationRule>

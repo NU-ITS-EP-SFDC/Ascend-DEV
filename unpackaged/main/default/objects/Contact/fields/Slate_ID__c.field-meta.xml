@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Slate_ID__c</fullName>
+    <description>This is id of a parent that was assigned through the Slate application process.
+Source = PROD_LZ.SRC_SLATE.APPLICANT_PARENTS_DATA</description>
+    <externalId>true</externalId>
+    <label>Slate ID</label>
+    <length>11</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

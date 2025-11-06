@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Object --></label>
+        <name>Object__c</name>
+        <picklistValues>
+            <masterLabel>Activity</masterLabel>
+            <translation><!-- Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address</masterLabel>
+            <translation><!-- Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliation</masterLabel>
+            <translation><!-- Affiliation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assignment</masterLabel>
+            <translation><!-- Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awards/Honors</masterLabel>
+            <translation><!-- Awards/Honors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaigns</masterLabel>
+            <translation><!-- Campaigns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation><!-- Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Constituent</masterLabel>
+            <translation><!-- Constituent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Constituent Name</masterLabel>
+            <translation><!-- Constituent Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Report</masterLabel>
+            <translation><!-- Contact Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Degree/Major</masterLabel>
+            <translation><!-- Degree/Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Designation</masterLabel>
+            <translation><!-- Designation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Society</masterLabel>
+            <translation><!-- Giving Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homepage</masterLabel>
+            <translation><!-- Homepage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Involvement</masterLabel>
+            <translation><!-- Involvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knowtify</masterLabel>
+            <translation><!-- Knowtify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maps</masterLabel>
+            <translation><!-- Maps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Name</masterLabel>
+            <translation><!-- Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Naming Opportunities</masterLabel>
+            <translation><!-- Naming Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nomination</masterLabel>
+            <translation><!-- Nomination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposal</masterLabel>
+            <translation><!-- Proposal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rating</masterLabel>
+            <translation><!-- Rating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation><!-- Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salutation</masterLabel>
+            <translation><!-- Salutation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Indicator</masterLabel>
+            <translation><!-- Service Indicator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stewardship</masterLabel>
+            <translation><!-- Stewardship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task</masterLabel>
+            <translation><!-- Task --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation><!-- User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watchlist</masterLabel>
+            <translation><!-- Watchlist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Plan</masterLabel>
+            <translation><!-- Work Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iWave</masterLabel>
+            <translation><!-- iWave --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

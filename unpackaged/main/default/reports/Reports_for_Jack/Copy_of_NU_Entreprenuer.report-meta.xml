@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.ucinn_ascendv2__Donor_ID__c</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_EMAIL</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Involvement__c.ucinn_ascendv2__Involvement_Code__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Involvement__c.ucinn_ascendv2__Involvement_Code_Description_Formula__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.ucinn_ascendv2__Preferred_Address_State__c</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_ADDR2_STATE</field>
+    </columns>
+    <description>Report of Alumni with entrepreneurship involvement codes.</description>
+    <filter>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Involvement__c.ucinn_ascendv2__Involvement_Code__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,AR Entrepreneur,Women&apos;s Entrepreneurship Initiative,BHS Health Sciences Entrepreneurs Member</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Contact.ucinn_ascendv2__Preferred_Address_State__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>MA</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Copy of NU_Entreprenuer</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ucinn_ascendv2__Involvement__c@ucinn_ascendv2__Involvement__c.ucinn_ascendv2__Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>FK_$Contact.ucinn_ascendv2__Donor_ID__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>ucinn_ascendv2__Involvement__c.ucinn_ascendv2__Award_Honor_Rec_d_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

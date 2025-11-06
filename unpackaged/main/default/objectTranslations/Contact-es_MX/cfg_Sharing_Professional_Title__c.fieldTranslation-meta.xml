@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Indicates that the Affinity Group member wants to share their Professional Title on Affinity Group sites. --></help>
+        <label><!-- Sharing: Professional Title --></label>
+        <name>cfg_Sharing_Professional_Title__c</name>
+    </CustomFieldTranslation>

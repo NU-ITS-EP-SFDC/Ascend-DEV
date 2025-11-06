@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Geopointe Route Plan Configuration --></label>
+        <name>geopointe__Route_Plan_Configuration__c</name>
+        <relationshipLabel><!-- Geopointe Route Plans --></relationshipLabel>
+    </CustomFieldTranslation>

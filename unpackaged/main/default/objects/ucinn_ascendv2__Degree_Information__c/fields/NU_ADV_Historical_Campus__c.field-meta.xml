@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NU_ADV_Historical_Campus__c</fullName>
+    <label>Historical Campus</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Boston</fullName>
+                <default>false</default>
+                <label>Boston</label>
+            </value>
+            <value>
+                <fullName>Charlotte</fullName>
+                <default>false</default>
+                <label>Charlotte</label>
+            </value>
+            <value>
+                <fullName>London</fullName>
+                <default>false</default>
+                <label>London</label>
+            </value>
+            <value>
+                <fullName>Portland</fullName>
+                <default>false</default>
+                <label>Portland</label>
+            </value>
+            <value>
+                <fullName>San Francisco</fullName>
+                <default>false</default>
+                <label>San Francisco</label>
+            </value>
+            <value>
+                <fullName>San Jose</fullName>
+                <default>false</default>
+                <label>San Jose</label>
+            </value>
+            <value>
+                <fullName>Seattle</fullName>
+                <default>false</default>
+                <label>Seattle</label>
+            </value>
+            <value>
+                <fullName>Toronto</fullName>
+                <default>false</default>
+                <label>Toronto</label>
+            </value>
+            <value>
+                <fullName>Vancouver</fullName>
+                <default>false</default>
+                <label>Vancouver</label>
+            </value>
+            <value>
+                <fullName>Arlington</fullName>
+                <default>false</default>
+                <label>Arlington</label>
+            </value>
+            <value>
+                <fullName>Oakland</fullName>
+                <default>false</default>
+                <label>Oakland</label>
+            </value>
+            <value>
+                <fullName>Silicon Valley</fullName>
+                <default>false</default>
+                <label>Silicon Valley</label>
+            </value>
+            <value>
+                <fullName>Miami</fullName>
+                <default>false</default>
+                <label>Miami</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

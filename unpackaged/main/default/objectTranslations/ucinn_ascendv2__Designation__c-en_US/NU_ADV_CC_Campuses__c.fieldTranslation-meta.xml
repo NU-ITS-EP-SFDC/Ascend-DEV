@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Campuses --></label>
+        <name>NU_ADV_CC_Campuses__c</name>
+        <picklistValues>
+            <masterLabel>Arlington</masterLabel>
+            <translation><!-- Arlington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boston</masterLabel>
+            <translation><!-- Boston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burlington</masterLabel>
+            <translation><!-- Burlington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charlotte</masterLabel>
+            <translation><!-- Charlotte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London</masterLabel>
+            <translation><!-- London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miami</masterLabel>
+            <translation><!-- Miami --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nahant</masterLabel>
+            <translation><!-- Nahant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New York</masterLabel>
+            <translation><!-- New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oakland</masterLabel>
+            <translation><!-- Oakland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roux Institute Portland</masterLabel>
+            <translation><!-- Roux Institute Portland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seattle</masterLabel>
+            <translation><!-- Seattle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silicon Valley</masterLabel>
+            <translation><!-- Silicon Valley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toronto</masterLabel>
+            <translation><!-- Toronto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vancouver</masterLabel>
+            <translation><!-- Vancouver --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

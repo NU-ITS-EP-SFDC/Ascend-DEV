@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- AG Constituent Segment --></label>
+        <name>NU_ADV_AG_Constituent_Segment__c</name>
+        <picklistValues>
+            <masterLabel>CPS Alum</masterLabel>
+            <translation><!-- CPS Alum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grad Alum</masterLabel>
+            <translation><!-- Grad Alum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NUSL Alum</masterLabel>
+            <translation><!-- NUSL Alum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent</masterLabel>
+            <translation><!-- Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UG General</masterLabel>
+            <translation><!-- UG General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UG Most Recent</masterLabel>
+            <translation><!-- UG Most Recent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UG Young Alum</masterLabel>
+            <translation><!-- UG Young Alum --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

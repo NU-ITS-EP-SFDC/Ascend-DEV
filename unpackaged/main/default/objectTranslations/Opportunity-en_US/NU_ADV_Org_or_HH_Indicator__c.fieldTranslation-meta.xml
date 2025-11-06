@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Org or HH Indicator --></label>
+        <name>NU_ADV_Org_or_HH_Indicator__c</name>
+        <picklistValues>
+            <masterLabel>Household</masterLabel>
+            <translation><!-- Household --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organization</masterLabel>
+            <translation><!-- Organization --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

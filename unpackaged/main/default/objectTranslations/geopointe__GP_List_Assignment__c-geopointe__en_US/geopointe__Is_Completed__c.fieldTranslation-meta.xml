@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Status of the list assignment - completed or not completed. --></help>
+        <label><!-- Is Completed --></label>
+        <name>geopointe__Is_Completed__c</name>
+    </CustomFieldTranslation>

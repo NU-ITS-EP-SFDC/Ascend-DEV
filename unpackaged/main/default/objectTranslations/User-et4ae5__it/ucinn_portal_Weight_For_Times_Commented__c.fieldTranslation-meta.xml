@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Weight For Times Commented --></label>
+        <name>ucinn_portal_Weight_For_Times_Commented__c</name>
+    </CustomFieldTranslation>

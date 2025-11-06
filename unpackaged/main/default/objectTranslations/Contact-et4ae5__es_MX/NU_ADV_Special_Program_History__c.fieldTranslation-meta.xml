@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Special Program History --></label>
+        <name>NU_ADV_Special_Program_History__c</name>
+        <picklistValues>
+            <masterLabel>American Classroom</masterLabel>
+            <translation><!-- American Classroom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Classroom</masterLabel>
+            <translation><!-- Global Classroom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Pathways</masterLabel>
+            <translation><!-- Global Pathways --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NUin</masterLabel>
+            <translation><!-- NUin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USPP</masterLabel>
+            <translation><!-- USPP --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

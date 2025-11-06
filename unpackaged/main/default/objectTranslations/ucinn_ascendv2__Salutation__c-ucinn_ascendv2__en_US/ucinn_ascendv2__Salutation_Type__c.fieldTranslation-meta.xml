@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Salutation Type --></label>
+        <name>ucinn_ascendv2__Salutation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Email Salutation</masterLabel>
+            <translation><!-- Email Salutation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Formal</masterLabel>
+            <translation><!-- Formal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Honor Roll Name</masterLabel>
+            <translation><!-- Honor Roll Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Informal</masterLabel>
+            <translation><!-- Informal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mailing Salutation</masterLabel>
+            <translation><!-- Mailing Salutation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modern Joint or Individual Name</masterLabel>
+            <translation><!-- Modern Joint or Individual Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nametag Display</masterLabel>
+            <translation><!-- Nametag Display --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nickname</masterLabel>
+            <translation><!-- Nickname --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

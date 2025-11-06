@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Geopointe Quality --></label>
+        <name>NU_ADV_Geopointe_Quality__c</name>
+    </CustomFieldTranslation>

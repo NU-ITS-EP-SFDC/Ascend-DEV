@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This is a legacy field no longer used by Geopointe. --></help>
+        <label><!-- Geocode Service DEPRECATED --></label>
+        <name>geopointe__Geocode_Service__c</name>
+        <picklistValues>
+            <masterLabel>MapQuest</masterLabel>
+            <translation><!-- MapQuest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OpenStreetMap</masterLabel>
+            <translation><!-- OpenStreetMap --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

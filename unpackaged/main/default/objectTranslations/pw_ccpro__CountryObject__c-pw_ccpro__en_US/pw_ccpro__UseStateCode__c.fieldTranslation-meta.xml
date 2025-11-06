@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When enabled the State field is completed with the state ISO Code value.  Otherwise the state Name value is used. --></help>
+        <label><!-- Use Subcountry Code in State field --></label>
+        <name>pw_ccpro__UseStateCode__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If checked, this action will be available in the Salesforce Mobile Geopointe app. Currently only Record actions are supported in the Salesforce Mobile app. --></help>
+        <label><!-- Available (Mobile) --></label>
+        <name>geopointe__Available_SF1__c</name>
+    </CustomFieldTranslation>

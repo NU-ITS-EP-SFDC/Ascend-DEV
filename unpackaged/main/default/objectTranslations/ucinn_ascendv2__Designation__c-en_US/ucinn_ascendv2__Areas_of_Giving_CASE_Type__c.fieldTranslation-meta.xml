@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Areas of Giving (CASE Type) --></label>
+        <name>ucinn_ascendv2__Areas_of_Giving_CASE_Type__c</name>
+        <picklistValues>
+            <masterLabel>CR - Current Restricted</masterLabel>
+            <translation><!-- CR - Current Restricted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CU - Current Unrestricted</masterLabel>
+            <translation><!-- CU - Current Unrestricted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EN - Endowment</masterLabel>
+            <translation><!-- EN - Endowment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LN - Loan</masterLabel>
+            <translation><!-- LN - Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NG - Non-Gift</masterLabel>
+            <translation><!-- NG - Non-Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PL - Plant</masterLabel>
+            <translation><!-- PL - Plant --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

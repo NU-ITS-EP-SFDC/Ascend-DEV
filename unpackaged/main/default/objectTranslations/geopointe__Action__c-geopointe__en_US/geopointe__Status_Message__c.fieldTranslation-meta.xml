@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This text is display while the Apex operation is being executed. Text should be short and descriptive such as: &quot;Loading...&quot;, &quot;Updating Contacts...&quot;, &quot;Processing...&quot;, etc. --></help>
+        <label><!-- Status Message --></label>
+        <name>geopointe__Status_Message__c</name>
+    </CustomFieldTranslation>

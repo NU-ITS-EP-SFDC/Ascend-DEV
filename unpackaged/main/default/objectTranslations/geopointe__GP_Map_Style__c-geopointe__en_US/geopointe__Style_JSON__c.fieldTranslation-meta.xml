@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The Google Maps style array in JSON format. --></help>
+        <label><!-- Style JSON --></label>
+        <name>geopointe__Style_JSON__c</name>
+    </CustomFieldTranslation>

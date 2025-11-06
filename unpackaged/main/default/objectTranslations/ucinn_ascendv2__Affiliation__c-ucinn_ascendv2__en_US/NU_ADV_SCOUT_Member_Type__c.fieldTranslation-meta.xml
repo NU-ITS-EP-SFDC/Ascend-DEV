@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- SCOUT Member Type --></label>
+        <name>NU_ADV_SCOUT_Member_Type__c</name>
+        <picklistValues>
+            <masterLabel>Blog Manager</masterLabel>
+            <translation><!-- Blog Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blog Member</masterLabel>
+            <translation><!-- Blog Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collateral Designer</masterLabel>
+            <translation><!-- Collateral Designer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Engagement Director</masterLabel>
+            <translation><!-- Community Engagement Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Engagement Strategist</masterLabel>
+            <translation><!-- Community Engagement Strategist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conference Creative Director</masterLabel>
+            <translation><!-- Conference Creative Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conference Designer</masterLabel>
+            <translation><!-- Conference Designer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conference Director</masterLabel>
+            <translation><!-- Conference Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conference Marketing Lead</masterLabel>
+            <translation><!-- Conference Marketing Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Contributor</masterLabel>
+            <translation><!-- Content Contributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Strategist</masterLabel>
+            <translation><!-- Content Strategist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design Director</masterLabel>
+            <translation><!-- Design Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Designer</masterLabel>
+            <translation><!-- Designer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Designer and Developer</masterLabel>
+            <translation><!-- Designer and Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developer</masterLabel>
+            <translation><!-- Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events Coordinator</masterLabel>
+            <translation><!-- Events Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events Director</masterLabel>
+            <translation><!-- Events Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Director</masterLabel>
+            <translation><!-- Executive Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faculty Advisor</masterLabel>
+            <translation><!-- Faculty Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDEA Lead</masterLabel>
+            <translation><!-- IDEA Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labs Director</masterLabel>
+            <translation><!-- Labs Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labs Member</masterLabel>
+            <translation><!-- Labs Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics Coordinator</masterLabel>
+            <translation><!-- Logistics Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Designer</masterLabel>
+            <translation><!-- Marketing Designer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Director</masterLabel>
+            <translation><!-- Marketing Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Lead</masterLabel>
+            <translation><!-- Marketing Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Strategist</masterLabel>
+            <translation><!-- Marketing Strategist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing and Events Director</masterLabel>
+            <translation><!-- Marketing and Events Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing and Events Strategist</masterLabel>
+            <translation><!-- Marketing and Events Strategist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations Assistant</masterLabel>
+            <translation><!-- Operations Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations Director</masterLabel>
+            <translation><!-- Operations Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photographer or Videotographer</masterLabel>
+            <translation><!-- Photographer or Videotographer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print Designer</masterLabel>
+            <translation><!-- Print Designer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Lead</masterLabel>
+            <translation><!-- Project Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Team Member</masterLabel>
+            <translation><!-- Project Team Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCOUT Labs</masterLabel>
+            <translation><!-- SCOUT Labs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCOUT Labs Director</masterLabel>
+            <translation><!-- SCOUT Labs Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Manager</masterLabel>
+            <translation><!-- Social Media Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategist</masterLabel>
+            <translation><!-- Strategist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Member</masterLabel>
+            <translation><!-- Team Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Director</masterLabel>
+            <translation><!-- Technology Director --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The Fiscal Year in which this payment should be included for Giving Day reporting. --></help>
+        <label><!-- Include For Giving Day --></label>
+        <name>Include_For_Giving_Day__c</name>
+    </CustomFieldTranslation>

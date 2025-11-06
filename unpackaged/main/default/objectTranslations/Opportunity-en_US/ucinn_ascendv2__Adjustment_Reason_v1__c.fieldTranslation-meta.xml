@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Adjustment Reason --></label>
+        <name>ucinn_ascendv2__Adjustment_Reason_v1__c</name>
+        <picklistValues>
+            <masterLabel>Amount Change-Donor Request</masterLabel>
+            <translation><!-- Amount Change-Donor Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amount Change-Internal Error</masterLabel>
+            <translation><!-- Amount Change-Internal Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appeal Code Change</masterLabel>
+            <translation><!-- Appeal Code Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Returned Item</masterLabel>
+            <translation><!-- Bank Returned Item --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Designation Change</masterLabel>
+            <translation><!-- Designation Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donor Advised Fund Payment</masterLabel>
+            <translation><!-- Donor Advised Fund Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donor Change</masterLabel>
+            <translation><!-- Donor Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Date Change</masterLabel>
+            <translation><!-- Gift Date Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Type Change</masterLabel>
+            <translation><!-- Gift Type Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installment Change</masterLabel>
+            <translation><!-- Installment Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recognition Change</masterLabel>
+            <translation><!-- Recognition Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Written Off</masterLabel>
+            <translation><!-- Written Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Pledge</masterLabel>
+            <translation><!-- Wrong Pledge --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

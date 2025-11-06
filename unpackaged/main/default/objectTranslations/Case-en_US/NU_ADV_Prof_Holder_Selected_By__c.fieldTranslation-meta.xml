@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Who should select the holder of the professorship? --></help>
+        <label><!-- Prof Holder Selected By --></label>
+        <name>NU_ADV_Prof_Holder_Selected_By__c</name>
+        <picklistValues>
+            <masterLabel>Bouve Dean</masterLabel>
+            <translation><!-- Bouve Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAMD Dean</masterLabel>
+            <translation><!-- CAMD Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COE Dean</masterLabel>
+            <translation><!-- COE Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COS Dean</masterLabel>
+            <translation><!-- COS Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPS Dean</masterLabel>
+            <translation><!-- CPS Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSSH Dean</masterLabel>
+            <translation><!-- CSSH Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMSB Dean</masterLabel>
+            <translation><!-- DMSB Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Khoury Dean</masterLabel>
+            <translation><!-- Khoury Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NUSL Dean</masterLabel>
+            <translation><!-- NUSL Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provost</masterLabel>
+            <translation><!-- Provost --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

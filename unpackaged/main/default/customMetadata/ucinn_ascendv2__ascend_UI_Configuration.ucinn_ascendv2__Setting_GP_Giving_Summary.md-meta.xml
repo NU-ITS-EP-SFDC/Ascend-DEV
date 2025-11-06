@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP Giving Summary</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Giving_Summary_Campaign_Start_Date__c&quot;,
+      &quot;toolTip&quot;: &quot;The campaign start date used to total up the campaign fundraising and cash totals in the constituent/organization overview page and the giving details page.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;date&quot;,
+        &quot;label&quot;: &quot;Giving Summary Campaign Start Date&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Giving_Summary_Campaign_End_Date__c&quot;,
+      &quot;toolTip&quot;: &quot;The campaign end date used to total up the campaign fundraising and cash totals in the constituent/organization overview page and the giving details page.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;date&quot;,
+        &quot;label&quot;: &quot;Giving Summary Campaign End Date&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Giving_Summary_Campaign_Appeal__c&quot;,
+      &quot;toolTip&quot;: &quot;The campaign names(s) used to total up the campaign fundraising and cash totals in the constituent/organization overview page and the giving details page.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Giving Summary Campaign Appeal&quot;,
+        &quot;listNotJSONSeperator&quot;: &quot;;&quot;,
+        &quot;type&quot;: &quot;listNotJSON&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        },
+        &quot;title&quot;: &quot;Giving Summary Campaign Appeal&quot;,
+        &quot;helpText&quot;: &quot;The campaign names(s) used to total up the campaign fundraising and cash totals in the constituent/organization overview page and the giving details page.&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Giving_Summary_Date_Appeal_Operator__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Giving Summary Date Appeal Operator&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;AND&quot;,
+          &quot;OR&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Lifetime_Giving_Calculation_Method__c&quot;,
+      &quot;toolTip&quot;: &quot;Changes calculation of the constituent&apos;s life time giving field for pledges that are written off or canceled and all recurring gifts.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Lifetime Giving Calculation Method&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Paid to Date by Designation&quot;,
+          &quot;Paid to Date&quot;
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Giving_Summary_Include_Recurring_Gift__c&quot;,
+      &quot;toolTip&quot;: &quot;Check to include recurring gifts with an end date into the calculation of lifetime fundraising giving totals.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Giving Summary Include Recurring Gift With End Date&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Custom_Giving_Summary_Definitions__c&quot;,
+      &quot;toolTip&quot;: &quot;Field definitions for custom giving summary fields, include object API name, calculation method, summary display field, calculation field , and criteria definitions for each field..&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Custom Giving Summary Definitions&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;title&quot;: &quot;Custom Giving Summary Definitions&quot;,
+        &quot;keyLabel&quot;: &quot;Object for Custom Giving Summary Calculation&quot;,
+        &quot;valueLabel&quot;: &quot;Custom Giving Summary Definition&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;Contact&quot;,
+            &quot;required&quot;: true,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;Custom Giving Summary Definitions for Contact&quot;,
+              &quot;keyLabel&quot;: &quot;Contact Field API Name&quot;,
+              &quot;keyHelpText&quot;: &quot;Field API Name on the Contact to store the Custom Giving Summary Information&quot;,
+              &quot;valueLabel&quot;: &quot;Custom Giving Summary Definition&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;title&quot;: &quot;Custom Giving Summary Definition&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;required&quot;: true,
+                        &quot;key&quot;: &quot;Object API Name&quot;,
+                        &quot;helpText&quot;: &quot;Object to base Custom Giving Summary Calculation on&quot;,
+                        &quot;valueType&quot;: &quot;string&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;picklist&quot;,
+                          &quot;customPicklistValuesString&quot;: [
+                            &quot;ucinn_ascendv2__Payment__c&quot;,
+                            &quot;ucinn_ascendv2__Hard_and_Soft_Credit__c&quot;
+                          ]
+                        }
+                      },
+                      {
+                        &quot;required&quot;: true,
+                        &quot;key&quot;: &quot;Calculation Field&quot;,
+                        &quot;helpText&quot;: &quot;Field (on the above Object) to use for Summary Giving Calculation. Specify a Date field to use with \&quot;First\&quot; and \&quot;Latest\&quot; Calculation Methods; otherwise, specify a Numeric field to use with \&quot;Average\&quot;, \&quot;Total\&quot;, and \&quot;Largest\&quot;.\n E.g. \&quot;ucinn_ascendv2__Credit_Amount__c\&quot; \n E.g. \&quot;ucinn_ascendv2__Credit_Date__c\&quot;&quot;,
+                        &quot;valueType&quot;: &quot;string&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;required&quot;: true,
+                        &quot;key&quot;: &quot;Calculation Method&quot;,
+                        &quot;valueType&quot;: &quot;string&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;picklist&quot;,
+                          &quot;customPicklistValuesString&quot;: [
+                            &quot;Average&quot;,
+                            &quot;Total&quot;,
+                            &quot;Largest&quot;,
+                            &quot;First&quot;,
+                            &quot;Latest&quot;
+                          ]
+                        }
+                      },
+                      {
+                        &quot;required&quot;: true,
+                        &quot;key&quot;: &quot;Summary Display Field&quot;,
+                        &quot;valueType&quot;: &quot;string&quot;,
+                        &quot;helpText&quot;: &quot;Field (on the above Object) to store on Contact&apos;s Summary Field. \n E.g. \&quot;ucinn_ascendv2__Credit_Amount__c\&quot; \n E.g. \&quot;ucinn_ascendv2__Credit_Date__c\&quot;&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;Criteria&quot;,
+                        &quot;valueType&quot;: &quot;list&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;list&quot;,
+                          &quot;listType&quot;: &quot;value&quot;,
+                          &quot;helpText&quot;: &quot;The first element specifies the Field on the Object (Payment/HSC) that is used for comparing with the value of the criteria (supports Relation__r.Relation_Field__c fields). The second element specifies the opration (\&quot;=\&quot;, \&quot;&lt;\&quot;, \&quot;&gt;\&quot;, \&quot;&lt;=\&quot;, \&quot;&gt;=\&quot;). The third element specifies the value of the criteria. Use \&quot;Empty\&quot; to specify blank values. Use \&quot;, \&quot; to specify a list of values. E.g. \&quot;Empty\&quot;, E.g. \&quot;Empty, Soft\&quot; &quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;text&quot;,
+                            &quot;title&quot;: &quot;Criteria&quot;
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;Account&quot;,
+            &quot;required&quot;: true,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;Custom Giving Summary Definitions for Account&quot;,
+              &quot;keyLabel&quot;: &quot;Account Field API Name&quot;,
+              &quot;keyHelpText&quot;: &quot;Field API Name on the Account to store the Custom Giving Summary Information&quot;,
+              &quot;valueLabel&quot;: &quot;Custom Giving Summary Definition&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;title&quot;: &quot;Custom Giving Summary Definition&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;required&quot;: true,
+                        &quot;key&quot;: &quot;Object API Name&quot;,
+                        &quot;helpText&quot;: &quot;Object to base Custom Giving Summary Calculation on&quot;,
+                        &quot;valueType&quot;: &quot;string&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;picklist&quot;,
+                          &quot;customPicklistValuesString&quot;: [
+                            &quot;ucinn_ascendv2__Payment__c&quot;,
+                            &quot;ucinn_ascendv2__Hard_and_Soft_Credit__c&quot;
+                          ]
+                        }
+                      },
+                      {
+                        &quot;required&quot;: true,
+                        &quot;key&quot;: &quot;Calculation Field&quot;,
+                        &quot;helpText&quot;: &quot;Field (on the above Object) to use for Summary Giving Calculation. Specify a Date field to use with \&quot;First\&quot; and \&quot;Latest\&quot; Calculation Methods; otherwise, specify a Numeric field to use with \&quot;Average\&quot;, \&quot;Total\&quot;, and \&quot;Largest\&quot;.\n E.g. \&quot;ucinn_ascendv2__Credit_Amount__c\&quot; \n E.g. \&quot;ucinn_ascendv2__Credit_Date__c\&quot;&quot;,
+                        &quot;valueType&quot;: &quot;string&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;required&quot;: true,
+                        &quot;key&quot;: &quot;Calculation Method&quot;,
+                        &quot;valueType&quot;: &quot;string&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;picklist&quot;,
+                          &quot;customPicklistValuesString&quot;: [
+                            &quot;Average&quot;,
+                            &quot;Total&quot;,
+                            &quot;Largest&quot;,
+                            &quot;First&quot;,
+                            &quot;Latest&quot;
+                          ]
+                        }
+                      },
+                      {
+                        &quot;required&quot;: true,
+                        &quot;key&quot;: &quot;Summary Display Field&quot;,
+                        &quot;valueType&quot;: &quot;string&quot;,
+                        &quot;helpText&quot;: &quot;Field (on the above Object) to store on Account&apos;s Summary Field. \n E.g. \&quot;ucinn_ascendv2__Credit_Amount__c\&quot; \n E.g. \&quot;ucinn_ascendv2__Credit_Date__c\&quot;&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;Criteria&quot;,
+                        &quot;valueType&quot;: &quot;list&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;list&quot;,
+                          &quot;listType&quot;: &quot;value&quot;,
+                          &quot;helpText&quot;: &quot;The first element specifies the Field on the Object (Payment/HSC) that is used for comparing with the value of the criteria (supports Relation__r.Relation_Field__c fields). The second element specifies the opration (\&quot;=\&quot;, \&quot;&lt;\&quot;, \&quot;&gt;\&quot;, \&quot;&lt;=\&quot;, \&quot;&gt;=\&quot;). The third element specifies the value of the criteria. Use \&quot;Empty\&quot; to specify blank values. Use \&quot;, \&quot; to specify a list of values. E.g. \&quot;Empty\&quot;, E.g. \&quot;Empty, Soft\&quot; &quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;text&quot;,
+                            &quot;title&quot;: &quot;Criteria&quot;
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;Household__c&quot;,
+            &quot;required&quot;: true,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;Custom Giving Summary Definitions for Household (Account)&quot;,
+              &quot;keyLabel&quot;: &quot;Household (Account) Field API Name&quot;,
+              &quot;keyHelpText&quot;: &quot;Field API Name on the Household (Account) to store the Custom Giving Summary Information&quot;,
+              &quot;valueLabel&quot;: &quot;Custom Giving Summary Definition&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;title&quot;: &quot;Custom Giving Summary Definition&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;required&quot;: true,
+                        &quot;key&quot;: &quot;Object API Name&quot;,
+                        &quot;helpText&quot;: &quot;Object to base Custom Giving Summary Calculation on&quot;,
+                        &quot;valueType&quot;: &quot;string&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;picklist&quot;,
+                          &quot;customPicklistValuesString&quot;: [
+                            &quot;ucinn_ascendv2__Payment__c&quot;,
+                            &quot;ucinn_ascendv2__Hard_and_Soft_Credit__c&quot;
+                          ]
+                        }
+                      },
+                      {
+                        &quot;required&quot;: true,
+                        &quot;key&quot;: &quot;Calculation Field&quot;,
+                        &quot;helpText&quot;: &quot;Field (on the above Object) to use for Summary Giving Calculation. Specify a Date field to use with \&quot;First\&quot; and \&quot;Latest\&quot; Calculation Methods; otherwise, specify a Numeric field to use with \&quot;Average\&quot;, \&quot;Total\&quot;, and \&quot;Largest\&quot;.\n E.g. \&quot;ucinn_ascendv2__Credit_Amount__c\&quot; \n E.g. \&quot;ucinn_ascendv2__Credit_Date__c\&quot;&quot;,
+                        &quot;valueType&quot;: &quot;string&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;required&quot;: true,
+                        &quot;key&quot;: &quot;Calculation Method&quot;,
+                        &quot;valueType&quot;: &quot;string&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;picklist&quot;,
+                          &quot;customPicklistValuesString&quot;: [
+                            &quot;Average&quot;,
+                            &quot;Total&quot;,
+                            &quot;Largest&quot;,
+                            &quot;First&quot;,
+                            &quot;Latest&quot;
+                          ]
+                        }
+                      },
+                      {
+                        &quot;required&quot;: true,
+                        &quot;key&quot;: &quot;Summary Display Field&quot;,
+                        &quot;valueType&quot;: &quot;string&quot;,
+                        &quot;helpText&quot;: &quot;Field (on the above Object) to store on Account&apos;s Summary Field. \n E.g. \&quot;ucinn_ascendv2__Credit_Amount__c\&quot; \n E.g. \&quot;ucinn_ascendv2__Credit_Date__c\&quot;&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;Criteria&quot;,
+                        &quot;valueType&quot;: &quot;list&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;list&quot;,
+                          &quot;listType&quot;: &quot;value&quot;,
+                          &quot;helpText&quot;: &quot;The first element specifies the Field on the Object (Payment/HSC) that is used for comparing with the value of the criteria (supports Relation__r.Relation_Field__c fields). The second element specifies the opration (\&quot;=\&quot;, \&quot;&lt;\&quot;, \&quot;&gt;\&quot;, \&quot;&lt;=\&quot;, \&quot;&gt;=\&quot;). The third element specifies the value of the criteria. Use \&quot;Empty\&quot; to specify blank values. Use \&quot;, \&quot; to specify a list of values. E.g. \&quot;Empty\&quot;, E.g. \&quot;Empty, Soft\&quot; &quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;text&quot;,
+                            &quot;title&quot;: &quot;Criteria&quot;
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+&quot;objectApiName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Setting__mdt&quot;,
+&quot;title&quot;: &quot;Gift Processing Giving Summary Calculation Settings&quot;,
+&quot;helpText&quot;: &quot;Configuration pertaining to the giving summary for Bio Demo.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

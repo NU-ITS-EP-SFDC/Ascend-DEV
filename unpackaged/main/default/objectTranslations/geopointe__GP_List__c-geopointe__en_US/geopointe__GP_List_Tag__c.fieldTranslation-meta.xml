@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Geopointe list tag that the list relates to. --></help>
+        <label><!-- Geopointe Tag --></label>
+        <name>geopointe__GP_List_Tag__c</name>
+        <relationshipLabel><!-- Geopointe List List Tag --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The purpose of the interaction. --></help>
+        <label><!-- Contact Purpose --></label>
+        <name>NU_ADV_Contact_Purpose_2__c</name>
+        <picklistValues>
+            <masterLabel>Constituent Initiated Contact</masterLabel>
+            <translation><!-- Constituent Initiated Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cultivation</masterLabel>
+            <translation><!-- Cultivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement</masterLabel>
+            <translation><!-- Engagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impromptu Interaction</masterLabel>
+            <translation><!-- Impromptu Interaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Introductory</masterLabel>
+            <translation><!-- Introductory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Content Referral</masterLabel>
+            <translation><!-- Marketing Content Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification</masterLabel>
+            <translation><!-- Qualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solicitation</masterLabel>
+            <translation><!-- Solicitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stewardship</masterLabel>
+            <translation><!-- Stewardship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volunteer</masterLabel>
+            <translation><!-- Volunteer --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type --></label>
+        <name>geopointe__Type__c</name>
+        <picklistValues>
+            <masterLabel>API Assign Records</masterLabel>
+            <translation><!-- API Assign Records --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add To Campaign</masterLabel>
+            <translation><!-- Add To Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batch Job</masterLabel>
+            <translation><!-- Batch Job --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dataset Extension</masterLabel>
+            <translation><!-- Dataset Extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Log</masterLabel>
+            <translation><!-- Error Log --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geocode Cleanup</masterLabel>
+            <translation><!-- Geocode Cleanup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print Route</masterLabel>
+            <translation><!-- Print Route --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SK Data Set Push</masterLabel>
+            <translation><!-- SK Data Set Push --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SK Session Id</masterLabel>
+            <translation><!-- SK Session Id --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

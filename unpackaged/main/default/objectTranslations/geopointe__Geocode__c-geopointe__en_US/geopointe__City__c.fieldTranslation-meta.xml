@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The city value provided to the geocoder. --></help>
+        <label><!-- City --></label>
+        <name>geopointe__City__c</name>
+    </CustomFieldTranslation>

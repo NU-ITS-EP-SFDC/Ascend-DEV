@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- ADV Reporting Unit --></label>
+        <name>NU_ADV_Reporting_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Athletics</masterLabel>
+            <translation><!-- Athletics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bouve College of Health Sciences</masterLabel>
+            <translation><!-- Bouve College of Health Sciences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Arts, Media &amp; Design</masterLabel>
+            <translation><!-- College of Arts, Media &amp; Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Engineering</masterLabel>
+            <translation><!-- College of Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Professional Studies</masterLabel>
+            <translation><!-- College of Professional Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Science</masterLabel>
+            <translation><!-- College of Science --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Social Sciences &amp; Humanities</masterLabel>
+            <translation><!-- College of Social Sciences &amp; Humanities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMSB</masterLabel>
+            <translation><!-- DMSB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Network</masterLabel>
+            <translation><!-- Global Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Khoury College of Computer Sciences</masterLabel>
+            <translation><!-- Khoury College of Computer Sciences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Library</masterLabel>
+            <translation><!-- Library --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roux Institute</masterLabel>
+            <translation><!-- Roux Institute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Law</masterLabel>
+            <translation><!-- School of Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Priorities</masterLabel>
+            <translation><!-- University Priorities --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

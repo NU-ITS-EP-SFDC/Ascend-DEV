@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ucinn_ascendv2__Capacity_Source__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Capacity Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ZoomInfo</fullName>
+                <default>false</default>
+                <label>ZoomInfo</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Dun and Bradstreet</fullName>
+                <default>false</default>
+                <label>Dun and Bradstreet</label>
+            </value>
+            <value>
+                <fullName>DatabaseUSA</fullName>
+                <default>false</default>
+                <label>DatabaseUSA</label>
+            </value>
+            <value>
+                <fullName>Donations</fullName>
+                <default>false</default>
+                <label>Donations</label>
+            </value>
+            <value>
+                <fullName>Real Estate (US)</fullName>
+                <default>false</default>
+                <label>Real Estate (US)</label>
+            </value>
+            <value>
+                <fullName>Real Estate (CA)</fullName>
+                <default>false</default>
+                <label>Real Estate (CA)</label>
+            </value>
+            <value>
+                <fullName>High Net Worth Individuals</fullName>
+                <default>false</default>
+                <label>High Net Worth Individuals</label>
+            </value>
+            <value>
+                <fullName>Financial</fullName>
+                <default>false</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Insider Filings</fullName>
+                <default>false</default>
+                <label>Insider Filings</label>
+            </value>
+            <value>
+                <fullName>Political Giving (US)</fullName>
+                <default>false</default>
+                <label>Political Giving (US)</label>
+            </value>
+            <value>
+                <fullName>Political Giving (State)</fullName>
+                <default>false</default>
+                <label>Political Giving (State)</label>
+            </value>
+            <value>
+                <fullName>Political Giving (CA)</fullName>
+                <default>false</default>
+                <label>Political Giving (CA)</label>
+            </value>
+            <value>
+                <fullName>Foundations (US)</fullName>
+                <default>false</default>
+                <label>Foundations (US)</label>
+            </value>
+            <value>
+                <fullName>Foundations (CA)</fullName>
+                <default>false</default>
+                <label>Foundations (CA)</label>
+            </value>
+            <value>
+                <fullName>Matching Gifts</fullName>
+                <default>false</default>
+                <label>Matching Gifts</label>
+            </value>
+            <value>
+                <fullName>Obituaries</fullName>
+                <default>false</default>
+                <label>Obituaries</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

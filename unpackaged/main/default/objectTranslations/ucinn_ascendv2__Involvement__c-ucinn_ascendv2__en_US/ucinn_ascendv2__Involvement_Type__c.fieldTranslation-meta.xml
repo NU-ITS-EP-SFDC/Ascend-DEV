@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Involvement Type --></label>
+        <name>ucinn_ascendv2__Involvement_Type__c</name>
+        <picklistValues>
+            <masterLabel>Advisor</masterLabel>
+            <translation><!-- Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisory Board Member</masterLabel>
+            <translation><!-- Advisory Board Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Director of Communications</masterLabel>
+            <translation><!-- Assistant Director of Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Program Director</masterLabel>
+            <translation><!-- Assistant Program Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Vice President for Academic Affairs</masterLabel>
+            <translation><!-- Assistant Vice President for Academic Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Vice President for Student Affairs</masterLabel>
+            <translation><!-- Assistant Vice President for Student Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Vice President for Student Involvement</masterLabel>
+            <translation><!-- Assistant Vice President for Student Involvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Vice President for Student Services</masterLabel>
+            <translation><!-- Assistant Vice President for Student Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board Member</masterLabel>
+            <translation><!-- Board Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEO</masterLabel>
+            <translation><!-- CEO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campus Liaison</masterLabel>
+            <translation><!-- Campus Liaison --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campus Outreach Coordinator</masterLabel>
+            <translation><!-- Campus Outreach Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Captain</masterLabel>
+            <translation><!-- Captain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chair</masterLabel>
+            <translation><!-- Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief of Staff</masterLabel>
+            <translation><!-- Chief of Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Leader</masterLabel>
+            <translation><!-- Co-Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-advisor</masterLabel>
+            <translation><!-- Co-advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-captain</masterLabel>
+            <translation><!-- Co-captain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-chair</masterLabel>
+            <translation><!-- Co-chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coach</masterLabel>
+            <translation><!-- Coach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Committee Member</masterLabel>
+            <translation><!-- Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Outreach Coordinator</masterLabel>
+            <translation><!-- Community Outreach Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comptroller</masterLabel>
+            <translation><!-- Comptroller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cultural Liaison</masterLabel>
+            <translation><!-- Cultural Liaison --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegate</masterLabel>
+            <translation><!-- Delegate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deputy Comptroller</masterLabel>
+            <translation><!-- Deputy Comptroller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director</masterLabel>
+            <translation><!-- Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director of Alumni Relations</masterLabel>
+            <translation><!-- Director of Alumni Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director of Communication</masterLabel>
+            <translation><!-- Director of Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director of Community Service</masterLabel>
+            <translation><!-- Director of Community Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director of Design</masterLabel>
+            <translation><!-- Director of Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director of Finance</masterLabel>
+            <translation><!-- Director of Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director of Marketing</masterLabel>
+            <translation><!-- Director of Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director of Marketing &amp; Communications</masterLabel>
+            <translation><!-- Director of Marketing &amp; Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director of Member Engagement</masterLabel>
+            <translation><!-- Director of Member Engagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director of Operations</masterLabel>
+            <translation><!-- Director of Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director of Recruitment &amp; Partnerships</masterLabel>
+            <translation><!-- Director of Recruitment &amp; Partnerships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elections Committee Chair</masterLabel>
+            <translation><!-- Elections Committee Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entrepreneur in Residence</masterLabel>
+            <translation><!-- Entrepreneur in Residence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Planner</masterLabel>
+            <translation><!-- Event Planner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Director of Communications</masterLabel>
+            <translation><!-- Executive Director of Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Vice President</masterLabel>
+            <translation><!-- Executive Vice President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faculty Advisor</masterLabel>
+            <translation><!-- Faculty Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fellow</masterLabel>
+            <translation><!-- Fellow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Board Member</masterLabel>
+            <translation><!-- Finance Board Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graphic Designer</masterLabel>
+            <translation><!-- Graphic Designer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Historian</masterLabel>
+            <translation><!-- Historian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest</masterLabel>
+            <translation><!-- Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Introducer</masterLabel>
+            <translation><!-- Introducer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Junior Program Director</masterLabel>
+            <translation><!-- Junior Program Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leader</masterLabel>
+            <translation><!-- Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leadership Team</masterLabel>
+            <translation><!-- Leadership Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager</masterLabel>
+            <translation><!-- Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Manager</masterLabel>
+            <translation><!-- Marketing Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Team</masterLabel>
+            <translation><!-- Marketing Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mentee</masterLabel>
+            <translation><!-- Mentee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mentor</masterLabel>
+            <translation><!-- Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderator</masterLabel>
+            <translation><!-- Moderator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nominee</masterLabel>
+            <translation><!-- Nominee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Assistant</masterLabel>
+            <translation><!-- Office Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operational Appeals Board</masterLabel>
+            <translation><!-- Operational Appeals Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parliamentarian</masterLabel>
+            <translation><!-- Parliamentarian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participant</masterLabel>
+            <translation><!-- Participant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photographer</masterLabel>
+            <translation><!-- Photographer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>President</masterLabel>
+            <translation><!-- President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program Director</masterLabel>
+            <translation><!-- Program Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewable Energy Initiatives Board</masterLabel>
+            <translation><!-- Renewable Energy Initiatives Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scout Liaison</masterLabel>
+            <translation><!-- Scout Liaison --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secretary</masterLabel>
+            <translation><!-- Secretary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senator</masterLabel>
+            <translation><!-- Senator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shortlist</masterLabel>
+            <translation><!-- Shortlist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Director</masterLabel>
+            <translation><!-- Social Media Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker</masterLabel>
+            <translation><!-- Speaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff</masterLabel>
+            <translation><!-- Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standing Committee Delegate (Delegate)</masterLabel>
+            <translation><!-- Standing Committee Delegate (Delegate) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Involvement Board Member</masterLabel>
+            <translation><!-- Student Involvement Board Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student-at-large</masterLabel>
+            <translation><!-- Student-at-large --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SustainingMember</masterLabel>
+            <translation><!-- SustainingMember --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasurer</masterLabel>
+            <translation><!-- Treasurer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underclassmen Representative</masterLabel>
+            <translation><!-- Underclassmen Representative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice Chair</masterLabel>
+            <translation><!-- Vice Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President</masterLabel>
+            <translation><!-- Vice President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President for Academic Affairs</masterLabel>
+            <translation><!-- Vice President for Academic Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President for Student Affairs</masterLabel>
+            <translation><!-- Vice President for Student Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President for Student Involvement</masterLabel>
+            <translation><!-- Vice President for Student Involvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President for Student Services</masterLabel>
+            <translation><!-- Vice President for Student Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President of Administration</masterLabel>
+            <translation><!-- Vice President of Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President of Alumni Relations</masterLabel>
+            <translation><!-- Vice President of Alumni Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President of Community Relations</masterLabel>
+            <translation><!-- Vice President of Community Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President of Community Service</masterLabel>
+            <translation><!-- Vice President of Community Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President of Events</masterLabel>
+            <translation><!-- Vice President of Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President of Finance</masterLabel>
+            <translation><!-- Vice President of Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President of Media &amp; Marketing</masterLabel>
+            <translation><!-- Vice President of Media &amp; Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President of Member Relations</masterLabel>
+            <translation><!-- Vice President of Member Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President of Recruitment &amp; Retention</masterLabel>
+            <translation><!-- Vice President of Recruitment &amp; Retention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President of University Relations</masterLabel>
+            <translation><!-- Vice President of University Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volunteer</masterLabel>
+            <translation><!-- Volunteer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webmaster</masterLabel>
+            <translation><!-- Webmaster --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

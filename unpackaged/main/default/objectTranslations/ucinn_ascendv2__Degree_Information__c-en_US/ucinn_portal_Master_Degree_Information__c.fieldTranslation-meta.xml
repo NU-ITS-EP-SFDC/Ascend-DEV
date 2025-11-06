@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Master Degree Information --></label>
+        <name>ucinn_portal_Master_Degree_Information__c</name>
+        <relationshipLabel><!-- Degree Information --></relationshipLabel>
+    </CustomFieldTranslation>

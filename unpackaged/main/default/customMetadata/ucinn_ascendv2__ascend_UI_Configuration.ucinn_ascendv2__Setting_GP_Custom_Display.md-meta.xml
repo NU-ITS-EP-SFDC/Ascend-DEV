@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP Custom Display</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Custom_Display_Field_Orders__c&quot;,
+      &quot;required&quot;: true,
+      &quot;toolTip&quot;: &quot;Specify the ordering of the columns along with headers and fields. The columns and fields will render based on how they are ordered.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Custom Display Field Orders&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;helpText&quot;: &quot;Specify the Custom Fields to display for each Object&quot;,
+        &quot;title&quot;: &quot;Custom Display Field Orders&quot;,
+        &quot;keyLabel&quot;: &quot;Object&quot;,
+        &quot;valueLabel&quot;: &quot;Custom Field Display&quot;,
+        &quot;keyHelpText&quot;: &quot;Object API Name&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;Opportunity&quot;,
+            &quot;helpText&quot;: &quot;Custom Display for Opporutnity&quot;,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;Custom Display for Opporutnity&quot;,
+              &quot;keyHelpText&quot;: &quot;Choose the Opportunity Record Types to display Custom Fields or use [CUSTOM] to specify the Column Header and use for ALL Record Types. Specify using either Record Types or Column Headers, NEVER both.&quot;,
+              &quot;valueType&quot;: &quot;text&quot;,
+              &quot;keyLabel&quot;: &quot;Opportunity Record Type or Column Header Label&quot;,
+              &quot;valueLabel&quot;: &quot;Custom Display&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;Gift&quot;,
+                  &quot;helpText&quot;: &quot;Custom Display for Opportunity - Gift Record Type. Make sure to specify the \&quot;Gift\&quot; Record Type for Opportunity in Custom Display Positions.&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;title&quot;: &quot;Custom Display for Gift&quot;,
+                    &quot;keyLabel&quot;: &quot;Column Header&quot;,
+                    &quot;valueLabel&quot;: &quot;Custom Display Fields&quot;,
+                    &quot;keyHelpText&quot;: &quot;Header for the Column, use \&quot;BLANK_#\&quot; for no column header&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;valueType&quot;: &quot;list&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;list&quot;,
+                          &quot;listType&quot;: &quot;object&quot;,
+                          &quot;listViewType&quot;: &quot;object&quot;,
+                          &quot;title&quot;: &quot;Custom Display Fields for Column&quot;,
+                          &quot;helpText&quot;: &quot;Specify the Custom Field API Name and the conditions for the field to display (if applicable).&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;helpText&quot;: &quot;Specify Custom Field API Name and Display Type (read,write). Or specify the Object Api Name and Object Field Api Name to grab value from&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;display condition&quot;,
+                              &quot;valueType&quot;: &quot;text&quot;,
+                              &quot;helpText&quot;: &quot;E.g. paymentRecord.Tender_Type_for_Gifts__c==\\\&quot;Property\\\&quot;\nE.g. (opportunityRecord.Type==\\\&quot;PGCLT (Charitable Lead Trust)\\\&quot;)||(opportunityRecord.Type==\\\&quot;PGCRT (Charitable Remainder Trust)\\\&quot;)\nE.g. opportunityRecord.RecordType==\\\&quot;Pledge\\\&quot;&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;textarea&quot;
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;Pledge&quot;,
+                  &quot;helpText&quot;: &quot;Custom Display for Opportunity - Pledge Record Type. Make sure to specify the \&quot;Pledge\&quot; Record Type for Opportunity in Custom Display Positions.&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;title&quot;: &quot;Custom Display for Pledge&quot;,
+                    &quot;keyLabel&quot;: &quot;Column Header&quot;,
+                    &quot;valueLabel&quot;: &quot;Custom Display Fields&quot;,
+                    &quot;keyHelpText&quot;: &quot;Header for the Column, use \&quot;BLANK_#\&quot; for no column header&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;valueType&quot;: &quot;list&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;list&quot;,
+                          &quot;listType&quot;: &quot;object&quot;,
+                          &quot;listViewType&quot;: &quot;object&quot;,
+                          &quot;title&quot;: &quot;Custom Display Fields for Column&quot;,
+                          &quot;helpText&quot;: &quot;Specify the Custom Field API Name and the conditions for the field to display (if applicable).&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;helpText&quot;: &quot;Specify Custom Field API Name and Display Type (read,write). Or specify the Object Api Name and Object Field Api Name to grab value from&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;display condition&quot;,
+                              &quot;valueType&quot;: &quot;text&quot;,
+                              &quot;helpText&quot;: &quot;E.g. paymentRecord.Tender_Type_for_Gifts__c==\\\&quot;Property\\\&quot;\nE.g. (opportunityRecord.Type==\\\&quot;PGCLT (Charitable Lead Trust)\\\&quot;)||(opportunityRecord.Type==\\\&quot;PGCRT (Charitable Remainder Trust)\\\&quot;)\nE.g. opportunityRecord.RecordType==\\\&quot;Pledge\\\&quot;&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;textarea&quot;
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;Recurring Gift&quot;,
+                  &quot;helpText&quot;: &quot;Custom Display for Opportunity - Recurring Gift Record Type. Make sure to specify the \&quot;Recurring Gift\&quot; Record Type for Opportunity in Custom Display Positions.&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;title&quot;: &quot;Custom Display for Recurring Gift&quot;,
+                    &quot;keyLabel&quot;: &quot;Column Header&quot;,
+                    &quot;valueLabel&quot;: &quot;Custom Display Fields&quot;,
+                    &quot;keyHelpText&quot;: &quot;Header for the Column, use \&quot;BLANK_#\&quot; for no column header&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;valueType&quot;: &quot;list&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;list&quot;,
+                          &quot;listType&quot;: &quot;object&quot;,
+                          &quot;listViewType&quot;: &quot;object&quot;,
+                          &quot;title&quot;: &quot;Custom Display Fields for Column&quot;,
+                          &quot;helpText&quot;: &quot;Specify the Custom Field API Name and the conditions for the field to display (if applicable).&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;helpText&quot;: &quot;Specify Custom Field API Name and Display Type (read,write). Or specify the Object Api Name and Object Field Api Name to grab value from&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;display condition&quot;,
+                              &quot;valueType&quot;: &quot;text&quot;,
+                              &quot;helpText&quot;: &quot;E.g. paymentRecord.Tender_Type_for_Gifts__c==\\\&quot;Property\\\&quot;\nE.g. (opportunityRecord.Type==\\\&quot;PGCLT (Charitable Lead Trust)\\\&quot;)||(opportunityRecord.Type==\\\&quot;PGCRT (Charitable Remainder Trust)\\\&quot;)\nE.g. opportunityRecord.RecordType==\\\&quot;Pledge\\\&quot;&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;textarea&quot;
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;Matching Gift&quot;,
+                  &quot;helpText&quot;: &quot;Custom Display for Opportunity - Matching Gift Record Type. Make sure to specify the \&quot;Matching Gift\&quot; Record Type for Opportunity in Custom Display Positions.&quot;,
+                  &quot;valueType&quot;: &quot;object&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;title&quot;: &quot;Custom Display for Matching Gift&quot;,
+                    &quot;keyLabel&quot;: &quot;Column Header&quot;,
+                    &quot;valueLabel&quot;: &quot;Custom Display Fields&quot;,
+                    &quot;keyHelpText&quot;: &quot;Header for the Column, use \&quot;BLANK_#\&quot; for no column header&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;valueType&quot;: &quot;list&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;list&quot;,
+                          &quot;listType&quot;: &quot;object&quot;,
+                          &quot;listViewType&quot;: &quot;object&quot;,
+                          &quot;title&quot;: &quot;Custom Display Fields for Column&quot;,
+                          &quot;helpText&quot;: &quot;Specify the Custom Field API Name and the conditions for the field to display (if applicable).&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;helpText&quot;: &quot;Specify Custom Field API Name and Display Type (read,write). Or specify the Object Api Name and Object Field Api Name to grab value from&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;display condition&quot;,
+                              &quot;valueType&quot;: &quot;text&quot;,
+                              &quot;helpText&quot;: &quot;E.g. paymentRecord.Tender_Type_for_Gifts__c==\\\&quot;Property\\\&quot;\nE.g. (opportunityRecord.Type==\\\&quot;PGCLT (Charitable Lead Trust)\\\&quot;)||(opportunityRecord.Type==\\\&quot;PGCRT (Charitable Remainder Trust)\\\&quot;)\nE.g. opportunityRecord.RecordType==\\\&quot;Pledge\\\&quot;&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;textarea&quot;
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;helpText&quot;: &quot;Column header for all Record Types. NOTES: this CANNOT be used along with Record Type specifics. If you&apos;ve already had Custom Field Displays for specific Opportunity Record Types, you cannot use this option.&quot;,
+                  &quot;valueType&quot;: &quot;list&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;listViewType&quot;: &quot;object&quot;,
+                    &quot;title&quot;: &quot;Custom Display Fields for Column&quot;,
+                    &quot;helpText&quot;: &quot;Specify the Custom Field API Name and the conditions for the field to display (if applicable).&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;valueType&quot;: &quot;text&quot;,
+                        &quot;helpText&quot;: &quot;Specify Custom Field API Name and Display Type (read,write). Or specify the Object Api Name and Object Field Api Name to grab value from&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;display condition&quot;,
+                        &quot;valueType&quot;: &quot;text&quot;,
+                        &quot;helpText&quot;: &quot;E.g. paymentRecord.Tender_Type_for_Gifts__c==\\\&quot;Property\\\&quot;\nE.g. (opportunityRecord.Type==\\\&quot;PGCLT (Charitable Lead Trust)\\\&quot;)||(opportunityRecord.Type==\\\&quot;PGCRT (Charitable Remainder Trust)\\\&quot;)\nE.g. opportunityRecord.RecordType==\\\&quot;Pledge\\\&quot;&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;textarea&quot;
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+            &quot;helpText&quot;: &quot;Custom Display for Payment&quot;,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;Custom Display for Payment&quot;,
+              &quot;valueType&quot;: &quot;text&quot;,
+              &quot;keyLabel&quot;: &quot;Column Header&quot;,
+              &quot;valueLabel&quot;: &quot;Custom Display&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueType&quot;: &quot;list&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;listViewType&quot;: &quot;object&quot;,
+                    &quot;title&quot;: &quot;Custom Display Fields for Column&quot;,
+                    &quot;helpText&quot;: &quot;Specify the Custom Field API Name and the conditions for the field to display (if applicable).&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;helpText&quot;: &quot;Specify Custom Field API Name and Display Type (read,write). Or specify the Object Api Name and Object Field Api Name to grab value from&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;display condition&quot;,
+                        &quot;valueType&quot;: &quot;text&quot;,
+                        &quot;helpText&quot;: &quot;E.g. paymentRecord.Tender_Type_for_Gifts__c==\\\&quot;Property\\\&quot;\nE.g. (opportunityRecord.Type==\\\&quot;PGCLT (Charitable Lead Trust)\\\&quot;)||(opportunityRecord.Type==\\\&quot;PGCRT (Charitable Remainder Trust)\\\&quot;)\nE.g. opportunityRecord.RecordType==\\\&quot;Pledge\\\&quot;&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;textarea&quot;
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Designation_Detail__c&quot;,
+            &quot;helpText&quot;: &quot;Custom Display for Designation Detail&quot;,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;Custom Display for Designation Detail&quot;,
+              &quot;valueType&quot;: &quot;text&quot;,
+              &quot;keyLabel&quot;: &quot;Column Header&quot;,
+              &quot;valueLabel&quot;: &quot;Custom Display&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueType&quot;: &quot;list&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;listViewType&quot;: &quot;object&quot;,
+                    &quot;title&quot;: &quot;Custom Display Fields for Column&quot;,
+                    &quot;helpText&quot;: &quot;Specify the Custom Field API Name and the conditions for the field to display (if applicable).&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;helpText&quot;: &quot;Specify Custom Field API Name and Display Type (read,write). Or specify the Object Api Name and Object Field Api Name to grab value from&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;display condition&quot;,
+                        &quot;valueType&quot;: &quot;text&quot;,
+                        &quot;helpText&quot;: &quot;E.g. paymentRecord.Tender_Type_for_Gifts__c==\\\&quot;Property\\\&quot;\nE.g. (opportunityRecord.Type==\\\&quot;PGCLT (Charitable Lead Trust)\\\&quot;)||(opportunityRecord.Type==\\\&quot;PGCRT (Charitable Remainder Trust)\\\&quot;)\nE.g. opportunityRecord.RecordType==\\\&quot;Pledge\\\&quot;&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;textarea&quot;
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Hard_and_Soft_Credit__c&quot;,
+            &quot;helpText&quot;: &quot;Custom Display for Hard and Soft Credit&quot;,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;Custom Display for Hard and Soft Credit&quot;,
+              &quot;valueType&quot;: &quot;text&quot;,
+              &quot;keyLabel&quot;: &quot;Column Header&quot;,
+              &quot;valueLabel&quot;: &quot;Custom Display&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueType&quot;: &quot;list&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;listViewType&quot;: &quot;object&quot;,
+                    &quot;title&quot;: &quot;Custom Display Fields for Column&quot;,
+                    &quot;helpText&quot;: &quot;Specify the Custom Field API Name and the conditions for the field to display (if applicable).&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;helpText&quot;: &quot;Specify Custom Field API Name and Display Type (read,write). Or specify the Object Api Name and Object Field Api Name to grab value from&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;display condition&quot;,
+                        &quot;valueType&quot;: &quot;text&quot;,
+                        &quot;helpText&quot;: &quot;E.g. paymentRecord.Tender_Type_for_Gifts__c==\\\&quot;Property\\\&quot;\nE.g. (opportunityRecord.Type==\\\&quot;PGCLT (Charitable Lead Trust)\\\&quot;)||(opportunityRecord.Type==\\\&quot;PGCRT (Charitable Remainder Trust)\\\&quot;)\nE.g. opportunityRecord.RecordType==\\\&quot;Pledge\\\&quot;&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;textarea&quot;
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Tribute__c&quot;,
+            &quot;helpText&quot;: &quot;Custom Display for Tribute&quot;,
+            &quot;valueType&quot;: &quot;object&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;Custom Display for Tribute&quot;,
+              &quot;valueType&quot;: &quot;text&quot;,
+              &quot;keyLabel&quot;: &quot;Column Header&quot;,
+              &quot;valueLabel&quot;: &quot;Custom Display&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueType&quot;: &quot;list&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;listViewType&quot;: &quot;object&quot;,
+                    &quot;title&quot;: &quot;Custom Display Fields for Column&quot;,
+                    &quot;helpText&quot;: &quot;Specify the Custom Field API Name and the conditions for the field to display (if applicable).&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;helpText&quot;: &quot;Specify Custom Field API Name and Display Type (read,write). Or specify the Object Api Name and Object Field Api Name to grab value from&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;display condition&quot;,
+                        &quot;valueType&quot;: &quot;text&quot;,
+                        &quot;helpText&quot;: &quot;E.g. paymentRecord.Tender_Type_for_Gifts__c==\\\&quot;Property\\\&quot;\nE.g. (opportunityRecord.Type==\\\&quot;PGCLT (Charitable Lead Trust)\\\&quot;)||(opportunityRecord.Type==\\\&quot;PGCRT (Charitable Remainder Trust)\\\&quot;)\nE.g. opportunityRecord.RecordType==\\\&quot;Pledge\\\&quot;&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;textarea&quot;
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Custom_Display_Positions__c&quot;,
+      &quot;required&quot;: true,
+      &quot;toolTip&quot;: &quot;Describes where the custom display will render on the Gift Processing page.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Custom Display Positions&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;helpText&quot;: &quot;Specify the position of Custom Fields to display for each Object&quot;,
+        &quot;title&quot;: &quot;Custom Display Field Position&quot;,
+        &quot;keyLabel&quot;: &quot;Object&quot;,
+        &quot;valueLabel&quot;: &quot;Custom Field Display Position&quot;,
+        &quot;keyHelpText&quot;: &quot;Object API Name&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;Opportunity&quot;,
+            &quot;helpText&quot;: &quot;Custom Display Position for Opporutnity. Choose \&quot;object\&quot; to configure by each Record Type. Choose \&quot;picklist\&quot; to configure by Header (for all Record Types). Note: This option must be set in accordance to the Opportunity settings in Custom Display Field Orders.&quot;,
+            &quot;valueType&quot;: &quot;multi&quot;,
+            &quot;valueTypeToFieldParams&quot;: {
+              &quot;object&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;title&quot;: &quot;Custom Display Position for Opporutnity by Record Type&quot;,
+                &quot;keyHelpText&quot;: &quot;Choose the Opportunity Record Types to set position.&quot;,
+                &quot;valueType&quot;: &quot;text&quot;,
+                &quot;keyLabel&quot;: &quot;Opportunity Record Type&quot;,
+                &quot;valueLabel&quot;: &quot;Custom Display Position&quot;,
+                &quot;jsonKeysToValueList&quot;: [
+                  {
+                    &quot;key&quot;: &quot;Gift&quot;,
+                    &quot;helpText&quot;: &quot;Custom Display Position for Opportunity - Gift Record Type.&quot;,
+                    &quot;valueType&quot;: &quot;text&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;picklist&quot;,
+                      &quot;customPicklistValuesString&quot;: [
+                        &quot;Above Opp Info&quot;,
+                        &quot;Inside Opp Info&quot;,
+                        &quot;Below Opp Info&quot;
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;Pledge&quot;,
+                    &quot;helpText&quot;: &quot;Custom Display Position for Opportunity - Pledge Record Type.&quot;,
+                    &quot;valueType&quot;: &quot;text&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;picklist&quot;,
+                      &quot;customPicklistValuesString&quot;: [
+                        &quot;Above Opp Info&quot;,
+                        &quot;Inside Opp Info&quot;,
+                        &quot;Below Opp Info&quot;
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;Matching Gift&quot;,
+                    &quot;helpText&quot;: &quot;Custom Display Position for Opportunity - Matching Gift Record Type.&quot;,
+                    &quot;valueType&quot;: &quot;text&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;picklist&quot;,
+                      &quot;customPicklistValuesString&quot;: [
+                        &quot;Above Opp Info&quot;,
+                        &quot;Inside Opp Info&quot;,
+                        &quot;Below Opp Info&quot;
+                      ]
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;Recurring Gift&quot;,
+                    &quot;helpText&quot;: &quot;Custom Display Position for Opportunity - Recurring Gift Record Type.&quot;,
+                    &quot;valueType&quot;: &quot;text&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;picklist&quot;,
+                      &quot;customPicklistValuesString&quot;: [
+                        &quot;Above Opp Info&quot;,
+                        &quot;Inside Opp Info&quot;,
+                        &quot;Below Opp Info&quot;
+                      ]
+                    }
+                  }
+                ]
+              },
+              &quot;string&quot;: {
+                &quot;type&quot;: &quot;picklist&quot;,
+                &quot;customPicklistValuesString&quot;: [
+                  &quot;Above Opp Info&quot;,
+                  &quot;Inside Opp Info&quot;,
+                  &quot;Below Opp Info&quot;
+                ]
+              }
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+            &quot;helpText&quot;: &quot;Custom Display Position for Payment.&quot;,
+            &quot;valueType&quot;: &quot;text&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Payment Info&quot;
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Designation_Detail__c&quot;,
+            &quot;helpText&quot;: &quot;Custom Display Position for Designation Detail.&quot;,
+            &quot;valueType&quot;: &quot;text&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;DD Info&quot;
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Hard_and_Soft_Credit__c&quot;,
+            &quot;helpText&quot;: &quot;Custom Display Position for Hard and Soft Credit.&quot;,
+            &quot;valueType&quot;: &quot;text&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;HSC Info&quot;
+              ]
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Tribute__c&quot;,
+            &quot;helpText&quot;: &quot;Custom Display Position for Tribute.&quot;,
+            &quot;valueType&quot;: &quot;text&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Tribute Info&quot;
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Custom_Display_Titles__c&quot;,
+      &quot;required&quot;: true,
+      &quot;toolTip&quot;: &quot;Specify the collection title for the custom display.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Custom Display Titles&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;helpText&quot;: &quot;Specify the Title of Custom Fields to display for each Object&quot;,
+        &quot;title&quot;: &quot;Custom Display Field Title&quot;,
+        &quot;keyLabel&quot;: &quot;Object&quot;,
+        &quot;valueLabel&quot;: &quot;Custom Field Display Title&quot;,
+        &quot;keyHelpText&quot;: &quot;Object API Name&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;Opportunity&quot;,
+            &quot;helpText&quot;: &quot;Custom Display Title for Opporutnity. Choose \&quot;object\&quot; to configure by each Record Type. Choose \&quot;text\&quot; to configure by Header (for all Record Types). Note: This option must be set in accordance to the Opportunity settings in Custom Display Field Orders.&quot;,
+            &quot;valueType&quot;: &quot;multi&quot;,
+            &quot;valueTypeToFieldParams&quot;: {
+              &quot;string&quot;: {
+                &quot;type&quot;: &quot;text&quot;
+              },
+              &quot;object&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;title&quot;: &quot;Custom Display Title for Opporutnity by Record Type&quot;,
+                &quot;keyHelpText&quot;: &quot;Choose the Opportunity Record Types to set title.&quot;,
+                &quot;valueType&quot;: &quot;text&quot;,
+                &quot;keyLabel&quot;: &quot;Opportunity Record Type&quot;,
+                &quot;valueLabel&quot;: &quot;Custom Display Title&quot;,
+                &quot;jsonKeysToValueList&quot;: [
+                  {
+                    &quot;key&quot;: &quot;Gift&quot;,
+                    &quot;helpText&quot;: &quot;Custom Display Title for Opportunity - Gift Record Type.&quot;,
+                    &quot;valueType&quot;: &quot;text&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;Pledge&quot;,
+                    &quot;helpText&quot;: &quot;Custom Display Title for Opportunity - Pledge Record Type.&quot;,
+                    &quot;valueType&quot;: &quot;text&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;Matching Gift&quot;,
+                    &quot;helpText&quot;: &quot;Custom Display Title for Opportunity - Matching Gift Record Type.&quot;,
+                    &quot;valueType&quot;: &quot;text&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  },
+                  {
+                    &quot;key&quot;: &quot;Recurring Gift&quot;,
+                    &quot;helpText&quot;: &quot;Custom Display Title for Opportunity - Recurring Gift Record Type.&quot;,
+                    &quot;valueType&quot;: &quot;text&quot;,
+                    &quot;valueCustomFieldParams&quot;: {
+                      &quot;type&quot;: &quot;text&quot;
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Payment__c&quot;,
+            &quot;helpText&quot;: &quot;Custom Display Title for Payment.&quot;,
+            &quot;valueType&quot;: &quot;text&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Designation_Detail__c&quot;,
+            &quot;helpText&quot;: &quot;Custom Display Title for Designation Detail.&quot;,
+            &quot;valueType&quot;: &quot;text&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Hard_and_Soft_Credit__c&quot;,
+            &quot;helpText&quot;: &quot;Custom Display Title for Hard and Soft Credit.&quot;,
+            &quot;valueType&quot;: &quot;text&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;ucinn_ascendv2__Tribute__c&quot;,
+            &quot;helpText&quot;: &quot;Custom Display Title for Tribute.&quot;,
+            &quot;valueType&quot;: &quot;text&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+&quot;objectApiName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Setting__mdt&quot;,
+&quot;title&quot;: &quot;Gift Processing Custom Display Information&quot;,
+&quot;helpText&quot;: &quot;Specify the Custom Fields, their orders and their position to display on the Gift Processing screen&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

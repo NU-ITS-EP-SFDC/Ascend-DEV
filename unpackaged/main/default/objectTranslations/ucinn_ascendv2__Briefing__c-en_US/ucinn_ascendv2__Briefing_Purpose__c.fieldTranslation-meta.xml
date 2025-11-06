@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Type</label>
+        <name>ucinn_ascendv2__Briefing_Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Career History</masterLabel>
+            <translation><!-- Career History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Bio</masterLabel>
+            <translation><!-- Corporate Bio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Bio</masterLabel>
+            <translation><!-- Event Bio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Philanthropy</masterLabel>
+            <translation><!-- External Philanthropy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Foundation</masterLabel>
+            <translation><!-- Family Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Information</masterLabel>
+            <translation><!-- Family Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Largest Visible Gift</masterLabel>
+            <translation><!-- Largest Visible Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notes</masterLabel>
+            <translation><!-- Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Analysis</masterLabel>
+            <translation><!-- Research Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Bio</masterLabel>
+            <translation><!-- Research Bio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Source of Wealth</masterLabel>
+            <translation><!-- Source of Wealth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee Bio</masterLabel>
+            <translation><!-- Trustee Bio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visible Assets</masterLabel>
+            <translation><!-- Visible Assets --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP Membership POS</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_Point_of_Sale__c&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;checkbox&quot;,
+            &quot;label&quot;: &quot;Enable Point of Sale&quot;
+         }
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_Membership_Purchasing__c&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;checkbox&quot;,
+            &quot;label&quot;: &quot;Enable Membership Purchasing&quot;
+         }
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Update_Existing_Memberships__c&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;checkbox&quot;,
+            &quot;label&quot;: &quot;Update Existing Memberships&quot;
+         }
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Prorate_Memberships_on_Overpayment__c&quot;,
+         &quot;toolTip&quot;: &quot;This will prorate membership expiration dates on overpayment.&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;checkbox&quot;,
+            &quot;label&quot;: &quot;Prorate Memberships on Overpayment&quot;
+         }
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Prorate_Memberships_on_Underpayment__c&quot;,
+         &quot;toolTip&quot;: &quot;This will prorate membership expiration dates on underpayment.&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;checkbox&quot;,
+            &quot;label&quot;: &quot;Prorate Memberships on Underpayment&quot;
+         }
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Generate_Joint_Membership__c&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;checkbox&quot;,
+            &quot;label&quot;: &quot;Generate Joint Membership&quot;
+         }
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Lapsed_Membership_Grace_Period__c&quot;,
+         &quot;toolTip&quot;: &quot;Period in months that a membership can lapse before a member&apos;s \&quot;Member Since\&quot; date resets.&quot;,
+         &quot;customFieldParams&quot;: {
+            &quot;type&quot;: &quot;text&quot;,
+            &quot;label&quot;: &quot;Lapsed Membership Grace Period&quot;
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;BLANK&quot;
+      }
+   ],
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Designation_Detail_to_Membership_Mapping__c&quot;,
+         &quot;toolTip&quot;: &quot;Configuration pertaining to the mapping of society membership fields to designation detail fields.&quot;,
+         &quot;jsonFieldParams&quot;: {
+            &quot;label&quot;: &quot;Membership to Designation Detail Mapping&quot;,
+            &quot;helpText&quot;: &quot;Maps Designation Detail fields to Society Membership object.&quot;,
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;keyLabel&quot;: &quot;Society Membership Field Api Name&quot;,
+            &quot;valueLabel&quot;: &quot;Designation Detail Field Api Name&quot;,
+            &quot;jsonKeysToValueList&quot;: [
+               {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               }
+            ]
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Asset_to_Product_Criteria_Mapping__c&quot;,
+         &quot;toolTip&quot;: &quot;Configuration pertaining to the mapping of Asset fields to Product fields.&quot;,
+         &quot;jsonFieldParams&quot;: {
+            &quot;label&quot;: &quot;Asset to Product Criteria Mapping&quot;,
+            &quot;helpText&quot;: &quot;Maps the Product fields to the Asset object.&quot;,
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;keyLabel&quot;: &quot;Asset Field Api Name&quot;,
+            &quot;valueLabel&quot;: &quot;Product Field Api Name&quot;,
+            &quot;jsonKeysToValueList&quot;: [
+               {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               }
+            ]
+         }
+      }
+   ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+&quot;objectApiName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Setting__mdt&quot;,
+&quot;title&quot;: &quot;Gift Processing Setting Membership/POS&quot;,
+&quot;helpText&quot;: &quot;Configuration pertaining to Memberships and POS in Gift Processing.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

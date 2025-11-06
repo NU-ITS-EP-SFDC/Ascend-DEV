@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Additional fields to set and their values --></help>
+        <label><!-- Scheduled Additional Fields --></label>
+        <name>geopointe__Scheduled_Additional_Fields__c</name>
+    </CustomFieldTranslation>

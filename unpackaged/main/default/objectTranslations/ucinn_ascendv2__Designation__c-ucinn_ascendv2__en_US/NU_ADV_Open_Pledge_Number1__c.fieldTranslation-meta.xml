@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Open Pledge Number --></label>
+        <name>NU_ADV_Open_Pledge_Number1__c</name>
+        <relationshipLabel><!-- Designations (Open Pledge Number) --></relationshipLabel>
+    </CustomFieldTranslation>

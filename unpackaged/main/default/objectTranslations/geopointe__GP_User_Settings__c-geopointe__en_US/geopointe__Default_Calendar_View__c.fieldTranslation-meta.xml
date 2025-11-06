@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The default starting view for the calendar --></help>
+        <label><!-- Default Calendar View --></label>
+        <name>geopointe__Default_Calendar_View__c</name>
+    </CustomFieldTranslation>

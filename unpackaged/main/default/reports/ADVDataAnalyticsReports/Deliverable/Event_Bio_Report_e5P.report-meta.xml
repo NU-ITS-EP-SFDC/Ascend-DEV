@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.ucinn_ascendv2__Briefings_Contact__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.ucinn_ascendv2__Briefings_Contact__r$ucinn_ascendv2__Briefing_Paragraph__c</field>
+    </columns>
+    <columns>
+        <field>Contact.ucinn_ascendv2__Briefings_Contact__r$NU_ADV_Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact.ucinn_ascendv2__Briefings_Contact__r$NU_ADV_Updated_Date__c</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>Id</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>7018c000001W67N</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Contact$Id</primaryTableColumn>
+        <relatedTable>CampaignMember-Campaign</relatedTable>
+        <relatedTableJoinColumn>Contact</relatedTableJoinColumn>
+    </crossFilters>
+    <description>What Event Bio briefing components exist for constituents affiliated with a given campaign?</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.ucinn_ascendv2__Briefings_Contact__r$ucinn_ascendv2__Briefing_Purpose__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Event Bio</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Event Bio Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Constituents_with_Briefing_Components__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$NU_ADV_Assignment_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

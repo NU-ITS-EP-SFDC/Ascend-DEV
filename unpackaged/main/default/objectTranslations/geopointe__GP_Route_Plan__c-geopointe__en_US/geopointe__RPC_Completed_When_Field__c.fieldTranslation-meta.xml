@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Name of lookup field to when the visit occurred --></help>
+        <label><!-- Completed When Field --></label>
+        <name>geopointe__RPC_Completed_When_Field__c</name>
+    </CustomFieldTranslation>

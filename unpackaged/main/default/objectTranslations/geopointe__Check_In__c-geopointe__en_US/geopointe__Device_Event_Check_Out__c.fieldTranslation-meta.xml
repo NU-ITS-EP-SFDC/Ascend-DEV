@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Device Event - Check Out --></label>
+        <name>geopointe__Device_Event_Check_Out__c</name>
+        <relationshipLabel><!-- Device Events - Check Out --></relationshipLabel>
+    </CustomFieldTranslation>

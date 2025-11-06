@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A multi-value picklist containing constituent self disclosed data. --></help>
+        <label><!-- Ethnicity --></label>
+        <name>ucinn_ascendv2__Ethnicity__c</name>
+        <picklistValues>
+            <masterLabel>American Indian/Alaska Native</masterLabel>
+            <translation><!-- American Indian/Alaska Native --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian</masterLabel>
+            <translation><!-- Asian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black/African American</masterLabel>
+            <translation><!-- Black/African American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hispanic</masterLabel>
+            <translation><!-- Hispanic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Hawaiian/Other Pacific Islander</masterLabel>
+            <translation><!-- Native Hawaiian/Other Pacific Islander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White</masterLabel>
+            <translation><!-- White --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Company --></label>
+        <name>NU_ADV_Company__c</name>
+        <picklistValues>
+            <masterLabel>NU_CANADA</masterLabel>
+            <translation><!-- NU_CANADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NU_KRI</masterLabel>
+            <translation><!-- NU_KRI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NU_LONDON</masterLabel>
+            <translation><!-- NU_LONDON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NU_USA</masterLabel>
+            <translation><!-- NU_USA --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

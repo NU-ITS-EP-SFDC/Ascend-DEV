@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Role --></label>
+        <name>ucinn_ascendv2__Role__c</name>
+        <picklistValues>
+            <masterLabel>Captain</masterLabel>
+            <translation><!-- Captain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chairman</masterLabel>
+            <translation><!-- Chairman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-chair</masterLabel>
+            <translation><!-- Co-chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>President</masterLabel>
+            <translation><!-- President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasurer</masterLabel>
+            <translation><!-- Treasurer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee</masterLabel>
+            <translation><!-- Trustee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice president</masterLabel>
+            <translation><!-- Vice president --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

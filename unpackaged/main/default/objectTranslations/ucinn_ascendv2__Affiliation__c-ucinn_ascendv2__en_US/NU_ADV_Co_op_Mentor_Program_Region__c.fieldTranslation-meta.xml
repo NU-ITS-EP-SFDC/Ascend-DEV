@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Co-op Mentor Program Region --></label>
+        <name>NU_ADV_Co_op_Mentor_Program_Region__c</name>
+        <picklistValues>
+            <masterLabel>London</masterLabel>
+            <translation><!-- London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New York City</masterLabel>
+            <translation><!-- New York City --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern California</masterLabel>
+            <translation><!-- Northern California --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portland, ME</masterLabel>
+            <translation><!-- Portland, ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual</masterLabel>
+            <translation><!-- Virtual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Washington D.C.</masterLabel>
+            <translation><!-- Washington D.C. --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

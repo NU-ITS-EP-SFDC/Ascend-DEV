@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The API name of the map object this Route Plan uses. --></help>
+        <label><!-- Map Object --></label>
+        <name>geopointe__RPC_Map_Object__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The recommendation&apos;s order index in relation to all other recommendations. --></help>
+        <label><!-- Recommendation Index --></label>
+        <name>geopointe__Recommendation_Index__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Geocode Id of the list assignment. --></help>
+        <label><!-- Geocode ID  (Deprecated) --></label>
+        <name>geopointe__Geocode_ID__c</name>
+    </CustomFieldTranslation>

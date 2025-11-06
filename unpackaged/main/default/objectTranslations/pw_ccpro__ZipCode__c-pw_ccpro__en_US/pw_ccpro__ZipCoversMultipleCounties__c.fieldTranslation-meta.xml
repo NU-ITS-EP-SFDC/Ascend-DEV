@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Flag indicating whether this ZIP Code crosses county lines. --></help>
+        <label><!-- Zip Covers Multiple Counties --></label>
+        <name>pw_ccpro__ZipCoversMultipleCounties__c</name>
+    </CustomFieldTranslation>

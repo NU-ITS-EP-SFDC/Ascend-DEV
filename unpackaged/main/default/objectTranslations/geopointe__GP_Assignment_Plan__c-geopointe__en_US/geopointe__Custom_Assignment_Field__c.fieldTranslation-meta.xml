@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This is the Geopointe Assignment Area field on your Standard or Custom object that will be populated with the matching Geopointe Assignment Area record. --></help>
+        <label><!-- Custom Assignment Field --></label>
+        <name>geopointe__Custom_Assignment_Field__c</name>
+    </CustomFieldTranslation>

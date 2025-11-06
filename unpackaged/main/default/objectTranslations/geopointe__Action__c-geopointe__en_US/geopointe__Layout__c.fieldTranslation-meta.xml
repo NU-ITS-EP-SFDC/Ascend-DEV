@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Stored JSON data about how to structure the layout of the action --></help>
+        <label><!-- Layout --></label>
+        <name>geopointe__Layout__c</name>
+    </CustomFieldTranslation>

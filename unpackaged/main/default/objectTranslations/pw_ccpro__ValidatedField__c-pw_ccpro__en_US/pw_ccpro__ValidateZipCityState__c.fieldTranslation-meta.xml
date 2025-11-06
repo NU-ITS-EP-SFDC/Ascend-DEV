@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If enabled, this option will verify, for US addresses, that the combination of ZIP Code, city, and state is valid. --></help>
+        <label><!-- ValidateZipCityState --></label>
+        <name>pw_ccpro__ValidateZipCityState__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Stage of Readiness --></label>
+        <name>ucinn_ascendv2__Stage_of_Readiness__c</name>
+        <picklistValues>
+            <masterLabel>Cultivation</masterLabel>
+            <translation><!-- Cultivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disqualification</masterLabel>
+            <translation><!-- Disqualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Assign</masterLabel>
+            <translation><!-- Do Not Assign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identification</masterLabel>
+            <translation><!-- Identification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long-term Disqualification</masterLabel>
+            <translation><!-- Long-term Disqualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not a Prospect</masterLabel>
+            <translation><!-- Not a Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner in Pipeline</masterLabel>
+            <translation><!-- Partner in Pipeline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification</masterLabel>
+            <translation><!-- Qualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short-term Disqualification</masterLabel>
+            <translation><!-- Short-term Disqualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solicitation</masterLabel>
+            <translation><!-- Solicitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stewardship</masterLabel>
+            <translation><!-- Stewardship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stewardship - Permanent</masterLabel>
+            <translation><!-- Stewardship - Permanent --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP xGP Util</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+   [
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__xGP_Tab_Refresh_Configuration__c&quot;,
+         &quot;toolTip&quot;: &quot;Map of keys (tab name) to a boolean value. ie. {\&quot;One-Time Membership\&quot;: true} Possible keys include: Gift, Pledge, Recurring, One-Time Membership, Auto Renewing Membership, Installment Based Membership Membership tabs are set to true by default \nIf true, refreshes page information for the specified tab after user changes the Constituent/Organization in xGP&quot;,
+         &quot;jsonFieldParams&quot;: {
+            &quot;label&quot;: &quot;xGP Tab Refresh Configuration&quot;,
+            &quot;keyLabel&quot;: &quot;Tab&quot;,
+            &quot;valueLabel&quot;: &quot;Refresh&quot;,
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;jsonKeysToValueList&quot;: [
+               {
+                  &quot;key&quot;: &quot;Gift&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;checkbox&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;One-Time Membership&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;checkbox&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;Pledge&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;checkbox&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;Recurring&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;checkbox&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;Auto Renewing Membership&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;checkbox&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;Installment Based Membership Membership&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;checkbox&quot;
+                  }
+               }
+            ]
+         }
+      },
+      {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Feature_to_Custom_Permission_Map__c&quot;,
+         &quot;toolTip&quot;: &quot;Configuration pertaining to what features to display on xGP&quot;,
+         &quot;jsonFieldParams&quot;: {
+            &quot;label&quot;: &quot;Feature to Custom Permission Map&quot;,
+            &quot;keyLabel&quot;: &quot;Feature&quot;,
+            &quot;valueLabel&quot;: &quot;Custom Permission&quot;,
+            &quot;valueHelpText&quot;: &quot;Leave Blank if always show.&quot;,
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;jsonKeysToValueList&quot;: [
+               {
+                  &quot;key&quot;: &quot;XGP_GIFT_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_PLEDGE_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_RECURRING_GIFT_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_MATCHING_GIFT_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_PAYMENT_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_ONE_TIME_MEMBERSHIP_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_AUTO_RENEWING_MEMBERSHIP_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_INSTALLMENT_BASED_MEMBERSHIP_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_ONE_TIME_POS_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_AUTO_RENEWING_POS_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_INSTALLMENT_BASED_POS_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_PARTIAL_PAYMENT_POS_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_MASS_ADJUSTMENT_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_MASS_CORRECTION_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_MASS_PAYMENT_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_GIVING_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_MEMBERSHIPS_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_POS_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_GIFT_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_PLEDGE_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_RECURRING_GIFT_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_ONE_TIME_MEMBERSHIP_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_AUTO_RENEWING_MEMBERSHIP_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_INSTALLMENT_BASED_MEMBERSHIP_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_ONE_TIME_POS_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_AUTO_RENEWING_POS_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_INSTALLMENT_BASED_POS_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;XGP_BIO_PARTIAL_PAYMENT_POS_TAB&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               }
+            ]
+         }
+      }
+   ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+&quot;objectApiName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Setting__mdt&quot;,
+&quot;title&quot;: &quot;Expedited Gift Processing Utility Settings&quot;,
+&quot;helpText&quot;: &quot;Configuration pertaining to some utility functionality of Expedited Gift Processing.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Method of interaction from the picklist. --></help>
+        <label><!-- Contact Method --></label>
+        <name>ucinn_ascendv2__Contact_Method__c</name>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation><!-- Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Casual Contact</masterLabel>
+            <translation><!-- Casual Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Item Given</masterLabel>
+            <translation><!-- Item Given --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter</masterLabel>
+            <translation><!-- Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Visit</masterLabel>
+            <translation><!-- Personal Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Meeting</masterLabel>
+            <translation><!-- Phone Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Message</masterLabel>
+            <translation><!-- Social Media Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text Message</masterLabel>
+            <translation><!-- Text Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Meeting</masterLabel>
+            <translation><!-- Video Meeting --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

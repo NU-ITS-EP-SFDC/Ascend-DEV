@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Affiliation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Affiliations</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Affiliation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Job Information --></label>
+            <section>Job Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Affiliation Layout v1</layout>
+        <sections>
+            <label><!-- Additional Details (If Applicable) --></label>
+            <section>Additional Details (If Applicable)</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Job Information --></label>
+            <section>Job Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- A &quot;Current&quot; affiliation cannot have an End Date. --></errorMessage>
+        <name>Current_Affiliation_Cannot_Have_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Do not change the Name field. Upon creation, the Name field should read [Default Name]. --></errorMessage>
+        <name>Name_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please uncheck &quot;Is Active&quot; if the Affiliation is no longer active. --></errorMessage>
+        <name>Uncheck_Active_if_End_Date_Input</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invalid start and end dates. Start date should be less than the end date. --></errorMessage>
+        <name>ucinn_ascendv2__End_Date_Greater_Than_Start_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

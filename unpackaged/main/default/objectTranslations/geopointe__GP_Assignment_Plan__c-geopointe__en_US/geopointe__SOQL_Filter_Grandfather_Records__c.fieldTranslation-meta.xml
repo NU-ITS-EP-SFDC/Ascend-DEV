@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If checked, a record that is ALREADY ASSIGNED will not be unassigned later even if it no longer meets the SOQL Filter criteria. --></help>
+        <label><!-- Grandfather Records --></label>
+        <name>geopointe__SOQL_Filter_Grandfather_Records__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Include in AR Volunteer Count? --></label>
+        <name>NU_ADV_Include_in_AR_Volunteer_Count__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How many years will the donor make payments? --></help>
+        <label><!-- Payment Schedule --></label>
+        <name>NU_ADV_Payment_Schedule__c</name>
+        <picklistValues>
+            <masterLabel>2 years</masterLabel>
+            <translation><!-- 2 years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 years</masterLabel>
+            <translation><!-- 3 years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 years</masterLabel>
+            <translation><!-- 4 years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 years</masterLabel>
+            <translation><!-- 5 years --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

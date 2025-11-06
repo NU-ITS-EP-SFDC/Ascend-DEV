@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Inherit Sharing --></label>
+        <name>geopointe__Inherit_Sharing__c</name>
+    </CustomFieldTranslation>

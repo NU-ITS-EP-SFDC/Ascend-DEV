@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Store the value from the multi-select picklist in a text variable that looks like this: Value A;Value B;Value C
+Append semicolons to the triggering service indicator&apos;s Value to populate three variables:
+1. semicolonAfter (&quot;Value;&quot;)
+2. semicolonBefore (&quot;;Value&quot;)
+3. bothSemicolons (&quot;;Value;&quot;)</description>
+        <name>Assign_Existing_Picklist_Values</name>
+        <label>Assign Existing Picklist Values</label>
+        <locationX>314</locationX>
+        <locationY>779</locationY>
+        <assignmentItems>
+            <assignToReference>serviceIndicatorMSP</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Constituent.NU_ADV_Service_Indicators__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>semicolonAfter</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.ucinn_ascendv2__Service_Indicator_Value__r.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>semicolonAfter</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>;</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>semicolonBefore</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>;</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>semicolonBefore</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.ucinn_ascendv2__Service_Indicator_Value__r.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>bothSemicolons</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>semicolonBefore</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>bothSemicolons</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Service_Indicator_Active</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>If an active service indicator is created (or updated) with an end date in the future, it must be made inactive on that end date. The scheduled path runs on the end date (if the end date is null, today, or in the past, it runs immediately). Since entry conditions cannot be set for a scheduled path, this element determines whether the flow needs to take action. The scheduled path ends if the end date is null or if the service indicator is already inactive.</description>
+        <name>Is_Scheduled_Path_Needed</name>
+        <label>Is Scheduled Path Needed?</label>
+        <locationX>468</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Run_Scheduled_Path</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ucinn_ascendv2__End_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ucinn_ascendv2__Is_Active__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Make_Inactive</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether the service indicator is active; checks the Service Indicator(s) multi-select picklist to see if it is necessary to take action.
+
+It is possible for the name of one service indicator value to be found in the name of another, e.g. &quot;Never Contact&quot; &amp; &quot;Never Contact by Phone.&quot; The semicolon variables force the flow to look for the EXACT service indicator value, not one with a similar name.</description>
+        <name>Service_Indicator_Active</name>
+        <label>Service Indicator Active?</label>
+        <locationX>314</locationX>
+        <locationY>887</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Service_Indicator_Active</name>
+            <conditionLogic>1 AND 5 AND NOT(2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ucinn_ascendv2__Is_Active__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>serviceIndicatorMSP</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>bothSemicolons</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>serviceIndicatorMSP</leftValueReference>
+                <operator>EndsWith</operator>
+                <rightValue>
+                    <elementReference>semicolonBefore</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>serviceIndicatorMSP</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <elementReference>semicolonAfter</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>serviceIndicatorMSP</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.ucinn_ascendv2__Service_Indicator_Value__r.Name</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Value</targetReference>
+            </connector>
+            <label>Active</label>
+        </rules>
+        <rules>
+            <name>No_Service_Indicator_Inactive</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4 OR 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ucinn_ascendv2__Is_Active__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>serviceIndicatorMSP</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>bothSemicolons</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>serviceIndicatorMSP</leftValueReference>
+                <operator>EndsWith</operator>
+                <rightValue>
+                    <elementReference>semicolonBefore</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>serviceIndicatorMSP</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <elementReference>semicolonAfter</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>serviceIndicatorMSP</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.ucinn_ascendv2__Service_Indicator_Value__r.Name</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Remove_Value</targetReference>
+            </connector>
+            <label>Inactive</label>
+        </rules>
+    </decisions>
+    <description>Updates the Service Indicator(s) field on the Constituent object to show all a constituent&apos;s active service indicators. The flow runs under the following circumstances:
+1. A new active service indicator is created.
+2. An active service indicator is made inactive.
+3. An inactive service indicator is made active.
+4. The end date of an active service indicator is changed.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>To add the new Service Indicator Value to the multi-select picklist field:
+1. If the field is blank, change it to the new value.
+2. If the field already has values, append the new value with a semicolon.</description>
+        <name>MSP_with_Value_Added</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!serviceIndicatorMSP}), 
+{!$Record.ucinn_ascendv2__Service_Indicator_Value__r.Name},
+{!serviceIndicatorMSP}&amp;&quot;;&quot;&amp;{!$Record.ucinn_ascendv2__Service_Indicator_Value__r.Name})</expression>
+    </formulas>
+    <formulas>
+        <description>To remove the deactivated Service Indicator Value from the multi-select picklist field:
+1. If the deactivated value is the only value in the field, clear the field.
+2. If the deactivated value is at the beginning of the field (which has been stored as a semicolon-separated text string), isolate the left portion of the string up to the first semicolon, then remove it.
+3. If the deactivated value is in the middle of the field, replace the value and the semicolons on either side of it with a single semicolon.
+4. If the deactivated value is at the end of the field, isolate the right portion of the string from the last semicolon on, then remove it.</description>
+        <name>MSP_with_Value_Removed</name>
+        <dataType>String</dataType>
+        <expression>IF({!serviceIndicatorMSP} = {!$Record.ucinn_ascendv2__Service_Indicator_Value__r.Name}, &quot;&quot;,
+   IF(BEGINS({!serviceIndicatorMSP}, {!semicolonAfter}), 
+   SUBSTITUTE({!serviceIndicatorMSP}, LEFT({!serviceIndicatorMSP}, FIND(&quot;;&quot;, {!serviceIndicatorMSP})), &quot;&quot;), 
+      IF(CONTAINS({!serviceIndicatorMSP}, {!bothSemicolons}), 
+      SUBSTITUTE({!serviceIndicatorMSP}, {!bothSemicolons}, &quot;;&quot;), 
+         SUBSTITUTE({!serviceIndicatorMSP}, RIGHT({!serviceIndicatorMSP}, FIND(&quot;;&quot;, REVERSE({!serviceIndicatorMSP}))), &quot;&quot;))))</expression>
+    </formulas>
+    <interviewLabel>Service Indicator Rollup to Constituent {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Service Indicator Rollup to Constituent</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Constituent</name>
+        <label>Get Constituent</label>
+        <locationX>314</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Existing_Picklist_Values</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ucinn_ascendv2__Contact__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>NU_ADV_Service_Indicators__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Add_Value</name>
+        <label>Add Value</label>
+        <locationX>50</locationX>
+        <locationY>995</locationY>
+        <inputAssignments>
+            <field>NU_ADV_Service_Indicators__c</field>
+            <value>
+                <elementReference>MSP_with_Value_Added</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.ucinn_ascendv2__Contact__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Explanation of validation bypass:
+Say an active service indicator is created on March 1 with an end date of March 31. On March 31, the scheduled path runs and unchecks the Active box. However, the flow still identifies TODAY() as March 1, so it triggers the validation rule Inactive_Must_Have_Past_End_Date.
+To fix this, a condition was added to the validation rule: NOT(BLANKVALUE(NU_ADV_Validation_Bypass__c, $System.OriginDateTime) &gt; NOW() - 0.00005787037). Validation Bypass is a date/time field with a default value of $System.OriginDateTime. This condition says the validation rule should only be triggered if the value of Validation Bypass does not fall within the last 5 seconds. (If for some reason Validation Bypass is null, the formula substitutes $System.OriginDateTime.)
+The flow resets Validation Bypass to the current time immediately before attempting to uncheck the Active box. Because Validation Bypass is greater than &quot;now minus 5 seconds,&quot; the validation rule is not triggered.</description>
+        <name>Make_Inactive</name>
+        <label>Make Inactive</label>
+        <locationX>336</locationX>
+        <locationY>384</locationY>
+        <connector>
+            <targetReference>Get_Constituent</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>NU_ADV_Validation_Bypass__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ucinn_ascendv2__Is_Active__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Remove_Value</name>
+        <label>Remove Value</label>
+        <locationX>314</locationX>
+        <locationY>995</locationY>
+        <inputAssignments>
+            <field>NU_ADV_Service_Indicators__c</field>
+            <value>
+                <elementReference>MSP_with_Value_Removed</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.ucinn_ascendv2__Contact__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Constituent</targetReference>
+        </connector>
+        <filterFormula>(ISNEW() &amp;&amp; {!$Record.ucinn_ascendv2__Is_Active__c} == True) ||
+ISCHANGED({!$Record.ucinn_ascendv2__Is_Active__c}) ||
+({!$Record.ucinn_ascendv2__Is_Active__c} == True &amp;&amp; ISCHANGED({!$Record.ucinn_ascendv2__End_Date__c}))</filterFormula>
+        <object>ucinn_ascendv2__Service_Indicator__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>Run_on_End_Date</name>
+            <connector>
+                <targetReference>Is_Scheduled_Path_Needed</targetReference>
+            </connector>
+            <label>Run on End Date</label>
+            <offsetNumber>0</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>ucinn_ascendv2__End_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>bothSemicolons</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>semicolonAfter</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>semicolonBefore</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>serviceIndicatorMSP</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

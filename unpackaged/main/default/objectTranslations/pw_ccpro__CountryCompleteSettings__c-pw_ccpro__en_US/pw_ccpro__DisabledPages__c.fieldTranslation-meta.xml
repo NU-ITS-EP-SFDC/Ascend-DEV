@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Names of Visualforce pages should be separated by a semicolon and a space --></help>
+        <label><!-- Disabled Pages --></label>
+        <name>pw_ccpro__DisabledPages__c</name>
+    </CustomFieldTranslation>

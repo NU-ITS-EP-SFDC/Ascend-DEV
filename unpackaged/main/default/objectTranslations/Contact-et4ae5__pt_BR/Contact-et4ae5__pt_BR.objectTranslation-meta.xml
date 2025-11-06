@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Constituent Layout for Admins</layout>
+        <sections>
+            <label><!-- Additional Bio Demo Information --></label>
+            <section>Additional Bio Demo Information</section>
+        </sections>
+        <sections>
+            <label><!-- Affinity Group Support Staff Contact Detail Management --></label>
+            <section>Affinity Group Support Staff Contact Detail Management</section>
+        </sections>
+        <sections>
+            <label><!-- Birth / Death Information --></label>
+            <section>Birth / Death Information</section>
+        </sections>
+        <sections>
+            <label><!-- Constituency --></label>
+            <section>Constituency</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Education Information --></label>
+            <section>Education Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Gifts) --></label>
+            <section>Giving Summary Information (Gifts)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Overall) --></label>
+            <section>Giving Summary Information (Overall)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledges) --></label>
+            <section>Giving Summary Information (Pledges)</section>
+        </sections>
+        <sections>
+            <label><!-- Interim Process Information --></label>
+            <section>Interim Process Information</section>
+        </sections>
+        <sections>
+            <label><!-- Other System Information --></label>
+            <section>Other System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Portal User Privacy Management --></label>
+            <section>Portal User Privacy Management</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect Information --></label>
+            <section>Prospect Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Affinity Group Support Staff Contact Detail Management --></label>
+            <section>Affinity Group Support Staff Contact Detail Management</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact PROScores Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Edit Constituent Layout</layout>
+        <sections>
+            <label><!-- Action Center Setting Information --></label>
+            <section>Action Center Setting Information</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Birth / Death Information --></label>
+            <section>Birth / Death Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Preference Information --></label>
+            <section>Contact Preference Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- External System ID Information --></label>
+            <section>External System ID Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Gifts) --></label>
+            <section>Giving Summary Information (Gifts)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Overall) --></label>
+            <section>Giving Summary Information (Overall)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledge Payments) --></label>
+            <section>Giving Summary Information (Pledge Payments)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledges) --></label>
+            <section>Giving Summary Information (Pledges)</section>
+        </sections>
+        <sections>
+            <label><!-- Interim Process Information --></label>
+            <section>Interim Process Information</section>
+        </sections>
+        <sections>
+            <label><!-- Presidential Address Information --></label>
+            <section>Presidential Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Edit Constituent Layout v1</layout>
+        <sections>
+            <label><!-- Additional Bio Demo Information --></label>
+            <section>Additional Bio Demo Information</section>
+        </sections>
+        <sections>
+            <label><!-- Affinity Group Support Staff Contact Detail Management --></label>
+            <section>Affinity Group Support Staff Contact Detail Management</section>
+        </sections>
+        <sections>
+            <label><!-- Birth / Death Information --></label>
+            <section>Birth / Death Information</section>
+        </sections>
+        <sections>
+            <label><!-- Constituency --></label>
+            <section>Constituency</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Education Information --></label>
+            <section>Education Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Gifts) --></label>
+            <section>Giving Summary Information (Gifts)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Overall) --></label>
+            <section>Giving Summary Information (Overall)</section>
+        </sections>
+        <sections>
+            <label><!-- Giving Summary Information (Pledges) --></label>
+            <section>Giving Summary Information (Pledges)</section>
+        </sections>
+        <sections>
+            <label><!-- Interim Process Information --></label>
+            <section>Interim Process Information</section>
+        </sections>
+        <sections>
+            <label><!-- Other System Information --></label>
+            <section>Other System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Portal User Privacy Management --></label>
+            <section>Portal User Privacy Management</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect Information --></label>
+            <section>Prospect Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Constituent Layout</layout>
+        <sections>
+            <label><!-- Action Center Setting Information --></label>
+            <section>Action Center Setting Information</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Birth / Death Information --></label>
+            <section>Birth / Death Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- External System ID Information --></label>
+            <section>External System ID Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Interim Process Information --></label>
+            <section>Interim Process Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner Constituent Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Generate Giving URL --></label>
+        <name>Generate_Giving_URL</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit Contact Update --></label>
+        <name>Submit_Contact_Update</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Manage Affinity Support Staff Info --></label>
+        <name>cfg_Manage_Affinity_Support_Staff_Info</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- For non constituent persons. --></description>
+        <label><!-- Non-Constituent --></label>
+        <name>NU_ADV_Non_Constituent</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- The record type that is used for editing the Constituent. --></description>
+        <label><!-- Constituent Details --></label>
+        <name>ucinn_ascendv2__Edit_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Only used when creating a new constituent contact. --></description>
+        <label><!-- Constituent --></label>
+        <name>ucinn_ascendv2__New_Contact</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The Donor ID can only be changed by the system administrator. --></errorMessage>
+        <name>ucinn_ascendv2__Change_Donor_ID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invalid deceased date. Deceased date needs to be after the birth date. --></errorMessage>
+        <name>ucinn_ascendv2__Deceased_Date_After_Birth</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There are no existing joint salutations. --></errorMessage>
+        <name>ucinn_ascendv2__Joint_Salutation_Pref_With_No_Spouse</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- InviteContactToEvent --></label>
+        <name>CventEvents__InviteContactToEvent</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ModifyCancelContactToEvent --></label>
+        <name>CventEvents__ModifyCancelContactToEvent</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NominateContactToEvent --></label>
+        <name>CventEvents__NominateContactToEvent</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RegisterContactToEvent --></label>
+        <name>CventEvents__RegisterContactToEvent</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP --></label>
+        <name>Loop__LOOP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP_Merge --></label>
+        <name>Loop__LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOPlus --></label>
+        <name>Loop__LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOP_Merge --></label>
+        <name>Loop__Mass_LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOPlus --></label>
+        <name>Loop__Mass_LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Acknowledgement_Letter --></label>
+        <name>NU_ADV_Acknowledgement_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Annual_Giving_Statement --></label>
+        <name>NU_ADV_Annual_Giving_Statement</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Applications --></label>
+        <name>NU_ADV_Applications</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_BioDem_Updates --></label>
+        <name>NU_ADV_BioDem_Updates</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Board_of_Trustees_Giving_Summary --></label>
+        <name>NU_ADV_Board_of_Trustees_Giving_Summary</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Condolence_Letter --></label>
+        <name>NU_ADV_Condolence_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Congratulation_Letter --></label>
+        <name>NU_ADV_Congratulation_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Dean_Acknowledgement_Letter --></label>
+        <name>NU_ADV_Dean_Acknowledgement_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Fund_Reports --></label>
+        <name>NU_ADV_Fund_Reports</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Gift_Planning_Correspondence --></label>
+        <name>NU_ADV_Gift_Planning_Correspondence</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Giving_Statements --></label>
+        <name>NU_ADV_Giving_Statements</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Name_Change --></label>
+        <name>NU_ADV_Name_Change</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_News_Articles --></label>
+        <name>NU_ADV_News_Articles</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Other_Letters --></label>
+        <name>NU_ADV_Other_Letters</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Presidential_Acknowledgement_Letter --></label>
+        <name>NU_ADV_Presidential_Acknowledgement_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Profile_Pic --></label>
+        <name>NU_ADV_Profile_Pic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Research --></label>
+        <name>NU_ADV_Research</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_SVP_Acknowledgement_Letter --></label>
+        <name>NU_ADV_SVP_Acknowledgement_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Submit_Bio_Update_Case --></label>
+        <name>NU_ADV_Submit_Bio_Update_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Tribute_Notification --></label>
+        <name>NU_ADV_Tribute_Notification</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Upload_Constituent_Research --></label>
+        <name>NU_ADV_Upload_Constituent_Research</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Upload_from_Constituent --></label>
+        <name>NU_ADV_Upload_from_Constituent</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NU_ADV_Volunteer_Form --></label>
+        <name>NU_ADV_Volunteer_Form</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_New_Pledge_or_Gift --></label>
+        <name>Submit_New_Pledge_or_Gift</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+    <webLinks>
+        <label>Assinar novamente o Marketing Cloud</label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label>Cancelar assinatura do Marketing Cloud</label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label>Enviar email do Marketing Cloud</label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label>Enviar SMS do Marketing Cloud</label>
+        <name>et4ae5__Send_ExactTarget_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label>Visualizar os dados analíticos do Marketing Cloud</label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map --></label>
+        <name>geopointe__Map</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map_Records_Contact --></label>
+        <name>geopointe__Map_Records_Contact</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map_newWindow --></label>
+        <name>geopointe__Map_newWindow</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Batch_Profile --></label>
+        <name>iWave_PROscores__Batch_Profile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Batch_Score --></label>
+        <name>iWave_PROscores__Batch_Score</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Batch_Score_Profile --></label>
+        <name>iWave_PROscores__Mass_Batch_Score_Profile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_To_Clipboard --></label>
+        <name>ucinn_ascendv2__Add_To_Clipboard</name>
+    </webLinks>
+</CustomObjectTranslation>

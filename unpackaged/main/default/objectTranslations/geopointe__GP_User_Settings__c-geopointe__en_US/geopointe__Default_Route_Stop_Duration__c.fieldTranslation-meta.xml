@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Default duration in minutes for a route stop. This may be overriden by system configuration. --></help>
+        <label><!-- Default Stop Duration --></label>
+        <name>geopointe__Default_Route_Stop_Duration__c</name>
+    </CustomFieldTranslation>

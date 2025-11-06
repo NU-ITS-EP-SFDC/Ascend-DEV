@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Snippet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DocGen Snippets</value>
+    </caseValues>
+    
+    
+    <layouts>
+        <layout>Component Layout</layout>
+        <sections>
+            <label><!-- Body --></label>
+            <section>Body</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

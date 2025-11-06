@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to restrict visibility of Vendor Ratings related list on record pages. Assigned to System Admin profile and the following permission sets: Vendor Rating Access, Prospect Management, Prospect Management Approval, Prospect Research.</description>
+    <isLicensed>false</isLicensed>
+    <label>Vendor Rating Access</label>
+</CustomPermission>

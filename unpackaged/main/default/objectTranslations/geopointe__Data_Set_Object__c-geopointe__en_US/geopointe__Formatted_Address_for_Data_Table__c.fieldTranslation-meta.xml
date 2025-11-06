@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, the system will output a formatted address in 1 column of the data table. --></help>
+        <label><!-- Formatted Address for Data Table --></label>
+        <name>geopointe__Formatted_Address_for_Data_Table__c</name>
+    </CustomFieldTranslation>

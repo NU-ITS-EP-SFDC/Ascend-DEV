@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If checked, the assignment area will use the assignment plan filter along with the assignment area filter. --></help>
+        <label><!-- Use Assignment Plan Filter --></label>
+        <name>geopointe__Use_AP_Filter__c</name>
+    </CustomFieldTranslation>

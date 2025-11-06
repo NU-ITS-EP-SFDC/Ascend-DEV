@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The folder to associate this layer with. --></help>
+        <label><!-- Folder --></label>
+        <name>geopointe__Folder__c</name>
+        <relationshipLabel><!-- Geopointe Layers --></relationshipLabel>
+    </CustomFieldTranslation>

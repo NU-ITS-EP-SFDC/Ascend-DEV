@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting INTERIM MergeSetting</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;Label&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Label&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;isCreation&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_LABEL&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;BLANK_HEADER_GENERAL&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;General&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Default_Setting__c&quot;,
+      &quot;tooltip&quot;: &quot;If checked, this setting will be used for record types that do not have a corresponding merge interim setting. There should only be one default setting specified.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Is Default&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Interim_Record_Type_Developer_Name__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Interim Record Type Developer Name&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Disable_Salesforce_Duplicate_Checks__c&quot;,
+      &quot;tooltip&quot;: &quot;Disables Salesforce duplicate checks when inserting SObjects.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Disable Salesforce Duplicate Checks&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Interim_Record_Type_Namespace__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Interim Record Type Namespace&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_RTv2_Processing__c&quot;,
+      &quot;tooltip&quot;: &quot;Enable automatic RTv2 processing after completing an interim&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable RTv2 Processing&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Target_Object_API_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;The API name of the target object. (e.g. \&quot;Contact\&quot; or \&quot;Account\&quot;)&quot;,
+      &quot;disabled&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Target Object API Name (Managed)&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Package_Extension__c&quot;,
+      &quot;tooltip&quot;: &quot;For extending the merge base class.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;label&quot;: &quot;Merge Base Package Extension&quot;,
+        &quot;sobjectName&quot;: &quot;ucinn_ascendv2__Package_Extension__mdt&quot;,
+        &quot;uniqueValueField&quot;: &quot;DeveloperName&quot;,
+        &quot;uniqueValueFieldsToConcat&quot;: [
+          &quot;NamespacePrefix&quot;,
+          &quot;$__&quot;,
+          &quot;DeveloperName&quot;
+        ],
+        &quot;fieldsToDisplay&quot;: [
+          &quot;Label&quot;
+        ],
+        &quot;whereClauseString&quot;: &quot;&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__New_Base_Package_Extension__c&quot;,
+      &quot;tooltip&quot;: &quot;For extending the interim new batch.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;label&quot;: &quot;New Base Package Extension&quot;,
+        &quot;sobjectName&quot;: &quot;ucinn_ascendv2__Package_Extension__mdt&quot;,
+        &quot;uniqueValueField&quot;: &quot;DeveloperName&quot;,
+        &quot;uniqueValueFieldsToConcat&quot;: [
+          &quot;NamespacePrefix&quot;,
+          &quot;$__&quot;,
+          &quot;DeveloperName&quot;
+        ],
+        &quot;fieldsToDisplay&quot;: [
+          &quot;Label&quot;
+        ],
+        &quot;whereClauseString&quot;: &quot;&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Pending_Base_Package_Extension__c&quot;,
+      &quot;tooltip&quot;: &quot;For extending the interim pending batch.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;label&quot;: &quot;Pending Base Package Extension&quot;,
+        &quot;sobjectName&quot;: &quot;ucinn_ascendv2__Package_Extension__mdt&quot;,
+        &quot;uniqueValueField&quot;: &quot;DeveloperName&quot;,
+        &quot;uniqueValueFieldsToConcat&quot;: [
+          &quot;NamespacePrefix&quot;,
+          &quot;$__&quot;,
+          &quot;DeveloperName&quot;
+        ],
+        &quot;fieldsToDisplay&quot;: [
+          &quot;Label&quot;
+        ],
+        &quot;whereClauseString&quot;: &quot;&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__In_Progress_Base_Package_Extension__c&quot;,
+      &quot;tooltip&quot;: &quot;For extending the interim in progress batch.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;lookup&quot;,
+        &quot;label&quot;: &quot;In Progress Base Package Extension&quot;,
+        &quot;sobjectName&quot;: &quot;ucinn_ascendv2__Package_Extension__mdt&quot;,
+        &quot;uniqueValueField&quot;: &quot;DeveloperName&quot;,
+        &quot;uniqueValueFieldsToConcat&quot;: [
+          &quot;NamespacePrefix&quot;,
+          &quot;$__&quot;,
+          &quot;DeveloperName&quot;
+        ],
+        &quot;fieldsToDisplay&quot;: [
+          &quot;Label&quot;
+        ],
+        &quot;whereClauseString&quot;: &quot;&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;BLANK_HEADER_MANUAL_MERGE&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Manual Merge&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Fields_to_Display__c&quot;,
+      &quot;toolTip&quot;: &quot;Constituent fields to display on the overview that will show on every tab. Example: field1__c, field2__c&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;listNotJSON&quot;,
+        &quot;listNotJSONSeperator&quot;: &quot;,&quot;,
+        &quot;label&quot;: &quot;Fields to Display&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Interim_Fields_To_Display__c&quot;,
+      &quot;toolTip&quot;: &quot;For displaying fields that will show up on every tab. Example: field1__c, field2__c&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;listNotJSON&quot;,
+        &quot;listNotJSONSeperator&quot;: &quot;,&quot;,
+        &quot;label&quot;: &quot;Interim Fields To Display&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;BLANK_HEADER_AUTO_MERGE&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Auto Merge&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Use_Auto_Merge_V2__c&quot;,
+      &quot;toolTip&quot;: &quot;Allows use of Interim to Contact auto merge v2 rather than v1.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Use Auto Merge V2&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Auto_Merge_Threshold__c&quot;,
+      &quot;toolTip&quot;: &quot;Matching threshold at which interims are automatically matched to a contact and merged, when only one duplicate is found.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;label&quot;: &quot;Auto Merge Threshold&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Contact_Record_Type_Developer_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;Developer name of the record type that will be applied to the contact on creation.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Record Type Developer Name&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Contact_Record_Type_Namespace__c&quot;,
+      &quot;toolTip&quot;: &quot;Namespace of the record type that will be applied to the contact on creation.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Record Type Namespace&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;BLANK_HEADER_POSSIBLE_DUP_LIST&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;header&quot;,
+        &quot;label&quot;: &quot;Possible Duplicate List&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Possible_Dup_Found_Headers__c&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;label&quot;: &quot;Possible Dup Found Headers&quot;,
+        &quot;helpText&quot;: &quot;Labels for headers.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Possible_Dup_Found_Fields_to_Display__c&quot;,
+      &quot;toolTip&quot;: &quot;Fields to display on the possible dup found table. Format is as follows [\&quot;Source.ucinn_ascendv2__First_Name__c\&quot;, \&quot;Target.FirstName\&quot;].&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;helpText&quot;: &quot;Fields to display on the possible dup found table. Format is as follows [\&quot;Source.ucinn_ascendv2__First_Name__c\&quot;, \&quot;Target.FirstName\&quot;].&quot;,
+        &quot;label&quot;: &quot;Possible Dup Found Fields to Display&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Possible_Dup_Found_Field_Type_Dict__c&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Possible Dup Found Field Type Dict&quot;,
+        &quot;helpText&quot;: &quot;Configuration to determine how we should show the fields to display.&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Id&quot;,
+                &quot;REFERENCE&quot;,
+                &quot;REFERENCE-URL&quot;,
+                &quot;REFERENCE-READONLY&quot;,
+                &quot;READONLY&quot;,
+                &quot;EMAIL&quot;,
+                &quot;PHONE&quot;,
+                &quot;DATE&quot;,
+                &quot;DATETIME&quot;,
+                &quot;INTEGER&quot;,
+                &quot;DOUBLE&quot;,
+                &quot;BOOLEAN&quot;,
+                &quot;STRING&quot;,
+                &quot;URL&quot;,
+                &quot;CURRENCY&quot;,
+                &quot;CURRENCY-READONLY&quot;,
+                &quot;DATE-READONLY&quot;,
+                &quot;DATETIME-READONLY&quot;,
+                &quot;NUMBER-READONLY&quot;,
+                &quot;PERCENTAGE-READONLY&quot;,
+                &quot;PHONE-READONLY&quot;,
+                &quot;RICHTEXT-READONLY&quot;,
+                &quot;URL-READONLY&quot;,
+                &quot;TEXTAREA-READONLY&quot;,
+                &quot;BOOLEAN-READONLY&quot;,
+                &quot;EMAIL-READONLY&quot;,
+                &quot;UNESCAPED-HTML&quot;,
+                &quot;Compound-Address&quot;,
+                &quot;ADDRESS-READONLY&quot;,
+                &quot;PICKLIST-READONLY&quot;,
+                &quot;MULTIPICKLIST-READONLY&quot;,
+                &quot;TIME-READONLY&quot;,
+                &quot;GEOLOCATION-READONLY&quot;,
+                &quot;ENCRYPTED-READONLY&quot;
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+&quot;objectApiName&quot;: &quot;ucinn_ascendv2__Manual_Merge_Setting__mdt&quot;,
+&quot;title&quot;: &quot;Merge Setting&quot;,&quot;allowCreate&quot;:true,
+&quot;helpText&quot;: &quot;Configuration pertaining to the custom metadata Merge Setting.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

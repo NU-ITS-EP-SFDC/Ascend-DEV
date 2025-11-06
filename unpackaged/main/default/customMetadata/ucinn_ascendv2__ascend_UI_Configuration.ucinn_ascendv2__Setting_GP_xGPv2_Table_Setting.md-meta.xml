@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting GP xGPv2 Table Setting</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:type="xsd:string">Every 1 Row</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;Label&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Label&quot;
+      },
+      &quot;criteria&quot;: [
+        {
+          &quot;isCreation&quot;: true
+        }
+      ]
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Gift_Type__c&quot;,
+      &quot;required&quot;: true,
+      &quot;toolTip&quot;:&quot;The table you wish to define a customization for.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Gift Type&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Expedited Session Recurring&quot;,
+          &quot;Expedited Session Pledge&quot;,
+          &quot;Expedited Session Gift&quot;,
+          &quot;Expedited Session Payment&quot;,
+          &quot;Expedited Bio Recurring&quot;,
+          &quot;Expedited Bio Pledge&quot;,
+          &quot;Expedited Bio Gift&quot;,
+          &quot;Mass Adjustment Designation Detail&quot;,
+          &quot;Expedited Session Installment Based Membership&quot;,
+          &quot;Expedited Session Auto Renewing Membership&quot;,
+          &quot;Expedited Session One-Time Membership&quot;,
+          &quot;Expedited Bio Installment Based Membership&quot;,
+          &quot;Expedited Bio Auto Renewing Membership&quot;,
+          &quot;Expedited Bio One-Time Membership&quot;,
+          &quot;Additional Expedited Bio Pledge&quot;,
+          &quot;Additional Expedited Bio Gift&quot;,
+          &quot;Additional Expedited Bio Recurring&quot;,
+          &quot;Additional Expedited Session Pledge&quot;,
+          &quot;Additional Expedited Session Gift&quot;,
+          &quot;Additional Expedited Session Recurring&quot;,
+          &quot;Additional Expedited Session Installment Based Membership&quot;,
+          &quot;Additional Expedited Session Auto Renewing Membership&quot;,
+          &quot;Additional Expedited Session One-Time Membership&quot;,
+          &quot;Additional Expedited Bio Installment Based Membership&quot;,
+          &quot;Additional Expedited Bio Auto Renewing Membership&quot;,
+          &quot;Additional Expedited Bio One-Time Membership&quot;,
+          &quot;Mass Payment Opportunity&quot;,
+          &quot;Mass Correction Designation Detail&quot;,
+          &quot;Expedited Session Installment Based POS&quot;,
+          &quot;Expedited Session Auto Renewing POS&quot;,
+          &quot;Expedited Session One-Time POS&quot;,
+          &quot;Expedited Session Partial Payment POS&quot;,
+          &quot;Expedited Bio Installment Based POS&quot;,
+          &quot;Expedited Bio Auto Renewing POS&quot;,
+          &quot;Expedited Bio One-Time POS&quot;,
+          &quot;Expedited Bio Partial Payment POS&quot;,
+          &quot;Additional Expedited Session Installment Based POS&quot;,
+          &quot;Additional Expedited Session Auto Renewing POS&quot;,
+          &quot;Additional Expedited Session One-Time POS&quot;,
+          &quot;Additional Expedited Session Partial Payment POS&quot;,
+          &quot;Additional Expedited Bio Installment Based POS&quot;,
+          &quot;Additional Expedited Bio Auto Renewing POS&quot;,
+          &quot;Additional Expedited Bio One-Time POS&quot;,
+          &quot;Additional Expedited Bio Partial Payment POS&quot;,
+          &quot;Expedited Session Matching Gift&quot;,
+          &quot;Expedited Wizard Pledge Payment&quot;,
+          &quot;Expedited Matching Gift&quot;,
+          &quot;Expedited Bio Matching Gift&quot;
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Donor_Type__c&quot;,
+
+      &quot;toolTip&quot;:&quot;If Both, this record will customize the table on the Constituent and Organization with the same specifications from this record. Else, this will only apply the customization on either the Constituent or Organization.&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Donor Type&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Both&quot;,
+          &quot;Constituent&quot;,
+          &quot;Organization&quot;
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Table_Title__c&quot;,
+
+      &quot;toolTip&quot;:&quot;Title of the UI, table, tab, or information component.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Table Title&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Search_Bar_Label__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Search Bar Label&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Is_Table_Disabled__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Is Table Disabled&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_Table_Refresh__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Table Refresh&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_Single_Row_Selection__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Single Row Selection&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_Multiple_Row_Selection__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Multiple Row Selection&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_Search_Bar__c&quot;,
+      &quot;toolTip&quot;:&quot;Checking the box will cause the search bar to appear, and un-checking the box will cause the search bar to be hidden from view.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Search Bar&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Enable_Filter__c&quot;,
+      &quot;toolTip&quot;:&quot;Displays filter button on the UI when checked and hides it from view when unchecked&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Enable Filter&quot;
+      }
+    }
+  ],
+  [
+          {
+         &quot;fieldName&quot;: &quot;ucinn_ascendv2__Table_Object_Search_Filter_Info_List__c&quot;,
+         &quot;toolTip&quot;: &quot;JSON list of object filter search information. \n EX) [{ \&quot;label\&quot;:\&quot;label Value\&quot;, \&quot;objectApi\&quot;:\&quot;ObjectApiNameValue\&quot;, \&quot;referenceApi\&quot;:\&quot;field That Looks up to search object or null to signify it is the search object\&quot;, \&quot;fieldsToQuery\&quot;: [\&quot;fieldl1\&quot;, \&quot;field2\&quot;,\&quot;etc\&quot;], \&quot;defaultWhereClause\&quot;: \&quot;Stage == &apos;Active&apos;\&quot;, \&quot;allowFilter\&quot; : true, \&quot;displayTab\&quot; : false, \&quot;limit\&quot;:\&quot;49000\&quot;, \&quot;orderByField\&quot;:\&quot;Id\&quot;, \&quot;orderByDirection\&quot;:\&quot;ASC\&quot;}]&quot;,
+         &quot;jsonFieldParams&quot;: {
+            &quot;label&quot;: &quot;Table Object Search Filter Info List&quot;,
+            &quot;type&quot;: &quot;list&quot;,
+            &quot;listType&quot;: &quot;object&quot;,
+            &quot;helpText&quot;: &quot;JSON list of object filter search information. EX) [{ \&quot;label\&quot;:\&quot;label Value\&quot;, \&quot;objectApi\&quot;:\&quot;ObjectApiNameValue\&quot;, \&quot;referenceApi\&quot;:\&quot;field That Looks up to search object or null to signify it is the search object\&quot;, \&quot;fieldsToQuery\&quot;: [\&quot;feidl1\&quot;, \&quot;field2\&quot;,\&quot;etc\&quot;], \&quot;defaultWhereClause\&quot;: \&quot;Stage == &apos;Active&apos;\&quot;, \&quot;allowFilter\&quot; : true, \&quot;displayTab\&quot; : false, \&quot;limit\&quot;:\&quot;49000\&quot;, \&quot;orderByField\&quot;:\&quot;Id\&quot;, \&quot;orderByDirection\&quot;:\&quot;ASC\&quot;}]&quot;,
+            &quot;jsonKeysToValueList&quot;: [
+               {
+                  &quot;key&quot;: &quot;label&quot;,
+                  &quot;label&quot;: &quot;Label&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;objectApi&quot;,
+                  &quot;label&quot;: &quot;Object Api Name&quot;,
+                  &quot;required&quot;:true,
+                  &quot;helpText&quot;: &quot;Object Api Name that we are searching against. It can be the object we are querying for or a child related object of the main object we are querying for.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;referenceApi&quot;,
+                  &quot;label&quot;: &quot;Reference Field Api Name&quot;,
+                  &quot;helpText&quot;: &quot;The lookup field to the object being queried. Leave blank if this is the object that is being queried.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;allowFilter&quot;,
+                  &quot;label&quot;: &quot;Allow Filter&quot;,
+                  &quot;helpText&quot;: &quot;Allow users to filter against this object when querying for the main object.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;checkbox&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;limit&quot;,
+                  &quot;label&quot;: &quot;Limit&quot;,
+                  &quot;helpText&quot;: &quot;Amount of records to query.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;orderBy&quot;,
+                  &quot;label&quot;: &quot;Order By&quot;,
+                  &quot;helpText&quot;: &quot;SOQL order by statment of how you want the records to be returned.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;text&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;defaultWhereClause&quot;,
+                  &quot;label&quot;: &quot;Where Clause&quot;,
+                  &quot;helpText&quot;: &quot;SOQL Default where clause that will always be appended with your filter when searching for records.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;textarea&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;displayTab&quot;,
+                  &quot;label&quot;: &quot;Display Tab&quot;,
+                  &quot;helpText&quot;: &quot;When there is more than one object to filter by we have the option to display the tabs of the different objects to filter by.&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                     &quot;type&quot;: &quot;checkbox&quot;
+                  }
+               },
+               {
+                  &quot;key&quot;: &quot;fieldsToQuery&quot;,
+                  &quot;label&quot;: &quot;Fields To Query&quot;,
+                  &quot;helpText&quot;: &quot;List of Fields To Query. Only applicable for the Object being queried not the related children records.&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                     &quot;type&quot;: &quot;list&quot;,
+                     &quot;listType&quot;: &quot;value&quot;,
+                     &quot;valueCustomFieldParams&quot;: {
+                        &quot;type&quot;: &quot;text&quot;
+                     }
+                  }
+               }
+            ]
+         }
+      }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Fields_To_Display__c&quot;,
+      &quot;toolTip&quot;:&quot;Field Api Names of the fields you want to display, order of field defined determines order in which fields are displayed.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Fields To Display&quot;,
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;allowReorder&quot;: true,
+        &quot;helpText&quot;: &quot;Field Api Names of the fields you want to display, order of field defined determines order in which fields are displayed.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Headers__c&quot;,
+      &quot;toolTip&quot;:&quot;Header Labels that correspond to the Fields to Display. If nothing populated it will just use the field labels defined on the fields.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Headers&quot;,
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;listType&quot;: &quot;value&quot;,
+        &quot;allowReorder&quot;: true,
+        &quot;helpText&quot;: &quot;Header Labels that correspond to the Fields to Display. If nothing populated it will just use the field labels defined on the fields.&quot;,
+        &quot;valueCustomFieldParams&quot;: {
+          &quot;type&quot;: &quot;text&quot;
+        }
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Field_Type_Dict__c&quot;,
+        &quot;toolTip&quot;: &quot;Configuration to determine how we should show the fields to display.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;label&quot;: &quot;Field Type Dict&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;helpText&quot;: &quot;Configuration to determine how we should show the fields to display.&quot;,
+        &quot;keyLabel&quot;:&quot;Field Api Name&quot;,
+        &quot;valueLabel&quot;:&quot;Display Type&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;picklist&quot;,
+              &quot;customPicklistValuesString&quot;: [
+                &quot;Id&quot;,
+                &quot;REFERENCE&quot;,
+                &quot;REFERENCE-URL&quot;,
+                &quot;REFERENCE-READONLY&quot;,
+                &quot;READONLY&quot;,
+                &quot;EMAIL&quot;,
+                &quot;PHONE&quot;,
+                &quot;DATE&quot;,
+                &quot;DATETIME&quot;,
+                &quot;INTEGER&quot;,
+                &quot;DOUBLE&quot;,
+                &quot;BOOLEAN&quot;,
+                &quot;STRING&quot;,
+                &quot;URL&quot;,
+                &quot;CURRENCY&quot;,
+                &quot;CURRENCY-READONLY&quot;,
+                &quot;DATE-READONLY&quot;,
+                &quot;DATETIME-READONLY&quot;,
+                &quot;NUMBER-READONLY&quot;,
+                &quot;PERCENTAGE-READONLY&quot;,
+                &quot;PHONE-READONLY&quot;,
+                &quot;RICHTEXT-READONLY&quot;,
+                &quot;URL-READONLY&quot;,
+                &quot;TEXTAREA-READONLY&quot;,
+                &quot;BOOLEAN-READONLY&quot;,
+                &quot;UNESCAPED-HTML&quot;,
+                &quot;Compound-Address&quot;,
+                &quot;ADDRESS-READONLY&quot;,
+                &quot;PICKLIST-READONLY&quot;,
+                &quot;MULTIPICKLIST-READONLY&quot;,
+                &quot;TIME-READONLY&quot;,
+                &quot;GEOLOCATION-READONLY&quot;,
+                &quot;ENCRYPTED-READONLY&quot;
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK1&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Filter_Criteria_Opportunity__c&quot;,
+      &quot;toolTip&quot;:&quot;It should be written as if it were to follow a WHERE from a SOQL query. For example, Amount &gt; 10.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Filter Criteria (Opportunity)&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Filter_Criteria_Designation_Detail__c&quot;,
+      &quot;toolTip&quot;:&quot;It should be written as if it were to follow a WHERE from a SOQL query. For example, Amount &gt; 10.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Filter Criteria (Designation Detail)&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Other_Object_Name__c&quot;,
+      &quot;toolTip&quot;:&quot;Object to search for in place of Opportunity&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Other Object Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Other_Filter_Criteria__c&quot;,
+      &quot;toolTip&quot;:&quot;Filter criteria for specified other object&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Other Filter Criteria&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Order_By__c&quot;,
+      &quot;toolTip&quot;:&quot;Only one column may be specified and it should be the Field API Name of the value being displayed in the column. No namespace is needed.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Order By&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Order_by_Direction__c&quot;,
+      &quot;toolTip&quot;:&quot;The value can either by ASC or DESC.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Order By Direction&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Number_of_Records_Per_Page__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Number of Records Per Page&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;5&quot;,
+          &quot;10&quot;,
+          &quot;25&quot;
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Record_Type_Name__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Record Type Name&quot;
+      }
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+   &quot;objectApiName&quot;: &quot;ucinn_ascendv2__Gift_Processing_Tables_Setting__mdt&quot;,
+   &quot;allowCreate&quot;: true,
+   &quot;additionalConditions&quot;: &quot;ucinn_ascendv2__Gift_Type__c LIKE &apos;%Expedited%&apos; AND (NOT DeveloperName LIKE &apos;xMG%&apos;)&quot;,
+   &quot;title&quot;: &quot;Expedited Gift Processing Table Settings&quot;,
+   &quot;helpText&quot;: &quot;Records that control the tables in Expedited Gift Processing.&quot;
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

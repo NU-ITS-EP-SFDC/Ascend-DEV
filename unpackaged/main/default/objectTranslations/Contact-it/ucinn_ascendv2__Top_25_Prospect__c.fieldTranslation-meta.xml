@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Top 25 Prospect --></label>
+        <name>ucinn_ascendv2__Top_25_Prospect__c</name>
+        <picklistValues>
+            <masterLabel>Advancement: CA Top 25</masterLabel>
+            <translation><!-- Advancement: CA Top 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advancement: SVP's Office</masterLabel>
+            <translation><!-- Advancement: SVP&apos;s Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Athletic Department</masterLabel>
+            <translation><!-- Athletic Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bouve College of Health Sciences</masterLabel>
+            <translation><!-- Bouve College of Health Sciences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Arts, Media &amp; Design</masterLabel>
+            <translation><!-- College of Arts, Media &amp; Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Engineering</masterLabel>
+            <translation><!-- College of Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Professional Studies</masterLabel>
+            <translation><!-- College of Professional Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Science</masterLabel>
+            <translation><!-- College of Science --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Social Sciences and Humanities</masterLabel>
+            <translation><!-- College of Social Sciences and Humanities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporations Top 25</masterLabel>
+            <translation><!-- Corporations Top 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D'Amore-McKim School of Business</masterLabel>
+            <translation><!-- D&apos;Amore-McKim School of Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundations Top 25</masterLabel>
+            <translation><!-- Foundations Top 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Khoury Collge of Computer Sciences</masterLabel>
+            <translation><!-- Khoury Collge of Computer Sciences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libraries</masterLabel>
+            <translation><!-- Libraries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mills College</masterLabel>
+            <translation><!-- Mills College --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New College of Humanities</masterLabel>
+            <translation><!-- New College of Humanities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office of the Chancellor</masterLabel>
+            <translation><!-- Office of the Chancellor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office of the Provost</masterLabel>
+            <translation><!-- Office of the Provost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>President's Office</masterLabel>
+            <translation><!-- President&apos;s Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roux Institute</masterLabel>
+            <translation><!-- Roux Institute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Law</masterLabel>
+            <translation><!-- School of Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Advancement</masterLabel>
+            <translation><!-- University Advancement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Advancement: International Top 25</masterLabel>
+            <translation><!-- University Advancement: International Top 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Advancement: NY Top 25</masterLabel>
+            <translation><!-- University Advancement: NY Top 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Advancement: Parents Top 25</masterLabel>
+            <translation><!-- University Advancement: Parents Top 25 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

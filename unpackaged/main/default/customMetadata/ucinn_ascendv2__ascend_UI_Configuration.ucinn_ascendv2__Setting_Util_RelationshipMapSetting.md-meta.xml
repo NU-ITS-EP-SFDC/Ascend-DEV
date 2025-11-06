@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Setting Util RelationshipMapSetting</label>
+    <protected>false</protected>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Add_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Additional_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Add__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Calculate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Allow_Edit__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Bio_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Calculate_Button_Label_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Config_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Create_Labels_Rows__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Delete_Event_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Edit_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Default__c</field>
+        <value xsi:type="xsd:string">[
+  [
+    {
+      &quot;fieldName&quot;: &quot;Label&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Label&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Label&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Relationship_Map_Display_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;Name to be displayed on the UI for this relationship map configuration.&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Relationship Map Display Name&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Host_Object_Name__c&quot;,
+      &quot;toolTip&quot;: &quot;The object that would be hosting the relationship map. (I.E. Contact)&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;label&quot;: &quot;Host Object Name&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Initial_Render_Method__c&quot;,
+      &quot;toolTip&quot;: &quot;Determines how the relationship map initially renders to the user.\n1: Renders the source node only.\n2: Renders up to Initial Render Depth by default, with at most Max Nodes To Render nodes.\n3: Renders all levels up to Max Nodes To Render nodes.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;picklist&quot;,
+        &quot;label&quot;: &quot;Initial Render Method&quot;,
+        &quot;customPicklistValuesString&quot;: [
+          &quot;Method 1 - Level 0 Only&quot;,
+          &quot;Method 2 - Initial Render Depth&quot;,
+          &quot;Method 3 - Max Nodes to Render&quot;
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Initial_Render_Depth__c&quot;,
+      &quot;toolTip&quot;: &quot;This value determines the initial relationship depth to render when the relationship map is invoked. This assumes that the # of nodes rendered with just Level 1 does not exceed the Max Nodes to Render value.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;label&quot;: &quot;Initial Render Depth&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Target_Depth_Level__c&quot;,
+      &quot;toolTip&quot;: &quot;Maximum Depth Level of relationships to query, where the source is level 0.&quot;,
+      &quot;required&quot;: true,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;label&quot;: &quot;Maximum Depth Level&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Inferred_Max_Search_Depth__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;label&quot;: &quot;Inferred Max Search Depth&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Max_Nodes_To_Render__c&quot;,
+      &quot;toolTip&quot;: &quot;This value determines the maximum number of relationships that the relationship will render before a filter is required. It does not limit the depth of the map to render.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;label&quot;: &quot;Max Nodes To Render&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Max_Nodes_To_Rende&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Description__c&quot;,
+      &quot;toolTip&quot;: &quot;Description for this configuration.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Description&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_Description&quot;
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Is_Default__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Is Default&quot;
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Is_Active__c&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;checkbox&quot;,
+        &quot;label&quot;: &quot;Is Active&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Relationship_Map_Node_Configuration__c&quot;,
+      &quot;toolTip&quot;: &quot;Configuration for styling of relationship map nodes by depth level.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Relationship Map Node Configuration&quot;,
+        &quot;keyLabel&quot;: &quot;Node Depth&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;color&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;borderColor&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;borderWidth&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;fontColor&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;fontSize&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;fontWeight&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;fontFamily&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;onHoverBorderWidth&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;onHoverBorderColor&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;onHoverBackgroundColor&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;onHoverFontColor&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;onHoverFontWeight&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;onHoverFontSize&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Relationship_Map_Configuration__c&quot;,
+      &quot;toolTip&quot;: &quot;Configuration for what the relationship map queries and how it handles different relationship types.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Relationship Map Configuration&quot;,
+        &quot;helpText&quot;: &quot;Configuration for what the relationship map queries and how it handles different relationship types.&quot;,
+        &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;list&quot;,
+              &quot;listType&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;sourceField&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;targetField&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;labelField&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;relationshipTypeFieldAPI&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;relationshipTypeValues&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;keyLabel&quot;: &quot;Relationship Type&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;relationshipStrength&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;lineWidth&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;lineColor&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Inferred_Relationship_Configuration__c&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Inferred Relationship Configuration&quot;,
+        &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;displayLabel&quot;,
+                  &quot;valueCustomFieldParams&quot;: {
+                    &quot;type&quot;: &quot;text&quot;
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;tableColumnSetting&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;label&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;fieldName&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;type&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;picklist&quot;,
+                          &quot;customPicklistValuesString&quot;: [
+                            &quot;url&quot;,
+                            &quot;customUrl&quot;,
+                            &quot;dynamicCustomType&quot;,
+                            &quot;currency&quot;,
+                            &quot;boolean&quot;,
+                            &quot;button&quot;,
+                            &quot;button-icon&quot;,
+                            &quot;date-local&quot;,
+                            &quot;date&quot;,
+                            &quot;email&quot;,
+                            &quot;location&quot;,
+                            &quot;number&quot;,
+                            &quot;percent&quot;,
+                            &quot;phone&quot;,
+                            &quot;text&quot;
+                          ]
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;wrapText&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;checkbox&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;typeAttributes&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;prepend&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;target&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;objectApi&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;fieldApi&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;type&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;editable&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;checkbox&quot;
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;displayValue&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;recordId&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;rowIndex&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;fieldName&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                              &quot;valueCustomFieldParams&quot;: {
+                                &quot;type&quot;: &quot;text&quot;
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;helpText&quot;: &quot;Role&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;object&quot;,
+                          &quot;jsonKeysToValueList&quot;: [
+                            {
+                              &quot;key&quot;: &quot;inferredRelationshipConfiguration&quot;,
+                              &quot;valueJsonFieldParams&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;jsonKeysToValueList&quot;: [
+                                  {
+                                    &quot;key&quot;: &quot;inferredRelationshipType&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;inferredRelationshipLineStyle&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;lineWidth&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;lineColor&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;inferredRelationshipToCreateSourceField&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;inferredRelationshipToCreateTargetField&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;key&quot;: &quot;inferredRelationshipToCreateTypeField&quot;,
+                                    &quot;valueCustomFieldParams&quot;: {
+                                      &quot;type&quot;: &quot;text&quot;
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Notes__c&quot;,
+      &quot;toolTip&quot;: &quot;Field to store any administrative notes about this configuration.&quot;,
+      &quot;customFieldParams&quot;: {
+        &quot;type&quot;: &quot;textarea&quot;,
+        &quot;label&quot;: &quot;Notes&quot;
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__On_Hover_Display_Fields__c&quot;,
+      &quot;toolTip&quot;: &quot;Configure fields to display on the relationship map node&apos;s hover-over display via JSON.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;On Hover Display Fields&quot;,
+        &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;keyLabel&quot;: &quot;Field Api Name&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;[CUSTOM]&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;dataType&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;label&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;condition&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;textarea&quot;
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__On_Hover_Display_Style__c&quot;,
+      &quot;toolTip&quot;: &quot;Configure the pop-up box via this configuration&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;On Hover Display Style&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;borderWidth&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;borderColor&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;backgroundColor&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;radius&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;width&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;boxHeight&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;yOffset&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;valueWidth&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          },
+          {
+            &quot;key&quot;: &quot;labelWidth&quot;,
+            &quot;valueCustomFieldParams&quot;: {
+              &quot;type&quot;: &quot;text&quot;
+            }
+          }
+        ]
+      }
+    }
+  ],
+  [
+    {
+      &quot;fieldName&quot;: &quot;ucinn_ascendv2__Sankey_Graph_Relationship_JSON__c&quot;,
+      &quot;toolTip&quot;: &quot;Valid JSON configuration to control data displayed on Relationship Map&apos;s Sankey graph. This configuration does not affect other graph types, such as Tree and Node.&quot;,
+      &quot;jsonFieldParams&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;label&quot;: &quot;Sankey Graph Relationship JSON&quot;,
+        &quot;keyLabel&quot;: &quot;Object Api Name&quot;,
+        &quot;jsonKeysToValueList&quot;: [
+          {
+            &quot;key&quot;: &quot;[CUSTOM]&quot;,
+            &quot;valueJsonFieldParams&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;jsonKeysToValueList&quot;: [
+                {
+                  &quot;key&quot;: &quot;sankeyLineText&quot;,
+                  &quot;valueJsonFieldParams&quot;: {
+                    &quot;type&quot;: &quot;list&quot;,
+                    &quot;listType&quot;: &quot;object&quot;,
+                    &quot;jsonKeysToValueList&quot;: [
+                      {
+                        &quot;key&quot;: &quot;text&quot;,
+                        &quot;valueCustomFieldParams&quot;: {
+                          &quot;type&quot;: &quot;text&quot;
+                        }
+                      },
+                      {
+                        &quot;key&quot;: &quot;keys&quot;,
+                        &quot;valueJsonFieldParams&quot;: {
+                          &quot;type&quot;: &quot;list&quot;,
+                          &quot;listType&quot;: &quot;value&quot;,
+                          &quot;valueCustomFieldParams&quot;: {
+                            &quot;type&quot;: &quot;text&quot;
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &quot;fieldName&quot;: &quot;BLANK_ucinn_ascendv2__Sankey_Graph_Relationship_JSON__c&quot;
+    }
+  ]
+]</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Field_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Icon_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Initialize_Info_On_Render__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Lookup_To_Parent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Nested_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Object_Api_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Order_By_Conditions_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Other_Button_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Process_Payment_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Record_Type_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Relationship_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Section_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Default_v1__c</field>
+        <value xsi:type="xsd:string">{
+   &quot;objectApiName&quot;:&quot;ucinn_ascendv2__Relationship_Map_Setting__mdt&quot;,
+   &quot;additionalConditions&quot;:&quot;&quot;,
+   &quot;title&quot;:&quot;Relationship Map Setting&quot;,
+   &quot;helpText&quot;:&quot;Configuration Pertaining to Custom metadata Relationship Map Setting&quot;,
+   &quot;allowCreate&quot;:true
+}</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Specialized_Configurations_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Style_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_List_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Title_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__To_Pledge_Button_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Type__c</field>
+        <value xsi:type="xsd:string">ascend Setting</value>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Default__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ucinn_ascendv2__Unique_Row_Field_Name_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

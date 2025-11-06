@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Matching_Key_Value_3__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Matching Key Value 3</label>
+    <referenceTo>ucinn_ascendv2__Matching_Key_Value__c</referenceTo>
+    <relationshipLabel>Affiliations (Matching Key Value 3)</relationshipLabel>
+    <relationshipName>Affiliations2</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

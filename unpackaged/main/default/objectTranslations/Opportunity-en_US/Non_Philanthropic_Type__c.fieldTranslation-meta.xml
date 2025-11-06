@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Non Philanthropic Type --></label>
+        <name>Non_Philanthropic_Type__c</name>
+        <picklistValues>
+            <masterLabel>Advertising/Promotional agreement</masterLabel>
+            <translation><!-- Advertising/Promotional agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quasi-governmental</masterLabel>
+            <translation><!-- Quasi-governmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quid Pro Quo Issue</masterLabel>
+            <translation><!-- Quid Pro Quo Issue --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Border Opacity --></label>
+        <name>geopointe__Border_Opacity__c</name>
+    </CustomFieldTranslation>

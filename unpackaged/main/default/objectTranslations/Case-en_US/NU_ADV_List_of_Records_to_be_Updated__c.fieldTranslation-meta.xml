@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Provide list of constituents or organizations to be updated (include ids if possible) --></help>
+        <label><!-- List of Records to be Updated --></label>
+        <name>NU_ADV_List_of_Records_to_be_Updated__c</name>
+    </CustomFieldTranslation>

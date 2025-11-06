@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Controls the order in which links and buttons are displayed in the action sections on the Map page. --></help>
+        <label><!-- Order --></label>
+        <name>geopointe__Order__c</name>
+    </CustomFieldTranslation>

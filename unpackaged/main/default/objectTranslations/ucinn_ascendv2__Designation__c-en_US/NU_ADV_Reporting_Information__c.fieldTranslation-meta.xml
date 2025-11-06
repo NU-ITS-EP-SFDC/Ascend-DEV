@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Reporting Information --></label>
+        <name>NU_ADV_Reporting_Information__c</name>
+        <picklistValues>
+            <masterLabel>Issue</masterLabel>
+            <translation><!-- Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Reportable</masterLabel>
+            <translation><!-- Not Reportable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reportable</masterLabel>
+            <translation><!-- Reportable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reportable if</masterLabel>
+            <translation><!-- Reportable if --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

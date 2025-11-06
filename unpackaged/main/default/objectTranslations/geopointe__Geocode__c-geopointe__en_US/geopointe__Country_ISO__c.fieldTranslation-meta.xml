@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The 2 character ISO country value that corresponds to the country sent to the geocoder. This was determined using the Country Code mappings configured in your system. --></help>
+        <label><!-- Country (ISO) --></label>
+        <name>geopointe__Country_ISO__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ucinn_ascendv2__Address_Relation__c$ucinn_ascendv2__Address__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Address_Relation__c$Name</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Address_Relation__c$Id</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Address_Relation__c$ucinn_ascendv2__In_Care_Of__c</field>
+    </columns>
+    <columns>
+        <field>ucinn_ascendv2__Address_Relation__c$ucinn_ascendv2__Address_Street_Formula__c</field>
+    </columns>
+    <description>Report to determine address relations that are linked to a specific address object, for purposes of data clean up.</description>
+    <filter>
+        <criteriaItems>
+            <column>ucinn_ascendv2__Address_Relation__c$ucinn_ascendv2__Address__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ADDR-0903671</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Address Relations Linked to Address</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Address_Relations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ucinn_ascendv2__Address_Relation__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

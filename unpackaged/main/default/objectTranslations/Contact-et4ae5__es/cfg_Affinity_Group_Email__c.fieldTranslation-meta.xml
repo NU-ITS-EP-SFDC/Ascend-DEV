@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Contact Email to be displayed for Support Staff on Affinity Group pages. --></help>
+        <label><!-- Affinity Group Email --></label>
+        <name>cfg_Affinity_Group_Email__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Associated Academic Organization --></label>
+        <name>NU_ADV_Associated_Academic_Organization__c</name>
+        <picklistValues>
+            <masterLabel>BHS</masterLabel>
+            <translation><!-- BHS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAM</masterLabel>
+            <translation><!-- CAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAS</masterLabel>
+            <translation><!-- CAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COE</masterLabel>
+            <translation><!-- COE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPS</masterLabel>
+            <translation><!-- CPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSC</masterLabel>
+            <translation><!-- CSC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSH</masterLabel>
+            <translation><!-- CSH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMSB</masterLabel>
+            <translation><!-- DMSB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KCCS</masterLabel>
+            <translation><!-- KCCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NUSL</masterLabel>
+            <translation><!-- NUSL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RX</masterLabel>
+            <translation><!-- RX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STE</masterLabel>
+            <translation><!-- STE --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

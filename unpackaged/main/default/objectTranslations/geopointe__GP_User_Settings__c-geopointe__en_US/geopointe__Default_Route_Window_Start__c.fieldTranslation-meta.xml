@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Default route window start time. This may be changed on the route. --></help>
+        <label><!-- Default Route Window --></label>
+        <name>geopointe__Default_Route_Window_Start__c</name>
+    </CustomFieldTranslation>

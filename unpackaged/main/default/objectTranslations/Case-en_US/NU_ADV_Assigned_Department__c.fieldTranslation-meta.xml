@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Assigned Department --></label>
+        <name>NU_ADV_Assigned_Department__c</name>
+        <picklistValues>
+            <masterLabel>Advancement Technology</masterLabel>
+            <translation><!-- Advancement Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Strategy and Analytics</masterLabel>
+            <translation><!-- Data Strategy and Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mills Data Team</masterLabel>
+            <translation><!-- Mills Data Team --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

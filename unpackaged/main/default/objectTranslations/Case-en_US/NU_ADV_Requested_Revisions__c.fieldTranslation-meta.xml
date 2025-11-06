@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please provide a summary of the requested revisions --></help>
+        <label><!-- Requested Revisions --></label>
+        <name>NU_ADV_Requested_Revisions__c</name>
+    </CustomFieldTranslation>
